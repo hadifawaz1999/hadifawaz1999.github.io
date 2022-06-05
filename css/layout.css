@@ -33,9 +33,9 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/header-background.jpg) no-repeat top center;
-   background-size: cover !important;
-	-webkit-background-size: cover !important;
+   /* background: #161415 url(../images/header-background.jpg) no-repeat top center; */
+   /* background-size: cover !important; */
+	/* -webkit-background-size: cover !important; */
    text-align: center;
    overflow: hidden;
 }
@@ -325,35 +325,67 @@ ul#nav li.current a { color: #F06000; }
    border-radius: 3px 0 0 3px;
 }
 
-.photoshop {
-  	width: 60%;
-  	-moz-animation: photoshop 2s ease;
-  	-webkit-animation: photoshop 2s ease;
+.arabic {
+   width: 100%;
+   -moz-animation: photoshop 2s ease;
+   -webkit-animation: photoshop 2s ease;
 }
-.illustrator {
-  	width: 55%;
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
+.english {
+   width: 67%;
+   -moz-animation: photoshop 2s ease;
+   -webkit-animation: photoshop 2s ease;
 }
-.wordpress {
-  	width: 50%;
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
+.french {
+   width: 67%;
+   -moz-animation: photoshop 2s ease;
+   -webkit-animation: photoshop 2s ease;
 }
+.python {
+   width: 100%;
+   -moz-animation: photoshop 2s ease;
+   -webkit-animation: photoshop 2s ease;
+}
+.c {
+   width: 100%;
+   -moz-animation: photoshop 2s ease;
+   -webkit-animation: photoshop 2s ease;
+}
+.cpp {
+   width: 100%;
+   -moz-animation: photoshop 2s ease;
+   -webkit-animation: photoshop 2s ease;
+}
+.Linux {
+   width: 70%;
+   -moz-animation: jquery 2s ease;
+   -webkit-animation: jquery 2s ease;
+}
+.Latex {
+   width: 70%;
+   -moz-animation: jquery 2s ease;
+   -webkit-animation: jquery 2s ease;
+}
+
 .css {
-  	width: 90%;
+  	width: 50%;
   	-moz-animation: css 2s ease;
   	-webkit-animation: css 2s ease;
 }
 .html5 {
-  	width: 80%;
+  	width: 50%;
   	-moz-animation: html5 2s ease;
   	-webkit-animation: html5 2s ease;
 }
-.jquery {
-  	width: 50%;
+.MSsql {
+  	width: 30%;
   	-moz-animation: jquery 2s ease;
   	-webkit-animation: jquery 2s ease;
+}
+
+.python-libraries {
+   width: 100%;
+   -moz-animation: jquery 2s ease;
+   -webkit-animation: jquery 2s ease;
 }
 
 @-moz-keyframes photoshop {
