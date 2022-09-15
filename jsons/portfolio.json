@@ -1,0 +1,32 @@
+{
+	"projects":[
+		{
+			"title": "Deep Learning for Optic Fiber",
+			"description" : "The aim of this project is to teach a Deep Learning model to remove non-linearity produced by an Optic Fiber when in a Communication System. This project is done for the Deep Learning class in my master year 2 <a href=\"https://micas.telecom-paris.fr/\">MICAS</a> in collaboration with my partner <a href=\"https://www.linkedin.com/in/valentin-gorse-433309149/?originalSubdomain=fr\">Valentin Gorse</a>.",
+			"image_source": "imgs/portfolio/dnn-optic.png",
+			"img_alter": "dnn optic fiber",
+			"link" : "https://github.com/hadifawaz1999/dnn-4-of"
+		},
+		{
+			"title" : "Dynamic Time Warping (DTW) Illustration",
+			"description" : "Check out how the <a href=\"https://rtavenar.github.io/blog/dtw.html\">Dynamic Time Warping (DTW)</a> algorithm whithout applying a warping window tries to find an optimal path to allign 2 Time Series of the SmoothSubspace dataset of the <a href=\"https://www.cs.ucr.edu/~eamonn/time_series_data_2018/\">UCR Archive</a>.",
+			"image_source" : "imgs/portfolio/DTW_GUI.gif",
+			"img_alter" : "dtw",
+			"link" : "https://github.com/hadifawaz1999/DTW_GUI"
+		},
+		{
+			"title" : "Dynamic Time Warping (DTW) with Warping Window Illustration",
+			"description" : "Check out how the <a href=\"https://rtavenar.github.io/blog/dtw.html\">Dynamic Time Warping (DTW)</a> algorithm when applying a warping window tries to find an optimal path to allign 2 Time Series of the SmoothSubspace dataset of the <a href=\"https://www.cs.ucr.edu/~eamonn/time_series_data_2018/\">UCR Archive</a>.",
+			"image_source" : "imgs/portfolio/DTW_GUI_warped.gif",
+			"img_alter" : "dtw warped",
+			"link" : "https://github.com/hadifawaz1999/DTW_GUI"
+		},
+		{
+			"title" : "Soft-DTW Barrycentering Illustration",
+			"description" : "Check out how the <a href=\"https://rtavenar.github.io/blog/softdtw.html\">Soft Dynamic Time Warping (Soft-DTW)</a> algorithm's barrycenter results on the Coffe Time Series dataset of the <a href=\"https://www.cs.ucr.edu/~eamonn/time_series_data_2018/\">UCR Archive</a>.",
+			"image_source" : "imgs/portfolio/soft_dtw.gif",
+			"img_alter" : "soft dtw",
+			"link" : "https://github.com/hadifawaz1999/Soft_dtw_draw"
+		}
+	]
+}

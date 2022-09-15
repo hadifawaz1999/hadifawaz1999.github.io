@@ -1,0 +1,32 @@
+{
+	"institutions":[
+		{
+			"date": "Since 2019",
+			"school": "Ecole Nationale Supérieure d’Ingénieurs Sud-Alsace",
+			"info": "ENSISA",
+			"link": "http://www.ensisa.uha.fr/",
+			"department": "Computer Science & Networking department"
+		},
+		{
+			"date": "2016-19",
+			"school": "IMT Atlantique",
+			"info": "Brest campus",
+			"link": "https://www.imt-atlantique.fr/en",
+			"department": "Computer Science department"
+		},
+		{
+			"date": "2013-16",
+			"school": "Telecom Lille",
+			"info": "now IMT Lille Douai",
+			"link": "http://imt-lille-douai.fr/en/",
+			"department": "Computer Science department"
+		}
+	],
+	"courses": ["Algorithmic", "Artificial Intelligence", "Computer Vision", "Computer Graphics", "Deep Learning", "Design Patterns", "Image Processing", "Networking", "Operating Systems", "Programming (C/C++, c#, Java, Python)", "Robotics"]
+}
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+{
+
+    "awards" :[
+
+        {
+            "date" : "2018",
+            "content" : "10th Place Award at the <a href=\"https://www.ul.edu.lb/media/announcements/default.aspx?facultyId=8&announcementId=5726\">Lebanese University Collegiate Programming Contest (LU-CPC)</a>"
+        }
+
+    ],
+
+    "certificats" :[
+
+        {
+            "date" : "2020",
+            "content" : "Certified in Python Basics by <a href=\"https://www.hackerrank.com\">HackerRank</a>"
+        },
+        {
+            "date" : "2020",
+            "content" : "CCNA Level 1 Certificate, Routing and Switching: Introduction to Networks by <a href=\"https://www.netacad.com/\">Netacad</a>"
+        },
+        {
+            "date" : "2019",
+            "content" : "Certificate of Completion, Intro to Machine Learning by <a href=\"https://www.kaggle.com/\">Kaggle</a>"
+        },
+        {
+            "date" : "2017",
+            "content" : "Participation Certificate from the , Cyber Community workshop in Cryptography at the <a href=\"https://www.ul.edu.lb/\">Lebanese Univeristy</a>, <a href=\"http://www.ulfg.ul.edu.lb/\">Faculty of Engineering</a>"
+        }
+
+    ]
+
+}

@@ -1,0 +1,23 @@
+{
+	"name": "Ali El Hadi Ismail Fawaz",
+	"title": "Data Scientest Intern @ <a href=\"https://www.irimas.uha.fr/\" style=\"color: black;\">IRIMAS</a>",
+	"abstract": "I am currently a Master year 2 student at <a href=\"https://www.telecom-paris.fr/\">Telecom Paris</a>, <a href=\"https://www.ip-paris.fr/\">Institut Polytechnique de Paris</a> following the program Machine Learning, Communication and Securty <a href=\"https://micas.telecom-paris.fr/\">MICAS</a>. I am doing now my Master's internship at the <a href=\"https://www.irimas.uha.fr/\">IRIMAS</a> of the <a href=\"https://www.uha.fr/fr/index.html\">Université Haute-Alsace</a>, <a href=\"https://www.ensisa.uha.fr/\">ENSISA</a>. My internship is about Deep Learning for Time Series  Analysis in which I am working with my supervisors <a href=\"https://maxime-devanne.com/\">Dr. Maxime DEVANNE</a>, <a href=\"https://germain-forestier.info/\">Prof. Germain FORESTIER</a> and <a href=\"https://www.jonathan-weber.eu/\">Dr. Jonathan WEBER</a>.",
+	"image" : "imgs/my_profile_pic.jpg",
+	"keywords": ["Data Science", "Time Series", "Pattern Recognition", "Machine Learning", "Deep Learning"],
+	"contact": 
+	{
+		"employer": "IRIMAS / Univ. Haute Alsace",
+		"street": "12 rue des frères Lumière",
+		"city": "68200 Mulhouse, France",
+		"email": "ali-el-hadi.ismail-fawaz@uha.fr",
+		"phone": "+33 06 14 59 63 85"	
+	},
+	"links":
+	{
+		"linkedin": "https://www.linkedin.com/in/ali-el-hadi-ismail-fawaz/",
+		"twitter": "https://twitter.com/Hadi_Fawaz_99",
+		"github": "https://github.com/hadifawaz1999",
+		"hackerrank" : "https://www.hackerrank.com/AHIF1999",
+		"kaggle" : "https://www.kaggle.com/alielhadiismailfawaz"
+	}
+}

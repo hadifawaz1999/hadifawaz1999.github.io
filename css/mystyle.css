@@ -1,0 +1,153 @@
+
+body {
+    font-family: 'Inconsolata', monospace;
+    font-size: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    --main-color2: #0975a0; /* dark green (bold) */
+    --main-color1: #04047c; /* clear green (links) */
+    --main-color3: #e3f0f2; /* very clear green (background) */
+}
+.profile-img {
+    border-radius: 25%;
+}
+.nav-border {
+    border-radius: 30px;
+}
+.sec-title {
+    border-radius: 30px;
+}
+.top-bar {
+    border-radius: 10px;
+}
+.download-button {
+    border-radius: 10px;
+    padding: 10px;
+    color: white;
+}
+.download-button:hover {
+    color:aquamarine;
+}
+.portfolio-image {
+    display: block;
+    height: auto;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section:before {
+    height: 4.5rem;
+    content: "";
+    display: block;
+    margin-top: -4.5rem;  /* negative margin equal to the header height */
+    visibility: hidden;
+    content: "";
+}
+.vertical { 
+    border-left: 1px solid var(--main-color1);
+    color: white; 
+    height: 4rem;
+}
+.horizontal-top { 
+    border-top: 1px solid var(--main-color1);
+}
+.horizontal-bottom { 
+    border-bottom : 1px solid var(--main-color1);
+}
+.grey-color {
+    color : var(--main-color1);
+}
+B {
+    color : var(--main-color1);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: var(--main-color1);
+    font-size: 1.5rem;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--main-color2);
+}
+.fa-home:hover{
+    color: var(--main-color2);
+}
+.fa-at{
+    color:var(--main-color1);
+}
+.fa-phone-alt {
+    color:var(--main-color1);
+}
+.fa {
+    color:var(--main-color1);
+}
+.fa:hover {
+    color:var(--main-color2);
+}
+.fas {
+    color:var(--main-color1);
+}
+.fas:hover {
+    color:var(--main-color2);
+}
+.fab {
+    color:var(--main-color1);
+}
+.fab:hover {
+    color:var(--main-color2);
+}
+.ai {
+    color:var(--main-color1);
+}
+.ai:hover {
+    color:var(--main-color2);
+}
+a {
+    color: var(--main-color2);
+}
+a:hover {
+    color: var(--main-color1);
+    text-decoration: underline;
+}
+.vertical-title-bar {
+    border-left: 6px solid var(--main-color2);
+    padding-left: 10px;
+}
+table td, table td * {
+    vertical-align: top;
+}
+
+tr.entry>td {
+  padding-bottom: 0.5rem;
+}
+
+.bib {
+    line-height: 18px;
+    height: 18px;
+}
+.bib:hover {
+    line-height: 18px;
+    height: 18px;
+}
+.noshown {
+    display: none;
+}
+.shown {
+
+}
+.bibtex-col{
+    font-size: 0.7rem;
+    color: var(--main-color2);
+    padding-left: 1em;
+    background-color: var(--main-color3);
+}
+.highlight{
+    border-top:2px solid grey;
+    border-bottom:2px solid grey;
+}
+.alert-success {
+    color: black;
+}
+.alert-success{
+    background-color: var(--main-color3);
+    border-color: var(--main-color2)
+}

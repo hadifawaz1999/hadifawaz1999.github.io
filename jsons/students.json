@@ -1,0 +1,204 @@
+{
+	"phd":[
+		{
+			"name": "Vasile Giurgi",
+			"link": "https://www.linkedin.com/in/vasile-giurgi/",
+			"date": "2022-",
+			"position" : "Master student",
+			"topic": "Data fusion and deep learning for perception systems in autonomous vehicles",
+			"partners": ["J-P. Lauffenburger", "T. Josso-Laurain"],
+			"partners_links": ["http://www.miam.mips.uha.fr/?page=membres&membre=lauffenburger&LanguageType=fr", "http://www.miam.mips.uha.fr/?page=membres&membre=josso_laurain_&LanguageType=fr"]
+		},
+		{
+		 	"name": "Mouad Hamri",
+		 	"link": "https://fr.linkedin.com/in/mouad-hamri-3635aa19",
+		 	"position" : "PhD student",
+		 	"date": "2021-",
+		 	"topic": "Deep learning for intelligent data extraction from invoices",
+		 	"enterprise": "Syentys",
+		 	"enterprise_link": "https://www.syentys.com",
+		 	"partners": ["M. Hassenforder", "J. Weber"],
+		 	"partners_links": ["https://www.linkedin.com/in/michel-hassenforder-1046115/", "https://www.jonathan-weber.eu"]
+		},
+		{
+			"name": "Gautier Pialla",
+			"link": "https://fr.linkedin.com/in/gpialla",
+			"date": "2020-",
+			"position" : "PhD student",
+			"topic": "Deep learning for time series",
+			"partners": ["G. Forestier", "L.Idoumghar", "J. Weber"],
+			"partners_links": ["https://germain-forestier.info", "http://www.mage.fst.uha.fr/idoumghar/", "https://www.jonathan-weber.eu"]
+		},
+		{
+			"name": "Olivier Schirm",
+			"link": "#",
+			"position" : "PhD student",
+			"date": "2020-",
+			"topic": "Spatio-temporal data analysis for automatic construction of hiking maps",
+			"enterprise": "Visorando",
+			"enterprise_link": "https://www.visorando.com/",
+			"partners": ["C. Wemmert", "G. Forestier", "J. Weber"],
+			"partners_links": ["https://wemmertc.github.io/webpage/", "https://germain-forestier.info", "https://www.jonathan-weber.eu"]
+		},
+		{
+			"name": "Mihreteab Negash Geletu",
+			"link": "https://et.linkedin.com/in/mihreteab-negash-09ba7537",
+			"position" : "PhD student",
+			"date": "2020-",
+			"topic": "Data fusion for perception systems in autonomous vehicles",
+			"partners": ["J-P. Lauffenburger", "T. Josso-Laurain", "M. Mamo"],
+			"partners_links": ["http://www.miam.mips.uha.fr/?page=membres&membre=lauffenburger&LanguageType=fr", "http://www.miam.mips.uha.fr/?page=membres&membre=josso_laurain_&LanguageType=fr", "https://et.linkedin.com/in/mengesha-mamo-0574008b"]
+		},
+		{
+			"name": "Milos Cuculovic",
+			"link": "https://ch.linkedin.com/in/milos-cuculovic-pmp-459b575a",
+			"date": "2019-",
+			"position" : "PhD student",
+			"topic": "Publishing process modeling and optimization",
+			"partners": ["M. Hassenforder", "F. Fondement"],
+			"partners_links": ["https://www.linkedin.com/in/michel-hassenforder-1046115/", "http://fondement.free.fr/lgl/"]
+		}
+	],
+	"graduated":[
+		{
+			"name": "Tsegamlak Terefe Debella",
+			"link": "https://www.researchgate.net/profile/Tsegamlak-Terefe",
+			"position" : "PhD student",
+			"date": "2022",
+			"topic": "Deep learning for time series averaging",
+			"partners": ["G. Forestier", "J. Weber", "D. H. Woldegebreal"],
+			"partners_links": ["https://germain-forestier.info", "https://www.jonathan-weber.eu", "https://www.researchgate.net/profile/Dereje-Woldegebreal"],
+			"new_position" : "Lecturer",
+			"new_compagny" : "AAIT",
+			"new_compagny_link" : "https://www.aau.edu.et/aait/" 
+		}
+	],
+	"postdoc":[
+		{
+			"name": "Oumaima Sliti",
+			"link": "",
+			"date": "2021-",
+			"position" : "Postdoc",
+			"topic": "Deep Learning for anomaly detection in non-destructive control",
+			"project": "APIAC",
+			"partners": ["C. Cudel", "J. Weber", "K. Tout"],
+			"partners_links": ["https://fr.linkedin.com/in/christophe-cudel-a9470415", "https://www.jonathan-weber.eu", "https://fr.linkedin.com/in/karim-tout"]
+		},
+		{
+			"name": "Amina Ben Hamida",
+			"link": "https://tn.linkedin.com/in/aminabenhamida",
+			"date": "2020-",
+			"position" : "Postdoc",
+			"topic": "Artificial intelligence to determine prognosis and mutation status in colorectal cancer using histological slides",
+			"project": "AiCOLO",
+			"partners": ["C. Wemmert", "G. Forestier", "J. Weber"],
+			"partners_links": ["https://wemmertc.github.io/webpage/", "https://germain-forestier.info", "https://www.jonathan-weber.eu"]
+		},
+		{
+		 	"name": "Bonan Cuan",
+		 	"link": "https://fr.linkedin.com/in/bonan-cuan-634a21196/fr-fr",
+		 	"date": "2020-",
+		 	"position" : "Postdoc",
+		 	"topic": "Modelling cell plasticity at the invasive Edge to Diminish Glioblastoma Early relapse risk",
+		 	"project": "Mi*EDGE",
+		 	"partners": ["C. Wemmert", "G. Forestier", "J. Weber"],
+		 	"partners_links": ["https://wemmertc.github.io/webpage/", "https://germain-forestier.info", "https://www.jonathan-weber.eu"]
+		}
+	],
+	"master":[
+		{
+			"name": "Javidan Abdullayev",
+			"link": "https://az.linkedin.com/in/cavidan-abdullayev-83289815b",
+			"date": "Spring semester 2022",
+			"position" : "Master student",
+			"topic": "Knowledge distillation for time series",
+			"project": "",
+			"partners": ["G. Forestier", "J. Weber"],
+			"partners_links": ["https://germain-forestier.info", "https://www.jonathan-weber.eu"]
+		},
+		{
+			"name": "Amir Ayed",
+			"link": "https://www.linkedin.com/in/ing-amir-ayed/",
+			"date": "Spring semester 2022",
+			"position" : "Master student",
+			"topic": "Deep generative models for skeleton data",
+			"project": "DELEGATION",
+			"partners": ["G. Forestier", "J. Weber"],
+			"partners_links": ["https://germain-forestier.info", "https://www.jonathan-weber.eu"]
+		},
+		{
+			"name": "Asmaa Cherif",
+			"link": "https://fr.linkedin.com/in/asmaa-cherif",
+			"date": "Spring semester 2022",
+			"position" : "Master student",
+			"topic": "Deep Learning for human motion analysis in rehabilitation",
+			"project": "",
+			"partners": ["G. Forestier", "J. Weber"],
+			"partners_links": ["https://germain-forestier.info", "https://www.jonathan-weber.eu"]
+		},
+		{
+			"name": "Ali El Hadi Ismail Fawaz",
+			"link": "https://fr.linkedin.com/in/ali-el-hadi-ismail-fawaz",
+			"date": "Spring semester 2022",
+			"position" : "Master student",
+			"topic": "Deep Learning for time series analysis",
+			"project": "",
+			"partners": ["G. Forestier", "J. Weber"],
+			"partners_links": ["https://germain-forestier.info", "https://www.jonathan-weber.eu"]
+		},
+		{
+			"name": "Elvin Ismayilzada",
+			"link": "https://az.linkedin.com/in/elvin-ismayilzada-4679251a3",
+			"date": "Spring semester 2022",
+			"position" : "Master student",
+			"topic": "Self-attention for time series classification",
+			"project": "",
+			"partners": ["G. Forestier", "J. Weber"],
+			"partners_links": ["https://germain-forestier.info", "https://www.jonathan-weber.eu"]
+		}
+	],
+	"past-master":[
+		{
+			"name": "Amira Ayadi",
+			"link": "https://www.linkedin.com/in/ayadi-amira-439186185/?originalSubdomain=fr",
+			"date": "Spring semester 2021",
+			"position" : "Master student",
+			"topic": "Deep Learning for human motion analysis in personalized rehabilitation",
+			"project": "DeepRehab",
+			"partners": ["G. Forestier", "J. Weber"],
+			"partners_links": ["https://germain-forestier.info", "https://www.jonathan-weber.eu"]
+		},
+		{
+			"name": "Emel Ay",
+			"link": "https://fr.linkedin.com/in/emel-ay-bb903718",
+			"date": "Spring semester 2021",
+			"position" : "Master student",
+			"topic": "Knowledge distillation for time series",
+			"project": "",
+			"partners": ["G. Forestier", "J. Weber"],
+			"partners_links": ["https://germain-forestier.info", "https://www.jonathan-weber.eu"]
+		},
+		{
+			"name": "Vasile Giurgi",
+			"link": "https://www.linkedin.com/in/vasile-giurgi/",
+			"date": "Spring semester 2021",
+			"position" : "Master student",
+			"topic": "Deep learning for perception systems in autonomous vehicles",
+			"project": "",
+			"partners": ["J-P. Lauffenburger", "T. Josso-Laurain"],
+			"partners_links": ["http://www.miam.mips.uha.fr/?page=membres&membre=lauffenburger&LanguageType=fr", "http://www.miam.mips.uha.fr/?page=membres&membre=josso_laurain_&LanguageType=fr"]
+		},
+		{
+			"name": "Laurent Baltenweck",
+			"link": "",
+			"date": "Spring semester 2021",
+			"position" : "Master student",
+			"topic": "Deep learning for image segmentation in the context of theater show",
+			"project": "",
+			"partners": ["T. Josso-Laurain"],
+			"partners_links": ["http://www.miam.mips.uha.fr/?page=membres&membre=josso_laurain_&LanguageType=fr"]
+		}
+	]
+}
+
+

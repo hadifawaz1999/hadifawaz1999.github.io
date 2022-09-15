@@ -1,0 +1,22 @@
+{
+	"news":[
+
+		{
+			"date" : "2022-03",
+			"content" : "Stated my Master's internship at <a href=\"https://www.irimas.uha.fr/\">IRIMAS</a>, <a href=\"https://www.uha.fr/fr/index.html\">UHA</a> about Time Series Analysis with Depp Learning models."
+		},
+
+		{
+			"date" : "2021-09",
+			"content" : "Started my Master year 2 at <a href=\"https://www.telecom-paris.fr/\">Telecom Paris</a>, <a href=\"https://www.ip-paris.fr/\">Institur Polytechnique de Paris</a> in the <a href=\"https://micas.telecom-paris.fr/\">MICAS</a>: Machine Learning, Communication and Security program."
+		},
+
+		{
+			"date" : "2019-09",
+			"content" : "Started an internsip with <a href=\"https://www.irimas.uha.fr/\">IRIMAS</a>, <a href=\"https://www.uha.fr/fr/index.html\">UHA</a> about Deep Learning models for Time Series Classification."
+		}
+
+	]
+}
+
+

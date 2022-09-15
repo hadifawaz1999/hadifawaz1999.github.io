@@ -1,0 +1,76 @@
+{
+
+	"education":[
+		{
+			"date": "2022",
+			"degree": "Bachelor Degree in Electrical and Telecommunication Engineering",
+			"school": ["Lebanese University", "Faculty of Engineering"],
+			"school_links": ["https://www.ul.edu.lb/", "http://www.ulfg.ul.edu.lb/"],
+			"content": "Bachelor Degree in Electrical and Telecommunication Engineering"
+		},
+		{
+			"date": "2017",
+			"degree": "Bac Degree in General Science",
+			"school": ["Collège des Pères Antonins"],
+			"school_links": ["http://www.cpantonins.edu.lb/"],
+			"content": "General Science"
+		}
+	],
+	"subreviewer":[
+
+		"<a href=\"https://ictai.computer.org/2022/\">IEEE ICTAI 2022</a>: IEEE International Conference on Tools with Artificial Intelligence",
+		"<a href=\"https://www.springer.com/journal/10994\">Machine Learning Journal 2022</a>",
+		"<a href=\"https://2022.ecmlpkdd.org/\">ECML-PKDD 2022</a>: European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases",
+		"<a href=\"https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69\">IEEE TKDE Journal 2022</a>: Transactions on Knowledge and Data Engineering",
+		"<a href=\"https://www.springer.com/journal/11548\">IJCARS Journal 2022</a>: International Journal of Computer Assisted Radiology and Surgery",
+		"<a href=\"https://vldb.org/2022/\">PVLDB 2022</a>: International Conference on Very Large Databases"
+
+	],
+	"skills":[
+
+		{
+			"skill" : "Languages",
+			"detailed_skill" : ["Arabic", "French", "English"],
+			"detailed_skill_link" : []
+		},
+
+		{
+			"skill" : "Programming",
+			"detailed_skill" : ["Python", "C++", "C", "HTML", "CSS", "Linux", "Latex", "MS-SQL"],
+			"detailed_skill_link" : []
+		},
+
+		{
+			"skill" : "Python Frameworks",
+			"detailed_skill" : ["Tensorflow","Keras","Numpy","Scikit-Learn","Matplotlib","Pandas"],
+			"detailed_skill_link" : ["https://www.tensorflow.org/","https://keras.io/","https://numpy.org/","https://scikit-learn.org/stable/","https://matplotlib.org/","https://pandas.pydata.org/"]
+		}
+
+	],
+	"experience":[
+
+		{
+			"type" : "Internship",
+			"date" : "2022",
+			"duration" : "6 months",
+			"places" : ["IRIMAS","UHA"],
+			"places_links" : ["https://www.irimas.uha.fr/","https://www.uha.fr/en/index.html"],
+			"about" : "Deep Learning and Machine Learning models for Time Series Analysis & Classification for my Master year 2",
+			"supervisors" : ["Maxime Devanne","Jonathan Weber", "Germain Forestier"],
+			"supervisors_links" : ["https://maxime-devanne.com/","https://www.jonathan-weber.eu/","https://germain-forestier.info/"]
+		},
+		{
+			"type" : "Internship",
+			"date" : "2019",
+			"duration" : "3 months",
+			"places" : ["IRIMAS","UHA"],
+			"places_links" : ["https://www.irimas.uha.fr/","https://www.uha.fr/en/index.html"],
+			"about" : "Deep Learning and Machine Learning models for Time Series Classification",
+			"supervisors" : ["Jonathan Weber", "Germain Forestier"],
+			"supervisors_links" : ["https://www.jonathan-weber.eu/","https://germain-forestier.info/"]
+		}
+
+	]
+}
+
+

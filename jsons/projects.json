@@ -1,0 +1,130 @@
+{
+	"current":[
+		{
+			"name": "DELEGATION",
+			"link": "https://maxime-devanne.com/delegation/",
+			"date": "2022-",
+			"topic": "Deep learning for generating human motion",
+			"partners": ["MICC", "CHRU of Brest", "CRM"],
+			"partners_links": ["https://www.micc.unifi.it/people/stefano-berretti/", "https://www.chu-brest.fr/fr", "https://www.arfp.asso.fr"],
+			"role": "Coordinator",
+			"fundings": "ANR (JCJC instrument)"
+		},
+		{
+			"name": "REVEIL",
+			"link": "",
+			"date": "2022-",
+			"topic": "Virtual reality application for rehabilitation",
+			"partners": ["LISEC", "CRM"],
+			"partners_links": ["http://www.lisec-recherche.eu/membre/escriva-boulley-geraldine", "https://www.arfp.asso.fr"],
+			"role": "Coordinator",
+			"fundings": "Fondation Matmut Paul Bennetot"
+		},
+		{
+			"name": "EviDeep",
+			"link": "",
+			"date": "2022-",
+			"topic": "Combining evidential theory and deep learning to improve autonomous vehicles perception",
+			"partners": ["MIAM team (IRIMAS)", "ONERA"],
+			"partners_links": ["https://www.irimas.uha.fr/index.php/departements/departement-automatique-signal-et-image/","https://www.onera.fr/fr"],
+			"role": "Member",
+			"fundings": "ANR (JCJC instrument)"
+		},
+		{
+			"name": "APIAC",
+			"link": "",
+			"date": "2021-",
+			"topic": "Deep learning for anomaly detection in non-destructive control",
+			"partners": ["IMTI team (IRIMAS)", "Cetim Grand Est"],
+			"partners_links": ["https://www.irimas.uha.fr/index.php/departements/departement-automatique-signal-et-image/","https://www.cetimgrandest.fr"],
+			"role": "Member",
+			"fundings": "Région Grand Est"
+		},
+		{
+		 	"name": "Mi*EDGE",
+		 	"link": "https://www.era-learn.eu/network-information/networks/eracosysmed/3rd-joint-transnational-call-for-european-research-projects-on-systems-medicine/modelling-cell-plasticity-at-the-invasive-edge-to-diminish-glioblastoma-early-relapse-risk",
+		 	"date": "2020-",
+		 	"topic": "Modelling cell plasticity at the invasive Edge to Diminish Glioblastoma Early relapse risk",
+		 	"partners": ["ICube","MHH (Germany)","TUD (Germany)","Humanitas (Italy)","LCBS (Luxembourg)"],
+		 	"partners_links": ["https://sdc.icube.unistra.fr/en/index.php?title=Home", "https://www.mhh.de/institute-zentren-forschungseinrichtungen/institut-fuer-pathologie", "https://tu-dresden.de", "https://5x1000.humanitas.it/news/locati-massimo/", "https://wwwfr.uni.lu/lcsb"],
+		 	"role": "Member",
+		 	"fundings": "ERACoSysmed/ANR"
+		},
+		{
+			"name": "AiCOLO",
+			"link": "https://wemmertc.github.io/aicolo/",
+			"date": "2019-",
+			"topic": "Artificial intelligence to determine prognosis and mutation status in colorectal cancer using histological slides",
+			"partners": ["ICube","CGFL"],
+			"partners_links": ["https://sdc.icube.unistra.fr/en/index.php?title=Home", "https://www.cgfl.fr"],
+			"role": "Member",
+			"fundings": "INSERM, plan cancer"
+		},
+		{
+		 	"name": "TIMES",
+		 	"link": "http://anr-times.unistra.fr/",
+		 	"date": "2017-",
+		 	"topic": "Geoscience and remote sensing data analysis and monitoring",
+		 	"partners": ["LIVE","EOST","LIPADE"],
+		 	"partners_links": ["https://live.unistra.fr/", "https://eost.unistra.fr/en/", "http://lipade.mi.parisdescartes.fr/?lang=fr"],
+		 	"role": "Member",
+		 	"fundings": "ANR"
+		}
+	],
+	"past":[
+		{
+			"name": "DeepRehab",
+			"link": "",
+			"date": "2020-2021",
+			"topic": "Deep learning for rehabilitation motion assessment",
+			"partners": ["IRIMAS"],
+			"partners_links": ["https://www.irimas.uha.fr/"],
+			"role": "Coordinator",
+			"fundings": "Université Haute-Alsace"
+		},
+		{
+			"name": "AMUSAAL",
+			"link": "",
+			"date": "2018-19",
+			"topic": "Activity recognition in ambient assisted living",
+			"partners": ["IMT Atlantique"],
+			"partners_links": ["https://departements.telecom-bretagne.eu/info/recherche/ihsev/"],
+			"role": "Member",
+			"fundings": "Région Bretagne (SAD)"
+		},
+		{
+			"name": "KERAAL",
+			"link": "http://keraal.enstb.org/",
+			"date": "2016-19",
+			"topic": "Robot coach for assisted rehabilitation",
+			"partners": ["IMT Atlantique"],
+			"partners_links": ["https://departements.telecom-bretagne.eu/info/recherche/ihsev/"],
+			"role": "Member",
+			"fundings": "ECHORD++, FP7"
+		},
+		{
+			"name": "MAGNUM",
+			"link": "",
+			"date": "2015",
+			"topic": "Analysis of consumer behavior in stores",
+			"employer": "Université de Lille",
+			"employer-link": "http://www.cristal.univ-lille.fr/??rubrique29&eid=33",
+			"partners": ["Université de Lille"],
+			"partners_links": ["http://www.cristal.univ-lille.fr/??rubrique29&eid=33"],
+			"role": "Member",
+			"fundings": "FUI"
+		},
+		{
+			"name": "MSI",
+			"link": "",
+			"date": "2015",
+			"topic": "Modeling of social intentions",
+			"partners": ["Université de Lille", "SCALab"],
+			"partners_links": ["http://www.cristal.univ-lille.fr/??rubrique29&eid=33", "https://www.scalab.cnrs.fr/index.php/fr/"],
+			"role": "Member",
+			"fundings": "CNRS"
+		}
+	]
+}
+
+
