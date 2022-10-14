@@ -2,6 +2,16 @@
 	"news":[
 
 		{
+			"date" : "2022-09",
+			"content" : "I graduated from <a href=\"https://www.telecom-paris.fr/\">Telecom Paris</a>, <a href=\"https://www.ip-paris.fr/\">Institut Polytechnique de Paris</a> with my Masters program <a href=\"https://micas.telecom-paris.fr/\">MICAS</a> with highest honors."
+		},
+
+		{
+			"date" : "2022-09",
+			"content" : "I graduated from the Lebanese University Faculty of Engineering with a Bachelor Degree in Telecommunication and Electrical Engineering."
+		},
+
+		{
 			"date" : "2022-03",
 			"content" : "Started my Master's internship at <a href=\"https://www.irimas.uha.fr/\">IRIMAS</a>, <a href=\"https://www.uha.fr/fr/index.html\">UHA</a> about Time Series Analysis with Depp Learning models."
 		},

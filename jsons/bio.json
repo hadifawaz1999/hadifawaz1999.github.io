@@ -2,6 +2,13 @@
 
 	"education":[
 		{
+			"date" : "2022",
+			"degree" : "Master in Science, <a href=\"https://micas.telecom-paris.fr/\">MICAS</a> program with highest honours",
+			"school" : ["Telecom Paris","Institut Polytechinque de Paris"],
+			"school_links" : ["https://www.telecom-paris.fr/","https://www.ip-paris.fr/"],
+			"content" : "M.Sc. with highest honours"
+		},
+		{
 			"date": "2022",
 			"degree": "Bachelor Degree in Electrical and Telecommunication Engineering",
 			"school": ["Lebanese University", "Faculty of Engineering"],
@@ -18,11 +25,13 @@
 	],
 	"subreviewer":[
 
-		"<a href=\"https://ictai.computer.org/2022/\">IEEE ICTAI 2022</a>: IEEE International Conference on Tools with Artificial Intelligence",
+		"<a href=\"https://www.springer.com/journal/10618\">DMKD 2022 Journal</a>: Data Mining and Knowledge Discovery",
+		"<a href=\"https://www.sciencedirect.com/journal/knowledge-based-systems\">Knowledge-based Systems 2022 Journals</a>",
 		"<a href=\"https://www.springer.com/journal/10994\">Machine Learning Journal 2022</a>",
-		"<a href=\"https://2022.ecmlpkdd.org/\">ECML-PKDD 2022</a>: European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases",
 		"<a href=\"https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69\">IEEE TKDE Journal 2022</a>: Transactions on Knowledge and Data Engineering",
 		"<a href=\"https://www.springer.com/journal/11548\">IJCARS Journal 2022</a>: International Journal of Computer Assisted Radiology and Surgery",
+		"<a href=\"https://ictai.computer.org/2022/\">IEEE ICTAI 2022</a>: IEEE International Conference on Tools with Artificial Intelligence",
+		"<a href=\"https://2022.ecmlpkdd.org/\">ECML-PKDD 2022</a>: European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases",
 		"<a href=\"https://vldb.org/2022/\">PVLDB 2022</a>: International Conference on Very Large Databases"
 
 	],
