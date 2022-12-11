@@ -396,7 +396,7 @@ $(document).ready(function(){
 
 // Function to read bib and display publications
 $(document).ready(function(){
-	$.get('publis/mypublis.bib', function(data) {
+	$.get('publis/my_publis.bib', function(data) {
    	res = bibtexParse.toJSON(data);
 	
 	cptIntArticle=0;
@@ -410,7 +410,7 @@ $(document).ready(function(){
 		authors = res[i].entryTags.author.split(' and ');
 		for (a=0; a<authors.length-1; a++){
 			names = authors[a].split(', ');
-			if (names[0] == 'Devanne'){
+			if (names[0] == 'Ismail-Fawaz'){
 				authors_string = authors_string + '<B>' + names[1] + ' ' + names[0] + '</B>, ';
 			}else{
 				authors_string = authors_string + names[1] + ' ' + names[0] + ', ';
@@ -418,7 +418,7 @@ $(document).ready(function(){
 		}
 		authors_string = authors_string.substring(0, authors_string.length - 2);
 		names = authors[authors.length-1].split(', ');
-		if (names[0] == 'Devanne'){
+		if (names[0] == 'Ismail-Fawaz'){
 			authors_string = authors_string + ' and ' + '<B>' + names[1] + ' ' + names[0] + '</B>';
 		}else{
 			authors_string = authors_string + ' and ' + names[1] + ' ' + names[0];
@@ -430,11 +430,17 @@ $(document).ready(function(){
 		if (res[i].entryTags.hasOwnProperty('url')){
 			link_string = link_string + '<a href="' + res[i].entryTags.url + '" target="blank_"><i class="fas fa-link"></i></a> ';
 		}
-
+		
 		link_string += '<a href="javascript: toggleInfos(\'' + res[i].citationKey + '\',\'bibtex\')">[BibTex]</a>';
-
+		
 		if (res[i].entryTags.hasOwnProperty('code')){
 			link_string += ' <a href="' + res[i].entryTags.code + '" target="blank_"><i class="fab fa-github-square"></i></a>';
+		}
+		if (res[i].entryTags.hasOwnProperty('slides')) {
+			link_string = link_string + '<a href="' + res[i].entryTags.slides + '" targer="bkank_"><i class="fab fa-slideshare"></i></a>'
+		}
+		if (res[i].entryTags.hasOwnProperty('webpage')){
+			link_string = link_string + '<a href="' + res[i].entryTags.webpage + '" target="blank_">[webpage]</a>'
 		}
 
 		link_string += '</div>'

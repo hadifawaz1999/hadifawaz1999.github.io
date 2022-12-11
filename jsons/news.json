@@ -2,6 +2,16 @@
 	"news":[
 
 		{
+			"date" : "2022-12",
+			"content" : "My paper titled <a href=\"#\">Enhancing Time Series Classification with Self-Supervised Learning</a> is accepted at the <a href=\"https://icaart.scitevents.org/\">2023 Internation Conference on Agents and Artificial Intelligence (ICAART 20223)</a> !"
+		},
+
+		{
+			"date" : "2022-10",
+			"content" : "My paper titled <a href=\"http://maxime-devanne.com/pages/HCCF-4-tsc/\">Deep Learning For Time Series Classification Using New Hand-Crafted Convolution Filters</a> is accepted at the <a href=\"https://bigdataieee.org/BigData2022/\">2022 IEEE Conference on Big Data</a> !"
+		},
+
+		{
 			"date" : "2022-10",
 			"content" : "I started my PhD on the <a href=\"http://maxime-devanne.com/delegation/\">DELEGATION</a> project at <a href=\"https://www.irimas.uha.fr/\">IRIMAS</a>, <a href=\"https://www.uha.fr/en/index.html\">UHA</a> under the supervision of <a href=\"http://maxime-devanne.com/\">Dr. Maxime DEVANNE</a>, <a href=\"https://www.jonathan-weber.eu/\">Dr. Jonathan WEBER</a> and <a href=\"https://germain-forestier.info/\">Prof. Germain FORESTIER</a>."
 		},
