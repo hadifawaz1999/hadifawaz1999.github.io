@@ -1,0 +1,48 @@
+{
+
+    "visitors":[
+
+        {
+            "date" : "2023-02",
+            "visitor" : "PhD candidate Lynn Miller",
+            "visitor_website" : "https://www.linkedin.com/in/lynn--miller/",
+            "visitor_workplace" :"Monash University",
+            "visitor_workplace_link" : "https://www.monash.edu/",
+            "visitor_workplace_city" : "Melbourne",
+            "visitor_workplace_country" : "Australia",
+            "topic" : "Deep Learning from SITS for Predicting Live Fuel Moisture Content",
+            "image_source" : "images/events/Lynn_Miller_2023_02/pic0.jpg",
+            "content" : "PhD candidate Lynn Miller presented her work about Deep Learning for Live Fuel Moisture Content Estimation. I had the chance to present for her my work published work during my PhD at IRIMAS UHA and got some great feedback. We discussed about the usage of <a href=\"https://ieeexplore.ieee.org/document/10020496\">Custom Filters</a> in other applications."
+         },
+
+        {
+            "date" : "2022-11",
+            "visitor" : "Dr. Charlotte Pelletier",
+            "visitor_website" : "https://sites.google.com/site/charpelletier/",
+            "visitor_workplace" : "Université Bretagne Sud",
+            "visitor_workplace_link" : "https://www.univ-ubs.fr/fr/index.html",
+            "visitor_workplace_country" : "France",
+            "visitor_workplace_city" : "Vannes",
+            "topic" : "Unsupervised Cross-Region Adaptation by Temporal Shift Estimation",
+            "image_source" : "images/events/Charlotte_Pelletier_2022_11/pic0.jpg",
+            "content" : "Dr. Charlotte Pelletier did a seminar about her team's work around Unsupervised Learning for Remote Sensing. I had the opportunity to present for her and discuss my work during my first couple of months since the start of my PhD at IRIMAS, UHA."
+        },
+
+        {
+            "date" : "2022-09",
+            "visitor" : "Prof. Geoff Webb",
+            "visitor_website" : "https://i.giwebb.com/",
+            "visitor_workplace" : "Monash University",
+            "visitor_workplace_link" : "https://www.monash.edu/",
+            "visitor_workplace_country" : "Australia",
+            "visitor_workplace_city" : "Melbourne",
+            "topic" : "Time Series Classification at Scale",
+            "image_source" : "images/events/Geoff_Webb_2022_09/pic0.jpg",
+            "content" : "Prof. Geoff Webb did a seminar about his team's work around Time Series Classification. I had the chance to present for him and discuss my work during my Master's Internship at IRIMAS, UHA."
+        }
+
+
+
+    ]
+
+}

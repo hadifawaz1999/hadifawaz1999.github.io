@@ -11,6 +11,28 @@ body {
 .profile-img {
     border-radius: 25%;
 }
+.visitor-img{
+    border-radius: 15%;
+    width: 200px;
+    height: 150px;
+}
+
+.center-img {
+    border-radius: 15%;
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+}
+.center-txt {
+  display: inline-block;
+  margin-left: 20px;
+}
+#wrapper {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
 .nav-border {
     border-radius: 30px;
 }
@@ -137,7 +159,7 @@ tr.entry>td {
 .bibtex-col{
     font-size: 0.7rem;
     color: var(--main-color2);
-    padding-left: 1em;
+    padding-left: 8em;
     background-color: var(--main-color3);
 }
 .highlight{

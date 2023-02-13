@@ -3,6 +3,11 @@
 
 		{
 			"date" : "2022-12",
+			"content" : "In Osaka Japan to present <a href=\"https://ieeexplore.ieee.org/document/10020496\">my paper</a> at the <a href=\"http://bigdataieee.org/BigData2022/\">IEEE Internation Conference on Big Data</a>."
+		},
+
+		{
+			"date" : "2022-12",
 			"content" : "My paper titled <a href=\"#\">Enhancing Time Series Classification with Self-Supervised Learning</a> is accepted at the <a href=\"https://icaart.scitevents.org/\">2023 Internation Conference on Agents and Artificial Intelligence (ICAART 20223)</a> !"
 		},
 
