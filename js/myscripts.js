@@ -98,7 +98,11 @@ $(document).ready(function(){
 
 		// sub-reviewer
 		for (var i=0; i<data.subreviewer.length; i++){
-			$("#sub-reviewer").append('<li>'+ data.subreviewer[i] + '</li>');
+			$("#sub-reviewer").append('<li>' + data.subreviewer[i] + '</li>');
+		}
+
+		for (var i=0; i<data.reviewer.length; i++){
+			$("#reviewer").append('<li>' + data.reviewer[i] + '</li>')
 		}
 
 		// committee
@@ -387,8 +391,9 @@ $(document).ready(function(){
 		for(var i=0; i<data.projects.length; i++){
 			// if(i%2 == 0){
 			// }
-			$("#portfolio-content").append('<div><h4 class="vertical-title-bar bg-info sec-title">' + data.projects[i].title + '</h4>');
-			$("#portfolio-content").append('<a href=' + data.projects[i].link + '><img src=' + data.projects[i].image_source + ' class="portfolio-image"> </a>');
+			$("#portfolio-content").append('<div><h4 class="vertical-title-bar bg-info sec-title text-center">' + data.projects[i].title + '</h4>');
+			$("#portfolio-content").append('<img src=' + data.projects[i].image_source + ' class="portfolio-image">');
+			$('#portfolio-content').append('<a href=' + data.projects[i].link + '> [Project Link]</a>')
 			$("#portfolio-content").append('<p class="text-justify">' + data.projects[i].description + '</p></div>');
 		}
 	});
