@@ -1,7 +1,7 @@
 {
 	"name": "Ali El Hadi Ismail Fawaz",
 	"title": "Data Scientest PhD Student @ <a href=\"https://www.irimas.uha.fr/\" style=\"color: black;\">IRIMAS</a>",
-	"abstract": "I am currently a PhD Student in my first year at <a href=\"https://www.irimas.uha.fr/\">IRIMAS</a>, <a href=\"https://www.uha.fr/en/index.html\">UHA</a> working on the <a href=\"http://maxime-devanne.com/delegation/\">DELEGATION</a> project. My work is on Deep Learning models for Time Series Classification, Analaysis and Generatiion of Human Motion under the supervision of <a href=\"https://maxime-devanne.com/\">Dr. Maxime DEVANNE</a>, <a href=\"https://www.jonathan-weber.eu/\">Dr. Jonathan WEBER</a> and <a href=\"https://germain-forestier.info/\">Prof. Germain FORESTIER</a>.",
+	"abstract": "I am currently a PhD Student in my first year at <a href=\"https://www.irimas.uha.fr/\">IRIMAS</a>, <a href=\"https://www.uha.fr/en/index.html\">UHA</a> working on the <a href=\"http://maxime-devanne.com/delegation/\">DELEGATION</a> project. My work is on Deep Learning models for Time Series Classification, Analaysis and Generatiion of Human Motion under the supervision of <a href=\"https://maxime-devanne.com/\">Dr. Maxime DEVANNE</a>, <a href=\"http://www.micc.unifi.it/berretti/\">Stefano Berretti</a> <a href=\"https://www.jonathan-weber.eu/\">Dr. Jonathan WEBER</a> and <a href=\"https://germain-forestier.info/\">Prof. Germain FORESTIER</a>.",
 	"image" : "imgs/my_profile_pic.jpg",
 	"keywords": ["Data Science", "Time Series", "Pattern Recognition", "Machine Learning", "Deep Learning", "Human Motion Generation", "Generative Models", "Time Series Classification"],
 	"contact": 
