@@ -2,6 +2,11 @@
 	"news":[
 
 		{
+			"date" : "2023-02",
+			"content" : "In Lisbon Portugal to present my paper titled \"Enhancing Time Series Classification with Self-Supervised Learning\" at the <a href=\"https://icaart.scitevents.org/\">15th Internation Conference on Agents and Artificial Intelligence (ICAART 20223)</a>."
+		},
+
+		{
 			"date" : "2022-12",
 			"content" : "In Osaka Japan to present <a href=\"https://ieeexplore.ieee.org/document/10020496\">my paper</a> at the <a href=\"http://bigdataieee.org/BigData2022/\">IEEE Internation Conference on Big Data</a>."
 		},
