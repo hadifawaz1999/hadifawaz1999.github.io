@@ -25,20 +25,25 @@
 	],
 	"subreviewer":[
 
-		"<a href=\"https://www.springer.com/journal/10618\">DMKD 2022 Journal</a>: Data Mining and Knowledge Discovery",
-		"<a href=\"https://www.sciencedirect.com/journal/knowledge-based-systems\">Knowledge-based Systems 2022 Journals</a>",
-		"<a href=\"https://www.springer.com/journal/10994\">Machine Learning Journal 2022</a>",
-		"<a href=\"https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69\">IEEE TKDE Journal 2022</a>: Transactions on Knowledge and Data Engineering",
-		"<a href=\"https://www.springer.com/journal/11548\">IJCARS Journal 2022</a>: International Journal of Computer Assisted Radiology and Surgery",
-		"<a href=\"https://ictai.computer.org/2022/\">IEEE ICTAI 2022</a>: IEEE International Conference on Tools with Artificial Intelligence",
-		"<a href=\"https://2022.ecmlpkdd.org/\">ECML-PKDD 2022</a>: European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases",
-		"<a href=\"https://vldb.org/2022/\">PVLDB 2022</a>: International Conference on Very Large Databases"
-
+		"Journal (2022-2023), <a href=\"https://www.springer.com/journal/10618\">DMKD</a> Data Mining and Knowledge Discovery",
+		"Journal (2022), <a href=\"https://www.sciencedirect.com/journal/knowledge-based-systems\">Knowledge-based Systems</a>",
+		"Journal, (2022-2023), <a href=\"https://www.springer.com/journal/10994\">Machine Learning</a>",
+		"Journal, (2022-2023), <a href=\"https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=69\">IEEE TKDE</a> Transactions on Knowledge and Data Engineering",
+		"Journal, (2022), <a href=\"https://www.springer.com/journal/11548\">IJCARS</a> International Journal of Computer Assisted Radiology and Surgery",
+		"Journal, (2023), <a href=\"https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5165369\">TAFFC</a> Transactions on Affective Computing",
+		"<a href=\"https://ictai.computer.org/2022/\">IEEE ICTAI</a> (2022) International Conference on Tools with Artificial Intelligence",
+		"<a href=\"https://2022.ecmlpkdd.org/\">ECML-PKDD</a> (2022-2023) European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases",
+		"<a href=\"https://vldb.org/2022/\">PVLDB</a> (2022) International Conference on Very Large Databases",
+		"<a href=\"https://2023.cbms-conference.org/\">IEEE ICBMS</a> (2023) International Symposium on Computer-Based Medical Systems",
+		"<a href=\"https://biomedicalimaging.org/2022/\">ISBI</a> (2022) IEEE International Symposium on Biomedical Imaging",
+		"<a href=\"https://conferences.miccai.org/2023/en/\">MICCAI</a> (2023) International Conference on Medical Image Computing and Computer Assisted Intervention",
+		"<a href=\"https://kdd.org/kdd2023/\">SIG-KDD</a> (2023) ACM SIGKDD CONFERENCE ON KNOWLEDGE DISCOVERY AND DATA MINING"
 	],
 	"reviewer":[
 
-		"<a href=\"https://sites.google.com/view/lfa-fg2023/\">LFA FG 2023</a>: 1st Workshop on Learning with Few or without Annotated face, body and gesture data"
-
+		"AALTD<a href=\"https://ecml-aaltd.github.io/aaltd2023/\"> (2023)</a>: Workshop on Advanced Analytics and Learning on Temporal Data. In junction with the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD <a href=\"https://2023.ecmlpkdd.org/\"> 2023</a>)",
+		"IJCNN<a href=\"https://2023.ijcnn.org/\"> (2023)</a>: International Joint Conference on Neural Networks",
+		"LFA<a href=\"https://sites.google.com/view/lfa-fg2023/\"> (2023)</a>: Workshop on Learning with Few or without Annotated face, body and gesture data. In junction with the IEEE International Conference on Automatic Face and Gedture (FG <a href=\"https://fg2023.ieee-biometrics.org/\"> 2023</a>)"
 	],
 	"skills":[
 
