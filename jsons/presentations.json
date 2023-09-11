@@ -1,4 +1,19 @@
 {
+    "invited" : [
+
+        {
+            "date" : "2023-06",
+            "invited_by" : "Prof. Geoff Webb",
+            "invited_by_website" : "https://www.google.com/search?channel=fs&client=ubuntu&q=geoff+webb",
+            "invited_by_workplace" : "Monash University",
+            "invited_by_workplace_link" : "https://www.monash.edu/",
+            "city" : "Melbourne",
+            "country" : "Australia",
+            "topic" : "Time Series Analysis",
+            "image_source" : "images/events/Melbourne_visit_2023_07/bitmap.png",
+            "content" : "During my visit to Prof. Geoff Webb's at the Monash University, I got the opportunity to meet all his research group and we discussed on many topics while I presented my PhD thesis work as well as my colleagues' work. During my stay we worked on a paper for Time Series Averaging and evaluated it usnig Clustering. The paper titled \"<a href=\"https://germain-forestier.info/publis/aaltd2023.pdf\">ShapeDBA: Generating Effective Time Series Prototypes using ShapeDTW Barycenter Averaging</a>\" got then accepted at the <a href=\"https://ecml-aaltd.github.io/aaltd2023/\">AALTD</a> workshop of the <a href=\"https://2023.ecmlpkdd.org/\">ECML/PKDD</a> conference in 2023."
+        }
+    ],
 
     "visitors":[
 

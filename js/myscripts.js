@@ -393,8 +393,25 @@ $(document).ready(function () {
 
 		}
 
+		for (var i = 0; i < data.invited.length; i++) {
+			$("#presentation-to-invited").append(
+				'<li class=\"display: list-item;\" style=\"list-style: none; margin: 10px 0;\"><div id=\"wrapper\"><img src=' + 
+				data.invited[i].image_source + ' class=\"center-img\">' +
+				'<div class=\"center-txt\">' + 'In <B>' +
+				data.invited[i].date + '</B>, <a href=' + data.invited[i].invited_by_website +
+				'>' + data.invited[i].invited_by + '</a>' +
+				' from <a href=' + data.invited[i].invited_by_workplace_link + '>' +
+				data.invited[i].invited_by_workplace + ', ' + data.invited[i].city +
+				' ' + data.invited[i].country +
+				'</a> came to Mulhouse FR, UHA IRIMAS to discuss about ' + data.invited[i].topic + '. ' +
+				data.invited[i].content + '</div></div>')
+			$('#presentation-to-visitors').last().after('</li>');
+
+		}
+
 	});
 });
+
 
 // Function to load demos from json
 $(document).ready(function () {
