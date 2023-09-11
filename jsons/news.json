@@ -12,6 +12,11 @@
 		},
 
 		{
+			"date" : "2023-06",
+			"content" : "New paper on arxiv titled <a href=\"https://arxiv.org/abs/2305.11921\">An Approach to Multiple Comparison Benchmark Evaluations that is Stable Under Manipulation of the Comparate Set</a> presenting a new stable approach for benchmarking comparison between classifiers/regressors/forecaster/etc."
+		},
+
+		{
 			"date" : "2023-05",
 			"content" : "I was elected as a council member of the IRIMAS laboratory."
 		},
