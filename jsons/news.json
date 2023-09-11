@@ -2,6 +2,21 @@
 	"news":[
 
 		{
+			"date" : "2023-07",
+			"content" : "My paper titled \"<a href=\"https://germain-forestier.info/publis/dsaa2023.pdf\">LITE: Light Inception with boosTing tEchniques for Time Series Classification</a>\" was accepted at <a href=\"https://conferences.sigappfr.org/dsaa2023/\">the 10th IEEE International Conference on Data Science and Advanced Analytics (DSAA)</a> in the <a href=\"https://dsaa2023.inesctec.pt/\">Learning from Temporal Data (LearnTeD)</a> special session track."
+		},
+
+		{
+			"date" : "2023-07",
+			"content" : "My paper titled \"<a href=\"https://germain-forestier.info/publis/aaltd2023.pdf\">ShapeDBA: Generating Effective Time Series Prototypes using ShapeDTW Barycenter Averaging\"</a> was accepted at the <a href=\"https://ecml-aaltd.github.io/aaltd2023/\">8th Workshop on Advanced Analytics and Learning on Temporal Data (AALTD)</a> in conjuction with <a href=\"https://2023.ecmlpkdd.org/\">the next European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML/PKDD)</a>."
+		},
+
+		{
+			"date" : "2023-05",
+			"content" : "I was elected as a council member of the IRIMAS laboratory."
+		},
+
+		{
 			"date" : "2023-02",
 			"content" : "In Lisbon Portugal to present my paper titled \"Enhancing Time Series Classification with Self-Supervised Learning\" at the <a href=\"https://icaart.scitevents.org/\">15th Internation Conference on Agents and Artificial Intelligence (ICAART 20223)</a>."
 		},
