@@ -128,7 +128,7 @@ $(document).ready(function () {
 					skill_string = skill_string + '<a href="' + data.skills[i].detailed_skill_link[e] + '">' + data.skills[i].detailed_skill[e] + '</a>';
 				}
 			}
-			$("#skills").append('<li>' + data.skills[i].skill + ': ' + skill_string + '</li>');
+			$("#skills").append('<li><B>' + data.skills[i].skill + '</B>: ' + skill_string + '</li>');
 		}
 
 		// experience
@@ -157,7 +157,16 @@ $(document).ready(function () {
 				}
 				experience_supervisor_string = experience_supervisor_string + '<a href="' + data.experience[i].supervisors_links[j] + '">' + data.experience[i].supervisors[j] + '</a>';
 			}
-			$("#experience").append('<li>' + data.experience[i].date + ' <span>•</span> ' + 'A ' + data.experience[i].duration + ' ' + data.experience[i].type + ' at ' + experience_place_string + ' about ' + data.experience[i].about + '. Supervised by ' + experience_supervisor_string)
+			$("#experience").append('<li><B>' + data.experience[i].date + '</B> <span>•</span> ' + 'A ' + data.experience[i].duration + ' ' + data.experience[i].type + ' at ' + experience_place_string + ' about ' + data.experience[i].about + '. Supervised by ' + experience_supervisor_string)
+		}
+
+		// responsibilities
+		for (var i = 0; i < data.responsibilities.length; i++) {
+			responsibility_place_string = "";
+			
+			responsibility_place_string = responsibility_place_string + "<B>" + data.responsibilities[i].date + "</B>: " + data.responsibilities[i].title + ' in the ' + data.responsibilities[i].place ;
+
+			$("#responsibilities").append('<li>' + responsibility_place_string + '</li>');
 		}
 	});
 });
@@ -400,10 +409,10 @@ $(document).ready(function () {
 				'<div class=\"center-txt\">' + 'In <B>' +
 				data.invited[i].date + '</B>, <a href=' + data.invited[i].invited_by_website +
 				'>' + data.invited[i].invited_by + '</a>' +
-				' from <a href=' + data.invited[i].invited_by_workplace_link + '>' +
+				' invited me to <a href=' + data.invited[i].invited_by_workplace_link + '>' +
 				data.invited[i].invited_by_workplace + ', ' + data.invited[i].city +
 				' ' + data.invited[i].country +
-				'</a> came to Mulhouse FR, UHA IRIMAS to discuss about ' + data.invited[i].topic + '. ' +
+				'</a> for open discussion about ' + data.invited[i].topic + '. ' +
 				data.invited[i].content + '</div></div>')
 			$('#presentation-to-visitors').last().after('</li>');
 
@@ -522,7 +531,7 @@ $(document).ready(function () {
 						'<div class=\"center-txt\">' + publi_string + '</div>'
 						// '<tr id="bib_' + res[i].citationKey + '" class="bibtex noshown"><td class="bibtex-col"><pre>\n@inproceedings{' + res[i].citationKey + ',\n  author = {' + res[i].entryTags.author + '},\n  title = {' + res[i].entryTags.title + '},\n  booktitle = {' + res[i].entryTags.booktitle + '},\n  city = {' + res[i].entryTags.city + '},\n  country = {' + res[i].entryTags.country + '},\n  pages = {' + res[i].entryTags.pages + '},\n  url = {' + res[i].entryTags.url + '},\n  year = {' + res[i].entryTags.year + '},\n  organization = {' + res[i].entryTags.organization + '}\n}' + '</td></tr>'
 						)
-					$("#int_confs").append('<tr id="bib_' + res[i].citationKey + '" class="bibtex noshown"><td class="bibtex-col"><pre>\n@inproceedings{' + res[i].citationKey + ',\n  author = {' + res[i].entryTags.author + '},\n  title = {' + res[i].entryTags.title + '},\n  booktitle = {' + res[i].entryTags.booktitle + '},\n  city = {' + res[i].entryTags.city + '},\n  country = {' + res[i].entryTags.country + '},\n  pages = {' + res[i].entryTags.pages + '},\n  url = {' + res[i].entryTags.url + '},\n  year = {' + res[i].entryTags.year + '},\n  organization = {' + res[i].entryTags.organization + '}\n}' + '</td></tr>');
+					$("#int_confs").append('<tr id="bib_' + res[i].citationKey + '" class="bibtex noshown"><td class="bibtex-col"><pre>\n@inproceedings{' + res[i].citationKey + ',\n  author = {' + res[i].entryTags.author + '},\n  title = {' + res[i].entryTags.title + '},\n  booktitle = {' + res[i].entryTags.booktitle + '},\n  city = {' + res[i].entryTags.city + '},\n  country = {' + res[i].entryTags.country + '},\n  pages = {' + res[i].entryTags.pages + '},\n  url = {' + res[i].entryTags.url + '},\n  year = {' + res[i].entryTags.year + '}\n}' + '</td></tr>');
 					
 					if (i == res.length - 1){
 						$('#int_confs').append('<hr>')

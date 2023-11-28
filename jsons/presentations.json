@@ -2,6 +2,19 @@
     "invited" : [
 
         {
+            "date" : "2023-11",
+            "invited_by" : "Dr. Patrick Schäfer",
+            "invited_by_website" : "https://www2.informatik.hu-berlin.de/~schaefpa/",
+            "invited_by_workplace" : "Humboldt-University",
+            "invited_by_workplace_link" : "https://www.hu-berlin.de/de",
+            "city" : "Berlin",
+            "country" : "Germany",
+            "topic" : "Deep Learning for Time Series Analysis",
+            "image_source" : "images/events/Patrick_Schafer_2023_11/pic0.png",
+            "content" : "The purpose of my visit to Dr. Patrick Schäfer's workplace was to give a talk on Deep Learning for Time Series Analysis, especially in the field of Classification and what I contributed in this field to evolve it ever since <a href=\"https://link.springer.com/article/10.1007/s10618-020-00710-y\">InceptionTime</a> got published in 2020. These contributions consist on both the hand-crafted convolution filters that produced <a href=\"https://ieeexplore.ieee.org/abstract/document/10020496\">H-InceptionTime</a> and the efficient deep learning model <a href=\"https://ieeexplore.ieee.org/abstract/document/10302569\">LITETime</a>."
+        },
+
+        {
             "date" : "2023-06",
             "invited_by" : "Prof. Geoff Webb",
             "invited_by_website" : "https://www.google.com/search?channel=fs&client=ubuntu&q=geoff+webb",
