@@ -510,12 +510,27 @@ $(document).ready(function () {
 				$("#int_journals").append('<tr id="' + res[i].citationKey + '" class="entry"><td style="width:40px;padding-right:1em;">[' + cptIntArticle + ']</td><td>' + publi_string + '</td></tr>');
 				$("#int_journals").append('<tr id="bib_' + res[i].citationKey + '" class="bibtex noshown"><td style="width:40px"></td><td class="bibtex-col"><pre>\n@article{' + res[i].citationKey + ',\n  author = {' + res[i].entryTags.author + '},\n  title = {' + res[i].entryTags.title + '},\n  journal = {' + res[i].entryTags.journal + '},\n  volume = {' + res[i].entryTags.volume + '},\n  number = {' + res[i].entryTags.number + '},\n  pages = {' + res[i].entryTags.pages + '},\n  url = {' + res[i].entryTags.url + '},\n  year = {' + res[i].entryTags.year + '},\n  publisher = {' + res[i].entryTags.publisher + '}\n}' + '</td></tr>');
 			} else if (res[i].entryType == 'inproceedings') {
-				if ((res[i].entryTags.hasOwnProperty('language')) && (res[i].entryTags.language == 'french')) {
+				// if ((res[i].entryTags.hasOwnProperty('language')) && (res[i].entryTags.language == 'french')) {
+				if (res[i].entryTags.isnational == "yes") {
 					// national conf
 					cptNatConf++;
 					publi_string = authors_string + '.<br> <a href=\"' + res[i].entryTags.url + '\">' + res[i].entryTags.title + '</a>.<br><i>' + res[i].entryTags.booktitle + ', ' + res[i].entryTags.city + ', ' + res[i].entryTags.country + ', ' + res[i].entryTags.year + '.</i><br>' + link_string;
-					$("#nat_confs").append('<tr id="' + res[i].citationKey + '" class="entry"><td style="width:40px;padding-right:1em;">[' + cptNatConf + ']</td><td>' + publi_string + '</td></tr>');
-					$("#nat_confs").append('<tr id="bib_' + res[i].citationKey + '" class="bibtex noshown"><td style="width:40px"></td><td class="bibtex-col"><pre>\n@inproceedings{' + res[i].citationKey + ',\n  author = {' + res[i].entryTags.author + '},\n  title = {' + res[i].entryTags.title + '},\n  booktitle = {' + res[i].entryTags.booktitle + '},\n  city = {' + res[i].entryTags.city + '},\n  country = {' + res[i].entryTags.country + '},\n  pages = {' + res[i].entryTags.pages + '},\n  url = {' + res[i].entryTags.url + '},\n  year = {' + res[i].entryTags.year + '},\n  organization = {' + res[i].entryTags.organization + '}\n}' + '</td></tr>');
+					// $("#int_confs").append('<tr id="' + res[i].citationKey + '" class="entry"><td style="width:40px;padding-right:1em;">[' + cptIntConf + ']</td><td>' + publi_string + '</td></tr>');
+					// $("#int_confs").append('<tr id="bib_' + res[i].citationKey + '" class="bibtex noshown"><td style="width:40px"></td><td class="bibtex-col"><pre>\n@inproceedings{' + res[i].citationKey + ',\n  author = {' + res[i].entryTags.author + '},\n  title = {' + res[i].entryTags.title + '},\n  booktitle = {' + res[i].entryTags.booktitle + '},\n  city = {' + res[i].entryTags.city + '},\n  country = {' + res[i].entryTags.country + '},\n  pages = {' + res[i].entryTags.pages + '},\n  url = {' + res[i].entryTags.url + '},\n  year = {' + res[i].entryTags.year + '},\n  organization = {' + res[i].entryTags.organization + '}\n}' + '</td></tr>');
+					
+					$("#nat_confs").append(
+						'<hr><div id=\"wrapper\" style=\"margin-left: 40px\">' + 
+						'[' + cptNatConf + ']' +
+						'<img src=' + res[i].entryTags.image_source +
+						' class=\"center-img\" style=\"margin-left: 20px\">' +
+						'<div class=\"center-txt\">' + publi_string + '</div>'
+						// '<tr id="bib_' + res[i].citationKey + '" class="bibtex noshown"><td class="bibtex-col"><pre>\n@inproceedings{' + res[i].citationKey + ',\n  author = {' + res[i].entryTags.author + '},\n  title = {' + res[i].entryTags.title + '},\n  booktitle = {' + res[i].entryTags.booktitle + '},\n  city = {' + res[i].entryTags.city + '},\n  country = {' + res[i].entryTags.country + '},\n  pages = {' + res[i].entryTags.pages + '},\n  url = {' + res[i].entryTags.url + '},\n  year = {' + res[i].entryTags.year + '},\n  organization = {' + res[i].entryTags.organization + '}\n}' + '</td></tr>'
+						)
+					$("#nat_confs").append('<tr id="bib_' + res[i].citationKey + '" class="bibtex noshown"><td class="bibtex-col"><pre>\n@inproceedings{' + res[i].citationKey + ',\n  author = {' + res[i].entryTags.author + '},\n  title = {' + res[i].entryTags.title + '},\n  booktitle = {' + res[i].entryTags.booktitle + '},\n  city = {' + res[i].entryTags.city + '},\n  country = {' + res[i].entryTags.country + '},\n  pages = {' + res[i].entryTags.pages + '},\n  url = {' + res[i].entryTags.url + '},\n  year = {' + res[i].entryTags.year + '}\n}' + '</td></tr>');
+					
+					if (i == res.length - 1){
+						$('#nat_confs').append('<hr>')
+					}
 				} else {
 					// international conf
 					cptIntConf++;
