@@ -2,6 +2,11 @@
 
 	"responsibilities":[
 		{
+			"date" : "2024-now",
+			"title" : "Co-Author and administrator of the <a href=\"https://msd-irimas.github.io/pages/dl4tsc/\">Deep Learning for Time Series Classification webpage </a>",
+			"place" : "<a href=\"https://msd-irimas.github.io/\">MSD-IRIMAS team</a>"
+		},
+		{
 			"date" : "2023-now",
 			"title" : "Core Developer",
 			"place" : "open source python package <a href=\"https://github.com/aeon-toolkit/aeon\">aeon-tookit</a>"

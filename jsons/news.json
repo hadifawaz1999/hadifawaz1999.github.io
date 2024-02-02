@@ -2,6 +2,10 @@
 	"news":[
 		{
 			"date" : "2024-01",
+			"content" : "A dedicated webpage on <a href=\"https://msd-irimas.github.io/pages/dl4tsc/\">Deep Learning for Time Series Classification</a>, authors: myself and <a href=\"https://maxime-devanne.com/\">Maxime Devanne</a> with contribution from the <a href=\"https://msd-irimas.github.io/\">MSD team</a>"
+		},
+		{
+			"date" : "2024-01",
 			"content" : "At <a href=\"https://iutdijon.u-bourgogne.fr/egc2024/\">EGC 2024</a> to give a talk about LITE for Time Series Classification, <a href=\"https://maxime-devanne.com/publis/ismail-fawaz_dsaa2023.pdf\">paper</a> already published in <a href=\"https://conferences.sigappfr.org/dsaa2023/\">DSAA 2023</a>."
 		},
 		{
