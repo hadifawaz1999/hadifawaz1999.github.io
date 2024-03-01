@@ -1,6 +1,10 @@
 {
 	"news":[
 		{
+			"date" : "2024-02",
+			"content" : "My paper titles <a href=\"https://arxiv.org/abs/2311.14534\">Finding Foundation Models for Time Series Classification with a PreText Task</a> has been accepted at the <a href=\"https://monashts.github.io/International-Workshop-on-Temporal-Analytics/\">2024 International Workshop on Temporal Analytics (IWTA)</a> at the <a href=\"https://pakdd2024.org/\">2024 Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)</a>"
+		},
+		{
 			"date" : "2024-01",
 			"content" : "A dedicated webpage on <a href=\"https://msd-irimas.github.io/pages/dl4tsc/\">Deep Learning for Time Series Classification</a>, authors: myself and <a href=\"https://maxime-devanne.com/\">Maxime Devanne</a> with contribution from the <a href=\"https://msd-irimas.github.io/\">MSD team</a>"
 		},
