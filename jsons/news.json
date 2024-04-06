@@ -1,6 +1,10 @@
 {
 	"news":[
 		{
+			"date": "2024-04",
+			"content": "My paper titled \"A Supervised Variational Auto-Encoder for Human Motion Generation using Convolutional Neural Networks\" got accepted at the <a href=\"https://brain.korea.ac.kr/icprai2024/\">4th International Conference on Pattern Recognition and Artificial Intelligence</a>."
+		},
+		{
 			"date" : "2024-02",
 			"content" : "My paper titles <a href=\"https://arxiv.org/abs/2311.14534\">Finding Foundation Models for Time Series Classification with a PreText Task</a> has been accepted at the <a href=\"https://monashts.github.io/International-Workshop-on-Temporal-Analytics/\">2024 International Workshop on Temporal Analytics (IWTA)</a> at the <a href=\"https://pakdd2024.org/\">2024 Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)</a>"
 		},
