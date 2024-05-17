@@ -1,12 +1,20 @@
 {
 	"news":[
 		{
+			"date": "2024-05",
+			"content": "A new paper on arxiv on the <a href=\"https://maxime-devanne.com/delegation/\">DELEGATION project</a> presenting a <a href=\"https://arxiv.org/abs/2405.07680\">a unified evaluation framework for human motion generative models</a>."
+		},
+		{
+			"date": "2024-05",
+			"content": "In Taipei Taiwan to present my <a href=\"https://doi.org/10.1007/978-981-97-2650-9_10\">Foundation Models paper for Time Series Classification</a> in the <a href=\"https://monashts.github.io/International-Workshop-on-Temporal-Analytics/\">IWTA</a> <a href=\"https://pakdd2024.org/\">@PAKDD2024</a>."
+		},
+		{
 			"date": "2024-04",
 			"content": "My paper titled \"A Supervised Variational Auto-Encoder for Human Motion Generation using Convolutional Neural Networks\" got accepted at the <a href=\"https://brain.korea.ac.kr/icprai2024/\">4th International Conference on Pattern Recognition and Artificial Intelligence</a>."
 		},
 		{
 			"date" : "2024-02",
-			"content" : "My paper titles <a href=\"https://arxiv.org/abs/2311.14534\">Finding Foundation Models for Time Series Classification with a PreText Task</a> has been accepted at the <a href=\"https://monashts.github.io/International-Workshop-on-Temporal-Analytics/\">2024 International Workshop on Temporal Analytics (IWTA)</a> at the <a href=\"https://pakdd2024.org/\">2024 Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)</a>"
+			"content" : "My paper titled <a href=\"https://arxiv.org/abs/2311.14534\">Finding Foundation Models for Time Series Classification with a PreText Task</a> has been accepted at the <a href=\"https://monashts.github.io/International-Workshop-on-Temporal-Analytics/\">2024 International Workshop on Temporal Analytics (IWTA)</a> at the <a href=\"https://pakdd2024.org/\">2024 Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD)</a>"
 		},
 		{
 			"date" : "2024-01",
