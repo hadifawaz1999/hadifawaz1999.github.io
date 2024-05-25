@@ -2,6 +2,14 @@
 	"news":[
 		{
 			"date": "2024-05",
+			"content": "A new <a href=\"https://github.com/MSD-IRIMAS/Augmenting-TSC-Elastic-Averaging\">open source python code</a> for generating synthetic time series data weighted elastic averaging."
+		},
+		{
+			"date": "2024-05",
+			"content": "A new <a href=\"https://github.com/MSD-IRIMAS/Simple-KAN-4-Time-Series\">open source python code</a> for using <a href=\"https://arxiv.org/abs/2404.19756\">Kolmogorov-Arnold Networks</a> in Time Series Classification."
+		},
+		{
+			"date": "2024-05",
 			"content": "A new paper on arxiv on the <a href=\"https://maxime-devanne.com/delegation/\">DELEGATION project</a> presenting a <a href=\"https://arxiv.org/abs/2405.07680\">a unified evaluation framework for human motion generative models</a>."
 		},
 		{
