@@ -187,6 +187,22 @@ $(document).ready(function () {
 	});
 });
 
+// Function to load aeon activities from json
+
+$(document).ready(function () {
+	$.getJSON("jsons/aeon.json", function (data) {
+		// maintainer
+		for (var i = 0; i < data.maintainer.length; i++){
+			$("#aeon-maintainer").append('<li>'+ data.maintainer[i].date + ' <span>•</span> ' + data.maintainer[i].content)
+		}
+
+		// mentor
+		for (var i = 0; i < data.mentor.length; i++){
+			$("#aeon-mentor").append('<li>'+ data.mentor[i].date + ' <span>•</span> ' + data.mentor[i].content)
+		}
+	});
+});
+
 // Function to load projects from json
 $(document).ready(function () {
 	$.getJSON("jsons/projects.json", function (data) {
@@ -439,7 +455,7 @@ $(document).ready(function () {
 		for (var i = 0; i < data.projects.length; i++) {
 			// if(i%2 == 0){
 			// }
-			$("#portfolio-content").append('<div><h4 class="vertical-title-bar bg-info sec-title text-center">' + data.projects[i].title + '</h4>');
+			$("#portfolio-content").append('<div><h4 class="vertical-title-bar subsections sec-title text-center">' + data.projects[i].title + '</h4>');
 			$("#portfolio-content").append('<img src=' + data.projects[i].image_source + ' class="portfolio-image">');
 			$('#portfolio-content').append('<a href=' + data.projects[i].link + '> [Project Link]</a>')
 			$("#portfolio-content").append('<p class="text-justify">' + data.projects[i].description + '</p></div>');
@@ -542,7 +558,7 @@ $(document).ready(function () {
 						'<hr><div id=\"wrapper\" style=\"margin-left: 40px\">' + 
 						'[' + cptIntConf + ']' +
 						'<img src=' + res[i].entryTags.image_source +
-						' class=\"center-img\" style=\"margin-left: 20px\">' +
+						' class=\"center-img\" style=\"margin-left: 20px; margin-right: 20px\">' +
 						'<div class=\"center-txt\">' + publi_string + '</div>'
 						// '<tr id="bib_' + res[i].citationKey + '" class="bibtex noshown"><td class="bibtex-col"><pre>\n@inproceedings{' + res[i].citationKey + ',\n  author = {' + res[i].entryTags.author + '},\n  title = {' + res[i].entryTags.title + '},\n  booktitle = {' + res[i].entryTags.booktitle + '},\n  city = {' + res[i].entryTags.city + '},\n  country = {' + res[i].entryTags.country + '},\n  pages = {' + res[i].entryTags.pages + '},\n  url = {' + res[i].entryTags.url + '},\n  year = {' + res[i].entryTags.year + '},\n  organization = {' + res[i].entryTags.organization + '}\n}' + '</td></tr>'
 						)

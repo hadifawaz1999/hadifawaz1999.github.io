@@ -44,7 +44,7 @@
   <!--body-->
   <body>
   	<div id="home" class="container">
-  		<div class="card border-0 sticky-top bg-info top-bar" style="margin-bottom: 30px;">
+  		<div class="card border-0 sticky-top sections top-bar" style="margin-bottom: 30px;">
 	  		<div class="row align-items-center">
 	  			<div class="col-md-4 sec-title">
 	  				<h3 id="myname" style="margin-left: 10px; margin-top: 10px;"></h3>
@@ -52,7 +52,7 @@
 	  			</div>
 	  			<div class="col-md-auto"></div>
 	    		<div class="col-md-7">
-	    			<nav class="navbar navbar-expand-lg navbar-light bg-info nav-border">
+	    			<nav class="navbar navbar-expand-lg navbar-light sections nav-border">
 					  <a class="navbar-brand" href="#home"><i class="fas fa-home"></i></a>
 					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					    <span class="navbar-toggler-icon"></span>
@@ -83,14 +83,14 @@
 		</div>
 		<section>
 			<div class="text-center grey-color" style="margin-bottom: 30px;">
-				<h4 class="bg-warning sec-title">Header</h4>
+				<h4 class="sections sec-title">Header</h4>
 			</div>
 		<div class="row">
 			<div class="col-md-3">
 				<img id ="img-profil" src="" alt="Ali El Hadi Ismail Fawaz" class="img-thumbnail img-responsive center-block profile-img">
 			</div>
 			<div class="col-md-5">
-				<h4 class="vertical-title-bar bg-info sec-title">About</h4>
+				<h4 class="vertical-title-bar subsections sec-title">About</h4>
 
 				<p id="abstract" class="text-justify"></p>
 				<div>
@@ -105,7 +105,7 @@
 
 			</div>
 			<div class="col-md-4">
-				<h4 class="vertical-title-bar bg-info sec-title" style="margin-left: 10px">Contact</h4>
+				<h4 class="vertical-title-bar subsections sec-title" style="margin-left: 10px">Contact</h4>
 				<p style="margin-left: 10px"><span id="address"></span>
 				<i class="fas fa-at"></i> <span id="email"></span>
 				<br />
@@ -128,7 +128,7 @@
 		</div>
 		<!-- <div id="highlight_news"></div> -->
 		<div>
-				<h4 class="vertical-title-bar bg-info sec-title text-center">Some news</h4>
+				<h4 class="vertical-title-bar subsections sec-title text-center">Some news</h4>
 				<ul id="list-news"></ul>
 				<div style="margin-left: 45px; margin-top: -10px">
 					<span id="see-more"><i class="fas fa-search-plus"></i></span>&nbsp;
@@ -139,32 +139,32 @@
 		</section>
 		<section id="bio">
 		<div class="text-center grey-color">
-			<h4 class="bg-warning sec-title">Bio</h4>
+			<h4 class="sections sec-title">Bio</h4>
 		</div>
 		<br>
 		<div class="row">
 			<div class="col-md-6">
-				<!-- <h4 class="vertical-title-bar bg-info sec-title">Background</h4>
+				<!-- <h4 class="vertical-title-bar subsections sec-title">Background</h4>
 				<ul id="background"></ul> -->
-				<h4 class="vertical-title-bar bg-info sec-title text-center">Skills</h4>
+				<h4 class="vertical-title-bar subsections sec-title text-center">Skills</h4>
 				<ul id="skills"></ul>
 			</div>
 			<div class="col-md-6">
-				<h4 class="vertical-title-bar bg-info sec-title text-center">Education</h4>
+				<h4 class="vertical-title-bar subsections sec-title text-center">Education</h4>
 				<ul id="education"></ul>
-				<!-- <h4 class="vertical-title-bar bg-info sec-title">Responsibilities</h4>
+				<!-- <h4 class="vertical-title-bar subsections sec-title">Responsibilities</h4>
 				<ul id="responsabilities"></ul>
-				<h4 class="vertical-title-bar bg-info sec-title">Organizing Committee Member</h4>
+				<h4 class="vertical-title-bar subsections sec-title">Organizing Committee Member</h4>
 				<ul id="committee"></ul> -->
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-6">
-				<h4 class="vertical-title-bar bg-info sec-title text-center">Experience</h4>
+				<h4 class="vertical-title-bar subsections sec-title text-center">Experience</h4>
 				<ul id="experience"></ul>
 			</div>
 			<div class="col-md-6">
-				<h4 class="vertical-title-bar bg-info sec-title text-center">Responsibilities</h4>
+				<h4 class="vertical-title-bar subsections sec-title text-center">Responsibilities</h4>
 				<ul id="responsibilities"></ul>
 			</div>
 		</div>
@@ -229,31 +229,51 @@
 		</section> -->
 		<section id="activities">
 		<div class="text-center grey-color">
-			<h4 class="bg-warning sec-title">Activities</h4>
+			<h4 class="sections sec-title">Activities</h4>
 		</div>
 		<br>
 		<div class="row">
 			<div class="col">
-				<h4 class="vertical-title-bar bg-info sec-title text-center">Reviewer</h4>
+				<h4 class="vertical-title-bar subsections sec-title text-center">With Aeon-Toolkit</h4>
+				<ul id="aeon">
+					<li><h4>Contributor:</h4>
+					<ul><li>Constantly contributing to the distances module,
+						transformation module with faster implementations
+						(e.g. <a href="https://github.com/aeon-toolkit/aeon/pull/417">
+						SAX</a> and <a href="https://github.com/aeon-toolkit/aeon/pull/489">
+						PAA</a> transformers), 
+						bug fixing, testing, documentation and notebooks.
+					</li>
+					</ul></li>
+					<li><h4>Maintainer:</h4></li>
+					<ul id="aeon-maintainer"></ul>
+					<li><h4>Mentoring:</h4></li>
+					<ul id="aeon-mentor"></ul>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<h4 class="vertical-title-bar subsections sec-title text-center">Reviewer</h4>
 				<ul id="reviewer"></ul>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col">
-				<h4 class="vertical-title-bar bg-info sec-title text-center">Sub-Reviewer</h4>
+				<h4 class="vertical-title-bar subsections sec-title text-center">Sub-Reviewer</h4>
 				<ul id="sub-reviewer"></ul>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col">
-				<h4 class="vertical-title-bar bg-info sec-title text-center">Certificats</h4>
+				<h4 class="vertical-title-bar subsections sec-title text-center">Certificats</h4>
 				<ul id="certificats"></ul>
 			</div>
 		</div>
 		
 		<div>
 			<div>
-				<h4 class="vertical-title-bar bg-info sec-title text-center">Awards</h4>
+				<h4 class="vertical-title-bar subsections sec-title text-center">Awards</h4>
 				<ul id="awards"></ul>
 			</div>
 		</div>
@@ -261,19 +281,19 @@
 
 		<section id="presentations">
 			<div class="text-center grey-color">
-				<h4 class="bg-warning sec-title">Presentations</h4>
+				<h4 class="sections sec-title">Presentations</h4>
 			</div>
 			<br>
 			<div class="row">
 				<div class="col">
-					<h4 class="vertical-title-bar bg-info sec-title text-center">Invited</h4>
+					<h4 class="vertical-title-bar subsections sec-title text-center">Invited</h4>
 					<ul id="presentation-to-invited"></ul>
 				</div>
 
 			</div>
 			<div class="row">
 				<div class="col">
-					<h4 class="vertical-title-bar bg-info sec-title text-center">Visitors</h4>
+					<h4 class="vertical-title-bar subsections sec-title text-center">Visitors</h4>
 					<ul id="presentation-to-visitors"></ul>
 				</div>
 
@@ -282,12 +302,12 @@
 
 		<section id="publications">
 		<div class="text-center grey-color">
-			<h4 class="bg-warning sec-title">Publications</h4>
+			<h4 class="sections sec-title">Publications</h4>
 		</div>
 		<br>
 		<!-- <div class="row">
 			<div class="col-md-12">
-				<h4 class="vertical-title-bar bg-info sec-title">Articles in International Journals</h4>
+				<h4 class="vertical-title-bar subsections sec-title">Articles in International Journals</h4>
 				<table class="col-md-12">
 					<tbody id="int_journals"></tbody>
 				</table>
@@ -295,7 +315,7 @@
 		</div> -->
 		<div class="row">
 			<div class="col-md-12">
-				<h4 class="vertical-title-bar bg-info sec-title text-center">Communications in International Conferences and Workshops</h4>
+				<h4 class="vertical-title-bar subsections sec-title text-center">Communications in International Conferences and Workshops</h4>
 				<table class="col-md-12">
 					<tbody id="int_confs"></tbody>
 				</table>
@@ -303,7 +323,7 @@
 		</div>
 		<!-- <div class="row">
 			<div class="col-md-12">
-				<h4 class="vertical-title-bar bg-info sec-title">Book chapters</h4>
+				<h4 class="vertical-title-bar subsections sec-title">Book chapters</h4>
 				<table class="col-md-12">
 					<tbody id="chapters"></tbody>
 				</table>
@@ -311,7 +331,7 @@
 		</div>-->
 		<div class="row">
 			<div class="col-md-12" style="margin-top: 20px;">
-				<h4 class="vertical-title-bar bg-info sec-title">Communications in National Conferences and Workshops</h4>
+				<h4 class="vertical-title-bar subsections sec-title">Communications in National Conferences and Workshops</h4>
 				<table class="col-md-12">
 					<tbody id="nat_confs"></tbody>
 				</table>
@@ -321,7 +341,7 @@
 
 		<section id="portfolio">
 		<div class="text-center grey-color">
-			<h4 class="bg-warning sec-title">Portfolio</h4>
+			<h4 class="sections sec-title">Portfolio</h4>
 		</div>
 		<br>
 		<div>During my acedamic career and research work, I worked on some projects conerning machine learning and deep learning on signals and time series.<br></div><br>

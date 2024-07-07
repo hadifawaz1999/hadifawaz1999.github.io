@@ -18,7 +18,7 @@ body {
 }
 
 .center-img {
-    border-radius: 15%;
+    border-radius: 0%;
     width: 200px;
     height: 150px;
     display: inline-block;
@@ -37,6 +37,7 @@ body {
     border-radius: 30px;
 }
 .sec-title {
+    border-color: #aef7ad;
     border-radius: 30px;
 }
 .top-bar {
@@ -172,4 +173,13 @@ tr.entry>td {
 .alert-success{
     background-color: var(--main-color3);
     border-color: var(--main-color2)
+}
+
+
+
+.sections {
+    background-color: #a0ced9;
+}
+.subsections {
+    background-color: #aef7ad;
 }

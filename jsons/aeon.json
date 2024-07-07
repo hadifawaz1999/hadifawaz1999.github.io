@@ -1,0 +1,23 @@
+{
+    "maintainer": [
+        {
+            "date": "2023-now",
+            "content": "Maintainer of the <a href=\"https://github.com/aeon-toolkit/aeon/tree/main/aeon/networks\">Networks module</a> in aeon and all of three Deep Learning sub-modules for <a href=\"https://github.com/aeon-toolkit/aeon/tree/main/aeon/classification/deep_learning\">Classification</a> / <a href=\"https://github.com/aeon-toolkit/aeon/tree/main/aeon/regression/deep_learning\">Regression</a> / <a href=\"https://github.com/aeon-toolkit/aeon/tree/main/aeon/clustering/deep_learning\">Clustering</a>."
+        },
+        {
+            "date": "2023-now",
+            "content": "Maintaining the <a href=\"https://github.com/aeon-toolkit/aeon/tree/main/aeon/transformations/collection/convolution_based/rocketGPU\">ROCKET GPU</a> implementations in the transformation module."
+        },
+        {
+            "date": "2023-now",
+            "content": "Maintaining the <a href=\"https://github.com/aeon-toolkit/aeon/blob/main/aeon/distances/_shape_dtw.py\">ShapeDTW similarity measure</a> in the distances module."
+        }
+    ],
+
+    "mentor": [
+        {
+            "date": "2024-now",
+            "content": "As part of the <a href=\"https://summerofcode.withgoogle.com/\">Google Summer of Code (GSoC)</a> program under the affiliation of <a href=\"https://numfocus.org/sponsored-projects/affiliated-projects\">NumFOCUS</a>, I am mentoring <a href=\"https://github.com/aadya940\">Aadya Chinubhai</a> on a project that focuses on implementing in <a href=\"https://www.aeon-toolkit.org/en/stable/\">aeon-toolkit</a> deep learning based models for time series clustering. More details about the GSoC project <a href=\"https://summerofcode.withgoogle.com/programs/2024/projects/Hvd0DfkD\">here</a> and detailed weekly updated Medium blogs <a href=\"https://medium.com/@aadyachinubhai\">here</a>."
+        }
+    ]
+}
