@@ -183,3 +183,22 @@ tr.entry>td {
 .subsections {
     background-color: #aef7ad;
 }
+.image-link {
+position: relative;
+}
+
+.image-preview {
+display: none;
+position: absolute;
+top: -10px;
+left: 110%;
+width: 400px;
+border: 1px solid #ff5b5bfb;
+padding: 5px;
+background-color: #ffdbdb;
+box-shadow: 0px 0px 5px rgb(255, 0, 0);
+}
+
+.image-link:hover .image-preview {
+display: block;
+}
