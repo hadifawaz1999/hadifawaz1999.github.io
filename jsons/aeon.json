@@ -19,5 +19,18 @@
             "date": "2024-now",
             "content": "As part of the <a href=\"https://summerofcode.withgoogle.com/\">Google Summer of Code (GSoC)</a> program under the affiliation of <a href=\"https://numfocus.org/sponsored-projects/affiliated-projects\">NumFOCUS</a>, I am mentoring <a href=\"https://github.com/aadya940\">Aadya Chinubhai</a> on a project that focuses on implementing in <a href=\"https://www.aeon-toolkit.org/en/stable/\">aeon-toolkit</a> deep learning based models for time series clustering. More details about the GSoC project <a href=\"https://summerofcode.withgoogle.com/programs/2024/projects/Hvd0DfkD\">here</a> and detailed weekly updated Medium blogs <a href=\"https://medium.com/@aadyachinubhai\">here</a>."
         }
+    ],
+
+    "tutorial": [
+        {
+            "date": "2024-09",
+            "content": "Myself and the rest of aeon's core developers presented a <a href=\"https://aeon-tutorials.github.io/ECML-2024/\">tutorial on time series machine learning</a> at the <a href=\"https://ecmlpkdd.org/2024/\">ECML/PKDD 2024</a> conference. I presented the section of deep learning based methods for time series analysis. We the presenters got an <a href=\"images/events/aeon_tutorial_ecml2024/award.jpeg\">award for having a session with big attendance</a>.",
+            "source_image": "images/events/aeon_tutorial_ecml2024/group_photo.jpeg"
+        },
+        {
+            "date": "2024-08",
+            "content": "Myself, the rest of aeon's core developers, and friends presented a <a href=\"https://aeon-tutorials.github.io/KDD-2024/\">tutorial on time series classification and extrinsic regression</a> at the <a href=\"https://kdd2024.kdd.org/\">SIG-KDD 2024</a> conference. I presented the section of dictionary based methods for time series classification.<br>For more information check out the <a href=\"https://www.researchgate.net/profile/Matthew-Middlehurst/publication/383420971_A_Hands-on_Introduction_to_Time_Series_Classification_and_Regression/links/66d09b02bd201736675f98cf/A-Hands-on-Introduction-to-Time-Series-Classification-and-Regression.pdf\">associated paper</a>.",
+            "source_image": "images/events/aeon_tutorial_kdd2024/group_photo.jpeg"
+        }
     ]
 }

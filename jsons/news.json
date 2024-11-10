@@ -1,6 +1,26 @@
 {
 	"news":[
 		{
+			"date": "2024-10",
+			"content": "One paper done by my intern <a href=\"https://www.linkedin.com/in/oumaima-badi-837060237/\">Oumaima Badi</a>, titled \"COCALITE: A Hybrid Model COmbining CAtch22 and LITE for Time Series Classification\" got accepted at the <a href=\"https://bigdataieee.org/\">2024 IEEE International conference on Big Data</a>"
+		},
+		{
+			"date": "2024-09",
+			"content": "Presenting at <a href=\"https://ecml-aaltd.github.io/aaltd2024/\">AALTD workshop in conjunction with ECML/PKDD</a> my paper title <a href=\"https://ecml-aaltd.github.io/aaltd2024/articles/Fawaz_AALTD24.pdf\">Weighted Average of Human Motion Sequences for Improving Rehabilitation Assessment</a>"
+		},
+		{
+			"date": "2024-09",
+			"content": "In Vilnius Lithuania, presenting a <a href=\"https://aeon-tutorials.github.io/ECML-2024/\">tutorial on time series machine learning</a> at <a href=\"https://ecmlpkdd.org/2024/\">ECML/PKDD 2024</a> with <a href=\"https://www.aeon-toolkit.org/en/stable/\">aeon-toolkit</a> core developers. We the presenters got an <a href=\"images/events/aeon_tutorial_ecml2024/award.jpeg\">award for having a session with big attendance</a>."
+		},
+		{
+			"date": "2024-08",
+			"content": "In Barcelona Spain, presenting a <a href=\"https://aeon-tutorials.github.io/KDD-2024/\">tutorial on time series classification and extrinsic regression</a> at <a href=\"https://kdd2024.kdd.org/\">SIG-KDD 2024</a> with <a href=\"https://germain-forestier.info/\">Prof. Germain Forestier</a>, <a href=\"https://i.giwebb.com/\">Prof. Geoff Webb</a>, and <a href=\"https://www.aeon-toolkit.org/en/stable/\">aeon-toolkit</a> core developers."
+		},
+		{
+			"date": "2024-06",
+			"content": "At <a href=\"http://www.micc.unifi.it/\"> MICC University of Florence</a> Italy visiting <a href=\"http://www.micc.unifi.it/berretti/\">Dr. Stefano Berretti</a> to discuss about the topic of Human Motion Generation."
+		},
+		{
 			"date": "2024-05",
 			"content": "A new <a href=\"https://github.com/MSD-IRIMAS/Augmenting-TSC-Elastic-Averaging\">open source python code</a> for generating synthetic time series data weighted elastic averaging."
 		},

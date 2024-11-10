@@ -60,10 +60,13 @@
 		"<a href=\"https://kdd.org/kdd2023/\">SIG-KDD</a> (2023) ACM SIGKDD CONFERENCE ON KNOWLEDGE DISCOVERY AND DATA MINING"
 	],
 	"reviewer":[
-
+		"Journal <a href=\"https://dl.acm.org/journal/TKDD\">ACM Transactions on Knowledge Discovery from Data</a>",
+		"Journal <a href=\"https://cis.ieee.org/publications/ieee-transactions-on-artificial-intelligence\">IEEE Transactions on Artificial Intelligence</a>",
+		"Journal, <a href=\"https://dl.acm.org/journal/tomm\"> ACM Transactions on Multimedia Computing, Communications and Applications</a>",
 		"AALTD<a href=\"https://ecml-aaltd.github.io/aaltd2023/\"> (2023)</a>: Workshop on Advanced Analytics and Learning on Temporal Data. In junction with the European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD <a href=\"https://2023.ecmlpkdd.org/\"> 2023</a>)",
 		"IJCNN<a href=\"https://2023.ijcnn.org/\"> (2023)</a>: International Joint Conference on Neural Networks",
-		"LFA (<a href=\"https://sites.google.com/view/lfa-fg2023/\">2023</a>-<a href=\"https://sites.google.com/view/lfa-fg2024/\">2024</a>): Workshop on Learning with Few or without Annotated face, body and gesture data. In junction with the IEEE International Conference on Automatic Face and Gedture (FG <a href=\"https://fg2023.ieee-biometrics.org/\"> 2023</a>)"
+		"LFA (<a href=\"https://sites.google.com/view/lfa-fg2023/\">2023</a>-<a href=\"https://sites.google.com/view/lfa-fg2024/\">2024</a>): Workshop on Learning with Few or without Annotated face, body and gesture data. In junction with the IEEE International Conference on Automatic Face and Gedture (FG <a href=\"https://fg2023.ieee-biometrics.org/\"> 2023</a>)",
+		"IEEE FG <a href=\"https://fg2024.ieee-biometrics.org/\">(2024)</a> International Conference on Automatic Face and Gedture"
 	],
 	"skills":[
 

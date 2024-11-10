@@ -200,6 +200,17 @@ $(document).ready(function () {
 		for (var i = 0; i < data.mentor.length; i++){
 			$("#aeon-mentor").append('<li>'+ data.mentor[i].date + ' <span>•</span> ' + data.mentor[i].content)
 		}
+
+		// tutorial
+		for (var i = 0; i < data.tutorial.length; i++){
+			$("#aeon-tutorial").append('<li class=\"display: list-item;\" style=\"list-style: none; margin: 10px 0;\"><div id=\"wrapper\"><img src='+
+				data.tutorial[i].source_image + ' class=\"center-img\">'+
+				'<div class=\"center-txt\">'+
+				data.tutorial[i].date+
+				' <span>•</span> '+ 
+				data.tutorial[i].content+
+				'</div></div></li>')
+		}
 	});
 });
 
@@ -402,6 +413,36 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$.getJSON("jsons/presentations.json", function (data) {
 
+		for (var i = 0; i < data.tutorial.length; i++) {
+			$("#presentation-tutorial").append(
+				'<li class=\"display: list-item;\" style=\"list-style: none; margin: 10px 0;\"><div id=\"wrapper\"><img src=' +
+				data.tutorial[i].source_image + ' class=\"center-img\">' +
+				'<div class=\"center-txt\">' + 'In <B>' +
+				data.tutorial[i].date + '</B>, Myself and '+
+				data.tutorial[i].co_presenters +
+				' presented a tutorial on ' +
+				'<a href=\"' + 
+				data.tutorial[i].tutorial_website +
+				'\">' +
+				data.tutorial[i].tutorial_title +
+				'</a>' +
+				' at the '+
+				'<a href=\"' + 
+				data.tutorial[i].tutorial_conference_Website +
+				'\">' +
+				data.tutorial[i].tutorial_conference +
+				'</a>.' +
+				'In this tutorial I presented the part on ' +
+				data.tutorial[i].sub_topic_presented +
+				', the <a href=\"'+
+				data.tutorial[i].sub_topic_presented_slides +
+				'\">slides</a> and <a href=\"'+
+				data.tutorial[i].sub_topic_presented_code +
+				'\">notebook</a> are publicly available.'
+			)
+			$('#presentation-to-visitors').last().after('</li>');
+		}
+
 		for (var i = 0; i < data.visitors.length; i++) {
 			$("#presentation-to-visitors").append(
 				'<li class=\"display: list-item;\" style=\"list-style: none; margin: 10px 0;\"><div id=\"wrapper\"><img src=' + 
@@ -511,20 +552,30 @@ $(document).ready(function () {
 			if (res[i].entryTags.hasOwnProperty('webpage')) {
 				link_string = link_string + '<a href="' + res[i].entryTags.webpage + '" target="blank_">[webpage]</a>'
 			}
+			if (res[i].entryTags.hasOwnProperty('poster')) {
+				link_string = link_string + '<a href="' + res[i].entryTags.poster + '" target="blank_">[poster]</a>'
+			}
 
 			link_string += '</div>'
 
 			if (res[i].entryType == "article") {
 				// article
 				cptIntArticle++;
-				num_string = '';
-				if (res[i].entryTags.number != '') {
-					num_string = '(' + res[i].entryTags.number + ') ';
+				publi_string = authors_string + '.<br> <a href=\"' + res[i].entryTags.url + '\">' + res[i].entryTags.title + '</a>.<br><i>' + res[i].entryTags.journal + ', ' + res[i].entryTags.volume+'('+res[i].entryTags.number+')' +', ' + res[i].entryTags.pages + ', ' + res[i].entryTags.year + '.</i><br>' + link_string;
+				
+				$("#int_journals").append(
+					'<hr><div id=\"wrapper\" style=\"margin-left: 40px\">' + 
+					'[' + cptIntArticle + ']' +
+					'<img src=' + res[i].entryTags.image_source +
+					' class=\"center-img\" style=\"margin-left: 20px; margin-right: 20px\">' +
+					'<div class=\"center-txt\">' + publi_string + '</div>'
+					)
+				$("#int_journals").append('<tr id="bib_' + res[i].citationKey + '" class="bibtex noshown"><td class="bibtex-col"><pre>\n@inproceedings{' + res[i].citationKey + ',\n  author = {' + res[i].entryTags.author + '},\n  title = {' + res[i].entryTags.title + '},\n  journal = {' + res[i].entryTags.journal + '},\n  volume = {' + res[i].entryTags.volume + '},\n  number = {' + res[i].entryTags.number + '},\n  pages = {' + res[i].entryTags.pages + '},\n  url = {' + res[i].entryTags.url + '},\n  year = {' + res[i].entryTags.year + '}\n}' + '</td></tr>');
+				
+				if (i == res.length - 1){
+					$('#int_confs').append('<hr>')
 				}
-				res[i].entryTags.pages = res[i].entryTags.pages.replace("--", "-")
-				publi_string = authors_string + '.<br>' + res[i].entryTags.title + '.<br><i>' + res[i].entryTags.journal + ', Vol. ' + res[i].entryTags.volume + num_string + ', pp. ' + res[i].entryTags.pages + ', ' + res[i].entryTags.year + '.</i><br>' + link_string;
-				$("#int_journals").append('<tr id="' + res[i].citationKey + '" class="entry"><td style="width:40px;padding-right:1em;">[' + cptIntArticle + ']</td><td>' + publi_string + '</td></tr>');
-				$("#int_journals").append('<tr id="bib_' + res[i].citationKey + '" class="bibtex noshown"><td style="width:40px"></td><td class="bibtex-col"><pre>\n@article{' + res[i].citationKey + ',\n  author = {' + res[i].entryTags.author + '},\n  title = {' + res[i].entryTags.title + '},\n  journal = {' + res[i].entryTags.journal + '},\n  volume = {' + res[i].entryTags.volume + '},\n  number = {' + res[i].entryTags.number + '},\n  pages = {' + res[i].entryTags.pages + '},\n  url = {' + res[i].entryTags.url + '},\n  year = {' + res[i].entryTags.year + '},\n  publisher = {' + res[i].entryTags.publisher + '}\n}' + '</td></tr>');
+				
 			} else if (res[i].entryType == 'inproceedings') {
 				// if ((res[i].entryTags.hasOwnProperty('language')) && (res[i].entryTags.language == 'french')) {
 				if (res[i].entryTags.isnational == "yes") {

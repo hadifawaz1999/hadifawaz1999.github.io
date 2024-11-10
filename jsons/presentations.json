@@ -1,4 +1,30 @@
 {
+    "tutorial": [
+        {
+            "date": "2024-09",
+            "co_presenters": "<a href=\"https://www.aeon-toolkit.org/en/stable/\"> the rest of aeon's core developers</a>",
+            "tutorial_title": "time series machine learning",
+            "tutorial_website": "https://aeon-tutorials.github.io/ECML-2024/",
+            "tutorial_conference": "ECML/PKDD 2024 conference",
+            "tutorial_conference_Website": "https://ecmlpkdd.org/2024/",
+            "source_image": "images/events/aeon_tutorial_ecml2024/me_presenting.png",
+            "sub_topic_presented": "deep learning based methods for time series analysis",
+            "sub_topic_presented_slides": "https://github.com/aeon-toolkit/aeon-tutorials/blob/main/ECML-2024/Slides/part7_deep_learning.pdf",
+            "sub_topic_presented_code": "https://github.com/aeon-toolkit/aeon-tutorials/blob/main/ECML-2024/Notebooks/part7_deep_learning_based.ipynb"
+        },
+        {
+            "date": "2024-08",
+            "co_presenters": "<a href=\"https://www.aeon-toolkit.org/en/stable/\"> the rest of aeon's core developers</a>, <a href=\"https://germain-forestier.info/\">Germain Forestier</a> and <a href=\"https://i.giwebb.com/\">Geoff Webb</a>",
+            "tutorial_title": "time series classification and extrinsic regression",
+            "tutorial_website": "https://aeon-tutorials.github.io/KDD-2024/",
+            "tutorial_conference": "SIG-KDD 2024 conference",
+            "tutorial_conference_Website": "https://kdd2024.kdd.org/",
+            "source_image": "images/events/aeon_tutorial_kdd2024/me_presenting.jpeg",
+            "sub_topic_presented": "dictionary based methods for time series classification",
+            "sub_topic_presented_slides": "https://github.com/aeon-tutorials/KDD-2024/blob/main/Slides/part6_dictionary_based.pdf",
+            "sub_topic_presented_code": "https://github.com/aeon-tutorials/KDD-2024/blob/main/Notebooks/part6_dictionary_based.ipynb"
+        }
+    ],
     "invited" : [
 
         {

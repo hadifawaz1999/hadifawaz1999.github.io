@@ -2,7 +2,7 @@
 	"name": "Ali El Hadi Ismail Fawaz",
 	"title": "Data Scientest PhD Student @ <a href=\"https://msd-irimas.github.io/\" style=\"color: black;\">MSD-IRIMAS</a>",
 	"abstract": "I am currently a PhD Student in my first year at <a href=\"https://msd-irimas.github.io/\">MSD-IRIMAS</a>, <a href=\"https://www.uha.fr/en/index.html\">UHA</a> working on the <a href=\"http://maxime-devanne.com/delegation/\">DELEGATION</a> project. My work is on Deep Learning models for Time Series Classification, Analaysis with applicaiton on Human Motion Sequences under the supervision of <a href=\"https://maxime-devanne.com/\">Dr. Maxime DEVANNE</a>, <a href=\"http://www.micc.unifi.it/berretti/\">Dr. Stefano BERRETTI</a>, <a href=\"https://www.jonathan-weber.eu/\">Prof. Jonathan WEBER</a> and <a href=\"https://germain-forestier.info/\">Prof. Germain FORESTIER</a>. <br> Author of the <a href=\"https://msd-irimas.github.io/pages/dl4tsc/\">Deep Learning for Time Series Classification</a> webpage in collaboration with <a href=\"https://maxime-devanne.com/\">Maxime Devanne</a> and the <a href=\"https://msd-irimas.github.io/\">MSD team</a>. Core developer in the Python open source package<a href=\"\"> aeon-toolkit</a> for time series machine learning, leading the deep learning module and contributing to other ones as well.",
-	"image" : "imgs/my_profile_pic.jpg",
+	"image" : "imgs/my_profile_pic.png",
 	"keywords": ["Data Science", "Time Series", "Pattern Recognition", "Machine Learning", "Deep Learning", "Human Motion Generation", "Generative Models", "Time Series Classification"],
 	"contact": 
 	{
@@ -19,6 +19,7 @@
 		"github": "https://github.com/hadifawaz1999",
 		"hackerrank" : "https://www.hackerrank.com/AHIF1999",
 		"kaggle" : "https://www.kaggle.com/alielhadiismailfawaz",
+		"webofscience": "https://www.webofscience.com/wos/author/record/61109192",
 		"researchgate" : "https://www.researchgate.net/profile/Ali-Ismail-Fawaz",
 		"scholar" : "https://scholar.google.com/citations?user=ELd4mo0AAAAJ&hl=en",
 		"orcid" : "https://orcid.org/0000-0001-5385-3339",

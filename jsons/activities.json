@@ -1,7 +1,10 @@
 {
 
     "awards" :[
-
+        {
+            "date": "2024",
+            "content": "<a href=\"images/events/aeon_tutorial_ecml2024/award/jpeg\">Session with big attendance</a> for a <a href=\"https://aeon-tutorials.github.io/ECML-2024/\">tutorial on time series machine learning</a> myself and <a href=\"https://www.aeon-toolkit.org/en/stable/\">the rest of aeon-toolkit's core developers</a> gave at the <a href=\"https://ecmlpkdd.org/2024/\">2024 ECML/PKDD conference</a>."
+        },
         {
             "date" : "2018",
             "content" : "10th Place Award at the <a href=\"https://www.ul.edu.lb/media/announcements/default.aspx?facultyId=8&announcementId=5726\">Lebanese University Collegiate Programming Contest (LU-CPC)</a>"
