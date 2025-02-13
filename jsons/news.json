@@ -1,6 +1,18 @@
 {
 	"news":[
 		{
+			"date": "2025-01",
+			"content": "In Strasbourg attending the French conference <a href=\"https://www.egc2025.cnrs.fr/\">EGC 2025</a>"
+		},
+		{
+			"date": "2025-01",
+			"content": "Succesfully defended my PhD titled Deep Learning for Time Series Analysis with Application on Human Motion !"
+		},
+		{
+			"date": "2024-12",
+			"content": "Look into the LITE: One journal paper accepted in <a href=\"https://doi.org/10.1007/s41060-024-00708-5\">JDSA</a> on multivariate time series classification"
+		},
+		{
 			"date": "2024-10",
 			"content": "One paper done by my intern <a href=\"https://www.linkedin.com/in/oumaima-badi-837060237/\">Oumaima Badi</a>, titled \"COCALITE: A Hybrid Model COmbining CAtch22 and LITE for Time Series Classification\" got accepted at the <a href=\"https://bigdataieee.org/\">2024 IEEE International conference on Big Data</a>"
 		},

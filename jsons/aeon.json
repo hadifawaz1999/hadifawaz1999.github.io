@@ -16,7 +16,7 @@
 
     "mentor": [
         {
-            "date": "2024-now",
+            "date": "2024",
             "content": "As part of the <a href=\"https://summerofcode.withgoogle.com/\">Google Summer of Code (GSoC)</a> program under the affiliation of <a href=\"https://numfocus.org/sponsored-projects/affiliated-projects\">NumFOCUS</a>, I am mentoring <a href=\"https://github.com/aadya940\">Aadya Chinubhai</a> on a project that focuses on implementing in <a href=\"https://www.aeon-toolkit.org/en/stable/\">aeon-toolkit</a> deep learning based models for time series clustering. More details about the GSoC project <a href=\"https://summerofcode.withgoogle.com/programs/2024/projects/Hvd0DfkD\">here</a> and detailed weekly updated Medium blogs <a href=\"https://medium.com/@aadyachinubhai\">here</a>."
         }
     ],
