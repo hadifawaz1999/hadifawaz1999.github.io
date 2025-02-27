@@ -382,6 +382,46 @@ $(document).ready(function () {
 			$("#students-masters").append('<li>' + student_string + partner_string + '.</li>');
 		}
 		// graduated
+		var numToshow = 5;
+		for (var i = 0; i < data.past_master.length; i++) {
+			partner_string = '<br>Co-supervised with ';
+			for (e = 0; e < data.past_master[i].partners.length; e++) {
+				if (e > 0) {
+					if (e == (data.past_master[i].partners.length - 1)) {
+						partner_string = partner_string + ' and ';
+					} else {
+						partner_string = partner_string + ', ';
+					}
+				}
+				partner_string = partner_string + '<a href="' + data.past_master[i].partners_links[e] + '" target="_blank">' + data.past_master[i].partners[e] + '</a>';
+			}
+			if (data.past_master[i].link != '') {
+				student_string = '<B><a href="' + data.past_master[i].link + '" target="_blank">' + data.past_master[i].name + '</a></B>' + ' <B>(' + data.past_master[i].date + '):</B> ' + data.past_master[i].topic + '.';
+			} else {
+				student_string = '<B><a href="#research">' + data.past_master[i].name + '</a></B>' + ' <B>(' + data.past_master[i].date + '):</B> ' + data.past_master[i].topic + '.';
+			}
+			if (i < numToshow)
+			{
+				$("#students-graduated").append('<li style=\"display: list-item;\">' + student_string + partner_string + '.</li>');
+			}
+			else
+			{
+				$("#students-graduated").append('<li style=\"display: none;\">' + student_string + partner_string + '.</li>');
+			}
+		}
+
+		size_li = $("#students-graduated li").length;
+		x = numToshow;
+		$('#master-see-more').click(function () {
+			x = (x + 1 <= size_li) ? x + 5 : size_li;
+			$('#students-graduated li:lt(' + x + ')').show();
+		});
+		$('#master-see-less').click(function () {
+			x = (x - 5 < 0) ? 5 : x - 5;
+			x = (x <= 5) ? 5 : x;
+			$('#students-graduated li').not(':lt(' + x + ')').hide();
+		});
+
 	});
 });
 

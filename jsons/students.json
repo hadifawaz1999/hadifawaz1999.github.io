@@ -107,96 +107,46 @@
 	],
 	"master":[
 		{
-			"name": "Javidan Abdullayev",
-			"link": "https://az.linkedin.com/in/cavidan-abdullayev-83289815b",
-			"date": "Spring semester 2022",
+			"name": "Victor Thiebaut",
+			"link": "https://www.linkedin.com/in/victor-thiebaut-0a0551261/",
+			"date": "2025",
 			"position" : "Master student",
-			"topic": "Knowledge distillation for time series",
-			"project": "",
-			"partners": ["G. Forestier", "J. Weber"],
-			"partners_links": ["https://germain-forestier.info", "https://www.jonathan-weber.eu"]
-		},
-		{
-			"name": "Amir Ayed",
-			"link": "https://www.linkedin.com/in/ing-amir-ayed/",
-			"date": "Spring semester 2022",
-			"position" : "Master student",
-			"topic": "Deep generative models for skeleton data",
-			"project": "DELEGATION",
-			"partners": ["G. Forestier", "J. Weber"],
-			"partners_links": ["https://germain-forestier.info", "https://www.jonathan-weber.eu"]
-		},
-		{
-			"name": "Asmaa Cherif",
-			"link": "https://fr.linkedin.com/in/asmaa-cherif",
-			"date": "Spring semester 2022",
-			"position" : "Master student",
-			"topic": "Deep Learning for human motion analysis in rehabilitation",
-			"project": "",
-			"partners": ["G. Forestier", "J. Weber"],
-			"partners_links": ["https://germain-forestier.info", "https://www.jonathan-weber.eu"]
-		},
-		{
-			"name": "Ali El Hadi Ismail Fawaz",
-			"link": "https://fr.linkedin.com/in/ali-el-hadi-ismail-fawaz",
-			"date": "Spring semester 2022",
-			"position" : "Master student",
-			"topic": "Deep Learning for time series analysis",
-			"project": "",
-			"partners": ["G. Forestier", "J. Weber"],
-			"partners_links": ["https://germain-forestier.info", "https://www.jonathan-weber.eu"]
-		},
-		{
-			"name": "Elvin Ismayilzada",
-			"link": "https://az.linkedin.com/in/elvin-ismayilzada-4679251a3",
-			"date": "Spring semester 2022",
-			"position" : "Master student",
-			"topic": "Self-attention for time series classification",
-			"project": "",
-			"partners": ["G. Forestier", "J. Weber"],
-			"partners_links": ["https://germain-forestier.info", "https://www.jonathan-weber.eu"]
+			"topic": "Development of Efficient Deep Learning Methods for Multi-Modal and Multi-Scale Earth Observation Data",
+			"project": "M2-BDA",
+			"partners": ["Germain Forestier"],
+			"partners_links": ["https://germain-forestier.info"]
 		}
 	],
-	"past-master":[
+	"past_master":[
 		{
-			"name": "Amira Ayadi",
-			"link": "https://www.linkedin.com/in/ayadi-amira-439186185/?originalSubdomain=fr",
-			"date": "Spring semester 2021",
+			"name": "Oumaima Badi",
+			"link": "https://www.linkedin.com/in/oumaima-badi-837060237/",
+			"date": "2024",
 			"position" : "Master student",
-			"topic": "Deep Learning for human motion analysis in personalized rehabilitation",
-			"project": "DeepRehab",
-			"partners": ["G. Forestier", "J. Weber"],
-			"partners_links": ["https://germain-forestier.info", "https://www.jonathan-weber.eu"]
+			"topic": "Deep Learning for time series classification",
+			"project": "MSD",
+			"partners": ["Maxime Devanne"],
+			"partners_links": ["https://maxime-devanne.com/"]
 		},
 		{
-			"name": "Emel Ay",
-			"link": "https://fr.linkedin.com/in/emel-ay-bb903718",
-			"date": "Spring semester 2021",
+			"name": "Hadjar Aroua Ferrar",
+			"link": "https://github.com/iivvy",
+			"date": "2024",
 			"position" : "Master student",
-			"topic": "Knowledge distillation for time series",
-			"project": "",
-			"partners": ["G. Forestier", "J. Weber"],
-			"partners_links": ["https://germain-forestier.info", "https://www.jonathan-weber.eu"]
+			"topic": "Deep Learning for skeleton based human motion generation",
+			"project": "DELEGATION",
+			"partners": ["Maxime Devanne"],
+			"partners_links": ["https://maxime-devanne.com/"]
 		},
 		{
-			"name": "Vasile Giurgi",
-			"link": "https://www.linkedin.com/in/vasile-giurgi/",
-			"date": "Spring semester 2021",
+			"name": "Abir Benaissa",
+			"link": "https://github.com/abirbenaissa",
+			"date": "2023",
 			"position" : "Master student",
-			"topic": "Deep learning for perception systems in autonomous vehicles",
-			"project": "",
-			"partners": ["J-P. Lauffenburger", "T. Josso-Laurain"],
-			"partners_links": ["http://www.miam.mips.uha.fr/?page=membres&membre=lauffenburger&LanguageType=fr", "http://www.miam.mips.uha.fr/?page=membres&membre=josso_laurain_&LanguageType=fr"]
-		},
-		{
-			"name": "Laurent Baltenweck",
-			"link": "",
-			"date": "Spring semester 2021",
-			"position" : "Master student",
-			"topic": "Deep learning for image segmentation in the context of theater show",
-			"project": "",
-			"partners": ["T. Josso-Laurain"],
-			"partners_links": ["http://www.miam.mips.uha.fr/?page=membres&membre=josso_laurain_&LanguageType=fr"]
+			"topic": "Deep Learning for skeleton based human motion generation",
+			"project": "DELEGATION",
+			"partners": ["Maxime Devanne"],
+			"partners_links": ["https://maxime-devanne.com/"]
 		}
 	]
 }
