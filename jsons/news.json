@@ -1,6 +1,10 @@
 {
 	"news":[
 		{
+			"date": "2025-02",
+			"content": "My thesis manuscript is now on arxiv ! <a href=\"https://arxiv.org/abs/2502.19364\">\"Deep Learning For Time Series Analysis With Application On Human Motion\"</a>"
+		},
+		{
 			"date": "2025-01",
 			"content": "In Strasbourg attending the French conference <a href=\"https://www.egc2025.cnrs.fr/\">EGC 2025</a>"
 		},

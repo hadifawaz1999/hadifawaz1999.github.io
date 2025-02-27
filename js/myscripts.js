@@ -88,7 +88,7 @@ $(document).ready(function () {
 				}
 				school_string = school_string + '<a href="' + data.education[i].school_links[e] + '" target="_blank"> ' + data.education[i].school[e] + '</a>';
 			}
-			$("#education").append('<li><B>' + data.education[i].date + ':</B> ' + data.education[i].degree + ' at ' + school_string + '</li>');
+			$("#education").append('<li><B>' + data.education[i].date + ':</B> ' + data.education[i].degree + ' at ' + school_string + '. ' + data.education[i].content + '</li>');
 		}
 
 		// responsabilities
