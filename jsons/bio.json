@@ -25,28 +25,28 @@
 			"degree": "PhD in Computer Science",
 			"school": ["Université de Haute-Alsace"],
 			"school_links": ["https://www.uha.fr/fr/index.html"],
-			"content": "Deep Learning for Time Series Analysis with Application on Human Motion"
+			"content": "Deep Learning for Time Series Analysis with Application on Human Motion. <a href=\"https://arxiv.org/abs/2502.19364\">[manuscript on arxiv]</a>"
 		},
 		{
 			"date" : "2022",
 			"degree" : "Master in Science, <a href=\"https://micas.telecom-paris.fr/\">MICAS</a> program with highest honours",
 			"school" : ["Telecom Paris","Institut Polytechinque de Paris"],
 			"school_links" : ["https://www.telecom-paris.fr/","https://www.ip-paris.fr/"],
-			"content" : "M.Sc. with highest honours"
+			"content" : "Graduated with highest honours"
 		},
 		{
 			"date": "2022",
-			"degree": "Bachelor Degree in Electrical and Telecommunication Engineering",
+			"degree": "Bachelor Degree in Engineering",
 			"school": ["Lebanese University", "Faculty of Engineering"],
 			"school_links": ["https://www.ul.edu.lb/", "http://www.ulfg.ul.edu.lb/"],
-			"content": "Bachelor Degree in Electrical and Telecommunication Engineering"
+			"content": "Bachelor Degree in Electrical and Telecommunication Engineering, Graduated with honours"
 		},
 		{
 			"date": "2017",
 			"degree": "Bac Degree in General Science",
 			"school": ["Collège des Pères Antonins"],
 			"school_links": ["http://www.cpantonins.edu.lb/"],
-			"content": "General Science"
+			"content": "General Science, Graduated with honours"
 		}
 	],
 	"subreviewer":[
