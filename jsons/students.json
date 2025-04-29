@@ -113,8 +113,8 @@
 			"position" : "Master student",
 			"topic": "Development of Efficient Deep Learning Methods for Multi-Modal and Multi-Scale Earth Observation Data",
 			"project": "M2-BDA",
-			"partners": ["Germain Forestier"],
-			"partners_links": ["https://germain-forestier.info"]
+			"partners": ["Germain Forestier", "Maxime Devanne", "Jonathan Weber"],
+			"partners_links": ["https://germain-forestier.info", "https://maxime-devanne.com/", "https://www.jonathan-weber.eu/"]
 		}
 	],
 	"past_master":[
@@ -125,8 +125,8 @@
 			"position" : "Master student",
 			"topic": "Deep Learning for time series classification",
 			"project": "MSD",
-			"partners": ["Maxime Devanne"],
-			"partners_links": ["https://maxime-devanne.com/"]
+			"partners": ["Maxime Devanne", "Jonathan Weber", "Germain Forestier"],
+			"partners_links": ["https://maxime-devanne.com/", "https://www.jonathan-weber.eu/", "https://germain-forestier.info/"]
 		},
 		{
 			"name": "Hadjar Aroua Ferrar",
@@ -135,8 +135,8 @@
 			"position" : "Master student",
 			"topic": "Deep Learning for skeleton based human motion generation",
 			"project": "DELEGATION",
-			"partners": ["Maxime Devanne"],
-			"partners_links": ["https://maxime-devanne.com/"]
+			"partners": ["Maxime Devanne", "Jonathan Weber", "Germain Forestier"],
+			"partners_links": ["https://maxime-devanne.com/", "https://www.jonathan-weber.eu/", "https://germain-forestier.info/"]
 		},
 		{
 			"name": "Abir Benaissa",
@@ -145,8 +145,8 @@
 			"position" : "Master student",
 			"topic": "Deep Learning for skeleton based human motion generation",
 			"project": "DELEGATION",
-			"partners": ["Maxime Devanne"],
-			"partners_links": ["https://maxime-devanne.com/"]
+			"partners": ["Maxime Devanne", "Jonathan Weber", "Germain Forestier"],
+			"partners_links": ["https://maxime-devanne.com/", "https://www.jonathan-weber.eu/", "https://germain-forestier.info/"]
 		}
 	]
 }

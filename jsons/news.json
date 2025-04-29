@@ -1,6 +1,14 @@
 {
 	"news":[
 		{
+			"date": "2025-04",
+			"content": "One paper accepted at <a href=\"https://2025.ijcnn.org/\">IJCNN 2025</a> about diversity in deep learning ensembles for time series classification !"
+		},
+		{
+			"date": "2025-03",
+			"content": "Participating in the <a href=\"https://anr.fr/Projet-ANR-24-CE23-1130\">ANR M2-BDA</a> Kickoff event focused on geoscience data for environmental monitoring."
+		},
+		{
 			"date": "2025-02",
 			"content": "My thesis manuscript is now on arxiv ! <a href=\"https://arxiv.org/abs/2502.19364\">\"Deep Learning For Time Series Analysis With Application On Human Motion\"</a>"
 		},
