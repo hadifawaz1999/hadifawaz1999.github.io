@@ -1,6 +1,10 @@
 {
 	"news":[
 		{
+			"date": "2025-05",
+			"content": "A <a href=\"https://summerofcode.withgoogle.com/programs/2025/projects/arjEn266\">Google Summer of Code project</a> is accepted ! Topic: Deep Learning for Time Series Forecasting with <a href=\"https://www.aeon-toolkit.org/en/stable/\">aeon</a>"
+		},
+		{
 			"date": "2025-04",
 			"content": "One paper accepted at <a href=\"https://2025.ijcnn.org/\">IJCNN 2025</a> about diversity in deep learning ensembles for time series classification !"
 		},
