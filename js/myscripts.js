@@ -548,7 +548,8 @@ $(document).ready(function () {
 $(document).ready(function () {
 	$.get('publis/my_publis.bib', function (data) {
 		res = bibtexParse.toJSON(data);
-
+		
+		cptArxiv = 0;
 		cptIntArticle = 0;
 		cptIntConf = 0;
 		cptChapter = 0;
@@ -597,8 +598,29 @@ $(document).ready(function () {
 			}
 
 			link_string += '</div>'
+			
+			if (res[i].entryType === "article" &&
+				res[i].entryTags.journal.includes("arXiv")) {
+				
+				// arxiv
+				cptArxiv++;
+				publi_string = authors_string + '.<br> <a href=\"' + res[i].entryTags.pdf + '\">' + res[i].entryTags.title + '</a>.<br><i>' + res[i].entryTags.journal + res[i].entryTags.year + '.</i><br>' + link_string;
+				
+				$("#art_arxiv").append(
+					'<hr><div id=\"wrapper\" style=\"margin-left: 40px\">' + 
+					'[' + cptArxiv + ']' +
+					'<img src=' + res[i].entryTags.image_source +
+					' class=\"center-img\" style=\"margin-left: 20px; margin-right: 20px\">' +
+					'<div class=\"center-txt\">' + publi_string + '</div>'
+					)
+				$("#art_arxiv").append('<tr id="bib_' + res[i].citationKey + '" class="bibtex noshown"><td class="bibtex-col"><pre>\n@article{' + res[i].citationKey + ',\n  author = {' + res[i].entryTags.author + '},\n  title = {' + res[i].entryTags.title + '},\n  journal = {' + res[i].entryTags.journal + '},\n  year = {' + res[i].entryTags.year + '}\n}' + '</td></tr>');
+				
+				if (i == res.length - 1){
+					$('#art_arxiv').append('<hr>')
+				}
 
-			if (res[i].entryType == "article") {
+			}
+			else if (res[i].entryType == "article") {
 				// article
 				cptIntArticle++;
 				publi_string = authors_string + '.<br> <a href=\"' + res[i].entryTags.url + '\">' + res[i].entryTags.title + '</a>.<br><i>' + res[i].entryTags.journal + ', ' + res[i].entryTags.volume+'('+res[i].entryTags.number+')' +', ' + res[i].entryTags.pages + ', ' + res[i].entryTags.year + '.</i><br>' + link_string;

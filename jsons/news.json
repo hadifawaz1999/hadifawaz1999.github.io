@@ -1,6 +1,14 @@
 {
 	"news":[
 		{
+			"date": "2025-07",
+			"content": "New paper on arxiv proposing <a href=\"https://msd-irimas.github.io/pages/DeepRehabPile/\">a new benchmark archive for skeleton-based human rehabilitation assessment</a>"
+		},
+		{
+			"date": "2025-06",
+			"content": "Two full length papers on time series analysis accepted at the <a href=\"https://ecml-aaltd.github.io/aaltd2025/\">AALTD</a> workshop at <a href=\"https://ecmlpkdd.org/2025/\">ECML-PKDD 2025</a>"
+		},
+		{
 			"date": "2025-05",
 			"content": "A <a href=\"https://summerofcode.withgoogle.com/programs/2025/projects/arjEn266\">Google Summer of Code project</a> is accepted ! Topic: Deep Learning for Time Series Forecasting with <a href=\"https://www.aeon-toolkit.org/en/stable/\">aeon</a>"
 		},

@@ -1,6 +1,10 @@
 {
     "maintainer": [
         {
+            "date": "2025-now",
+            "content": "Maintainer of the <a href=\"https://github.com/aeon-toolkit/aeon/tree/main/aeon/transformations/collection/self_supervised\">Self Supervised Learning</a> transformation sub-module."
+        },
+        {
             "date": "2023-now",
             "content": "Maintainer of the <a href=\"https://github.com/aeon-toolkit/aeon/tree/main/aeon/networks\">Networks module</a> in aeon and all of three Deep Learning sub-modules for <a href=\"https://github.com/aeon-toolkit/aeon/tree/main/aeon/classification/deep_learning\">Classification</a> / <a href=\"https://github.com/aeon-toolkit/aeon/tree/main/aeon/regression/deep_learning\">Regression</a> / <a href=\"https://github.com/aeon-toolkit/aeon/tree/main/aeon/clustering/deep_learning\">Clustering</a>."
         },
@@ -16,12 +20,12 @@
 
     "mentor": [
         {
-            "date": "2024",
-            "content": "Mentoring with Tony Bagnall and Matthew Middlehurst: <a href=\"https://github.com/aadya940\">Aadya Chinubhai</a> on a project that focuses on implementing deep learning based models for time series clustering. More details about the GSoC project <a href=\"https://summerofcode.withgoogle.com/programs/2024/projects/Hvd0DfkD\">here</a> and detailed weekly updated Medium blogs <a href=\"https://medium.com/@aadyachinubhai\">here</a>."
-        },
-        {
             "date": "2025",
             "content": "Mentoring with Tony Bagnall and Matthew Middlehurs: <a href=\"https://github.com/lucifer4073\">Balgopal Moharana</a> on a project that focuses on implementing deep learning based models for time series forecasting. More details about the GSoC project <a href=\"https://summerofcode.withgoogle.com/programs/2025/projects/arjEn266\">here</a>."
+        },
+        {
+            "date": "2024",
+            "content": "Mentoring with Tony Bagnall and Matthew Middlehurst: <a href=\"https://github.com/aadya940\">Aadya Chinubhai</a> on a project that focuses on implementing deep learning based models for time series clustering. More details about the GSoC project <a href=\"https://summerofcode.withgoogle.com/programs/2024/projects/Hvd0DfkD\">here</a> and detailed weekly updated Medium blogs <a href=\"https://medium.com/@aadyachinubhai\">here</a>."
         }
     ],
 
