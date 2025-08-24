@@ -2,7 +2,15 @@
 	"news":[
 		{
 			"date": "2025-08",
+			"content": "A new medium blog about <a href=\"https://medium.com/@aeon.toolkit/forecasting-horizons-da426b7a6c24\">forecasting horizons</a> in collaboration with <a href=\"https://timeseriesclassification.com/\">Tony Bagnal</a> for this year's <a href=\"https://www.aeon-toolkit.org/en/stable/\">aeon</a> GSoC."
+		},
+		{
+			"date": "2025-08",
 			"content": "Two workshop papers now available on the <a href=\"https://ecml-aaltd.github.io/aaltd2025/program.html\">AALTD workshop webpage</a>. See you in ECML !"
+		},
+		{
+			"date": "2025-07",
+			"content": "<a href=\"https://github.com/MSD-IRIMAS/docker-tutorial\">A new tutorial on github</a> for using <a href=\"https://www.docker.com/\">Docker</a> with <a href=\"https://www.tensorflow.org/\">tensorflow</a> for GPU acceleration."
 		},
 		{
 			"date": "2025-07",
@@ -203,5 +211,6 @@
 
 	]
 }
+
 
 
