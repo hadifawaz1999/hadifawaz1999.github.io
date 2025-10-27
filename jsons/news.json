@@ -1,6 +1,14 @@
 {
 	"news":[
 		{
+			"date": "2025-10",
+			"content": "At Paris to present <a href=\"https://www.aeon-toolkit.org/en/stable/\">aeon-toolkit</a> at the <a href=\"https://p16.inria.fr/fr/\">P16 annual meetup</a>"
+		},
+		{
+			"date": "2025-09",
+			"content": "I am now the scientific coordinator of the <a href=\"https://www.goelan.uha.fr/html/learn_more.html\">GOELAN</a> project, part of <a href=\"https://anr.fr/ProjetIA-17-NCUN-0014\">NCU-ELAN</a>"
+		},
+		{
 			"date": "2025-09",
 			"content": "Presenting a <a href=\"https://aeon-tutorials.github.io/ECML-Demo-2025/\">demo</a> at <a href=\"https://ecmlpkdd.org/2025/\">ECML-PKDD 2025</a> on time series machine learning with <a href=\"https://www.aeon-toolkit.org/en/stable/\">aeon-toolkit</a>."
 		},
