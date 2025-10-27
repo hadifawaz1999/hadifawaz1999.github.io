@@ -2,6 +2,10 @@
 	"news":[
 		{
 			"date": "2025-10",
+			"content": "Master's internship position on <a href=\"https://maxime-devanne.com/jobs/internship_position_delegation_generation_rehab_2026.pdf\">deep generative models for rehabilitation exercises</a>"
+		},
+		{
+			"date": "2025-10",
 			"content": "At Paris to present <a href=\"https://www.aeon-toolkit.org/en/stable/\">aeon-toolkit</a> at the <a href=\"https://p16.inria.fr/fr/\">P16 annual meetup</a>"
 		},
 		{
@@ -231,6 +235,7 @@
 
 	]
 }
+
 
 
 
