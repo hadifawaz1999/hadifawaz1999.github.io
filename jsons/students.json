@@ -1,62 +1,14 @@
 {
 	"phd":[
 		{
-			"name": "Vasile Giurgi",
-			"link": "https://www.linkedin.com/in/vasile-giurgi/",
-			"date": "2022-",
-			"position" : "Master student",
-			"topic": "Data fusion and deep learning for perception systems in autonomous vehicles",
-			"partners": ["J-P. Lauffenburger", "T. Josso-Laurain"],
-			"partners_links": ["http://www.miam.mips.uha.fr/?page=membres&membre=lauffenburger&LanguageType=fr", "http://www.miam.mips.uha.fr/?page=membres&membre=josso_laurain_&LanguageType=fr"]
-		},
-		{
-		 	"name": "Mouad Hamri",
-		 	"link": "https://fr.linkedin.com/in/mouad-hamri-3635aa19",
-		 	"position" : "PhD student",
-		 	"date": "2021-",
-		 	"topic": "Deep learning for intelligent data extraction from invoices",
-		 	"enterprise": "Syentys",
-		 	"enterprise_link": "https://www.syentys.com",
-		 	"partners": ["M. Hassenforder", "J. Weber"],
-		 	"partners_links": ["https://www.linkedin.com/in/michel-hassenforder-1046115/", "https://www.jonathan-weber.eu"]
-		},
-		{
-			"name": "Gautier Pialla",
-			"link": "https://fr.linkedin.com/in/gpialla",
-			"date": "2020-",
+			"name": "Victor Thiebaut",
+			"link": "https://www.linkedin.com/in/victor-thiebaut-0a0551261/",
+			"date": "2025-",
 			"position" : "PhD student",
-			"topic": "Deep learning for time series",
-			"partners": ["G. Forestier", "L.Idoumghar", "J. Weber"],
-			"partners_links": ["https://germain-forestier.info", "http://www.mage.fst.uha.fr/idoumghar/", "https://www.jonathan-weber.eu"]
-		},
-		{
-			"name": "Olivier Schirm",
-			"link": "#",
-			"position" : "PhD student",
-			"date": "2020-",
-			"topic": "Spatio-temporal data analysis for automatic construction of hiking maps",
-			"enterprise": "Visorando",
-			"enterprise_link": "https://www.visorando.com/",
-			"partners": ["C. Wemmert", "G. Forestier", "J. Weber"],
-			"partners_links": ["https://wemmertc.github.io/webpage/", "https://germain-forestier.info", "https://www.jonathan-weber.eu"]
-		},
-		{
-			"name": "Mihreteab Negash Geletu",
-			"link": "https://et.linkedin.com/in/mihreteab-negash-09ba7537",
-			"position" : "PhD student",
-			"date": "2020-",
-			"topic": "Data fusion for perception systems in autonomous vehicles",
-			"partners": ["J-P. Lauffenburger", "T. Josso-Laurain", "M. Mamo"],
-			"partners_links": ["http://www.miam.mips.uha.fr/?page=membres&membre=lauffenburger&LanguageType=fr", "http://www.miam.mips.uha.fr/?page=membres&membre=josso_laurain_&LanguageType=fr", "https://et.linkedin.com/in/mengesha-mamo-0574008b"]
-		},
-		{
-			"name": "Milos Cuculovic",
-			"link": "https://ch.linkedin.com/in/milos-cuculovic-pmp-459b575a",
-			"date": "2019-",
-			"position" : "PhD student",
-			"topic": "Publishing process modeling and optimization",
-			"partners": ["M. Hassenforder", "F. Fondement"],
-			"partners_links": ["https://www.linkedin.com/in/michel-hassenforder-1046115/", "http://fondement.free.fr/lgl/"]
+			"topic": "Development of Efficient Deep Learning Methods for Multi-Modal and Multi-Scale Earth Observation Data",
+			"project": "M2-BDA",
+			"partners": ["Germain Forestier", "Cyril Meyer", "Anne Puissant"],
+			"partners_links": ["https://germain-forestier.info", "https://cyrilmeyer.eu/", "https://live.unistra.fr/live/annuaire/puissant-anne"]
 		}
 	],
 	"graduated":[
@@ -106,6 +58,8 @@
 		}
 	],
 	"master":[
+	],
+	"past_master":[
 		{
 			"name": "Victor Thiebaut",
 			"link": "https://www.linkedin.com/in/victor-thiebaut-0a0551261/",
@@ -115,9 +69,7 @@
 			"project": "M2-BDA",
 			"partners": ["Germain Forestier", "Maxime Devanne", "Jonathan Weber"],
 			"partners_links": ["https://germain-forestier.info", "https://maxime-devanne.com/", "https://www.jonathan-weber.eu/"]
-		}
-	],
-	"past_master":[
+		},
 		{
 			"name": "Oumaima Badi",
 			"link": "https://www.linkedin.com/in/oumaima-badi-837060237/",
