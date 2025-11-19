@@ -3,7 +3,8 @@
 	"responsibilities":[
 		{
 			"date": "2025-now",
-			"title": "Scientific Coordinator of the <a href=\"https://www.goelan.uha.fr/\">GOELAN chat bot</a> as part of the <a href=\"https://anr.fr/ProjetIA-17-NCUN-0014\">NCU-ELAN</a> project"
+			"title": "Scientific Coordinator of the <a href=\"https://www.goelan.uha.fr/\">GOELAN chat bot</a> as part of the <a href=\"https://anr.fr/ProjetIA-17-NCUN-0014\">NCU-ELAN</a> project",
+			"place": "<a href=\"https://www.uha.fr/en/index.html\">UHA</a>"
 		},
 		{
 			"date" : "2024-now",
@@ -134,5 +135,6 @@
 
 	]
 }
+
 
 
