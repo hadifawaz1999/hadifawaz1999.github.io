@@ -1,0 +1,40 @@
+[
+    {
+        "id": "thor-son-of-asgard-2004",
+        "id_order": 1,
+        "series": "Thor: Son of Asgard",
+        "type": "Limited Series",
+        "year_start": 2004,
+        "year_end": 2005, 
+        "issues": "1-12",
+        "rating": 3.67,
+        "review": "",
+        "places": ["Asgard"],
+        "characters": ["Thor Odinson","Hela","Loki Laufeyson","Odin Borson","Sif","Balder Odinson","Fandral","Heimdal","Hogun","Karnilla","Volstagg","Skuld","Urd","Verdandi","Valkyrie","Enchantress","Freyja Freyrdottir","Lorelei"],
+        "writer": "C. B. Cebulski",
+        "tags": ["Asgard", "mythology"],
+        "pages": 277,
+        "age": "plastic",
+        "references": null,
+        "comments": null
+    },
+    {
+        "id": "thor-son-of-asgard-2004",
+        "id_order": 1,
+        "series": "Thor: Son of Asgard",
+        "type": "Limited Series",
+        "year_start": 2004,
+        "year_end": 2005, 
+        "issues": "1-12",
+        "rating": 3.67,
+        "review": "",
+        "places": ["Asgard"],
+        "characters": ["Thor Odinson","Hela","Loki Laufeyson","Odin Borson","Sif","Balder Odinson","Fandral","Heimdal","Hogun","Karnilla","Volstagg","Skuld","Urd","Verdandi","Valkyrie","Enchantress","Freyja Freyrdottir","Lorelei"],
+        "writer": "C. B. Cebulski",
+        "tags": ["Asgard", "Mythology"],
+        "pages": 277,
+        "age": "plastic",
+        "references": null,
+        "comments": null
+    }
+]
