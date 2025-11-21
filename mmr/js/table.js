@@ -3,15 +3,16 @@ $(document).ready(function () {
 
     $.getJSON("data/comics.json", function (data) {
 
+        data.sort((a, b) => a.id_order - b.id_order);
+
         const table_body = document.getElementById("comics-table-view");
 
         var table_row;
 
-        var id_col, series_col, type_col, years_col, age_col, writer_col, places_col, pages_col, rating_col, issues_col, tags_col, char_col;
+        var id_col, series_col, type_col, years_col, age_col, writer_col, pages_col, rating_col, issues_col, tags_col, char_col;
 
         var years_text;
         var tags_text;
-        var places_text;
 
         var button;
 
@@ -19,7 +20,6 @@ $(document).ready(function () {
 
             years_text = "";
             tags_text = "";
-            places_text = "";
 
             table_row = document.createElement("tr");
 
@@ -29,7 +29,6 @@ $(document).ready(function () {
             years_col = document.createElement("td");
             age_col = document.createElement("td");
             writer_col = document.createElement("td");
-            places_col = document.createElement("td");
             pages_col = document.createElement("td");
             char_col = document.createElement("td");
             rating_col = document.createElement("td");
@@ -50,13 +49,6 @@ $(document).ready(function () {
                 }
             }
 
-            for (var j = 0; j < data[i].places.length; j++) {
-                places_text = places_text + data[i].places[j];
-                if (j < data[i].places.length - 1) {
-                    places_text = places_text + ", ";
-                }
-            }
-
             id_col.textContent = data[i].id_order;
             table_row.appendChild(id_col);
 
@@ -74,9 +66,6 @@ $(document).ready(function () {
 
             writer_col.textContent = data[i].writer;
             table_row.appendChild(writer_col);
-
-            places_col.textContent = places_text;
-            table_row.appendChild(places_col);
 
             button = document.createElement("button");
             button.textContent = "Click to view";
