@@ -74,6 +74,10 @@ tbody tr:nth-child(odd) {
 .menu-btn:hover {
   background: #374151;
 }
+.menu-btn.active {
+  background: #0066ff;
+  color: #fff;
+}
 
 
 #characters-modal-overlay {

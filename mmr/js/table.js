@@ -1,3 +1,5 @@
+
+function initTableView() {
 // loading the table view of the comics dataset
 $(document).ready(function () {
 
@@ -93,6 +95,7 @@ $(document).ready(function () {
     });
 
 });
+}
 
 function openCharsModal(chars_list) {
     $.getJSON("data/chars.json", function (chars_data){
