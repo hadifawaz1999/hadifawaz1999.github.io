@@ -31,6 +31,9 @@ function loadPage(page, event) {
       if (page === "table.html" && typeof initTableView === "function") {
         setTimeout(() => initTableView(), 0);
       }
+      if (page == "graph_chars.html" && typeof initGraphCharsView == "function") {
+        setTimeout(() => initGraphCharsView(), 0);
+      }
     })
     .catch(err => {
       document.getElementById("content").innerHTML = "<p>Error loading page.</p>";

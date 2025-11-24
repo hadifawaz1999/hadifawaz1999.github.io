@@ -1,22 +1,5 @@
 [
     {
-        "id_order": 0,
-        "series": "",
-        "type": "",
-        "year_start": 0,
-        "year_end": 0, 
-        "issues": "",
-        "rating": 0,
-        "review": "",
-        "characters": [],
-        "writer": "",
-        "tags": [],
-        "pages": 0,
-        "age": "",
-        "references": null,
-        "comments": null
-    },
-    {
         "id_order": 41,
         "series": "Amazing Spider-Man",
         "type": "Ongoing Series",

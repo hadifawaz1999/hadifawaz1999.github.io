@@ -170,3 +170,107 @@ tbody tr:nth-child(odd) {
     background: #005ef4;
     color: white;
 }
+
+#graph-chars {
+  width: 90vw;
+  height: 80vh;
+  margin: 2rem auto;
+  border: 1px solid #444;
+}
+
+
+/* Outer layout */
+.filter-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Each column box */
+.filter-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Label styling */
+.filter-label {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Search bar */
+.filter-search {
+  width: 240px;
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #1c1c1c;
+  color: #eee;
+  margin-bottom: 6px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.filter-search:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 5px #ffcc00;
+}
+
+/* Dropdown list */
+.filter-select {
+  width: 240px;
+  height: 220px;
+  border-radius: 8px;
+  background: #1b1b1b;
+  border: 1px solid #333;
+  color: #eee;
+  padding: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.filter-select option {
+  padding: 6px;
+}
+
+.filter-select:hover {
+  border-color: #ffcc00;
+}
+
+/* Make scrollbars look nicer */
+.filter-select::-webkit-scrollbar {
+  width: 8px;
+}
+.filter-select::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+.filter-select::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+
+#graph-wrapper {
+    width: 70%;            /* control how wide it is */
+    max-width: 70%;      /* prevent super large screens from stretching it */
+    margin: 0 auto;        /* centers it */
+    padding: 20px 0;
+}
+
+#graph-chars  {
+    width: 70%;           /* narrower than full page */
+    max-width: 70%;     /* don’t stretch too much on big screens */
+    margin: 0 auto;       /* center horizontally */
+    height: 600px;        /* IMPORTANT: gives it a visible height */
+    border: 1px solid #444;
+    border-radius: 8px;
+    overflow: hidden;
+}
