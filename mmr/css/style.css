@@ -274,3 +274,45 @@ tbody tr:nth-child(odd) {
     border-radius: 8px;
     overflow: hidden;
 }
+
+.node-popup {
+  position: absolute;
+  background: #1e1e1e;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-size: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  max-width: 240px;
+  z-index: 10;
+}
+
+.node-popup a {
+  color: #4ea3ff;
+  text-decoration: none;
+}
+
+.node-popup a:hover {
+  text-decoration: underline;
+}
+
+.toggle-btn {
+  width: 100%;
+  padding: 10px 14px;
+  background: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.toggle-btn:hover {
+  background: #1976d2;
+}
+
+.toggle-btn:active {
+  transform: scale(0.97);
+}

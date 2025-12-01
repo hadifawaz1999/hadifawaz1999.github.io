@@ -2,7 +2,7 @@
 
 <div id="graph-filters" style="width:100%; display:flex; justify-content:center; margin:20px 0;">
   <div class="filter-container">
-    
+
     <div class="filter-box">
       <label class="filter-label">Series</label>
       <input type="text" id="seriesSearch" class="filter-search" placeholder="Search series...">
@@ -19,7 +19,48 @@
 </div>
 
 
-<div id="graph-wrapper">
-    <div id="graph-chars"></div>
-</div>
+<!-- <div id="graph-wrapper">
+  <div id="graph-chars" style="position: relative;"></div>
+</div> -->
 
+<div id="graph-wrapper" style="display:flex; gap:20px; align-items:stretch;">
+
+  <!-- Left: graph container -->
+  <div id="graph-chars"
+    style="flex:1; position:relative; min-height:500px; border:1px solid #444; border-radius:8px; overflow:hidden;">
+    <!-- Sigma graph will render here -->
+  </div>
+
+  <!-- Right: shortest path panel -->
+  <aside id="path-panel" style="width:280px;">
+
+    <!-- Button always visible -->
+    <button id="togglePathPanel" class="toggle-btn" onclick="ToggleBFSbutton()">
+      Show Path Finder
+    </button>
+
+    <!-- Collapsible inner panel -->
+    <div id="pathPanelContent"
+      style="display:none; border:1px solid #444; border-radius:8px; padding:12px 16px; background:#111; font-size:0.9rem;">
+
+      <h2 style="margin-top:0; font-size:1.1rem;">Find Shortest Path</h2>
+
+      <div style="margin-bottom:10px;">
+        <label for="pathChar1" class="filter-label">From character</label>
+        <input type="text" id="pathChar1Search" class="filter-search" placeholder="Search characters...">
+        <select id="pathChar1" class="filter-select" size="6" style="width:100%;"></select>
+      </div>
+
+      <div style="margin-bottom:10px;">
+        <label for="pathChar2" class="filter-label">To character</label>
+        <input type="text" id="pathChar2Search" class="filter-search" placeholder="Search characters...">
+        <select id="pathChar2" class="filter-select" size="6" style="width:100%;"></select>
+      </div>
+
+      <button id="findShortestPathButton" style="width:100%; padding:6px; margin-top:4px; cursor:pointer;">Find Path (BFS)</button>
+
+      <div id="pathResult" style="margin-top:12px; min-height:40px; line-height:1.4;"></div>
+
+    </div>
+  </aside>
+</div>

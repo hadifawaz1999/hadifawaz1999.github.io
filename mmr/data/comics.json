@@ -23,7 +23,12 @@
         "pages": 0,
         "age": "Silver",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/3723338/the-amazing-spider-man-1",
+            "issue 2": "https://leagueofcomicgeeks.com/comic/9970910/the-amazing-spider-man-2",
+            "issue 3": "https://leagueofcomicgeeks.com/comic/5277466/the-amazing-spider-man-3"
+        }
     },
     {
         "id_order": 40,
@@ -46,7 +51,10 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/2806132/spider-man-season-one-hc"
+        }
     },
     {
         "id_order": 39,
@@ -76,7 +84,12 @@
         "pages": 0,
         "age": "Silver",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 19": "https://leagueofcomicgeeks.com/comic/6243477/fantastic-four-19",
+            "issue 20": "https://leagueofcomicgeeks.com/comic/5470729/fantastic-four-20",
+            "issue 21": "https://leagueofcomicgeeks.com/comic/3338128/fantastic-four-21"
+        }
     },
     {
         "id_order": 38,
@@ -102,7 +115,10 @@
         "pages": 0,
         "age": "Silver",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/2762934/fantastic-four-annual-1"
+        }
     },
     {
         "id_order": 37,
@@ -134,7 +150,12 @@
         "pages": 0,
         "age": "Silver",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 16": "https://leagueofcomicgeeks.com/comic/9509189/fantastic-four-16",
+            "issue 17": "https://leagueofcomicgeeks.com/comic/6224331/fantastic-four-17",
+            "issue 18": "https://leagueofcomicgeeks.com/comic/9471512/fantastic-four-18"
+        }
     },
     {
         "id_order": 36,
@@ -161,7 +182,10 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/8300689/avengers-origins-ant-man-the-wasp-1"
+        }
     },
     {
         "id_order": 35,
@@ -191,7 +215,19 @@
         "pages": 0,
         "age": "Silver",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 35": "https://leagueofcomicgeeks.com/comic/7193478/tales-to-astonish-35",
+            "issue 36": "https://leagueofcomicgeeks.com/comic/3760740/tales-to-astonish-36",
+            "issue 37": "https://leagueofcomicgeeks.com/comic/9639171/tales-to-astonish-37",
+            "issue 38": "https://leagueofcomicgeeks.com/comic/1964202/tales-to-astonish-38",
+            "issue 39": "https://leagueofcomicgeeks.com/comic/6013734/tales-to-astonish-39",
+            "issue 40": "https://leagueofcomicgeeks.com/comic/8443507/tales-to-astonish-40",
+            "issue 41": "https://leagueofcomicgeeks.com/comic/5452055/tales-to-astonish-41",
+            "issue 42": "https://leagueofcomicgeeks.com/comic/8282814/tales-to-astonish-42",
+            "issue 43": "https://leagueofcomicgeeks.com/comic/4212860/tales-to-astonish-43",
+            "issue 44": "https://leagueofcomicgeeks.com/comic/4762887/tales-to-astonish-44"
+        }
     },
     {
         "id_order": 34,
@@ -213,7 +249,10 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/5230218/ant-man-season-one-hc"
+        }
     },
     {
         "id_order": 33,
@@ -258,7 +297,10 @@
         "pages": 0,
         "age": "Silver",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/1226704/tales-to-astonish-27"
+        }
     },
     {
         "id_order": 31,
@@ -301,7 +343,13 @@
         "pages": 0,
         "age": "Silver",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 12": "https://leagueofcomicgeeks.com/comic/1572941/fantastic-four-12",
+            "issue 13": "https://leagueofcomicgeeks.com/comic/6158505/fantastic-four-13",
+            "issue 14": "https://leagueofcomicgeeks.com/comic/4812018/fantastic-four-14",
+            "issue 15": "https://leagueofcomicgeeks.com/comic/7955875/fantastic-four-15"
+        }
     },
     {
         "id_order": 30,
@@ -328,7 +376,15 @@
         "pages": 0,
         "age": "Silver",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/search/117849?keyword=Incredible%20Hulk",
+            "issue 2": "https://leagueofcomicgeeks.com/comic/1558206/the-incredible-hulk-2",
+            "issue 3": "https://leagueofcomicgeeks.com/comic/2360402/the-incredible-hulk-3",
+            "issue 4": "https://leagueofcomicgeeks.com/comic/8904487/the-incredible-hulk-4",
+            "issue 5": "https://leagueofcomicgeeks.com/comic/7375160/the-incredible-hulk-5",
+            "issue 6": "https://leagueofcomicgeeks.com/comic/7506368/the-incredible-hulk-6"
+        }
     },
     {
         "id_order": 29,
@@ -351,7 +407,10 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/2221741/hulk-season-one-hc"
+        }
     },
     {
         "id_order": 28,
@@ -389,7 +448,17 @@
         "pages": 0,
         "age": "Silver",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 83": "https://leagueofcomicgeeks.com/comic/1034084/journey-into-mystery-83",
+            "issue 84": "https://leagueofcomicgeeks.com/comic/3501508/journey-into-mystery-84",
+            "issue 85": "https://leagueofcomicgeeks.com/comic/2148810/journey-into-mystery-85",
+            "issue 86": "https://leagueofcomicgeeks.com/comic/2153485/journey-into-mystery-86",
+            "issue 87": "https://leagueofcomicgeeks.com/comic/4925152/journey-into-mystery-87",
+            "issue 88": "https://leagueofcomicgeeks.com/comic/4168477/journey-into-mystery-88",
+            "issue 89": "https://leagueofcomicgeeks.com/comic/6738672/journey-into-mystery-89",
+            "issue 90": "https://leagueofcomicgeeks.com/comic/8706914/journey-into-mystery-90"
+        }
     },
     {
         "id_order": 27,
@@ -419,7 +488,10 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/5469604/avengers-origins-thor-1"
+        }
     },
     {
         "id_order": 26,
@@ -445,7 +517,10 @@
         "pages": 0,
         "age": "Silver",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 15": "https://leagueofcomicgeeks.com/comic/5881528/amazing-fantasy-15"
+        }
     },
     {
         "id_order": 25,
@@ -487,7 +562,20 @@
         "pages": 0,
         "age": "Silver",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/2818246/fantastic-four-1",
+            "issue 2": "https://leagueofcomicgeeks.com/comic/5491303/fantastic-four-2",
+            "issue 3": "https://leagueofcomicgeeks.com/comic/8221430/fantastic-four-3",
+            "issue 4": "https://leagueofcomicgeeks.com/comic/7797516/fantastic-four-4",
+            "issue 5": "https://leagueofcomicgeeks.com/comic/9834720/fantastic-four-5",
+            "issue 6": "https://leagueofcomicgeeks.com/comic/4541174/fantastic-four-6",
+            "issue 7": "https://leagueofcomicgeeks.com/comic/3480476/fantastic-four-7",
+            "issue 8": "https://leagueofcomicgeeks.com/comic/8187054/fantastic-four-8",
+            "issue 9": "https://leagueofcomicgeeks.com/comic/6697509/fantastic-four-9",
+            "issue 10": "https://leagueofcomicgeeks.com/comic/6891495/fantastic-four-10",
+            "issue 11": "https://leagueofcomicgeeks.com/comic/1342767/fantastic-four-11"
+        }
     },
     {
         "id_order": 24,
@@ -516,7 +604,10 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/6753256/fantastic-four-season-one-hc"
+        }
     },
     {
         "id_order": 23,
@@ -540,7 +631,15 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/5109302/storm-1",
+            "issue 2": "https://leagueofcomicgeeks.com/comic/7480718/storm-2",
+            "issue 3": "https://leagueofcomicgeeks.com/comic/7382221/storm-3",
+            "issue 4": "https://leagueofcomicgeeks.com/comic/8146879/storm-4",
+            "issue 5": "https://leagueofcomicgeeks.com/comic/7743847/storm-5",
+            "issue 6": "https://leagueofcomicgeeks.com/comic/7451843/storm-6"
+        }
     },
     {
         "id_order": 22,
@@ -568,7 +667,14 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/6180662/angel-revelations-1",
+            "issue 2": "https://leagueofcomicgeeks.com/comic/5389142/angel-revelations-2",
+            "issue 3": "https://leagueofcomicgeeks.com/comic/1963116/angel-revelations-3",
+            "issue 4": "https://leagueofcomicgeeks.com/comic/3113700/angel-revelations-4",
+            "issue 5": "https://leagueofcomicgeeks.com/comic/2435174/angel-revelations-5"
+        }
     },
     {
         "id_order": 21,
@@ -587,7 +693,10 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/5707384/wolverine-hunger-1"
+        }
     },
     {
         "id_order": 20,
@@ -618,7 +727,22 @@
         "pages": 0,
         "age": "Copper",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 72": "https://leagueofcomicgeeks.com/comic/4544239/marvel-comics-presents-72",
+            "issue 73": "https://leagueofcomicgeeks.com/comic/5853989/marvel-comics-presents-73",
+            "issue 74": "https://leagueofcomicgeeks.com/comic/5195112/marvel-comics-presents-74",
+            "issue 75": "https://leagueofcomicgeeks.com/comic/5980936/marvel-comics-presents-75",
+            "issue 76": "https://leagueofcomicgeeks.com/comic/2192664/marvel-comics-presents-76",
+            "issue 77": "https://leagueofcomicgeeks.com/comic/1235038/marvel-comics-presents-77",
+            "issue 78": "https://leagueofcomicgeeks.com/comic/5294020/marvel-comics-presents-78",
+            "issue 79": "https://leagueofcomicgeeks.com/comic/8210609/marvel-comics-presents-79",
+            "issue 80": "https://leagueofcomicgeeks.com/comic/6493124/marvel-comics-presents-80",
+            "issue 81": "https://leagueofcomicgeeks.com/comic/3796645/marvel-comics-presents-81",
+            "issue 82": "https://leagueofcomicgeeks.com/comic/8169260/marvel-comics-presents-82",
+            "issue 83": "https://leagueofcomicgeeks.com/comic/7735360/marvel-comics-presents-83",
+            "issue 84": "https://leagueofcomicgeeks.com/comic/8156979/marvel-comics-presents-84"
+        }
     },
     {
         "id_order": 19,
@@ -642,7 +766,10 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/9896877/logan-shadow-society-1"
+        }
     },
     {
         "id_order": 18,
@@ -666,7 +793,13 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/8738975/born-1",
+            "issue 2": "https://leagueofcomicgeeks.com/comic/6443506/born-2",
+            "issue 3": "https://leagueofcomicgeeks.com/comic/4184338/born-3",
+            "issue 4": "https://leagueofcomicgeeks.com/comic/1934054/born-4"
+        }
     },
     {
         "id_order": 17,
@@ -689,7 +822,19 @@
         "pages": 0,
         "age": "Silver",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 110": "https://leagueofcomicgeeks.com/comic/7117749/strange-tales-110",
+            "issue 111": "https://leagueofcomicgeeks.com/comic/7727929/strange-tales-111",
+            "issue 114": "https://leagueofcomicgeeks.com/comic/2763837/strange-tales-114",
+            "issue 116": "https://leagueofcomicgeeks.com/comic/2618609/strange-tales-116",
+            "issue 117": "https://leagueofcomicgeeks.com/comic/9285660/strange-tales-117",
+            "issue 118": "https://leagueofcomicgeeks.com/comic/3687596/strange-tales-118",
+            "issue 119": "https://leagueofcomicgeeks.com/comic/7451939/strange-tales-119",
+            "issue 120": "https://leagueofcomicgeeks.com/comic/3697756/strange-tales-120",
+            "issue 121": "https://leagueofcomicgeeks.com/comic/4626260/strange-tales-121",
+            "issue 122": "https://leagueofcomicgeeks.com/comic/4915832/strange-tales-122"
+        }
     },
     {
         "id_order": 16,
@@ -716,7 +861,13 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/3779959/daredevil-battlin-jack-murdock-1",
+            "issue 2": "https://leagueofcomicgeeks.com/comic/2941548/daredevil-battlin-jack-murdock-2",
+            "issue 3": "https://leagueofcomicgeeks.com/comic/4384842/daredevil-battlin-jack-murdock-3",
+            "issue 4": "https://leagueofcomicgeeks.com/comic/9759379/daredevil-battlin-jack-murdock-4"
+        }
     },
     {
         "id_order": 15,
@@ -753,7 +904,14 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/1931243/daredevil-the-man-without-fear-1",
+            "issue 2": "https://leagueofcomicgeeks.com/comic/7111218/daredevil-the-man-without-fear-2",
+            "issue 3": "https://leagueofcomicgeeks.com/comic/3757437/daredevil-the-man-without-fear-3",
+            "issue 4": "https://leagueofcomicgeeks.com/comic/1245831/daredevil-the-man-without-fear-4",
+            "issue 5": "https://leagueofcomicgeeks.com/comic/8595861/daredevil-the-man-without-fear-5"
+        }
     },
     {
         "id_order": 14,
@@ -776,7 +934,13 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/5762856/ororo-before-the-storm-1",
+            "issue 2": "https://leagueofcomicgeeks.com/comic/5501649/ororo-before-the-storm-2",
+            "issue 3": "https://leagueofcomicgeeks.com/comic/2282194/ororo-before-the-storm-3",
+            "issue 4": "https://leagueofcomicgeeks.com/comic/1173457/ororo-before-the-storm-4"
+        }
     },
     {
         "id_order": 13,
@@ -803,7 +967,10 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/8092725/mystic-arcana-scarlet-witch-1"
+        }
     },
     {
         "id_order": 12,
@@ -827,7 +994,10 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/7252264/doctor-strange-season-one-hc"
+        }
     },
     {
         "id_order": 11,
@@ -847,7 +1017,10 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/6037737/logan-path-of-the-warlord-1"
+        }
     },
     {
         "id_order": 10,
@@ -866,7 +1039,14 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/3007218/sub-mariner-the-depths-1",
+            "issue 2": "https://leagueofcomicgeeks.com/comic/8045966/sub-mariner-the-depths-2",
+            "issue 3": "https://leagueofcomicgeeks.com/comic/8843544/sub-mariner-the-depths-3",
+            "issue 4": "https://leagueofcomicgeeks.com/comic/9436244/sub-mariner-the-depths-4",
+            "issue 5": "https://leagueofcomicgeeks.com/comic/7193192/sub-mariner-the-depths-5"
+        }
     },
     {
         "id_order": 9,
@@ -885,7 +1065,15 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/9132935/fury-peacemaker-1",
+            "issue 2": "https://leagueofcomicgeeks.com/comic/6977404/fury-peacemaker-2",
+            "issue 3": "https://leagueofcomicgeeks.com/comic/7706336/fury-peacemaker-3",
+            "issue 4": "https://leagueofcomicgeeks.com/comic/3799980/fury-peacemaker-4",
+            "issue 5": "https://leagueofcomicgeeks.com/comic/5077064/fury-peacemaker-5",
+            "issue 6": "https://leagueofcomicgeeks.com/comic/2126519/fury-peacemaker-6"
+        }
     },
     {
         "id_order": 8,
@@ -912,7 +1100,14 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/1929872/x-men-magneto-testament-1",
+            "issue 2": "https://leagueofcomicgeeks.com/comic/3099290/x-men-magneto-testament-2",
+            "issue 3": "https://leagueofcomicgeeks.com/comic/6922731/x-men-magneto-testament-3",
+            "issue 4": "https://leagueofcomicgeeks.com/comic/7619809/x-men-magneto-testament-4",
+            "issue 5": "https://leagueofcomicgeeks.com/comic/9607791/x-men-magneto-testament-5"
+        }
     },
     {
         "id_order": 7,
@@ -936,7 +1131,10 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 635.1": "https://leagueofcomicgeeks.com/comic/7375347/captain-america-namor-6351"
+        }
     },
     {
         "id_order": 6,
@@ -966,7 +1164,14 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 620": "https://leagueofcomicgeeks.com/comic/3677916/captain-america-bucky-620",
+            "issue 621": "https://leagueofcomicgeeks.com/comic/8917877/captain-america-bucky-621",
+            "issue 622": "https://leagueofcomicgeeks.com/comic/2159799/captain-america-bucky-622",
+            "issue 623": "https://leagueofcomicgeeks.com/comic/5376286/captain-america-bucky-623",
+            "issue 624": "https://leagueofcomicgeeks.com/comic/7622658/captain-america-bucky-624"
+        }
     },
     {
         "id_order": 5,
@@ -994,7 +1199,11 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 0": "https://leagueofcomicgeeks.com/comic/3897347/marvels-0",
+            "issue 1": "https://leagueofcomicgeeks.com/comic/4745422/marvels-1"
+        }
     },
     {
         "id_order": 4,
@@ -1022,7 +1231,10 @@
         "pages": 0,
         "age": "Bronze",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 255": "https://leagueofcomicgeeks.com/comic/6413795/captain-america-255"
+        }
     },
     {
         "id_order": 3,
@@ -1045,7 +1257,14 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/4261328/origin-ii-1",
+            "issue 2": "https://leagueofcomicgeeks.com/comic/6105017/origin-ii-2",
+            "issue 3": "https://leagueofcomicgeeks.com/comic/4373608/origin-ii-3",
+            "issue 4": "https://leagueofcomicgeeks.com/comic/7570446/origin-ii-4",
+            "issue 5": "https://leagueofcomicgeeks.com/comic/7186688/origin-ii-5"
+        }
     },
     {
         "id_order": 2,
@@ -1068,7 +1287,15 @@
         "pages": 0,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/6112383/wolverine-the-origin-1",
+            "issue 2": "https://leagueofcomicgeeks.com/comic/8895863/wolverine-the-origin-2",
+            "issue 3": "https://leagueofcomicgeeks.com/comic/4657071/wolverine-the-origin-3",
+            "issue 4": "https://leagueofcomicgeeks.com/comic/3232875/wolverine-the-origin-4",
+            "issue 5": "https://leagueofcomicgeeks.com/comic/4831840/wolverine-the-origin-5",
+            "issue 6": "https://leagueofcomicgeeks.com/comic/1452091/wolverine-the-origin-6"
+        }
     },
     {
         "id_order": 1,
@@ -1085,6 +1312,20 @@
         "pages": 277,
         "age": "Modern",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/6813633/thor-son-of-asgard-1",
+            "issue 2": "https://leagueofcomicgeeks.com/comic/7998252/thor-son-of-asgard-2",
+            "issue 3": "https://leagueofcomicgeeks.com/comic/2223557/thor-son-of-asgard-3",
+            "issue 4": "https://leagueofcomicgeeks.com/comic/4631935/thor-son-of-asgard-4",
+            "issue 5": "https://leagueofcomicgeeks.com/comic/9162028/thor-son-of-asgard-5",
+            "issue 6": "https://leagueofcomicgeeks.com/comic/7287041/thor-son-of-asgard-6",
+            "issue 7": "https://leagueofcomicgeeks.com/comic/9775913/thor-son-of-asgard-7",
+            "issue 8": "https://leagueofcomicgeeks.com/comic/3027609/thor-son-of-asgard-8",
+            "issue 9": "https://leagueofcomicgeeks.com/comic/1061684/thor-son-of-asgard-9",
+            "issue 10": "https://leagueofcomicgeeks.com/comic/1848736/thor-son-of-asgard-10",
+            "issue 11": "https://leagueofcomicgeeks.com/comic/8394291/thor-son-of-asgard-11",
+            "issue 12": "https://leagueofcomicgeeks.com/comic/5114154/thor-son-of-asgard-12"
+        }
     }
 ]
