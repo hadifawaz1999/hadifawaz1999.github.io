@@ -1,0 +1,318 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 1.5rem;
+  background: #111827;
+  color: #e5e7eb;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+#summary {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #d1d5db;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+thead {
+  background: #1f2937;
+}
+
+th, td {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #1f2937;
+  text-align: left;
+}
+
+tbody tr:nth-child(even) {
+  background: #111827;
+}
+
+tbody tr:nth-child(odd) {
+  background: #020617;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.1rem 0.4rem;
+  margin-right: 0.25rem;
+  border-radius: 9999px;
+  background: #374151;
+  font-size: 0.75rem;
+}
+.menu {
+  margin-top: 2rem;
+}
+
+.menu-btn {
+  display: inline-block;
+  padding: 0.8rem 1.2rem;
+  margin-right: 1rem;
+  background: #1f2937;
+  color: #e5e7eb;
+  text-decoration: none;
+  border-radius: 0.4rem;
+}
+
+.menu-btn:hover {
+  background: #374151;
+}
+.menu-btn.active {
+  background: #0066ff;
+  color: #fff;
+}
+
+
+#characters-modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 998;
+}
+
+/* Modal box */
+.modal-box {
+    display: none;
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    
+    background: #ffffff;
+    color: black;
+    padding: 20px 28px;
+    border-radius: 12px;
+    
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    border: 2px solid #bb2e2e;
+    
+    width: 400px;
+    max-width: 90%;
+    z-index: 999;
+
+    font-family: Arial, sans-serif;
+
+    transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+    opacity: 0;
+}
+
+/* Show animation */
+.modal-box.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Close button */
+.close-btn {
+    background: #bb2e2e;
+    color: white;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.15s;
+}
+
+.close-btn:hover {
+    background: #9c1f1f;
+}
+#characters-modalText a {
+    display: inline-block;
+    background: #8aafea;           /* button background */
+    color: rgb(45, 45, 45);               /* text color */
+    padding: 6px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 3px 4px;
+    position: relative;         /* needed for ::after underline */
+}
+
+/* Underline animation */
+#characters-modalText a::after {
+    content: "";
+    position: absolute;
+    left: 10px;                 /* aligns underline inside padding */
+    bottom: 4px;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.25s ease-in-out;
+}
+
+#characters-modalText a:hover::after {
+    width: calc(100% - 20px);   /* respects horizontal padding */
+}
+
+/* Background hover effect (optional) */
+#characters-modalText a:hover {
+    background: #005ef4;
+    color: white;
+}
+
+#graph-chars {
+  width: 90vw;
+  height: 80vh;
+  margin: 2rem auto;
+  border: 1px solid #444;
+}
+
+
+/* Outer layout */
+.filter-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Each column box */
+.filter-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Label styling */
+.filter-label {
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Search bar */
+.filter-search {
+  width: 240px;
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #444;
+  background: #1c1c1c;
+  color: #eee;
+  margin-bottom: 6px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.filter-search:focus {
+  border-color: #ffcc00;
+  box-shadow: 0 0 5px #ffcc00;
+}
+
+/* Dropdown list */
+.filter-select {
+  width: 240px;
+  height: 220px;
+  border-radius: 8px;
+  background: #1b1b1b;
+  border: 1px solid #333;
+  color: #eee;
+  padding: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.filter-select option {
+  padding: 6px;
+}
+
+.filter-select:hover {
+  border-color: #ffcc00;
+}
+
+/* Make scrollbars look nicer */
+.filter-select::-webkit-scrollbar {
+  width: 8px;
+}
+.filter-select::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 4px;
+}
+.filter-select::-webkit-scrollbar-thumb:hover {
+  background: #777;
+}
+
+
+#graph-wrapper {
+    width: 70%;            /* control how wide it is */
+    max-width: 70%;      /* prevent super large screens from stretching it */
+    margin: 0 auto;        /* centers it */
+    padding: 20px 0;
+}
+
+#graph-chars  {
+    width: 70%;           /* narrower than full page */
+    max-width: 70%;     /* don’t stretch too much on big screens */
+    margin: 0 auto;       /* center horizontally */
+    height: 600px;        /* IMPORTANT: gives it a visible height */
+    border: 1px solid #444;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.node-popup {
+  position: absolute;
+  background: #1e1e1e;
+  color: #fff;
+  border-radius: 4px;
+  padding: 8px 10px;
+  font-size: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  max-width: 240px;
+  z-index: 10;
+}
+
+.node-popup a {
+  color: #4ea3ff;
+  text-decoration: none;
+}
+
+.node-popup a:hover {
+  text-decoration: underline;
+}
+
+.toggle-btn {
+  width: 100%;
+  padding: 10px 14px;
+  background: #1e88e5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.toggle-btn:hover {
+  background: #1976d2;
+}
+
+.toggle-btn:active {
+  transform: scale(0.97);
+}
