@@ -90,6 +90,26 @@ tbody tr:nth-child(odd) {
     z-index: 998;
 }
 
+#path-modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 998;
+}
+
+#issues-modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(3px);
+    z-index: 998;
+}
+
 /* Modal box */
 .modal-box {
     display: none;
@@ -167,6 +187,40 @@ tbody tr:nth-child(odd) {
 
 /* Background hover effect (optional) */
 #characters-modalText a:hover {
+    background: #005ef4;
+    color: white;
+}
+
+#issues-modalText a {
+    display: inline-block;
+    background: #8aafea;           /* button background */
+    color: rgb(45, 45, 45);               /* text color */
+    padding: 6px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 3px 4px;
+    position: relative;         /* needed for ::after underline */
+}
+
+/* Underline animation */
+#issues-modalText a::after {
+    content: "";
+    position: absolute;
+    left: 10px;                 /* aligns underline inside padding */
+    bottom: 4px;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.25s ease-in-out;
+}
+
+#issues-modalText a:hover::after {
+    width: calc(100% - 20px);   /* respects horizontal padding */
+}
+
+/* Background hover effect (optional) */
+#issues-modalText a:hover {
     background: #005ef4;
     color: white;
 }
