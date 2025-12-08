@@ -370,3 +370,14 @@ tbody tr:nth-child(odd) {
 .toggle-btn:active {
   transform: scale(0.97);
 }
+
+
+.mtv-chart-area {
+  margin-top: 0.3rem;
+  border-radius: 14px;
+  border: 1px dashed rgba(255, 255, 255, 0.12);
+  background: radial-gradient(circle at top left, #101428, #050816 70%);
+  min-height: 460px; /* adjust to taste */
+  position: relative;
+  overflow: hidden;
+}

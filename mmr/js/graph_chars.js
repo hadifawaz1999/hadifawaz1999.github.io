@@ -341,7 +341,7 @@ function applyFilters() {
         return true;
     });
 
-    console.log(filtered_comics_data);
+    // console.log(filtered_comics_data);
 
     buildGraphCharsFromData(filtered_comics_data, charsData);
 }
