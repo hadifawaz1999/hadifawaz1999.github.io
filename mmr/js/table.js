@@ -107,7 +107,7 @@ function openIssuesModal(urls_dict) {
     let issues_html = "";
 
     const all_issues = Object.keys(urls_dict).sort((a,b) => {
-        return parseInt(a.slice(7)) - parseInt(b.slice(7));
+        return parseInt(a.slice(6)) - parseInt(b.slice(6));
     });
 
     for (let i = 0; i < all_issues.length; i++) {
