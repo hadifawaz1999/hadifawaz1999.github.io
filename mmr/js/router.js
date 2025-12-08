@@ -31,8 +31,11 @@ function loadPage(page, event) {
       if (page === "table.html" && typeof initTableView === "function") {
         setTimeout(() => initTableView(), 0);
       }
-      if (page == "graph_chars.html" && typeof initGraphCharsView == "function") {
+      if (page === "graph_chars.html" && typeof initGraphCharsView == "function") {
         setTimeout(() => initGraphCharsView(), 0);
+      }
+      if (page === "rating_ts.html" && typeof initRatingTSView == "function") {
+        setTimeout(() => initRatingTSView(), 0);
       }
     })
     .catch(err => {

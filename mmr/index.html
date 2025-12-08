@@ -18,10 +18,14 @@
   <!-- Graphology library: includes ForceAtlas2 layout -->
   <script src="https://cdn.jsdelivr.net/npm/graphology-library/dist/graphology-library.min.js"></script>
 
+  <!-- Import Plotly -->
+  <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+
   <!-- Your scripts -->
   <script src="js/table.js"></script>
   <script src="js/router.js"></script>
   <script src="js/graph_chars.js"></script>
+  <script src="js/rating_ts.js"></script>
 </head>
 
 <body>
@@ -31,7 +35,8 @@
 
   <div class="menu">
     <a href="#" class="menu-btn" onclick="loadPage('table.html', event)">📊 Table View</a>
-    <a href="#" class="menu-btn" onclick="loadPage('graph_chars.html', event)">📈 Characters Graph</a>
+    <a href="#" class="menu-btn" onclick="loadPage('graph_chars.html', event)">📈 Graph View</a>
+    <a href="#" class="menu-btn" onclick="loadPage('rating_ts.html', event)">📈 Rating Time Series View</a>
     <!-- You can add more later -->
   </div>
 
