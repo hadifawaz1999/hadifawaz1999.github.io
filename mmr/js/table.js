@@ -69,18 +69,24 @@ $(document).ready(function () {
             writer_col.textContent = data[i].writer;
             table_row.appendChild(writer_col);
 
-            button = document.createElement("button");
-            button.textContent = "Click to view";
-            button.addEventListener("click", ((characters) => {
+            characters_button = document.createElement("button");
+            characters_button.textContent = "Click to view";
+            characters_button.addEventListener("click", ((characters) => {
                 return () => openCharsModal(characters);
             })(data[i].characters));
-            char_col.appendChild(button);
+            char_col.appendChild(characters_button);
             table_row.appendChild(char_col);
 
             pages_col.textContent = data[i].pages;
             table_row.appendChild(pages_col);
 
-            issues_col.textContent = data[i].issues;
+            // issues_col.textContent = data[i].issues + " ";
+            issues_button = document.createElement("button");
+            issues_button.textContent = `${data[i].issues}`;
+            issues_button.addEventListener("click", ((urls) => {
+                return () => openIssuesModal(urls);
+            })(data[i].urls));
+            issues_col.appendChild(issues_button);
             table_row.appendChild(issues_col);
             
             rating_col.textContent = data[i].rating;
@@ -95,6 +101,32 @@ $(document).ready(function () {
     });
 
 });
+}
+
+function openIssuesModal(urls_dict) {
+    let issues_html = "";
+
+    const all_issues = Object.keys(urls_dict).sort((a,b) => {
+        return parseInt(a.slice(7)) - parseInt(b.slice(7));
+    });
+
+    for (let i = 0; i < all_issues.length; i++) {
+        const issue_id = all_issues[i];
+        const issue_url = urls_dict[issue_id];
+
+        issues_html += `<a href="${issue_url}" target="_blank">${issue_id}</a>`;
+
+        if (i < all_issues.length - 1) {
+            issues_html = issues_html + " ";
+        }
+    }
+
+    document.getElementById("issues-modalText").innerHTML = issues_html;
+    document.getElementById("issues-modal-overlay").style.display = "block";
+
+    const modal = document.getElementById("issues-modal");
+    modal.style.display = "block";
+    setTimeout(() => modal.classList.add("show"), 10);
 }
 
 function openCharsModal(chars_list) {
@@ -125,12 +157,22 @@ function openCharsModal(chars_list) {
     });
 }
 
-function closeModal() {
+function closeTableCharsModal() {
     const modal = document.getElementById("characters-modal");
     modal.classList.remove("show");
 
     setTimeout(() => {
         modal.style.display = "none";
         document.getElementById("characters-modal-overlay").style.display = "none";
+    }, 10);
+}
+
+function closeTableIssuesModal() {
+    const modal = document.getElementById("issues-modal");
+    modal.classList.remove("show");
+
+    setTimeout(() => {
+        modal.style.display = "none";
+        document.getElementById("issues-modal-overlay").style.display = "none";
     }, 10);
 }

@@ -4,6 +4,10 @@
 // Global state
 // -----------------------------------------------------
 let current_graph = null;
+let graph_components = [];
+let component_id_map = {};
+let visited_dfs = {};
+
 let comicsData = [];
 let charsData = null;
 let currentSeriesFilter = null;
@@ -102,6 +106,8 @@ function buildGraphCharsFromData(data, chars_data) {
 
     current_graph = graph;
 
+    findComponents(current_graph);
+
     // -------------------------------------------------
     // Layout: prefer ForceAtlas2 if available, else fallback
     // -------------------------------------------------
@@ -196,6 +202,43 @@ function customLabelRenderer(ctx, data, settings) {
 
     // Draw label just above the node
     ctx.fillText(data.label, data.x, data.y - size - 3);
+}
+
+function findComponents(graph) {
+    graph_components = [];
+    component_id_map = {};
+    visited_dfs = {};
+
+    const nodes = graph.nodes();
+    let component_id = 0;
+    
+    for (let i = 0; i < nodes.length; i++){
+        const nodeID = nodes[i];
+
+        if (!visited_dfs[nodeID]) {
+            graph_components.push([]);
+            dfs_component(graph, nodeID, component_id);
+            component_id++;
+        }
+    }
+}
+
+function dfs_component(graph, nodeID, component_id){
+    visited_dfs[nodeID] = true;
+    graph_components[component_id].push(nodeID);
+    component_id_map[nodeID] = component_id;
+
+    const neighbors = graph.neighbors(nodeID);
+
+    for (let k = 0; k < neighbors.length; k++){
+        if (!visited_dfs[neighbors[k]]){
+            dfs_component(graph, neighbors[k], component_id);
+        }
+    }
+}
+
+function check_if_same_component(node_a, node_b){
+    return component_id_map[node_a] == component_id_map[node_b];
 }
 
 function populateSelectOptions(select_element, values, all_label) {
@@ -340,18 +383,31 @@ function ToggleBFSbutton(){
             if (bfs_button.textContent == "Find Path (BFS)"){
                 const char1_name = char1_select.value;
                 const char2_name = char2_select.value;
+                
+                const are_in_same_component = check_if_same_component(`char:${char1_name}`, `char:${char2_name}`);
+                
+                if (char1_name === char2_name) {
+                    document.getElementById("path-modalText").innerHTML = `<h1>Please choose two characters that are distinct.</h1>`;
+                    document.getElementById("path-modal-overlay").style.display = "block";
 
-                const shortest_path = get_bfs_shortest_path(current_graph, `char:${char1_name}`, `char:${char2_name}`);
-
-                resetGraphColors(current_graph);
-                if (!shortest_path) {
-                    return;
+                    const modal = document.getElementById("path-modal");
+                    modal.style.display = "block";
+                    setTimeout(() => modal.classList.add("show"), 10);
                 }
+                else if (are_in_same_component) {
+                    const shortest_path = get_bfs_shortest_path(current_graph, `char:${char1_name}`, `char:${char2_name}`);
+                    highlightShortestPath(current_graph, shortest_path);
+                    currentRenderer.refresh();
+                    bfs_button.textContent = "Reset Graph Colors";
+                }
+                else {
+                    document.getElementById("path-modalText").innerHTML = `<h1>The path between the character ${char1_name} and the character ${char2_name} does not exist.</h1>`;
+                    document.getElementById("path-modal-overlay").style.display = "block";
 
-                highlightShortestPath(current_graph, shortest_path);
-                currentRenderer.refresh();
-
-                bfs_button.textContent = "Reset Graph Colors";
+                    const modal = document.getElementById("path-modal");
+                    modal.style.display = "block";
+                    setTimeout(() => modal.classList.add("show"), 10);
+                }
             }
             else{
                 bfs_button.textContent = "Find Path (BFS)";
@@ -359,6 +415,16 @@ function ToggleBFSbutton(){
             }
         });
     }
+}
+
+function closePathModal() {
+    const modal = document.getElementById("path-modal");
+    modal.classList.remove("show");
+
+    setTimeout(() => {
+        modal.style.display = "none";
+        document.getElementById("path-modal-overlay").style.display = "none";
+    }, 10);
 }
 
 function get_bfs_shortest_path(graph, source_id, target_id){
@@ -413,8 +479,16 @@ function highlightShortestPath(graph, path) {
     if (!path) return;
 
     // Color nodes
+    let counter_node = 0;
     for (const node of path) {
-        graph.setNodeAttribute(node, "color", "#ff3333");
+        if (counter_node === 0 || counter_node === path.length - 1) {
+            graph.setNodeAttribute(node, "color", "#00ff00");
+        }
+        else {
+            graph.setNodeAttribute(node, "color", "#99ff99");
+        }
+
+        counter_node++;
     }
 
     // Color edges between consecutive nodes
