@@ -271,7 +271,10 @@
         "pages": 0,
         "age": "Silver",
         "references": null,
-        "comments": null
+        "comments": null,
+        "urls": {
+            "issue 27": "https://leagueofcomicgeeks.com/comic/1226704/tales-to-astonish-27"
+        }
     },
     {
         "id_order": 32,
@@ -299,7 +302,9 @@
         "references": null,
         "comments": null,
         "urls": {
-            "issue 1": "https://leagueofcomicgeeks.com/comic/1226704/tales-to-astonish-27"
+            "issue 39": "https://leagueofcomicgeeks.com/comic/6725977/tales-of-suspense-39",
+            "issue 45": "https://leagueofcomicgeeks.com/comic/7646031/tales-of-suspense-45",
+            "issue 46": "https://leagueofcomicgeeks.com/comic/2771928/tales-of-suspense-46"
         }
     },
     {
