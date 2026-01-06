@@ -30,7 +30,7 @@
 			"degree": "PhD in Computer Science",
 			"school": ["Université de Haute-Alsace"],
 			"school_links": ["https://www.uha.fr/fr/index.html"],
-			"content": "Deep Learning for Time Series Analysis with Application on Human Motion. <a href=\"https://arxiv.org/abs/2502.19364\">[manuscript on arxiv]</a>"
+			"content": "Deep Learning for Time Series Analysis with Application on Human Motion. <a href=\"https://theses.hal.science/tel-05164981/document\">[manuscript pdf]</a>"
 		},
 		{
 			"date" : "2022",
@@ -72,6 +72,7 @@
 		"<a href=\"https://kdd.org/kdd2023/\">SIG-KDD</a> (2023) ACM SIGKDD CONFERENCE ON KNOWLEDGE DISCOVERY AND DATA MINING"
 	],
 	"reviewer":[
+		"Journal (2026-now) <a href=\"https://dl.acm.org/journal/csur\">ACM Computing Surveys</a>",
 		"Journal (2025-now) <a href=\"https://www.sciencedirect.com/journal/pattern-recognition\">Pattern Recognition</a>",
 		"Journal (2025-now) <a href=\"https://www.sciencedirect.com/journal/neural-networks\">Neural Networks</a>",
 		"Journal (2024-now) <a href=\"https://link.springer.com/journal/10994\">Machine Learning</a>",

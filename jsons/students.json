@@ -1,6 +1,16 @@
 {
 	"phd":[
 		{
+			"name": "Elias Mouaheb",
+			"link": "https://www.linkedin.com/in/elias-mouaheb-398075254/",
+			"date": "2026-",
+			"position" : "PhD student",
+			"topic": "Contextualized evaluation and frugality of Large Language Models",
+			"project": "NCU-ELAN",
+			"partners": ["Germain Forestier", "Christophe Cudel", "Jonathan Weber"],
+			"partners_links": ["https://germain-forestier.info", "https://fr.linkedin.com/in/christophe-cudel-a9470415", "https://www.jonathan-weber.eu/"]
+		},
+		{
 			"name": "Victor Thiebaut",
 			"link": "https://www.linkedin.com/in/victor-thiebaut-0a0551261/",
 			"date": "2025-",
@@ -12,49 +22,30 @@
 		}
 	],
 	"graduated":[
-		{
-			"name": "Tsegamlak Terefe Debella",
-			"link": "https://www.researchgate.net/profile/Tsegamlak-Terefe",
-			"position" : "PhD student",
-			"date": "2022",
-			"topic": "Deep learning for time series averaging",
-			"partners": ["G. Forestier", "J. Weber", "D. H. Woldegebreal"],
-			"partners_links": ["https://germain-forestier.info", "https://www.jonathan-weber.eu", "https://www.researchgate.net/profile/Dereje-Woldegebreal"],
-			"new_position" : "Lecturer",
-			"new_compagny" : "AAIT",
-			"new_compagny_link" : "https://www.aau.edu.et/aait/" 
-		}
 	],
 	"postdoc":[
+		
+	],
+	"engineers":[
 		{
-			"name": "Oumaima Sliti",
-			"link": "",
-			"date": "2021-",
-			"position" : "Postdoc",
-			"topic": "Deep Learning for anomaly detection in non-destructive control",
-			"project": "APIAC",
-			"partners": ["C. Cudel", "J. Weber", "K. Tout"],
-			"partners_links": ["https://fr.linkedin.com/in/christophe-cudel-a9470415", "https://www.jonathan-weber.eu", "https://fr.linkedin.com/in/karim-tout"]
+			"name": "Maxime Gangneux",
+			"link": "https://www.linkedin.com/in/maxime-gangneux-8a334b328/",
+			"date": "2025-",
+			"position" : "Engineer",
+			"topic": "Development of the UHA <a href=\"https://www.goelan.uha.fr/\">GOELAN</a> chat-bot",
+			"project": "NCU-ELAN",
+			"partners": ["Christophe Cudel"],
+			"partners_links": ["https://fr.linkedin.com/in/christophe-cudel-a9470415"]
 		},
 		{
-			"name": "Amina Ben Hamida",
-			"link": "https://tn.linkedin.com/in/aminabenhamida",
-			"date": "2020-",
-			"position" : "Postdoc",
-			"topic": "Artificial intelligence to determine prognosis and mutation status in colorectal cancer using histological slides",
-			"project": "AiCOLO",
-			"partners": ["C. Wemmert", "G. Forestier", "J. Weber"],
-			"partners_links": ["https://wemmertc.github.io/webpage/", "https://germain-forestier.info", "https://www.jonathan-weber.eu"]
-		},
-		{
-		 	"name": "Bonan Cuan",
-		 	"link": "https://fr.linkedin.com/in/bonan-cuan-634a21196/fr-fr",
-		 	"date": "2020-",
-		 	"position" : "Postdoc",
-		 	"topic": "Modelling cell plasticity at the invasive Edge to Diminish Glioblastoma Early relapse risk",
-		 	"project": "Mi*EDGE",
-		 	"partners": ["C. Wemmert", "G. Forestier", "J. Weber"],
-		 	"partners_links": ["https://wemmertc.github.io/webpage/", "https://germain-forestier.info", "https://www.jonathan-weber.eu"]
+			"name": "Julien Muller",
+			"link": "https://www.linkedin.com/in/julien-muller-a03897346/",
+			"date": "2025-",
+			"position" : "Engineer",
+			"topic": "Development of the UHA <a href=\"https://www.goelan.uha.fr/\">GOELAN</a> chat-bot",
+			"project": "NCU-ELAN",
+			"partners": ["Christophe Cudel"],
+			"partners_links": ["https://fr.linkedin.com/in/christophe-cudel-a9470415"]
 		}
 	],
 	"master":[

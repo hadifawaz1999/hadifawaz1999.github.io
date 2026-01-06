@@ -361,7 +361,27 @@ $(document).ready(function () {
 			}
 			$("#students-postdocs").append('<li>' + student_string + partner_string + '.</li>');
 		}
-		// engineers/masters
+		// engineers
+		for (var i = 0; i < data.engineers.length; i++) {
+			partner_string = '<br>Co-supervised with ';
+			for (e = 0; e < data.engineers[i].partners.length; e++) {
+				if (e > 0) {
+					if (e == (data.engineers[i].partners.length - 1)) {
+						partner_string = partner_string + ' and ';
+					} else {
+						partner_string = partner_string + ', ';
+					}
+				}
+				partner_string = partner_string + '<a href="' + data.engineers[i].partners_links[e] + '" target="_blank">' + data.engineers[i].partners[e] + '</a>';
+			}
+			if (data.engineers[i].link != '') {
+				student_string = '<B><a href="' + data.engineers[i].link + '" target="_blank">' + data.engineers[i].name + '</a></B>' + ' <B>(' + data.engineers[i].date + '):</B> ' + data.engineers[i].topic + '.';
+			} else {
+				student_string = '<B><a href="#research">' + data.engineers[i].name + '</a></B>' + ' <B>(' + data.engineers[i].date + '):</B> ' + data.engineers[i].topic + '.';
+			}
+			$("#students-engineers").append('<li>' + student_string + partner_string + '.</li>');
+		}
+		// masters
 		for (var i = 0; i < data.master.length; i++) {
 			partner_string = '<br>Co-supervised with ';
 			for (e = 0; e < data.master[i].partners.length; e++) {

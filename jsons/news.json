@@ -1,6 +1,18 @@
 {
 	"news":[
 		{
+			"date": "2025-12",
+			"content": "One paper accepted at the <a href=\"https://icaart.scitevents.org/\">ICAART 2026</a> on pruning CNNs for Time Series Classification!"
+		},
+		{
+			"date": "2025-11",
+			"content": "Giving a talk at the annual <a href=\"https://www.irimas.uha.fr/\">IRIMAS</a> seminar on Deep Learning for Time Series Classification"
+		},
+		{
+			"date": "2025-11",
+			"content": "<a href=\"https://doi.org/10.1109/IJCNN64981.2025.11228372\">Paper in IJCNN 2025 proceedings</a> on ensemble diversity for time series classification !"
+		},
+		{
 			"date": "2025-10",
 			"content": "Master's internship position on <a href=\"https://maxime-devanne.com/jobs/internship_position_delegation_generation_rehab_2026.pdf\">deep generative models for rehabilitation exercises</a>"
 		},
