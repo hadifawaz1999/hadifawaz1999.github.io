@@ -1,5 +1,40 @@
 [
     {
+        "id_order": 42,
+        "series": "Spider-Man: Doctor Octopus: Year One",
+        "type": "Limited Series",
+        "year_start": 2004,
+        "year_end": 2004, 
+        "issues": "1-5",
+        "rating": 4.3,
+        "review": "",
+        "characters": [
+            "Otto Octavius",
+            "Jason Ionello",
+            "Mary Octavius",
+            "Raymond Warren",
+            "Torbert Octavius",
+            "Mary Alice Anders",
+            "Spider-Man",
+            "Tinkerer",
+            "Toy",
+            "Doctor Octopus"
+        ],
+        "writer": "Zeb Wells",
+        "tags": ["Origin Story"],
+        "pages": 0,
+        "age": "Modern",
+        "references": null,
+        "comments": null,
+        "urls": {
+            "issue 1": "https://leagueofcomicgeeks.com/comic/5364306/spider-man-doctor-octopus-year-one-1",
+            "issue 2": "https://leagueofcomicgeeks.com/comic/4725469/spider-man-doctor-octopus-year-one-2",
+            "issue 3": "https://leagueofcomicgeeks.com/comic/8155745/spider-man-doctor-octopus-year-one-3",
+            "issue 4": "https://leagueofcomicgeeks.com/comic/8475306/spider-man-doctor-octopus-year-one-4",
+            "issue 5": "https://leagueofcomicgeeks.com/comic/1260300/spider-man-doctor-octopus-year-one-5"
+        }
+    },
+    {
         "id_order": 41,
         "series": "Amazing Spider-Man",
         "type": "Ongoing Series",
