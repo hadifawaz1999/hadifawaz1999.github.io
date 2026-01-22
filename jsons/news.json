@@ -1,6 +1,10 @@
 {
 	"news":[
 		{
+			"date": "2026-01",
+			"content": "<a href=\"https://msd-irimas.github.io/\">Elias Mouaheb</a> started his PhD in our team on evaluating LLMs in the frame of the NCU-ELAN project, welcome !"
+		},
+		{
 			"date": "2025-12",
 			"content": "One paper accepted at the <a href=\"https://icaart.scitevents.org/\">ICAART 2026</a> on pruning CNNs for Time Series Classification!"
 		},
@@ -247,6 +251,7 @@
 
 	]
 }
+
 
 
 
