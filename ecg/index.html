@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ECG + Heart Sync</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="page-header">
+    <div class="header-inner">
+      <h1>ECG + Heart Synchronization</h1>
+      <p class="subtitle">
+        This tool illustrates how an ECG waveform is synchronized with the heartbeat, showing the timing
+        relationship between ECG phases and atrial and ventricular contraction.
+      </p>
+
+      <dl class="meta">
+        <div>
+          By <span id="authorText"><a href="https://hadifawaz1999.github.io/">Ali Ismail-Fawaz</a></span>
+        </div>
+      </dl>
+    </div>
+  </header>
+
+  <!-- ===== INFO PANEL ===== -->
+  <section class="info" aria-label="About this tool">
+    <div class="info-inner">
+      <h2>About</h2>
+      <p>
+        The visualization plays back ECG recordings and highlights simplified heart contraction patterns
+        in sync with the ECG phases (P, QRS, T). It is intended for demonstration and educational use.
+      </p>
+
+      <div class="info-grid">
+        <div class="card">
+          <h3>How to use</h3>
+          <ul>
+            <li>Press <strong>Play</strong> to start playback.</li>
+            <li>Use <strong>Pause</strong> to stop playback at the current time.</li>
+            <li>Press <strong>Restart</strong> to return to the beginning.</li>
+            <li>Select a different <strong>Record</strong> to load another ECG sample.</li>
+            <li>Use <strong>Speed</strong> to slow down or speed up playback.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Dataset</h3>
+          <p>
+            <strong>Source:</strong> <span id="datasetSourceText"><a href="https://www.physionet.org/content/ludb/1.0.1/">Lobachevsky University Electrocardiography Database</a></span><br />
+            <strong>Sampling rate: 500 Hz<br />
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Notes</h3>
+          <ul>
+            <li>The heart animation is a simplified timing illustration, not a diagnostic model.</li>
+            <li>ECG phase intervals come from the annotations provided by the original dataset.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="module" src="./app.js"></script>
+
+  <!-- ===== MAIN VISUALIZATION ===== -->
+  <div class="wrap">
+    <section class="left">
+      <div id="heartContainer"></div>
+
+      <div class="status">
+        <div>Phase: <span id="phaseText">—</span></div>
+        <div>Time: <span id="timeText">0.00</span>s</div>
+      </div>
+    </section>
+
+    <section class="right">
+      <canvas id="ecg" width="900" height="420"></canvas>
+
+      <div class="controls">
+        <label>
+          Record
+          <select id="recordSel"></select>
+        </label>
+
+        <button id="restartBtn">Restart</button>
+        <button id="playBtn">Play</button>
+        <button id="pauseBtn" disabled>Pause</button>
+
+        <label>
+          Speed
+          <select id="speedSel">
+            <option value="0.1">0.1×</option>
+            <option value="0.5">0.5×</option>
+            <option value="1" selected>1×</option>
+            <option value="2">2×</option>
+            <option value="4">4×</option>
+          </select>
+        </label>
+      </div>
+    </section>
+  </div>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
