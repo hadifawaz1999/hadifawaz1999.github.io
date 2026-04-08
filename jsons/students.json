@@ -17,8 +17,8 @@
 			"position" : "PhD student",
 			"topic": "Development of Efficient Deep Learning Methods for Multi-Modal and Multi-Scale Earth Observation Data",
 			"project": "M2-BDA",
-			"partners": ["Germain Forestier", "Cyril Meyer", "Anne Puissant"],
-			"partners_links": ["https://germain-forestier.info", "https://cyrilmeyer.eu/", "https://live.unistra.fr/live/annuaire/puissant-anne"]
+			"partners": ["Germain Forestier", "Cyril Meyer", "Romain Wegner", "Anne Puissant"],
+			"partners_links": ["https://germain-forestier.info", "https://cyrilmeyer.eu/", "https://romainwenger.fr/", "https://live.unistra.fr/live/annuaire/puissant-anne"]
 		}
 	],
 	"graduated":[
@@ -27,6 +27,16 @@
 		
 	],
 	"engineers":[
+		{
+			"name": "Yoan Lespessailles",
+			"link": "https://www.linkedin.com/in/yoan-l/",
+			"date": "2026",
+			"position" : "Engineer",
+			"topic": "Developing an application for data annotation",
+			"project": "",
+			"partners": ["Cyril Meyer"],
+			"partners_links": ["https://cyrilmeyer.eu/"]
+		},
 		{
 			"name": "Maxime Gangneux",
 			"link": "https://www.linkedin.com/in/maxime-gangneux-8a334b328/",
@@ -49,6 +59,16 @@
 		}
 	],
 	"master":[
+		{
+			"name": "Pauline Blavy",
+			"link": "https://www.linkedin.com/in/pauline-blavy/",
+			"date": "2026",
+			"position" : "Master student",
+			"topic": "Domain Foundation Models for Time Series Classification",
+			"project": "TERMINUS",
+			"partners": ["Germain Forestier", "Maxime Devanne", "Cyril Meyer"],
+			"partners_links": ["https://germain-forestier.info", "https://maxime-devanne.com/", "https://cyrilmeyer.eu/"]
+		}
 	],
 	"past_master":[
 		{
