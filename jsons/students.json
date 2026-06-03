@@ -60,6 +60,16 @@
 	],
 	"master":[
 		{
+			"name": "Chaymae Dihaji",
+			"link": "https://www.linkedin.com/in/chaymae-dihaji/",
+			"date": "2026",
+			"position" : "Master student",
+			"topic": "Textual annotation of skeleton-based rehabilitation sequences",
+			"project": "DELEGATION",
+			"partners": ["Germain Forestier", "Maxime Devanne", "Jonathan Weber"],
+			"partners_links": ["https://germain-forestier.info", "https://maxime-devanne.com/", "https://www.jonathan-weber.eu/"]
+		},
+		{
 			"name": "Pauline Blavy",
 			"link": "https://www.linkedin.com/in/pauline-blavy/",
 			"date": "2026",
