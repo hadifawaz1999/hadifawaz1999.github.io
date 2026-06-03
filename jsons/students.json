@@ -44,8 +44,8 @@
 			"position" : "Engineer",
 			"topic": "Development of the UHA <a href=\"https://www.goelan.uha.fr/\">GOELAN</a> chat-bot",
 			"project": "NCU-ELAN",
-			"partners": ["Christophe Cudel"],
-			"partners_links": ["https://fr.linkedin.com/in/christophe-cudel-a9470415"]
+			"partners": ["Elias Mouaheb", "Christophe Cudel"],
+			"partners_links": ["https://www.linkedin.com/in/elias-mouaheb-398075254/", "https://fr.linkedin.com/in/christophe-cudel-a9470415"]
 		},
 		{
 			"name": "Julien Muller",
@@ -54,8 +54,8 @@
 			"position" : "Engineer",
 			"topic": "Development of the UHA <a href=\"https://www.goelan.uha.fr/\">GOELAN</a> chat-bot",
 			"project": "NCU-ELAN",
-			"partners": ["Christophe Cudel"],
-			"partners_links": ["https://fr.linkedin.com/in/christophe-cudel-a9470415"]
+			"partners": ["Elias Mouaheb", "Christophe Cudel"],
+			"partners_links": ["https://www.linkedin.com/in/elias-mouaheb-398075254/", "https://fr.linkedin.com/in/christophe-cudel-a9470415"]
 		}
 	],
 	"master":[
