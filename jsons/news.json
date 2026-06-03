@@ -2,6 +2,10 @@
 	"news":[
 		{
 			"date": "2026-05",
+			"content": "<a href=\"https://maxime-devanne.com/\">Maxime Devanne</a> presenting our paper at <a href=\"https://fg2026.ieee-biometrics.org/\">IEEE FG 2026</a> for a <a href=\"https://msd-irimas.github.io/pages/DeepRehabPile/\">new benchmark on skeleton-based rehabilitation assessment !</a>"
+		},
+		{
+			"date": "2026-05",
 			"content": "One paper on Satelite Images Time Series accepted at the national French conference <a href=\"https://caprfiap2026.sciencesconf.org/\">RFIAP 2026</a>"
 		},
 		{
