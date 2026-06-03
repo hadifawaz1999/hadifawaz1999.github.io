@@ -1,6 +1,16 @@
 {
 	"current":[
 		{
+			"name": "TERMINUS",
+			"link": "#",
+			"date": "2026-",
+			"topic": "Domain Foundation Models For Time Series Classification",
+			"partners": ["Germain Forestier", "Maxime Devanne", "Cyril Meyer", "Jonathan Weber"],
+			"partners_links": ["https://germain-forestier.info/", "https://maxime-devanne.com/", "https://cyrilmeyer.eu/", "https://www.jonathan-weber.eu/"],
+			"role": "Partner/Member",
+			"fundings": "ANR PRME"
+		},
+		{
 			"name": "ELAN",
 			"link": "https://anr.fr/ProjetIA-17-NCUN-0014",
 			"date": "2018-",
