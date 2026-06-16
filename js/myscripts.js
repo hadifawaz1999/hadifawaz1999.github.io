@@ -620,7 +620,7 @@ $(document).ready(function () {
 			link_string += '</div>'
 			
 			if (res[i].entryType === "article" &&
-				res[i].entryTags.journal.includes("arXiv")) {
+				res[i].entryTags.journal.includes("preprint")) {
 				
 				// arxiv
 				cptArxiv++;
