@@ -1,0 +1,439 @@
+:root {
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --text: #172033;
+  --muted: #687386;
+  --border: rgba(23, 32, 51, 0.12);
+  --accent: #3953e6;
+  --accent-dark: #1f27b7;
+  --accent-soft: rgba(92, 57, 230, 0.1);
+  --shadow: 0 14px 38px rgba(16, 24, 40, 0.10);
+  --radius-lg: 22px;
+  --radius-md: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(66, 57, 230, 0.722), transparent 30rem),
+    radial-gradient(circle at top right, rgba(235, 50, 37, 0.573), transparent 28rem),
+    var(--bg);
+}
+
+a {
+  color: var(--accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.app-shell {
+  height: 100vh;
+  width: min(1500px, calc(100% - 24px));
+  margin: 0 auto;
+  padding: 12px 0;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  gap: 12px;
+}
+
+/* HEADER */
+
+.hero {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.88);
+  box-shadow: var(--shadow);
+}
+
+.hero-content {
+  padding: 16px 22px;
+}
+
+.eyebrow,
+.card-label {
+  margin: 0 0 5px;
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(1.7rem, 3vw, 3rem);
+  line-height: 1;
+  letter-spacing: -0.05em;
+}
+
+.subtitle {
+  margin: 8px 0 0;
+  max-width: 820px;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.author {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+/* MAIN DASHBOARD */
+
+.visual-panel {
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 360px 1fr;
+  gap: 12px;
+}
+
+.heart-card,
+.ecg-card,
+.info-card {
+  min-height: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow);
+}
+
+.heart-card {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 18px;
+  background:
+    radial-gradient(circle at 50% 42%, var(--accent-soft), transparent 15rem),
+    rgba(255, 255, 255, 0.9);
+}
+
+#heartContainer {
+  min-height: 0;
+  display: grid;
+  place-items: center;
+}
+
+.ecg-card {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: 12px;
+  padding: 18px;
+}
+
+.canvas-header h2 {
+  margin: 0;
+  font-size: 1.35rem;
+  letter-spacing: -0.03em;
+}
+
+canvas {
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  display: block;
+  border: 1px solid rgba(23, 32, 51, 0.13);
+  border-radius: 18px;
+  background:
+    linear-gradient(rgba(230, 57, 70, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(230, 57, 70, 0.035) 1px, transparent 1px),
+    #fff;
+  background-size: 24px 24px;
+}
+
+/* CONTROLS */
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: end;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: #f9fbff;
+}
+
+.controls label {
+  display: grid;
+  gap: 4px;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button-group {
+  display: flex;
+  gap: 8px;
+}
+
+button,
+select {
+  height: 36px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--text);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+select {
+  min-width: 125px;
+  padding: 0 12px;
+}
+
+button {
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+button.primary {
+  border-color: transparent;
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  color: #fff;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
+/* STATUS */
+
+.status {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.status > div {
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.status-label {
+  display: block;
+  margin-bottom: 3px;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.status strong {
+  font-size: 1rem;
+}
+
+/* COMPACT INFO FOOTER */
+
+.info {
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 12px;
+}
+
+.info-intro,
+.info-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: var(--shadow);
+}
+
+.info-intro {
+  padding: 14px 16px;
+}
+
+.info-intro h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  letter-spacing: -0.03em;
+}
+
+.info-intro p:last-child {
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.35;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.info-card {
+  padding: 14px;
+}
+
+.info-card h3 {
+  margin: 0 0 6px;
+  font-size: 0.95rem;
+}
+
+.info-card p,
+.info-card li {
+  color: var(--muted);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+.info-card ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.info-card li + li {
+  margin-top: 3px;
+}
+
+/* HEART */
+
+.heart {
+  width: min(310px, 80%);
+  height: min(310px, 80%);
+  display: block;
+  overflow: visible;
+  transform-origin: center;
+  filter: drop-shadow(0 18px 26px rgba(183, 31, 43, 0.18));
+}
+
+.heart-outline {
+  fill: #e63946;
+  opacity: 0.10;
+}
+
+#atria {
+  fill: #e85d67;
+  opacity: 0.28;
+}
+
+#ventricles {
+  fill: #b71f2b;
+  opacity: 0.22;
+}
+
+#atria,
+#ventricles {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.atria-contract {
+  animation: atriaContract 200ms ease-out 1;
+}
+
+.ventricles-contract {
+  animation: ventriclesContract 320ms cubic-bezier(.2,.9,.2,1) 1;
+}
+
+.ventricles-relax {
+  animation: ventriclesRelax 300ms ease-out 1;
+}
+
+.heart-contract {
+  animation: heartContract 340ms cubic-bezier(.2,.9,.2,1) 1;
+}
+
+@keyframes atriaContract {
+  0% { transform: scale(1); }
+  45% { transform: scale(0.72); }
+  100% { transform: scale(1); }
+}
+
+@keyframes ventriclesContract {
+  0% { transform: scale(1); }
+  45% { transform: scale(0.64); }
+  100% { transform: scale(1); }
+}
+
+@keyframes ventriclesRelax {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+@keyframes heartContract {
+  0% { transform: scale(1); }
+  30% { transform: scale(0.93, 0.91); }
+  70% { transform: scale(0.985, 0.99); }
+  100% { transform: scale(1); }
+}
+
+.on {
+  opacity: 1;
+  filter: drop-shadow(0 0 10px rgba(230, 57, 70, 0.35));
+}
+
+.repol {
+  opacity: 0.78;
+  filter: drop-shadow(0 0 8px rgba(37, 99, 235, 0.25));
+}
+
+.flowPaused {
+  animation-play-state: paused !important;
+}
+
+.vessel {
+  fill: #c65a5a;
+  opacity: 0.38;
+}
+
+.groove {
+  fill: none;
+  stroke: rgba(23, 32, 51, 0.25);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+
+.shine {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.7);
+  stroke-width: 5;
+  stroke-linecap: round;
+  opacity: 0.38;
+}
+
+/* SMALL SCREENS */
+
+@media (max-width: 1050px) {
+  html,
+  body {
+    overflow: auto;
+  }
+
+  .app-shell {
+    height: auto;
+  }
+
+  .visual-panel,
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}

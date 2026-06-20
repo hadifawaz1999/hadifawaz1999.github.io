@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Blogs | Ali Ismail-Fawaz</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <main class="page">
+        <header class="hero">
+            <p class="eyebrow">Blog Library</p>
+            <h1>Interactive blogs, demos & notes</h1>
+            <p>
+                A collection of visual explanations, research demos, and technical articles by <br />
+                <a href="https://github.com/hadifawaz1999">Ali Ismail-Fawaz</a>.
+            </p>
+        </header>
+
+        <section class="toolbar">
+            <div>
+                <strong id="blogCount">0</strong>
+                <span>blogs available</span>
+            </div>
+
+            <input id="searchInput" type="search" placeholder="Search blogs..." aria-label="Search blogs" />
+        </section>
+
+        <section id="blogGrid" class="blog-grid" aria-label="Blog list"></section>
+
+        <p id="emptyState" class="empty-state" hidden>
+            No blogs found.
+        </p>
+    </main>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

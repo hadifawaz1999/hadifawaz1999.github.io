@@ -1,0 +1,22 @@
+[
+    {
+        "title": "ECG + Heart Synchronization",
+        "slug": "ecg-heart-sync",
+        "description": "Interactive visualization showing how ECG waveform phases synchronize with atrial and ventricular contraction.",
+        "categories": ["Data Visualization", "Medical AI"],
+        "date": "2026-02-03",
+        "author": "Ali Ismail-Fawaz",
+        "url": "./ecg/",
+        "featured": true
+    },
+    {
+        "title": "Marvel Comic Books Dataset",
+        "slug": "marvel-comic-books-dataset",
+        "description": "An interactive visualization of the Marvel comic books dataset, showcasing character appearances and relationships.",
+        "categories": ["Data Visualization", "Comics"],
+        "date": "2025-12-21",
+        "author": "Ali Ismail-Fawaz",
+        "url": "./mmr/",
+        "featured": true
+    }
+]

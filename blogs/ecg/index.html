@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ECG + Heart Sync</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+  <main class="app-shell">
+    <header class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Interactive ECG Education Tool</p>
+        <h1>ECG + Heart Synchronization</h1>
+        <p class="subtitle">
+          Explore how ECG waveform phases align with atrial and ventricular contraction in real time.
+        </p>
+
+        <p class="author">
+          By <span id="authorText"><a target="_blank" href="https://hadifawaz1999.github.io/">Ali Ismail-Fawaz</a></span>
+        </p>
+      </div>
+    </header>
+
+    <section class="visual-panel" aria-label="ECG visualization">
+      <div class="heart-card">
+        <div class="card-label">Heart Activity</div>
+        <div id="heartContainer"></div>
+
+        <div class="status">
+          <div>
+            <span class="status-label">Phase</span>
+            <strong id="phaseText">—</strong>
+          </div>
+          <div>
+            <span class="status-label">Time</span>
+            <strong><span id="timeText">0.00</span>s</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="ecg-card">
+        <div class="canvas-header">
+          <div>
+            <div class="card-label">ECG Signal</div>
+            <h2>Waveform Playback</h2>
+          </div>
+        </div>
+
+        <canvas id="ecg" width="900" height="420"></canvas>
+
+        <div class="controls">
+          <label>
+            <span>Record</span>
+            <select id="recordSel"></select>
+          </label>
+
+          <div class="button-group">
+            <button id="restartBtn">Restart</button>
+            <button id="playBtn" class="primary">Play</button>
+            <button id="pauseBtn" disabled>Pause</button>
+          </div>
+
+          <label>
+            <span>Speed</span>
+            <select id="speedSel">
+              <option value="0.1">0.1×</option>
+              <option value="0.5">0.5×</option>
+              <option value="1" selected>1×</option>
+              <option value="2">2×</option>
+              <option value="4">4×</option>
+            </select>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section class="info" aria-label="About this tool">
+      <div class="info-intro">
+        <p class="eyebrow">About the Demo</p>
+        <h2>Designed for visual ECG learning</h2>
+        <p>
+          The visualization plays back ECG recordings and highlights simplified heart contraction patterns
+          in sync with ECG phases: P, QRS, and T. It is intended for demonstration and educational use.
+        </p>
+      </div>
+
+      <div class="info-grid">
+        <article class="info-card">
+          <h3>How to use</h3>
+          <ul>
+            <li>Press <strong>Play</strong> to start playback.</li>
+            <li>Use <strong>Pause</strong> to stop playback at the current time.</li>
+            <li>Press <strong>Restart</strong> to return to the beginning.</li>
+            <li>Select another <strong>Record</strong> to load a different ECG sample.</li>
+            <li>Use <strong>Speed</strong> to change playback rate.</li>
+          </ul>
+        </article>
+
+        <article class="info-card">
+          <h3>Dataset</h3>
+          <p>
+            <strong>Source:</strong>
+            <span id="datasetSourceText">
+              <a target="_blank" href="https://www.physionet.org/content/ludb/1.0.1/">
+                Lobachevsky University Electrocardiography Database
+              </a>
+            </span>
+          </p>
+          <p><strong>Sampling rate:</strong> 500 Hz</p>
+        </article>
+
+        <article class="info-card">
+          <h3>Notes</h3>
+          <ul>
+            <li>The heart animation is a simplified timing illustration, not a diagnostic model.</li>
+            <li>ECG phase intervals come from annotations provided by the original dataset.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./app.js"></script>
+</body>
+</html>

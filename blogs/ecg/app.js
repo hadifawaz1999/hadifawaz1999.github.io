@@ -5,12 +5,12 @@
 // ]
 
 async function loadInlineSVG(url, containerId) {
-  const res = await fetch(url);
-  if (!res.ok) throw new Error(`Failed to load SVG: ${url}`);
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`Failed to load SVG: ${url}`);
 
-  const svgText = await res.text();
-  const container = document.getElementById(containerId);
-  container.innerHTML = svgText;
+    const svgText = await res.text();
+    const container = document.getElementById(containerId);
+    container.innerHTML = svgText;
 }
 
 
@@ -173,7 +173,13 @@ function setupECGCanvas(canvas, ecg, fs) {
         ctx.stroke();
     }
 
-    return { draw };
+    // return { draw };
+    return {
+        draw,
+        secondsVisible,
+        plotW,
+        margin
+    };
 }
 
 import { setupHeart } from "./heart.js";
@@ -226,6 +232,7 @@ function normalizeIntervals(intervals) {
     let intervals = { P: [], QRS: [], T: [] };
     let duration = 0;
     let ecgView = null;
+    let dragging = false;
 
     function stopAndResetUI() {
         running = false;
@@ -300,10 +307,71 @@ function normalizeIntervals(intervals) {
         if (heart.pauseFlows) heart.pauseFlows();    // ✅ keep flows stopped
     }
 
+    function jumpToTime(t) {
+        tOffset = Math.max(0, Math.min(t, duration));
+
+        ecgView.draw(tOffset);
+
+        const ph = phaseAt(tOffset, intervals);
+        heart.setPhase(ph, tOffset);
+    }
+
 
     playBtn.addEventListener("click", start);
     pauseBtn.addEventListener("click", pause);
     if (restartBtn) restartBtn.addEventListener("click", restart);
+
+    canvas.addEventListener("mousedown", e => {
+        dragging = true;
+
+        if (running) {
+            pause();
+        }
+
+        scrub(e);
+    });
+
+    window.addEventListener("mouseup", () => {
+        dragging = false;
+    });
+
+    canvas.addEventListener("mousemove", e => {
+        if (!dragging) return;
+        scrub(e);
+    });
+
+    function scrub(e) {
+
+        const rect = canvas.getBoundingClientRect();
+
+        const x =
+            ((e.clientX - rect.left) / rect.width) *
+            canvas.width;
+
+        const plotX =
+            x - ecgView.margin.left;
+
+        const clampedX =
+            Math.max(
+                0,
+                Math.min(ecgView.plotW, plotX)
+            );
+
+        const visibleStart =
+            Math.max(
+                0,
+                tOffset - ecgView.secondsVisible
+            );
+
+        const visibleTime =
+            (clampedX / ecgView.plotW) *
+            ecgView.secondsVisible;
+
+        const newTime =
+            visibleStart + visibleTime;
+
+        jumpToTime(newTime);
+    }
 
     function tick() {
         if (!running) return;
