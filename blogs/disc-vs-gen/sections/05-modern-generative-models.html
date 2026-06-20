@@ -1,0 +1,101 @@
+<section class="section">
+
+  <h2>5. Generative Models Today</h2>
+
+  <p>
+    The previous experiment used Gaussian distributions because they are easy to
+    visualize. But the same idea appears in modern generative models.
+  </p>
+
+  <p>
+    Consider a Conditional Variational Autoencoder, or CVAE, trained on images.
+    Instead of directly learning a classification boundary, it learns how images
+    are generated for each class.
+  </p>
+
+  <div class="equation">
+    $$
+    P(x|y)
+    $$
+  </div>
+
+  <p>
+    More precisely, the model introduces a latent variable \(z\), which captures
+    hidden factors of variation such as shape, pose, thickness, texture, or
+    style.
+  </p>
+
+  <div class="equation">
+    $$
+    P(x|y)
+    =
+    \int P(x|z,y)P(z)\,dz
+    $$
+  </div>
+
+  <p>
+    To classify a new image \(x\), we can ask which class would most likely
+    have generated it:
+  </p>
+
+  <div class="key-equation">
+    $$
+    \hat{y}
+    =
+    \arg\max_c
+    P(x|y=c)P(y=c)
+    $$
+  </div>
+
+  <p>
+    This is the same principle as the Gaussian experiment. The ellipses are gone,
+    but the logic is unchanged: learn a model of each class, then classify by
+    comparing how well each class explains the input.
+  </p>
+
+  <div class="quote-box">
+    A CVAE does not need to learn a decision boundary directly. The boundary
+    emerges from comparing class-conditional likelihoods.
+  </div>
+
+  <p>
+    A similar idea appears in foundation-model pretraining. A model may first be
+    trained with a generative objective, such as predicting missing parts of the data.
+  </p>
+
+  <div class="equation">
+    $$
+    \text{pretrain by learning structure in } x
+    $$
+  </div>
+
+  <p>
+    After this pretraining stage, the learned representation can be adapted to a
+    specific downstream task, such as image classification, diagnosis, or
+    sequence labeling.
+  </p>
+
+  <p>
+    The important point is not that one model magically solves every task. The
+    point is more precise: a generative pretext task can force the model to learn
+    useful structure before it is trained for one target task.
+  </p>
+
+  <div class="quote-box">
+    Generative learning can be useful even when the final goal is
+    discriminative.
+  </div>
+
+  <p>
+    This gives a modern version of the article's main thesis: learning how data
+    is produced can provide a richer starting point than learning only how to
+    separate labels.
+  </p>
+
+  <div class="transition-box">
+    But richer does not always mean better. In practice, choosing between
+    generative and discriminative models depends on the task, the data, and the
+    assumptions we are willing to make.
+  </div>
+
+</section>

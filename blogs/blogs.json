@@ -1,5 +1,15 @@
 [
     {
+        "title": "Discriminative vs Generative Models",
+        "slug": "disc-vs-gen",
+        "description": "Understanding the fundamental differences between discriminative and generative machine learning models.",
+        "categories": ["Machine Learning", "Probability"],
+        "date": "2026-06-20",
+        "author": "Ali Ismail-Fawaz",
+        "url": "./disc-vs-gen/",
+        "featured": true
+    },
+    {
         "title": "ECG + Heart Synchronization",
         "slug": "ecg-heart-sync",
         "description": "Interactive visualization showing how ECG waveform phases synchronize with atrial and ventricular contraction.",

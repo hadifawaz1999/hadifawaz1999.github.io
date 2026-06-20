@@ -1,0 +1,100 @@
+<section class="section">
+
+
+<h2>2. What Should a Model Learn?</h2>
+
+<p>
+    Consider a dataset composed of observations \(x\) and labels \(y\).
+</p>
+
+<p>
+    Before discussing algorithms, we should first ask a more fundamental
+    question:
+</p>
+
+<div class="question-box">
+    What information should a model learn from the dataset?
+</div>
+
+<p>
+    A discriminative model focuses on the task of prediction. It only
+    learns what is necessary to infer the label from an observation.
+</p>
+
+<div class="equation">
+    $$
+    P(y \mid x)
+    $$
+</div>
+
+<p>
+    In other words, given an observation \(x\), what is the probability
+    that it belongs to class \(y\)?
+</p>
+
+<p>
+    A generative model takes a different approach. Instead of learning only
+    the prediction task, it attempts to learn how observations and labels
+    are distributed together.
+</p>
+
+<div class="equation">
+    $$
+    P(x,y)
+    $$
+</div>
+
+<p>
+    At first glance, this may seem like a much harder problem. Why learn
+    the entire distribution when all we want is a classifier?
+</p>
+
+<p>
+    The answer is that learning the full distribution provides access to
+    additional information:
+</p>
+
+<div class="equation">
+    $$
+    P(x|y)
+    \qquad \text{and} \qquad
+    P(y)
+    $$
+</div>
+
+<p>
+    These quantities can then be combined through Bayes' rule to recover a
+    classifier:
+</p>
+
+<div class="key-equation">
+    $$
+    P(y|x)
+    =
+    \frac{P(x|y)P(y)}
+         {P(x)}
+    $$
+</div>
+
+<p>
+    This reveals an important asymmetry.
+</p>
+
+<div class="question-box">
+    Learning \(P(x,y)\) gives access to \(P(y|x)\).
+    <br><br>
+    Does learning \(P(y|x)\) give access to \(P(x,y)\)?
+</div>
+
+<p>
+    In general, the answer is no. This is the fundamental reason why a
+    generative model can often perform classification, while a purely
+    discriminative model cannot naturally generate realistic samples.
+</p>
+
+<div class="transition-box">
+    Let's make this distinction concrete with a simple synthetic dataset.
+</div>
+
+
+</section>

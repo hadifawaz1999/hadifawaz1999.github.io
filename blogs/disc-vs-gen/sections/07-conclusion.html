@@ -1,0 +1,103 @@
+<section class="section">
+
+  <h2>Conclusion</h2>
+
+  <p>
+    We began with a common explanation:
+  </p>
+
+  <div class="quote-box">
+    Discriminative models classify.
+    <br><br>
+    Generative models generate.
+  </div>
+
+  <p>
+    While not incorrect, this description misses the fundamental distinction
+    between the two paradigms.
+  </p>
+
+  <p>
+    A discriminative model learns only what is necessary for prediction:
+  </p>
+
+  <div class="equation">
+    $$
+    P(y|x)
+    $$
+  </div>
+
+  <p>
+    A generative model attempts to learn how observations and labels are
+    distributed:
+  </p>
+
+  <div class="equation">
+    $$
+    P(x,y)
+    $$
+  </div>
+
+  <p>
+    This seemingly small difference leads to a profound asymmetry. By learning
+    the joint distribution, a generative model can recover a classifier through
+    Bayes' rule. The reverse is generally not true.
+  </p>
+
+  <div class="key-equation">
+    $$
+    P(x,y)
+    \;\Longrightarrow\;
+    P(y|x)
+    $$
+  </div>
+
+  <p>
+    The synthetic experiment illustrated this idea directly. The generative
+    model learned class distributions and obtained a decision boundary as a
+    consequence. The discriminative model learned only the boundary.
+  </p>
+
+  <p>
+    Modern generative models extend the same philosophy. Whether we are
+    modeling images, text, signals, or other modalities, learning how data is
+    produced can provide useful structure that later supports discriminative
+    tasks.
+  </p>
+
+  <div class="quote-box">
+    Generative models are not powerful because they can generate.
+    <br><br>
+    They are powerful because generation is evidence that the model has learned
+    something deeper about the data.
+  </div>
+
+  <p>
+    Ultimately, the distinction is not about classification versus generation.
+    It is about what the model chooses to learn.
+  </p>
+
+  <div class="key-equation">
+    $$
+    \text{Discriminative:}
+    \quad
+    P(y|x)
+    $$
+  </div>
+
+  <div class="key-equation">
+    $$
+    \text{Generative:}
+    \quad
+    P(x,y)
+    $$
+  </div>
+
+  <p>
+    Once this perspective is adopted, many classical and modern machine
+    learning methods can be viewed through the same lens: some models focus on
+    the task, while others attempt to understand the process that generated the
+    data in the first place.
+  </p>
+
+</section>

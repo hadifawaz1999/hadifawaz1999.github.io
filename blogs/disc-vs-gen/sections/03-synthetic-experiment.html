@@ -1,0 +1,246 @@
+<section class="section">
+
+  <h2>3. A Synthetic Experiment</h2>
+
+  <p>
+    To make the distinction concrete, let us create a simple two-dimensional
+    dataset with two classes.
+  </p>
+
+  <div class="equation">
+    $$
+    x = (x_1, x_2),
+    \qquad
+    y \in \{0,1\}
+    $$
+  </div>
+
+  <p>
+    Each class is generated from a different Gaussian distribution. This gives
+    us two visible clouds of points.
+  </p>
+
+  <figure class="media-figure">
+    <img src="./experiment_outputs/figures/01-dataset.png" alt="Synthetic two-class dataset">
+    <figcaption>
+      The same dataset will be given to both models. The difference is not in
+      the data, but in what each model tries to learn from it.
+    </figcaption>
+  </figure>
+
+  <h3>The discriminative model</h3>
+
+  <p>
+    The discriminative model directly learns the probability of the label given
+    the observation:
+  </p>
+
+  <div class="equation">
+    $$
+    P(y|x)
+    $$
+  </div>
+
+  <p>
+    In our experiment, we use logistic regression:
+  </p>
+
+  <div class="equation">
+    $$
+    P(y=1|x)
+    =
+    \sigma(w^T x + b)
+    $$
+  </div>
+
+  <p>
+    The decision boundary appears when the model is equally uncertain between
+    the two classes:
+  </p>
+
+  <div class="equation">
+    $$
+    P(y=1|x)=0.5
+    \quad \Longrightarrow \quad
+    w^T x + b = 0
+    $$
+  </div>
+
+  <p>
+    Because this equation is linear in \(x\), the discriminative boundary is a
+    straight line.
+  </p>
+
+  <figure class="media-figure">
+    <video controls muted loop playsinline>
+      <source src="./experiment_outputs/videos/02-discriminative-boundary-learning.mp4" type="video/mp4">
+    </video>
+    <figcaption>
+      The discriminative model directly moves the decision boundary as it sees
+      more training samples.
+    </figcaption>
+  </figure>
+
+  <!-- <figure class="media-figure">
+    <img src="./experiment_outputs/figures/03-discriminative-model.png" alt="Discriminative model decision boundary">
+    <figcaption>
+      After training, logistic regression has learned a separating boundary. It
+      can classify points, but it has not learned a distribution for either
+      class.
+    </figcaption>
+  </figure> -->
+
+  <h3>The generative model</h3>
+
+  <p>
+    The generative model learns something different. Instead of directly
+    learning \(P(y|x)\), it learns one distribution per class:
+  </p>
+
+  <div class="equation">
+    $$
+    P(x|y=0)
+    \qquad \text{and} \qquad
+    P(x|y=1)
+    $$
+  </div>
+
+  <p>
+    In this experiment, each class is modeled as a Gaussian:
+  </p>
+
+  <div class="equation">
+    $$
+    P(x|y=c)
+    =
+    \mathcal{N}(\mu_c,\Sigma_c)
+    $$
+  </div>
+
+  <p>
+    The model estimates the mean \(\mu_c\), covariance \(\Sigma_c\), and prior
+    probability \(P(y=c)\) for each class.
+  </p>
+
+  <figure class="media-figure">
+    <video controls muted loop playsinline>
+      <source src="./experiment_outputs/videos/01-generative-boundary-learning.mp4" type="video/mp4">
+    </video>
+    <figcaption>
+      The generative model first estimates class distributions. The decision
+      boundary is then derived from those distributions.
+    </figcaption>
+  </figure>
+
+  <h3>How the generative boundary appears</h3>
+
+  <p>
+    For a new point \(x\), the model computes how likely the point is under
+    each class distribution:
+  </p>
+
+  <div class="equation">
+    $$
+    P(x|y=0)P(y=0)
+    \qquad \text{versus} \qquad
+    P(x|y=1)P(y=1)
+    $$
+  </div>
+
+  <p>
+    The point is assigned to the class with the larger score.
+  </p>
+
+  <div class="equation">
+    $$
+    \hat{y}
+    =
+    \arg\max_{c \in \{0,1\}}
+    P(x|y=c)P(y=c)
+    $$
+  </div>
+
+  <p>
+    The decision boundary is the set of points where both class scores are
+    equal:
+  </p>
+
+  <div class="key-equation">
+    $$
+    P(x|y=0)P(y=0)
+    =
+    P(x|y=1)P(y=1)
+    $$
+  </div>
+
+  <p>
+    This is the crucial difference: the generative model does not directly
+    learn the boundary. The boundary emerges from comparing the learned class
+    distributions.
+  </p>
+
+  <figure class="media-figure">
+    <img src="./experiment_outputs/figures/02-generative-model.png" alt="Generative model class distributions and decision boundary">
+    <figcaption>
+      The ellipses represent the learned Gaussian distributions. The dashed
+      boundary appears where the two class probabilities are equal.
+    </figcaption>
+  </figure>
+
+  <p>
+    Since the two classes can have different covariance matrices,
+    \(\Sigma_0 \neq \Sigma_1\), the resulting boundary is generally quadratic:
+  </p>
+
+  <div class="equation">
+    $$
+    x^T A x + b^T x + c = 0
+    $$
+  </div>
+
+  <p>
+    This is why the generative boundary can bend, while logistic regression
+    produces a straight line in this experiment.
+  </p>
+
+  <h3>Generation as an extra capability</h3>
+
+  <p>
+    Once the class distributions are learned, the model can also create new
+    samples by sampling from them:
+  </p>
+
+  <div class="equation">
+    $$
+    x_{\text{new}}
+    \sim
+    P(x|y=c)
+    $$
+  </div>
+
+  <figure class="media-figure">
+    <video controls muted loop playsinline>
+      <source src="./experiment_outputs/videos/03-generative-sampling.mp4" type="video/mp4">
+    </video>
+    <figcaption>
+      New points can be generated by sampling from the learned class
+      distributions.
+    </figcaption>
+  </figure>
+
+  <!-- <figure class="media-figure">
+    <img src="./experiment_outputs/figures/04-generated-samples.png" alt="Generated samples from the generative model">
+    <figcaption>
+      The generated points follow the learned class distributions. Logistic
+      regression has no equivalent sampling mechanism because it never learned
+      \(P(x|y)\).
+    </figcaption>
+  </figure> -->
+
+  <div class="transition-box">
+    The experiment shows the asymmetry clearly: the generative model can derive
+    a classifier from distributions, but the discriminative model cannot derive
+    distributions from a boundary.
+  </div>
+
+</section>

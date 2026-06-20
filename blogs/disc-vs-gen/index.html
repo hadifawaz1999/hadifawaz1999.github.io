@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Discriminative vs Generative Models | Ali Ismail-Fawaz</title>
+  <link rel="stylesheet" href="./style.css" />
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['\\(', '\\)'], ['$', '$']],
+        displayMath: [['$$', '$$']]
+      }
+    };
+  </script>
+
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+
+<body>
+  <main class="article-page">
+
+    <a class="back-link" href="../index.html">← Back to blogs</a>
+
+    <header class="article-hero">
+      <p class="eyebrow">Machine Learning Theory</p>
+
+      <h1>Discriminative vs Generative Models</h1>
+
+      <p class="subtitle">
+        Why learning to classify data is not the same as learning how data is generated.
+      </p>
+
+      <div class="article-meta">
+        <span><a href="https://github.com/hadifawaz1999" target="_blank">Ali Ismail-Fawaz</a></span>
+        <span>June 2026</span>
+        <span>12–15 min read</span>
+        <span>Intermediate</span>
+      </div>
+
+      <div class="tag-row">
+        <span>Machine Learning</span>
+        <span>Probability</span>
+        <span>Bayes Rule</span>
+        <span>Generative Models</span>
+      </div>
+    </header>
+
+    <section class="intro-card">
+      <h2>The central question</h2>
+
+      <p>
+        A discriminative model learns how to separate classes. A generative model
+        tries to learn how the data itself could have been produced.
+      </p>
+
+      <p>
+        This difference is often summarized as “one classifies and one generates,”
+        but that explanation is too shallow. In this article, we will look at the
+        distinction through probability, geometry, and a synthetic experiment.
+      </p>
+
+      <blockquote>
+        If a model understands how each class generates data, classification can
+        emerge from that knowledge. But if a model only learns the classification
+        boundary, generation does not naturally follow.
+      </blockquote>
+    </section>
+
+    <nav class="table-of-contents" id="table-of-contents">
+      <div class="toc-header">
+        <span>Contents</span>
+      </div>
+
+      <ul id="toc-list">
+        <li class="toc-loading">Loading sections...</li>
+      </ul>
+    </nav>
+
+    <div id="content"></div>
+
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+
+</html>

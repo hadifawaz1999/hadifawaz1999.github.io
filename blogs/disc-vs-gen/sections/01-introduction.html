@@ -1,0 +1,148 @@
+<section class="section">
+
+  <h2>1. The Misconception</h2>
+
+  <p>
+    Ask a machine learning student about the difference between discriminative
+    and generative models and the answer will often be:
+  </p>
+
+  <div class="quote-box">
+    “Discriminative models classify data, while generative models generate data.”
+  </div>
+
+  <p>
+    Although this statement is not entirely incorrect, it hides the fundamental
+    distinction between the two paradigms and often leads to a shallow
+    understanding of what these models actually learn.
+  </p>
+
+  <p>
+    Consider the following examples:
+  </p>
+
+  <ul>
+    <li>Logistic Regression is a discriminative model.</li>
+    <li>Support Vector Machines are discriminative models.</li>
+    <li>Naive Bayes is a generative model.</li>
+    <li>Gaussian Discriminant Analysis is a generative model.</li>
+    <li>Large Language Models are generative models.</li>
+  </ul>
+
+  <p>
+    At first glance, the distinction seems obvious. Logistic Regression
+    classifies emails as spam or not spam, while a Large Language Model
+    generates text. End of story.
+  </p>
+
+  <p>
+    However, this interpretation immediately raises an interesting question.
+  </p>
+
+  <div class="question-box">
+    If a model can generate realistic examples from a class,
+    shouldn't it also be able to recognize that class?
+  </div>
+
+  <div class="figure-card">
+    <div class="model-asymmetry-figure" aria-label="Generative versus discriminative model diagram">
+
+      <div class="model-panel">
+        <div class="model-title">Generative Model</div>
+
+        <div class="model-node world-node">
+          Learns class distributions
+        </div>
+
+        <div class="vertical-arrow"></div>
+
+        <div class="model-node representation-node">
+          Internal representation
+        </div>
+
+        <div class="branch-container">
+          <div class="branch">
+            <div class="diagonal-arrow left"></div>
+            <div class="output-node">
+              Classification via Bayes rule
+              <!-- <span>via Bayes rule</span> -->
+            </div>
+          </div>
+
+          <div class="branch">
+            <div class="diagonal-arrow right"></div>
+            <div class="output-node">
+              Generation via sampling
+              <!-- <span>via sampling</span> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="model-panel">
+        <div class="model-title">Discriminative Model</div>
+
+        <div class="model-node boundary-node">
+          Learns the decision boundary
+        </div>
+
+        <div class="vertical-arrow"></div>
+
+        <div class="output-node single-output">
+          Classification
+        </div>
+      </div>
+
+    </div>
+
+    <p class="figure-caption">
+      A generative model learns class distributions, so it can classify using
+      Bayes rule and generate new samples by sampling. A discriminative model
+      learns the boundary needed for classification.
+    </p>
+  </div>
+  <p>
+    The figure above already hints at a deeper asymmetry.
+    A model that learns how data is generated may naturally acquire the ability
+    to classify. In contrast, a model that only learns a classification rule
+    does not necessarily learn anything about how the data itself was produced.
+  </p>
+
+
+  <p>
+    In fact, many generative models can perform classification remarkably well.
+    Classical examples include Naive Bayes and Gaussian Discriminant Analysis.
+  </p>
+
+  <p>
+    Now consider the opposite direction.
+  </p>
+
+  <div class="question-box">
+    If a model can perfectly classify data, does it know how that data was
+    generated?
+  </div>
+
+  <p>
+    Surprisingly, the answer is generally no.
+  </p>
+
+  <p>
+    A classifier may learn an almost perfect decision boundary while having
+    little understanding of the underlying process that produced the data.
+  </p>
+
+  <p>
+    This observation reveals that the true distinction between discriminative
+    and generative models is not about classification versus generation.
+    Instead, it is about the amount of information each model attempts to learn
+    about the world.
+  </p>
+
+  <div class="transition-box">
+    To understand why, we first need to ask a more fundamental question:
+    <br><br>
+    <strong>What exactly should a model learn from a dataset?</strong>
+  </div>
+
+</section>

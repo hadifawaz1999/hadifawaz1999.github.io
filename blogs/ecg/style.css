@@ -437,3 +437,20 @@ button:disabled {
     grid-template-columns: 1fr;
   }
 }
+
+.back-link {
+  display: inline-flex;
+  align-items: center;
+
+  margin-bottom: 20px;
+
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 700;
+
+  transition: color 0.2s ease;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}

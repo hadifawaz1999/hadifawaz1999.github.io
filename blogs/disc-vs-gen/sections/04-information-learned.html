@@ -1,0 +1,66 @@
+<section class="section">
+
+  <h2>4. Information Learned</h2>
+
+  <p>
+    The experiment revealed an asymmetry: a generative model can derive a
+    classifier, but a discriminative model cannot generally derive a generator.
+  </p>
+
+  <div class="question-box">
+    Which object contains more information: \(P(y|x)\) or \(P(x,y)\)?
+  </div>
+
+  <p>
+    A discriminative model learns the conditional distribution:
+  </p>
+
+  <div class="equation">
+    $$
+    P(y|x)
+    $$
+  </div>
+
+  <p>
+    This is exactly what we need for classification. But it says nothing about
+    how likely the observation \(x\) itself is.
+  </p>
+
+  <p>
+    A generative model learns the joint distribution:
+  </p>
+
+  <div class="key-equation">
+    $$
+    P(x,y)
+    =
+    P(y|x)P(x)
+    =
+    P(x|y)P(y)
+    $$
+  </div>
+
+  <p>
+    This object contains both the relationship between observations and labels,
+    and the distribution of the observations themselves.
+  </p>
+
+  <div class="quote-box">
+    Knowing \(P(x,y)\) lets us recover \(P(y|x)\), \(P(x|y)\),
+    \(P(x)\), and \(P(y)\). Knowing only \(P(y|x)\) is not enough
+    to recover all of these quantities.
+  </div>
+
+  <p>
+    This is the theoretical reason behind the asymmetry. A generative model
+    tries to learn a richer object, so classification becomes one consequence
+    of that knowledge.
+  </p>
+
+  <div class="transition-box">
+  This same asymmetry is not limited to Gaussian toy models. It also appears in
+  modern generative models, where the distributions are learned by neural
+  networks instead of simple formulas.
+</div>
+
+</section>

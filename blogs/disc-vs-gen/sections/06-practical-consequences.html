@@ -1,0 +1,117 @@
+<section class="section">
+
+  <h2>6. Practical Consequences</h2>
+
+  <p>
+    The previous sections may give the impression that generative models are
+    strictly superior because they learn more information. However, learning a
+    richer object is also a more difficult problem.
+  </p>
+
+  <p>
+    In practice, the choice depends on the goal.
+  </p>
+
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th>Situation</th>
+        <th>Usually Preferred</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Pure classification accuracy</td>
+        <td>Discriminative</td>
+      </tr>
+      <tr>
+        <td>Small datasets</td>
+        <td>Generative</td>
+      </tr>
+      <tr>
+        <td>Data generation</td>
+        <td>Generative</td>
+      </tr>
+      <tr>
+        <td>Density estimation</td>
+        <td>Generative</td>
+      </tr>
+      <tr>
+        <td>Fast prediction only</td>
+        <td>Discriminative</td>
+      </tr>
+      <tr>
+        <td>Representation learning</td>
+        <td>Generative</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>Why discriminative models often win</h3>
+
+  <p>
+    If the only objective is classification, a discriminative model can devote
+    all of its capacity to learning:
+  </p>
+
+  <div class="equation">
+    $$
+    P(y|x)
+    $$
+  </div>
+
+  <p>
+    It does not spend resources modeling aspects of the data that are irrelevant
+    for the classification task.
+  </p>
+
+  <div class="quote-box">
+    When the task is known in advance, directly optimizing the task is often the
+    most efficient strategy.
+  </div>
+
+  <h3>Why generative models remain attractive</h3>
+
+  <p>
+    Generative models attempt to learn:
+  </p>
+
+  <div class="equation">
+    $$
+    P(x,y)
+    $$
+  </div>
+
+  <p>
+    This is a harder objective, but it provides additional capabilities such as
+    data generation, uncertainty estimation, likelihood evaluation, and richer
+    representations.
+  </p>
+
+  <p>
+    In many modern systems, the generative model is not the final classifier.
+    Instead, it serves as a way to learn useful structure before adapting the
+    model to a specific task.
+  </p>
+
+  <div class="quote-box">
+    Discriminative learning asks:
+    <!-- <br><br> -->
+    "How do I solve this task?"
+    <br><br>
+    Generative learning asks:
+    <!-- <br><br> -->
+    "How was this data produced?"
+  </div>
+
+  <p>
+    Neither philosophy is universally better. Their strengths come from
+    optimizing different objectives.
+  </p>
+
+  <div class="transition-box">
+    We are now ready to return to the original question and summarize the true
+    distinction between discriminative and generative models.
+  </div>
+
+</section>
