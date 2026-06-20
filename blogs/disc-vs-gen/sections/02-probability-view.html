@@ -26,8 +26,9 @@
     P(y \mid x)
     $$
 </div>
-
 <p>
+    This quantity is called the <strong>conditional distribution</strong> of
+    the label given the observation.
     In other words, given an observation \(x\), what is the probability
     that it belongs to class \(y\)?
 </p>
@@ -45,6 +46,8 @@
 </div>
 
 <p>
+    This quantity is called the <strong>joint distribution</strong>. It
+    describes how observations and labels occur together.
     At first glance, this may seem like a much harder problem. Why learn
     the entire distribution when all we want is a classifier?
 </p>
@@ -63,6 +66,9 @@
 </div>
 
 <p>
+    Here, \(P(x|y)\) is the <strong>class-conditional distribution</strong>,
+    while \(P(y)\) is the <strong>prior (marginal) distribution</strong> over classes.
+    <!-- These quantities are connected through Bayes' rule: -->
     These quantities can then be combined through Bayes' rule to recover a
     classifier:
 </p>
@@ -74,6 +80,23 @@
     \frac{P(x|y)P(y)}
          {P(x)}
     $$
+</div>
+
+<div class="quote-box">
+    Conditional distribution:
+    \(P(y|x)\)
+    <br><br>
+
+    Joint distribution:
+    \(P(x,y)\)
+    <br><br>
+
+    Class-conditional distribution:
+    \(P(x|y)\)
+    <br><br>
+
+    Prior (marginal) distribution:
+    \(P(y)\)
 </div>
 
 <p>
