@@ -76,6 +76,10 @@ async function loadSections() {
     }
 
     buildTOC();
+
+    if (window.MathJax && window.MathJax.typesetPromise) {
+        await window.MathJax.typesetPromise([container]);
+    }
 }
 
 function handleTOCVisibility() {
