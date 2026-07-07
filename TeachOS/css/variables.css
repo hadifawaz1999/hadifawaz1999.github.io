@@ -1,0 +1,59 @@
+:root {
+  --color-bg: #111827;
+  --color-surface: #1d2638;
+  --color-surface-soft: #263247;
+
+  --color-text: #eef2ff;
+  --color-text-muted: #b8c2d9;
+
+  --color-blue: #7fb6ff;
+  --color-blue-soft: rgba(127, 182, 255, 0.16);
+
+  --color-red: #ff8fab;
+  --color-red-soft: rgba(255, 143, 171, 0.14);
+
+  --color-border: rgba(255, 255, 255, 0.08);
+
+  --desktop-bg: var(--color-bg);
+  --desktop-gradient:
+    radial-gradient(circle at top left, var(--color-blue-soft), transparent 35%),
+    radial-gradient(circle at bottom right, var(--color-red-soft), transparent 32%),
+    linear-gradient(135deg, #111827 0%, #1b2234 100%);
+
+  --text-main: var(--color-text);
+  --text-muted: var(--color-text-muted);
+
+  --accent: var(--color-blue);
+  --danger: var(--color-red);
+
+  --taskbar-height: 56px;
+  --taskbar-bg: rgba(20, 28, 45, 0.84);
+  --taskbar-border: var(--color-border);
+
+  --window-bg: rgba(29, 38, 56, 0.94);
+  --window-header-bg:
+    linear-gradient(90deg,
+      rgba(127, 182, 255, 0.18),
+      rgba(255, 143, 171, 0.14));
+  --window-border: var(--color-border);
+  --window-radius: 16px;
+  --window-shadow: 0 18px 40px rgba(0, 0, 0, 0.45);
+
+  --terminal-bg: #0f172a;
+  --terminal-text: #d6f5ff;
+  --terminal-muted: #8ca3c7;
+
+  --icon-hover-bg: rgba(127, 182, 255, 0.14);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  --transition-fast: 160ms ease;
+}
