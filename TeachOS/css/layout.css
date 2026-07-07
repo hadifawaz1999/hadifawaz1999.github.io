@@ -1,0 +1,31 @@
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: var(--desktop-bg);
+    color: var(--text-main);
+}
+
+.desktop {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: var(--desktop-gradient);
+}
+
+.windows-container {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+}
+
+.windows-container>* {
+    pointer-events: auto;
+}
+
+.taskbar {
+    height: var(--taskbar-height);
+}

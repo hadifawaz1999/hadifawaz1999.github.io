@@ -1,0 +1,44 @@
+.terminal {
+    height: 100%;
+    min-height: 280px;
+    padding: 16px;
+    border: 1px solid rgba(127, 182, 255, 0.16);
+    border-radius: 14px;
+    background: var(--terminal-bg);
+    color: var(--terminal-text);
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    font-size: 14px;
+}
+
+.terminal__output {
+    margin-bottom: 12px;
+}
+
+.terminal__output p {
+    margin: 0 0 8px;
+}
+
+.terminal__command {
+    color: var(--color-blue);
+    font-weight: 700;
+}
+
+.terminal__input-line {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.terminal__prompt {
+    color: var(--color-red);
+    white-space: nowrap;
+}
+
+.terminal__input {
+    flex: 1;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: var(--terminal-text);
+    font: inherit;
+}

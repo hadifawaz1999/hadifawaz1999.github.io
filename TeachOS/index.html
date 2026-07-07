@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TeachOS</title>
+
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/desktop.css" />
+    <link rel="stylesheet" href="css/taskbar.css" />
+    <link rel="stylesheet" href="css/windows.css" />
+    <link rel="stylesheet" href="css/terminal.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+</head>
+
+<body>
+    <main id="desktop" class="desktop">
+        <section class="desktop-icons">
+            <button class="desktop-icon" data-app="terminal">
+                <span class="desktop-icon__emoji">💻</span>
+                <span class="desktop-icon__label">Terminal</span>
+            </button>
+
+            <button class="desktop-icon" data-app="filesystem">
+                <span class="desktop-icon__emoji">📁</span>
+                <span class="desktop-icon__label">Files</span>
+            </button>
+
+            <button class="desktop-icon" data-app="scheduler">
+                <span class="desktop-icon__emoji">⚙️</span>
+                <span class="desktop-icon__label">Scheduler</span>
+            </button>
+
+            <button class="desktop-icon" data-app="memory">
+                <span class="desktop-icon__emoji">🧠</span>
+                <span class="desktop-icon__label">Memory</span>
+            </button>
+        </section>
+
+        <section id="windows-container" class="windows-container"></section>
+    </main>
+
+    <footer class="taskbar">
+        <button class="start-button">TeachOS</button>
+
+        <div id="running-apps" class="running-apps"></div>
+
+        <div class="system-tray">
+            <div class="tray-clock">
+                <span id="clock-time">--:--</span>
+                <span id="clock-date">---</span>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+
+</html>

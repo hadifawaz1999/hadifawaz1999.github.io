@@ -1,0 +1,152 @@
+.window {
+    position: absolute;
+    width: 640px;
+    min-height: 380px;
+    border: 1px solid var(--window-border);
+    border-radius: var(--window-radius);
+    background: var(--window-bg);
+    color: var(--text-main);
+    box-shadow: var(--window-shadow);
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+    transform: scale(0.98);
+    opacity: 0;
+    animation: windowOpen 180ms ease forwards;
+}
+
+.window.is-active {
+    border-color: rgba(127, 182, 255, 0.38);
+    box-shadow:
+        var(--window-shadow),
+        0 0 0 1px rgba(127, 182, 255, 0.16),
+        0 0 34px rgba(127, 182, 255, 0.12);
+}
+
+.window__header {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 14px;
+    background: var(--window-header-bg);
+    border-bottom: 1px solid var(--window-border);
+    cursor: grab;
+    user-select: none;
+}
+
+.window__header:active {
+    cursor: grabbing;
+}
+
+.window__controls {
+    display: flex;
+    gap: 8px;
+}
+
+.window__control {
+
+    width: 30px;
+    height: 30px;
+
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, .04);
+
+    color: var(--text-main);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition:
+        background .18s,
+        border-color .18s,
+        transform .18s;
+}
+
+.window__control:hover {
+
+    background: rgba(127, 182, 255, .15);
+
+    border-color: rgba(127, 182, 255, .35);
+
+    transform: translateY(-1px);
+
+}
+
+.window__control--close:hover {
+
+    background: rgba(255, 143, 171, .16);
+
+    border-color: rgba(255, 143, 171, .45);
+
+}
+
+.window__control--close {
+    background: var(--color-red);
+}
+
+.window__control--minimize {
+    background: #ffd166d9;
+}
+
+.window__control--maximize {
+    background: var(--color-blue);
+}
+
+.window__title {
+    flex: 1;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.window__body {
+    height: calc(100% - 44px);
+    padding: 18px;
+    overflow: auto;
+}
+
+.window__app {
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+}
+
+.window__icon {
+
+    width: 28px;
+    height: 28px;
+
+    display: grid;
+    place-items: center;
+
+    border-radius: 8px;
+
+    background: rgba(127, 182, 255, .12);
+
+    border: 1px solid rgba(127, 182, 255, .22);
+
+}
+
+.window.is-maximized {
+    border-radius: 18px;
+}
+
+.window.is-minimized {
+    display: none;
+}
+
+@keyframes windowOpen {
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

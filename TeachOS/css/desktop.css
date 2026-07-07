@@ -1,0 +1,97 @@
+.desktop {
+  padding: 32px;
+}
+
+.desktop::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(127, 182, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(127, 182, 255, 0.08) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.desktop::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 18% 18%, rgba(127, 182, 255, 0.28), transparent 24%),
+    radial-gradient(circle at 78% 72%, rgba(255, 143, 171, 0.22), transparent 26%);
+  pointer-events: none;
+}
+
+.desktop-icons {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 92px;
+  gap: 18px;
+}
+
+.desktop-icon {
+  width: 92px;
+  padding: 10px 8px;
+  border: 1px solid transparent;
+  border-radius: 16px;
+  background: transparent;
+  color: var(--text-main);
+  cursor: pointer;
+  text-align: center;
+  transition:
+    background var(--transition-fast),
+    border-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.desktop-icon:hover {
+  background: var(--icon-hover-bg);
+  border-color: rgba(127, 182, 255, 0.28);
+  transform: translateY(-2px);
+}
+
+.desktop-icon__emoji {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 8px;
+  border-radius: 14px;
+  font-size: 30px;
+  background:
+    linear-gradient(145deg, rgba(127, 182, 255, 0.2), rgba(255, 143, 171, 0.12));
+  border: 1px solid rgba(127, 182, 255, 0.35);
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.28),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+}
+
+.desktop-icon__label {
+  display: block;
+  font-size: 14px;
+  line-height: 1.25;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.55);
+}
+
+.desktop::after {
+  animation: glowDrift 14s ease-in-out infinite;
+}
+
+.desktop-icon__emoji {
+  position: relative;
+  overflow: hidden;
+}
+
+.desktop-icon__emoji::after {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  border-radius: 999px;
+  background: rgba(127, 182, 255, 0.24);
+  filter: blur(12px);
+  opacity: 0.45;
+  animation: softPulse 3s ease-in-out infinite;
+}
