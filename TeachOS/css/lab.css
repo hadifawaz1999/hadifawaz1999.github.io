@@ -1,0 +1,39 @@
+.lab {
+    height: 100%;
+}
+
+.lab__header {
+    margin-bottom: 20px;
+}
+
+.lab__header h2 {
+    margin: 0 0 8px;
+    font-size: 24px;
+}
+
+.lab__header p {
+    margin: 0;
+    color: var(--text-muted);
+}
+
+.lab__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 14px;
+}
+
+.lab-card {
+    padding: 16px;
+    border: 1px solid rgba(127, 182, 255, 0.16);
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.lab-card h3 {
+    margin: 0 0 8px;
+}
+
+.lab-card p {
+    margin: 0;
+    color: var(--text-muted);
+}
