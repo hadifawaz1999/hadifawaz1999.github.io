@@ -7,6 +7,8 @@
   <meta name="description" content="Dashboard for ADE teaching-service data">
   <title>ADE Teaching Dashboard</title>
 
+  <script src="vendor/plotly.min.js"></script>
+  <!-- <script type="module" src="./js/main.js"></script> -->
   <script>
     (() => {
       const savedTheme = localStorage.getItem("ade-dashboard-theme");
@@ -15,6 +17,7 @@
   </script>
   <link rel="stylesheet" href="./css/dashboard.css">
   <link rel="stylesheet" href="./css/filters.css">
+  <link rel="stylesheet" href="./css/timeline.css">
   <script type="module" src="./js/app.js"></script>
 </head>
 
@@ -44,12 +47,13 @@
       <button class="nav-button active" type="button" data-view="summary" aria-current="page">
         Service summary
       </button>
-      <button class="nav-button" type="button" data-view="gantt" disabled>
-        Gantt diagram
-        <span class="nav-badge">Soon</span>
+
+      <button class="nav-button" type="button" data-view="timeline">
+        Timeline
       </button>
-      <button class="nav-button" type="button" data-view="distribution" disabled>
-        Distribution over time
+
+      <button class="nav-button" type="button" data-view="statistics" disabled>
+        Statistics
         <span class="nav-badge">Soon</span>
       </button>
     </aside>

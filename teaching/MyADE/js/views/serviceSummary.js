@@ -1,7 +1,42 @@
+import { renderAnalysisView } from "./analysisView.js";
+
 const SESSION_TYPES = ["CM", "TD", "TD1", "TD2", "EXAM"];
 const PROJECT_CATEGORY = "project/suivi";
 
 export function renderServiceSummary(container, database) {
+  container.innerHTML = `
+    <nav class="dashboard-view-tabs" aria-label="Dashboard views">
+      <button class="dashboard-view-tab is-active" type="button" data-view="table" aria-selected="true">Table</button>
+      <button class="dashboard-view-tab" type="button" data-view="analysis" aria-selected="false">Analysis</button>
+    </nav>
+    <section class="dashboard-view-panel" data-view-panel="table"></section>
+    <section class="dashboard-view-panel" data-view-panel="analysis" hidden></section>
+  `;
+
+  const tablePanel = container.querySelector('[data-view-panel="table"]');
+  const analysisPanel = container.querySelector('[data-view-panel="analysis"]');
+  renderTableView(tablePanel, database);
+  renderAnalysisView(analysisPanel, database);
+
+  container.querySelectorAll(".dashboard-view-tab").forEach((button) => {
+    button.addEventListener("click", () => {
+      const selectedView = button.dataset.view;
+      container.querySelectorAll(".dashboard-view-tab").forEach((tab) => {
+        const active = tab === button;
+        tab.classList.toggle("is-active", active);
+        tab.setAttribute("aria-selected", String(active));
+      });
+      container.querySelectorAll("[data-view-panel]").forEach((panel) => {
+        panel.hidden = panel.dataset.viewPanel !== selectedView;
+      });
+      if (selectedView === "analysis") {
+        window.dispatchEvent(new Event("resize"));
+      }
+    });
+  });
+}
+
+function renderTableView(container, database) {
   const activityOptions = Object.values(database.courses ?? {})
     .map((course) => ({ id: course.id, name: course.name }))
     .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: "base" }));
