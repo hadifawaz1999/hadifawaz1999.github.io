@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Dashboard for ADE teaching-service data">
+  <title>ADE Teaching Dashboard</title>
+
+  <script>
+    (() => {
+      const savedTheme = localStorage.getItem("ade-dashboard-theme");
+      document.documentElement.dataset.theme = savedTheme === "light" ? "light" : "dark";
+    })();
+  </script>
+  <link rel="stylesheet" href="./css/dashboard.css">
+  <script type="module" src="./js/app.js"></script>
+</head>
+
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">ADE data explorer</p>
+      <h1>ADE Teaching Dashboard</h1>
+    </div>
+    <div class="topbar-actions">
+      <p id="data-status" class="data-status" aria-live="polite">Loading data…</p>
+
+      <button id="theme-toggle" class="theme-toggle" type="button" role="switch" aria-checked="true"
+        aria-label="Switch to light mode">
+        <span class="theme-toggle-track" aria-hidden="true">
+          <span class="theme-toggle-thumb"></span>
+        </span>
+        <span id="theme-toggle-label" class="theme-toggle-label">Dark</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="layout">
+    <aside class="sidebar" aria-label="Dashboard views">
+      <h2>Views</h2>
+
+      <button class="nav-button active" type="button" data-view="summary" aria-current="page">
+        Service summary
+      </button>
+      <button class="nav-button" type="button" data-view="gantt" disabled>
+        Gantt diagram
+        <span class="nav-badge">Soon</span>
+      </button>
+      <button class="nav-button" type="button" data-view="distribution" disabled>
+        Distribution over time
+        <span class="nav-badge">Soon</span>
+      </button>
+    </aside>
+
+    <main class="content">
+      <section class="page-heading">
+        <div>
+          <p class="eyebrow">Teaching service</p>
+          <h2>Service summary</h2>
+          <p class="page-description">
+            Aggregated teaching hours and session counts by course and session type.
+          </p>
+        </div>
+      </section>
+
+      <section id="view-container" aria-live="polite">
+        <div class="state-card">Loading service summary…</div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+{
+    "schema_version": "1.1",
+    "courses": {
+        "open-source-project": {
+            "id": "open-source-project",
+            "name": "Open Source Project",
+            "aliases": [],
+            "category": "project/suivi",
+            "audiences": [
+                {
+                    "source_label": "3A Info",
+                    "year": "3A",
+                    "diploma": "Info IR",
+                    "establishment": "ENSISA",
+                    "track": null,
+                    "study_mode": null
+                }
+            ]
+        },
+        "immersion-info": {
+            "id": "immersion-info",
+            "name": "Immersion Info",
+            "aliases": [],
+            "category": "project/suivi",
+            "audiences": [
+                {
+                    "source_label": "1A Info",
+                    "year": "1A",
+                    "diploma": "Info IR",
+                    "establishment": "ENSISA",
+                    "track": null,
+                    "study_mode": null
+                }
+            ]
+        },
+        "projet-1A-info-fin-annee": {
+            "id": "projet-1A-info-fin-annee",
+            "name": "Projet 1A Info Fin d'Annee",
+            "aliases": [],
+            "category": "project/suivi",
+            "audiences": [
+                {
+                    "source_label": "1A Info",
+                    "year": "1A",
+                    "diploma": "Info IR",
+                    "establishment": "ENSISA",
+                    "track": null,
+                    "study_mode": null
+                }
+            ]
+        }
+    },
+    "suivis": [
+        {
+            "id": "open-source-project",
+            "name": "Open Source Project",
+            "course_id": "open-source-project",
+            "related_course_id": "open-source",
+            "category": "project/suivi",
+            "hours": 10,
+            "description": "Development of an open source project.",
+            "audiences": [
+                {
+                    "source_label": "3A Info",
+                    "year": "3A",
+                    "diploma": "Info IR",
+                    "establishment": "ENSISA",
+                    "track": null,
+                    "study_mode": null
+                }
+            ],
+            "students": [],
+            "metadata": null
+        },
+        {
+            "id": "immersion-info",
+            "name": "Immersion Info",
+            "course_id": "immersion-info",
+            "related_course_id": null,
+            "category": "project/suivi",
+            "hours": 10,
+            "description": "Immersion des premieres années Info IR.",
+            "audiences": [
+                {
+                    "source_label": "1A Info",
+                    "year": "1A",
+                    "diploma": "Info IR",
+                    "establishment": "ENSISA",
+                    "track": null,
+                    "study_mode": null
+                }
+            ],
+            "students": [],
+            "metadata": null
+        },
+        {
+            "id": "projet-1A-info-fin-annee",
+            "name": "Projet 1A Info Fin d'Annee",
+            "course_id": "projet-1A-info-fin-annee",
+            "related_course_id": null,
+            "category": "project/suivi",
+            "hours": 20,
+            "description": "Projet de fin d'année pour les étudiants de première année Info IR.",
+            "audiences": [
+                {
+                    "source_label": "1A Info",
+                    "year": "1A",
+                    "diploma": "Info IR",
+                    "establishment": "ENSISA",
+                    "track": null,
+                    "study_mode": null
+                }
+            ],
+            "students": [],
+            "metadata": null
+        }
+    ]
+}

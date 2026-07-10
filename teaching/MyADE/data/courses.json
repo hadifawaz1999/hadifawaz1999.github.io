@@ -1,0 +1,2063 @@
+{
+  "metadata": {
+    "schema_version": "1.0",
+    "source": {
+      "type": "ics",
+      "filename": "ADECal.ics",
+      "calendar_product": "-//ADE/version 6.0"
+    },
+    "timezone": "Europe/Paris",
+    "generated_at": "2026-07-10T17:11:14.251089+02:00"
+  },
+  "courses": {
+    "algo-sd": {
+      "id": "algo-sd",
+      "name": "Algo SD",
+      "aliases": [],
+      "category": "course",
+      "audiences": [
+        {
+          "source_label": "1A info",
+          "year": "1A",
+          "diploma": "Info IR",
+          "establishment": "ENSISA",
+          "track": null,
+          "study_mode": null
+        }
+      ]
+    },
+    "deep-learning": {
+      "id": "deep-learning",
+      "name": "Deep Learning",
+      "aliases": [
+        "Deep Learning-1"
+      ],
+      "category": "course",
+      "audiences": [
+        {
+          "source_label": "3A Alt IR P Data",
+          "year": "3A",
+          "diploma": "Info IR",
+          "establishment": "ENSISA",
+          "track": "Data",
+          "study_mode": "FA"
+        },
+        {
+          "source_label": "3A info P Data",
+          "year": "3A",
+          "diploma": "Info IR",
+          "establishment": "ENSISA",
+          "track": "Data",
+          "study_mode": "FI"
+        }
+      ]
+    },
+    "fouille-de-donnees": {
+      "id": "fouille-de-donnees",
+      "name": "Fouille de données",
+      "aliases": [],
+      "category": "course",
+      "audiences": [
+        {
+          "source_label": "M2 MIAGE FA Choix Big Data",
+          "year": "M2",
+          "diploma": "MIAGE",
+          "establishment": "FST",
+          "track": "Big Data",
+          "study_mode": "FA"
+        },
+        {
+          "source_label": "M2 MIAGE FI Choix Big Data",
+          "year": "M2",
+          "diploma": "MIAGE",
+          "establishment": "FST",
+          "track": "Big Data",
+          "study_mode": "FI"
+        },
+        {
+          "source_label": "M2 IM",
+          "year": "M2",
+          "diploma": "IM",
+          "establishment": "FST",
+          "track": null,
+          "study_mode": null
+        },
+        {
+          "source_label": "M2 MATHEMATIQUES",
+          "year": "M2",
+          "diploma": "IMDS",
+          "establishment": "FST",
+          "track": null,
+          "study_mode": null
+        }
+      ]
+    },
+    "intelligence-artificielle": {
+      "id": "intelligence-artificielle",
+      "name": "Intelligence Artificielle",
+      "aliases": [
+        "Intelligence Artificielle - 1"
+      ],
+      "category": "course",
+      "audiences": [
+        {
+          "source_label": "2A info",
+          "year": "2A",
+          "diploma": "Info IR",
+          "establishment": "ENSISA",
+          "track": null,
+          "study_mode": null
+        }
+      ]
+    },
+    "open-source": {
+      "id": "open-source",
+      "name": "Open Source",
+      "aliases": [
+        "Open Source - 1"
+      ],
+      "category": "course",
+      "audiences": [
+        {
+          "source_label": "3A info",
+          "year": "3A",
+          "diploma": "Info IR",
+          "establishment": "ENSISA",
+          "track": null,
+          "study_mode": null
+        }
+      ]
+    }
+  },
+  "sessions": [
+    {
+      "id": "fouille-de-donnees-2026-09-14-1600-cm",
+      "course_id": "fouille-de-donnees",
+      "session_type": "CM",
+      "session_number": 1,
+      "start": "2026-09-14T16:00:00+02:00",
+      "end": "2026-09-14T18:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_K_AMPHI A",
+        "site": "ILL",
+        "building": "K",
+        "room": "AMPHI A"
+      },
+      "source": {
+        "original_title": "Fouille de données",
+        "original_audiences": [
+          "M2 MIAGE FA Choix Big Data",
+          "M2 MIAGE FI Choix Big Data",
+          "M2 IM",
+          "M2 MATHEMATIQUES"
+        ]
+      }
+    },
+    {
+      "id": "fouille-de-donnees-2026-09-15-1330-cm",
+      "course_id": "fouille-de-donnees",
+      "session_type": "CM",
+      "session_number": 2,
+      "start": "2026-09-15T13:30:00+02:00",
+      "end": "2026-09-15T15:30:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_K_AMPHI A",
+        "site": "ILL",
+        "building": "K",
+        "room": "AMPHI A"
+      },
+      "source": {
+        "original_title": "Fouille de données",
+        "original_audiences": [
+          "M2 MIAGE FA Choix Big Data",
+          "M2 MIAGE FI Choix Big Data",
+          "M2 IM",
+          "M2 MATHEMATIQUES"
+        ]
+      }
+    },
+    {
+      "id": "fouille-de-donnees-2026-09-17-1015-td",
+      "course_id": "fouille-de-donnees",
+      "session_type": "TD",
+      "session_number": 1,
+      "start": "2026-09-17T10:15:00+02:00",
+      "end": "2026-09-17T12:15:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_K_AMPHI GB",
+        "site": "ILL",
+        "building": "K",
+        "room": "AMPHI GB"
+      },
+      "source": {
+        "original_title": "AFouille de données",
+        "original_audiences": [
+          "M2 MIAGE FA Choix Big Data",
+          "M2 MIAGE FI Choix Big Data",
+          "M2 IM",
+          "M2 MATHEMATIQUES"
+        ]
+      }
+    },
+    {
+      "id": "open-source-2026-09-18-0800-cm",
+      "course_id": "open-source",
+      "session_type": "CM",
+      "session_number": 1,
+      "start": "2026-09-18T08:00:00+02:00",
+      "end": "2026-09-18T10:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E32",
+        "site": "ILL",
+        "building": "I",
+        "room": "E32"
+      },
+      "source": {
+        "original_title": "Open Source",
+        "original_audiences": [
+          "3A info"
+        ]
+      }
+    },
+    {
+      "id": "intelligence-artificielle-2026-09-21-1000-cm",
+      "course_id": "intelligence-artificielle",
+      "session_type": "CM",
+      "session_number": 1,
+      "start": "2026-09-21T10:00:00+02:00",
+      "end": "2026-09-21T12:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E33",
+        "site": "ILL",
+        "building": "I",
+        "room": "E33"
+      },
+      "source": {
+        "original_title": "Intelligence Artificielle",
+        "original_audiences": [
+          "2A info"
+        ]
+      }
+    },
+    {
+      "id": "deep-learning-2026-09-22-1000-td",
+      "course_id": "deep-learning",
+      "session_type": "TD",
+      "session_number": 1,
+      "start": "2026-09-22T10:00:00+02:00",
+      "end": "2026-09-22T12:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E25",
+        "site": "ILL",
+        "building": "I",
+        "room": "E25"
+      },
+      "source": {
+        "original_title": "Deep Learning",
+        "original_audiences": [
+          "3A Alt IR P Data",
+          "3A info P Data"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-09-23-0800-cm",
+      "course_id": "algo-sd",
+      "session_type": "CM",
+      "session_number": 1,
+      "start": "2026-09-23T08:00:00+02:00",
+      "end": "2026-09-23T10:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E25",
+        "site": "ILL",
+        "building": "I",
+        "room": "E25"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "1A info"
+        ]
+      }
+    },
+    {
+      "id": "deep-learning-2026-09-23-1000-td",
+      "course_id": "deep-learning",
+      "session_type": "TD",
+      "session_number": 2,
+      "start": "2026-09-23T10:00:00+02:00",
+      "end": "2026-09-23T12:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_Petit Amphi",
+        "site": "ILL",
+        "building": "I",
+        "room": "Petit Amphi"
+      },
+      "source": {
+        "original_title": "Deep Learning",
+        "original_audiences": [
+          "3A Alt IR P Data",
+          "3A info P Data"
+        ]
+      }
+    },
+    {
+      "id": "intelligence-artificielle-2026-09-23-1400-cm",
+      "course_id": "intelligence-artificielle",
+      "session_type": "CM",
+      "session_number": 2,
+      "start": "2026-09-23T14:00:00+02:00",
+      "end": "2026-09-23T16:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_PC2",
+        "site": "ILL",
+        "building": "I",
+        "room": "PC2"
+      },
+      "source": {
+        "original_title": "Intelligence Artificielle",
+        "original_audiences": [
+          "2A info"
+        ]
+      }
+    },
+    {
+      "id": "intelligence-artificielle-2026-09-25-0800-cm",
+      "course_id": "intelligence-artificielle",
+      "session_type": "CM",
+      "session_number": 3,
+      "start": "2026-09-25T08:00:00+02:00",
+      "end": "2026-09-25T10:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_PCMAster",
+        "site": "ILL",
+        "building": "I",
+        "room": "PCMAster"
+      },
+      "source": {
+        "original_title": "Intelligence Artificielle",
+        "original_audiences": [
+          "2A info"
+        ]
+      }
+    },
+    {
+      "id": "deep-learning-2026-09-25-1000-td",
+      "course_id": "deep-learning",
+      "session_type": "TD",
+      "session_number": 3,
+      "start": "2026-09-25T10:00:00+02:00",
+      "end": "2026-09-25T12:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E23",
+        "site": "ILL",
+        "building": "I",
+        "room": "E23"
+      },
+      "source": {
+        "original_title": "Deep Learning",
+        "original_audiences": [
+          "3A Alt IR P Data",
+          "3A info P Data"
+        ]
+      }
+    },
+    {
+      "id": "open-source-2026-10-02-1000-cm",
+      "course_id": "open-source",
+      "session_type": "CM",
+      "session_number": 2,
+      "start": "2026-10-02T10:00:00+02:00",
+      "end": "2026-10-02T12:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E26",
+        "site": "ILL",
+        "building": "I",
+        "room": "E26"
+      },
+      "source": {
+        "original_title": "Open Source",
+        "original_audiences": [
+          "3A info"
+        ]
+      }
+    },
+    {
+      "id": "intelligence-artificielle-2026-10-02-1400-td",
+      "course_id": "intelligence-artificielle",
+      "session_type": "TD",
+      "session_number": 1,
+      "start": "2026-10-02T14:00:00+02:00",
+      "end": "2026-10-02T16:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_PC2",
+        "site": "ILL",
+        "building": "I",
+        "room": "PC2"
+      },
+      "source": {
+        "original_title": "Intelligence Artificielle",
+        "original_audiences": [
+          "TD2 2A info"
+        ]
+      }
+    },
+    {
+      "id": "open-source-2026-10-05-0800-cm",
+      "course_id": "open-source",
+      "session_type": "CM",
+      "session_number": 3,
+      "start": "2026-10-05T08:00:00+02:00",
+      "end": "2026-10-05T10:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E34",
+        "site": "ILL",
+        "building": "I",
+        "room": "E34"
+      },
+      "source": {
+        "original_title": "Open Source",
+        "original_audiences": [
+          "3A info"
+        ]
+      }
+    },
+    {
+      "id": "fouille-de-donnees-2026-10-05-1545-cm",
+      "course_id": "fouille-de-donnees",
+      "session_type": "CM",
+      "session_number": 3,
+      "start": "2026-10-05T15:45:00+02:00",
+      "end": "2026-10-05T17:45:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_K_AMPHI A",
+        "site": "ILL",
+        "building": "K",
+        "room": "AMPHI A"
+      },
+      "source": {
+        "original_title": "Fouille de données",
+        "original_audiences": [
+          "M2 MIAGE FA Choix Big Data",
+          "M2 MIAGE FI Choix Big Data",
+          "M2 IM",
+          "M2 MATHEMATIQUES"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-10-06-0800-cm",
+      "course_id": "algo-sd",
+      "session_type": "CM",
+      "session_number": 2,
+      "start": "2026-10-06T08:00:00+02:00",
+      "end": "2026-10-06T10:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E23",
+        "site": "ILL",
+        "building": "I",
+        "room": "E23"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "1A info"
+        ]
+      }
+    },
+    {
+      "id": "deep-learning-2026-10-06-1000-td",
+      "course_id": "deep-learning",
+      "session_type": "TD",
+      "session_number": 4,
+      "start": "2026-10-06T10:00:00+02:00",
+      "end": "2026-10-06T12:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E23",
+        "site": "ILL",
+        "building": "I",
+        "room": "E23"
+      },
+      "source": {
+        "original_title": "Deep Learning",
+        "original_audiences": [
+          "3A Alt IR P Data",
+          "3A info P Data"
+        ]
+      }
+    },
+    {
+      "id": "deep-learning-2026-10-07-1000-td",
+      "course_id": "deep-learning",
+      "session_type": "TD",
+      "session_number": 5,
+      "start": "2026-10-07T10:00:00+02:00",
+      "end": "2026-10-07T12:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_Grand Amphi",
+        "site": "ILL",
+        "building": "I",
+        "room": "Grand Amphi"
+      },
+      "source": {
+        "original_title": "Deep Learning",
+        "original_audiences": [
+          "3A Alt IR P Data",
+          "3A info P Data"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-10-08-0800-cm",
+      "course_id": "algo-sd",
+      "session_type": "CM",
+      "session_number": 3,
+      "start": "2026-10-08T08:00:00+02:00",
+      "end": "2026-10-08T10:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_Grand Amphi",
+        "site": "ILL",
+        "building": "I",
+        "room": "Grand Amphi"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "1A info"
+        ]
+      }
+    },
+    {
+      "id": "fouille-de-donnees-2026-10-08-1015-cm",
+      "course_id": "fouille-de-donnees",
+      "session_type": "CM",
+      "session_number": 4,
+      "start": "2026-10-08T10:15:00+02:00",
+      "end": "2026-10-08T12:15:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_K_AMPHI GB",
+        "site": "ILL",
+        "building": "K",
+        "room": "AMPHI GB"
+      },
+      "source": {
+        "original_title": "Fouille de données",
+        "original_audiences": [
+          "M2 MIAGE FA Choix Big Data",
+          "M2 MIAGE FI Choix Big Data",
+          "M2 IM",
+          "M2 MATHEMATIQUES"
+        ]
+      }
+    },
+    {
+      "id": "fouille-de-donnees-2026-10-09-0800-td",
+      "course_id": "fouille-de-donnees",
+      "session_type": "TD",
+      "session_number": 2,
+      "start": "2026-10-09T08:00:00+02:00",
+      "end": "2026-10-09T10:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_K_AMPHI A",
+        "site": "ILL",
+        "building": "K",
+        "room": "AMPHI A"
+      },
+      "source": {
+        "original_title": "AFouille de données",
+        "original_audiences": [
+          "M2 MIAGE FA Choix Big Data",
+          "M2 MIAGE FI Choix Big Data",
+          "M2 IM",
+          "M2 MATHEMATIQUES"
+        ]
+      }
+    },
+    {
+      "id": "deep-learning-2026-10-12-0800-td",
+      "course_id": "deep-learning",
+      "session_type": "TD",
+      "session_number": 6,
+      "start": "2026-10-12T08:00:00+02:00",
+      "end": "2026-10-12T10:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_Petit Amphi",
+        "site": "ILL",
+        "building": "I",
+        "room": "Petit Amphi"
+      },
+      "source": {
+        "original_title": "Deep Learning",
+        "original_audiences": [
+          "3A Alt IR P Data",
+          "3A info P Data"
+        ]
+      }
+    },
+    {
+      "id": "fouille-de-donnees-2026-10-12-1545-cm",
+      "course_id": "fouille-de-donnees",
+      "session_type": "CM",
+      "session_number": 5,
+      "start": "2026-10-12T15:45:00+02:00",
+      "end": "2026-10-12T17:45:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_K_AMPHI A",
+        "site": "ILL",
+        "building": "K",
+        "room": "AMPHI A"
+      },
+      "source": {
+        "original_title": "Fouille de données",
+        "original_audiences": [
+          "M2 MIAGE FA Choix Big Data",
+          "M2 MIAGE FI Choix Big Data",
+          "M2 IM",
+          "M2 MATHEMATIQUES"
+        ]
+      }
+    },
+    {
+      "id": "fouille-de-donnees-2026-10-14-1015-cm",
+      "course_id": "fouille-de-donnees",
+      "session_type": "CM",
+      "session_number": 6,
+      "start": "2026-10-14T10:15:00+02:00",
+      "end": "2026-10-14T12:15:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_K_AMPHI TAGLANG",
+        "site": "ILL",
+        "building": "K",
+        "room": "AMPHI TAGLANG"
+      },
+      "source": {
+        "original_title": "Fouille de données",
+        "original_audiences": [
+          "M2 MIAGE FA Choix Big Data",
+          "M2 MIAGE FI Choix Big Data",
+          "M2 IM",
+          "M2 MATHEMATIQUES"
+        ]
+      }
+    },
+    {
+      "id": "deep-learning-2026-10-14-1400-td",
+      "course_id": "deep-learning",
+      "session_type": "TD",
+      "session_number": 7,
+      "start": "2026-10-14T14:00:00+02:00",
+      "end": "2026-10-14T16:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E25",
+        "site": "ILL",
+        "building": "I",
+        "room": "E25"
+      },
+      "source": {
+        "original_title": "Deep Learning",
+        "original_audiences": [
+          "3A Alt IR P Data",
+          "3A info P Data"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-10-15-1000-cm",
+      "course_id": "algo-sd",
+      "session_type": "CM",
+      "session_number": 4,
+      "start": "2026-10-15T10:00:00+02:00",
+      "end": "2026-10-15T12:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_Petit Amphi",
+        "site": "ILL",
+        "building": "I",
+        "room": "Petit Amphi"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "1A info"
+        ]
+      }
+    },
+    {
+      "id": "fouille-de-donnees-2026-10-16-1015-cm",
+      "course_id": "fouille-de-donnees",
+      "session_type": "CM",
+      "session_number": 7,
+      "start": "2026-10-16T10:15:00+02:00",
+      "end": "2026-10-16T12:15:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_K_AMPHI GB",
+        "site": "ILL",
+        "building": "K",
+        "room": "AMPHI GB"
+      },
+      "source": {
+        "original_title": "Fouille de données",
+        "original_audiences": [
+          "M2 MIAGE FA Choix Big Data",
+          "M2 MIAGE FI Choix Big Data",
+          "M2 IM",
+          "M2 MATHEMATIQUES"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-10-16-1400-td1",
+      "course_id": "algo-sd",
+      "session_type": "TD1",
+      "session_number": 1,
+      "start": "2026-10-16T14:00:00+02:00",
+      "end": "2026-10-16T16:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E26",
+        "site": "ILL",
+        "building": "I",
+        "room": "E26"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD1 1A info"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-10-16-1600-td2",
+      "course_id": "algo-sd",
+      "session_type": "TD2",
+      "session_number": 1,
+      "start": "2026-10-16T16:00:00+02:00",
+      "end": "2026-10-16T18:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E26",
+        "site": "ILL",
+        "building": "I",
+        "room": "E26"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD2 1A info"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-10-19-0800-cm",
+      "course_id": "algo-sd",
+      "session_type": "CM",
+      "session_number": 5,
+      "start": "2026-10-19T08:00:00+02:00",
+      "end": "2026-10-19T10:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_Grand Amphi",
+        "site": "ILL",
+        "building": "I",
+        "room": "Grand Amphi"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "1A info"
+        ]
+      }
+    },
+    {
+      "id": "open-source-2026-10-19-1000-cm",
+      "course_id": "open-source",
+      "session_type": "CM",
+      "session_number": 4,
+      "start": "2026-10-19T10:00:00+02:00",
+      "end": "2026-10-19T12:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E28 (nouv)",
+        "site": "ILL",
+        "building": "I",
+        "room": "E28 (nouv)"
+      },
+      "source": {
+        "original_title": "Open Source",
+        "original_audiences": [
+          "3A info"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-10-20-0800-td1",
+      "course_id": "algo-sd",
+      "session_type": "TD1",
+      "session_number": 2,
+      "start": "2026-10-20T08:00:00+02:00",
+      "end": "2026-10-20T10:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E28 (nouv)",
+        "site": "ILL",
+        "building": "I",
+        "room": "E28 (nouv)"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD1 1A info"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-10-20-1000-td2",
+      "course_id": "algo-sd",
+      "session_type": "TD2",
+      "session_number": 2,
+      "start": "2026-10-20T10:00:00+02:00",
+      "end": "2026-10-20T12:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E26",
+        "site": "ILL",
+        "building": "I",
+        "room": "E26"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD2 1A info"
+        ]
+      }
+    },
+    {
+      "id": "intelligence-artificielle-2026-10-20-1600-td",
+      "course_id": "intelligence-artificielle",
+      "session_type": "TD",
+      "session_number": 2,
+      "start": "2026-10-20T16:00:00+02:00",
+      "end": "2026-10-20T18:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_PCMAster",
+        "site": "ILL",
+        "building": "I",
+        "room": "PCMAster"
+      },
+      "source": {
+        "original_title": "Intelligence Artificielle",
+        "original_audiences": [
+          "TD2 2A info"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-10-21-0800-td2",
+      "course_id": "algo-sd",
+      "session_type": "TD2",
+      "session_number": 3,
+      "start": "2026-10-21T08:00:00+02:00",
+      "end": "2026-10-21T10:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E26",
+        "site": "ILL",
+        "building": "I",
+        "room": "E26"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD2 1A info"
+        ]
+      }
+    },
+    {
+      "id": "intelligence-artificielle-2026-10-21-1000-td",
+      "course_id": "intelligence-artificielle",
+      "session_type": "TD",
+      "session_number": 3,
+      "start": "2026-10-21T10:00:00+02:00",
+      "end": "2026-10-21T12:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_PC2",
+        "site": "ILL",
+        "building": "I",
+        "room": "PC2"
+      },
+      "source": {
+        "original_title": "Intelligence Artificielle",
+        "original_audiences": [
+          "TD2 2A info"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-10-21-1400-td1",
+      "course_id": "algo-sd",
+      "session_type": "TD1",
+      "session_number": 3,
+      "start": "2026-10-21T14:00:00+02:00",
+      "end": "2026-10-21T16:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E26",
+        "site": "ILL",
+        "building": "I",
+        "room": "E26"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD1 1A info"
+        ]
+      }
+    },
+    {
+      "id": "intelligence-artificielle-2026-10-22-0800-td",
+      "course_id": "intelligence-artificielle",
+      "session_type": "TD",
+      "session_number": 4,
+      "start": "2026-10-22T08:00:00+02:00",
+      "end": "2026-10-22T10:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_PC3_BYOD",
+        "site": "ILL",
+        "building": "I",
+        "room": "PC3_BYOD"
+      },
+      "source": {
+        "original_title": "Intelligence Artificielle",
+        "original_audiences": [
+          "TD2 2A info"
+        ]
+      }
+    },
+    {
+      "id": "open-source-2026-10-23-1400-cm",
+      "course_id": "open-source",
+      "session_type": "CM",
+      "session_number": 5,
+      "start": "2026-10-23T14:00:00+02:00",
+      "end": "2026-10-23T16:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E33",
+        "site": "ILL",
+        "building": "I",
+        "room": "E33"
+      },
+      "source": {
+        "original_title": "Open Source",
+        "original_audiences": [
+          "3A info"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-11-02-0800-cm",
+      "course_id": "algo-sd",
+      "session_type": "CM",
+      "session_number": 6,
+      "start": "2026-11-02T08:00:00+01:00",
+      "end": "2026-11-02T10:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_Grand Amphi",
+        "site": "ILL",
+        "building": "I",
+        "room": "Grand Amphi"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "1A info"
+        ]
+      }
+    },
+    {
+      "id": "deep-learning-2026-11-02-1400-td",
+      "course_id": "deep-learning",
+      "session_type": "TD",
+      "session_number": 8,
+      "start": "2026-11-02T14:00:00+01:00",
+      "end": "2026-11-02T16:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_Grand Amphi",
+        "site": "ILL",
+        "building": "I",
+        "room": "Grand Amphi"
+      },
+      "source": {
+        "original_title": "Deep Learning",
+        "original_audiences": [
+          "3A Alt IR P Data",
+          "3A info P Data"
+        ]
+      }
+    },
+    {
+      "id": "fouille-de-donnees-2026-11-03-0800-cm",
+      "course_id": "fouille-de-donnees",
+      "session_type": "CM",
+      "session_number": 8,
+      "start": "2026-11-03T08:00:00+01:00",
+      "end": "2026-11-03T10:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_K_AMPHI A",
+        "site": "ILL",
+        "building": "K",
+        "room": "AMPHI A"
+      },
+      "source": {
+        "original_title": "Fouille de données",
+        "original_audiences": [
+          "M2 MIAGE FA Choix Big Data",
+          "M2 MIAGE FI Choix Big Data",
+          "M2 IM",
+          "M2 MATHEMATIQUES"
+        ]
+      }
+    },
+    {
+      "id": "deep-learning-2026-11-04-1400-td",
+      "course_id": "deep-learning",
+      "session_type": "TD",
+      "session_number": 9,
+      "start": "2026-11-04T14:00:00+01:00",
+      "end": "2026-11-04T16:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E23",
+        "site": "ILL",
+        "building": "I",
+        "room": "E23"
+      },
+      "source": {
+        "original_title": "Deep Learning",
+        "original_audiences": [
+          "3A Alt IR P Data",
+          "3A info P Data"
+        ]
+      }
+    },
+    {
+      "id": "fouille-de-donnees-2026-11-06-1015-cm",
+      "course_id": "fouille-de-donnees",
+      "session_type": "CM",
+      "session_number": 9,
+      "start": "2026-11-06T10:15:00+01:00",
+      "end": "2026-11-06T12:15:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_K_AMPHI TAGLANG",
+        "site": "ILL",
+        "building": "K",
+        "room": "AMPHI TAGLANG"
+      },
+      "source": {
+        "original_title": "Fouille de données",
+        "original_audiences": [
+          "M2 MIAGE FA Choix Big Data",
+          "M2 MIAGE FI Choix Big Data",
+          "M2 IM",
+          "M2 MATHEMATIQUES"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-11-06-1400-td2",
+      "course_id": "algo-sd",
+      "session_type": "TD2",
+      "session_number": 4,
+      "start": "2026-11-06T14:00:00+01:00",
+      "end": "2026-11-06T16:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E33",
+        "site": "ILL",
+        "building": "I",
+        "room": "E33"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD2 1A info"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-11-06-1600-td1",
+      "course_id": "algo-sd",
+      "session_type": "TD1",
+      "session_number": 4,
+      "start": "2026-11-06T16:00:00+01:00",
+      "end": "2026-11-06T18:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E33",
+        "site": "ILL",
+        "building": "I",
+        "room": "E33"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD1 1A info"
+        ]
+      }
+    },
+    {
+      "id": "deep-learning-2026-11-09-1400-td",
+      "course_id": "deep-learning",
+      "session_type": "TD",
+      "session_number": 10,
+      "start": "2026-11-09T14:00:00+01:00",
+      "end": "2026-11-09T16:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E23",
+        "site": "ILL",
+        "building": "I",
+        "room": "E23"
+      },
+      "source": {
+        "original_title": "Deep Learning",
+        "original_audiences": [
+          "3A Alt IR P Data",
+          "3A info P Data"
+        ]
+      }
+    },
+    {
+      "id": "fouille-de-donnees-2026-11-10-0800-cm",
+      "course_id": "fouille-de-donnees",
+      "session_type": "CM",
+      "session_number": 10,
+      "start": "2026-11-10T08:00:00+01:00",
+      "end": "2026-11-10T10:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_K_AMPHI A",
+        "site": "ILL",
+        "building": "K",
+        "room": "AMPHI A"
+      },
+      "source": {
+        "original_title": "Fouille de données",
+        "original_audiences": [
+          "M2 MIAGE FA Choix Big Data",
+          "M2 MIAGE FI Choix Big Data",
+          "M2 IM",
+          "M2 MATHEMATIQUES"
+        ]
+      }
+    },
+    {
+      "id": "deep-learning-2026-11-12-1000-td",
+      "course_id": "deep-learning",
+      "session_type": "TD",
+      "session_number": 11,
+      "start": "2026-11-12T10:00:00+01:00",
+      "end": "2026-11-12T12:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E25",
+        "site": "ILL",
+        "building": "I",
+        "room": "E25"
+      },
+      "source": {
+        "original_title": "Deep Learning",
+        "original_audiences": [
+          "3A Alt IR P Data",
+          "3A info P Data"
+        ]
+      }
+    },
+    {
+      "id": "fouille-de-donnees-2026-11-13-1015-td",
+      "course_id": "fouille-de-donnees",
+      "session_type": "TD",
+      "session_number": 3,
+      "start": "2026-11-13T10:15:00+01:00",
+      "end": "2026-11-13T12:15:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_K_AMPHI A",
+        "site": "ILL",
+        "building": "K",
+        "room": "AMPHI A"
+      },
+      "source": {
+        "original_title": "AFouille de données",
+        "original_audiences": [
+          "M2 MIAGE FA Choix Big Data",
+          "M2 MIAGE FI Choix Big Data",
+          "M2 IM",
+          "M2 MATHEMATIQUES"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-11-13-1400-td2",
+      "course_id": "algo-sd",
+      "session_type": "TD2",
+      "session_number": 5,
+      "start": "2026-11-13T14:00:00+01:00",
+      "end": "2026-11-13T16:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E27",
+        "site": "ILL",
+        "building": "I",
+        "room": "E27"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD2 1A info"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-11-13-1600-td1",
+      "course_id": "algo-sd",
+      "session_type": "TD1",
+      "session_number": 5,
+      "start": "2026-11-13T16:00:00+01:00",
+      "end": "2026-11-13T18:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E34",
+        "site": "ILL",
+        "building": "I",
+        "room": "E34"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD1 1A info"
+        ]
+      }
+    },
+    {
+      "id": "deep-learning-2026-11-16-1400-td",
+      "course_id": "deep-learning",
+      "session_type": "TD",
+      "session_number": 12,
+      "start": "2026-11-16T14:00:00+01:00",
+      "end": "2026-11-16T16:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_Petit Amphi",
+        "site": "ILL",
+        "building": "I",
+        "room": "Petit Amphi"
+      },
+      "source": {
+        "original_title": "Deep Learning",
+        "original_audiences": [
+          "3A Alt IR P Data",
+          "3A info P Data"
+        ]
+      }
+    },
+    {
+      "id": "deep-learning-2026-11-18-1000-td",
+      "course_id": "deep-learning",
+      "session_type": "TD",
+      "session_number": 13,
+      "start": "2026-11-18T10:00:00+01:00",
+      "end": "2026-11-18T12:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_Grand Amphi",
+        "site": "ILL",
+        "building": "I",
+        "room": "Grand Amphi"
+      },
+      "source": {
+        "original_title": "Deep Learning",
+        "original_audiences": [
+          "3A Alt IR P Data",
+          "3A info P Data"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-11-20-0800-td2",
+      "course_id": "algo-sd",
+      "session_type": "TD2",
+      "session_number": 6,
+      "start": "2026-11-20T08:00:00+01:00",
+      "end": "2026-11-20T10:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E28 (nouv)",
+        "site": "ILL",
+        "building": "I",
+        "room": "E28 (nouv)"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD2 1A info"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-11-20-1000-td1",
+      "course_id": "algo-sd",
+      "session_type": "TD1",
+      "session_number": 6,
+      "start": "2026-11-20T10:00:00+01:00",
+      "end": "2026-11-20T12:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E34",
+        "site": "ILL",
+        "building": "I",
+        "room": "E34"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD1 1A info"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-11-23-1600-td2",
+      "course_id": "algo-sd",
+      "session_type": "TD2",
+      "session_number": 7,
+      "start": "2026-11-23T16:00:00+01:00",
+      "end": "2026-11-23T18:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E34",
+        "site": "ILL",
+        "building": "I",
+        "room": "E34"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD2 1A info"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-11-24-0800-td1",
+      "course_id": "algo-sd",
+      "session_type": "TD1",
+      "session_number": 7,
+      "start": "2026-11-24T08:00:00+01:00",
+      "end": "2026-11-24T10:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E26",
+        "site": "ILL",
+        "building": "I",
+        "room": "E26"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD1 1A info"
+        ]
+      }
+    },
+    {
+      "id": "intelligence-artificielle-2026-11-24-1000-td",
+      "course_id": "intelligence-artificielle",
+      "session_type": "TD",
+      "session_number": 5,
+      "start": "2026-11-24T10:00:00+01:00",
+      "end": "2026-11-24T12:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E34",
+        "site": "ILL",
+        "building": "I",
+        "room": "E34"
+      },
+      "source": {
+        "original_title": "Intelligence Artificielle",
+        "original_audiences": [
+          "TD2 2A info"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-11-25-0800-td2",
+      "course_id": "algo-sd",
+      "session_type": "TD2",
+      "session_number": 8,
+      "start": "2026-11-25T08:00:00+01:00",
+      "end": "2026-11-25T10:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E34",
+        "site": "ILL",
+        "building": "I",
+        "room": "E34"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD2 1A info"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-11-25-1000-td1",
+      "course_id": "algo-sd",
+      "session_type": "TD1",
+      "session_number": 8,
+      "start": "2026-11-25T10:00:00+01:00",
+      "end": "2026-11-25T12:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E26",
+        "site": "ILL",
+        "building": "I",
+        "room": "E26"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD1 1A info"
+        ]
+      }
+    },
+    {
+      "id": "intelligence-artificielle-2026-11-26-0800-td",
+      "course_id": "intelligence-artificielle",
+      "session_type": "TD",
+      "session_number": 6,
+      "start": "2026-11-26T08:00:00+01:00",
+      "end": "2026-11-26T10:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E34",
+        "site": "ILL",
+        "building": "I",
+        "room": "E34"
+      },
+      "source": {
+        "original_title": "Intelligence Artificielle",
+        "original_audiences": [
+          "TD2 2A info"
+        ]
+      }
+    },
+    {
+      "id": "intelligence-artificielle-2026-11-30-1600-td",
+      "course_id": "intelligence-artificielle",
+      "session_type": "TD",
+      "session_number": 7,
+      "start": "2026-11-30T16:00:00+01:00",
+      "end": "2026-11-30T18:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_PC1",
+        "site": "ILL",
+        "building": "I",
+        "room": "PC1"
+      },
+      "source": {
+        "original_title": "Intelligence Artificielle",
+        "original_audiences": [
+          "TD2 2A info"
+        ]
+      }
+    },
+    {
+      "id": "fouille-de-donnees-2026-12-02-1015-td",
+      "course_id": "fouille-de-donnees",
+      "session_type": "TD",
+      "session_number": 4,
+      "start": "2026-12-02T10:15:00+01:00",
+      "end": "2026-12-02T12:15:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_K_AMPHI TAGLANG",
+        "site": "ILL",
+        "building": "K",
+        "room": "AMPHI TAGLANG"
+      },
+      "source": {
+        "original_title": "AFouille de données",
+        "original_audiences": [
+          "M2 MIAGE FA Choix Big Data",
+          "M2 MIAGE FI Choix Big Data",
+          "M2 IM",
+          "M2 MATHEMATIQUES"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-12-02-1400-td1",
+      "course_id": "algo-sd",
+      "session_type": "TD1",
+      "session_number": 9,
+      "start": "2026-12-02T14:00:00+01:00",
+      "end": "2026-12-02T16:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E24",
+        "site": "ILL",
+        "building": "I",
+        "room": "E24"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD1 1A info"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-12-02-1600-td2",
+      "course_id": "algo-sd",
+      "session_type": "TD2",
+      "session_number": 9,
+      "start": "2026-12-02T16:00:00+01:00",
+      "end": "2026-12-02T18:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E28 (nouv)",
+        "site": "ILL",
+        "building": "I",
+        "room": "E28 (nouv)"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD2 1A info"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-12-08-0800-td1",
+      "course_id": "algo-sd",
+      "session_type": "TD1",
+      "session_number": 10,
+      "start": "2026-12-08T08:00:00+01:00",
+      "end": "2026-12-08T10:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E33",
+        "site": "ILL",
+        "building": "I",
+        "room": "E33"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD1 1A info"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-12-08-1000-td2",
+      "course_id": "algo-sd",
+      "session_type": "TD2",
+      "session_number": 10,
+      "start": "2026-12-08T10:00:00+01:00",
+      "end": "2026-12-08T12:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E26",
+        "site": "ILL",
+        "building": "I",
+        "room": "E26"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD2 1A info"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-12-16-1400-td2",
+      "course_id": "algo-sd",
+      "session_type": "TD2",
+      "session_number": 11,
+      "start": "2026-12-16T14:00:00+01:00",
+      "end": "2026-12-16T16:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E34",
+        "site": "ILL",
+        "building": "I",
+        "room": "E34"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD2 1A info"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-12-16-1600-td1",
+      "course_id": "algo-sd",
+      "session_type": "TD1",
+      "session_number": 11,
+      "start": "2026-12-16T16:00:00+01:00",
+      "end": "2026-12-16T18:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E27",
+        "site": "ILL",
+        "building": "I",
+        "room": "E27"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD1 1A info"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-12-18-0800-td2",
+      "course_id": "algo-sd",
+      "session_type": "TD2",
+      "session_number": 12,
+      "start": "2026-12-18T08:00:00+01:00",
+      "end": "2026-12-18T10:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E27",
+        "site": "ILL",
+        "building": "I",
+        "room": "E27"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD2 1A info"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-12-18-1000-td1",
+      "course_id": "algo-sd",
+      "session_type": "TD1",
+      "session_number": 12,
+      "start": "2026-12-18T10:00:00+01:00",
+      "end": "2026-12-18T12:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E27",
+        "site": "ILL",
+        "building": "I",
+        "room": "E27"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD1 1A info"
+        ]
+      }
+    },
+    {
+      "id": "open-source-2027-01-04-1000-exam",
+      "course_id": "open-source",
+      "session_type": "EXAM",
+      "session_number": 1,
+      "start": "2027-01-04T10:00:00+01:00",
+      "end": "2027-01-04T12:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E28 (nouv)",
+        "site": "ILL",
+        "building": "I",
+        "room": "E28 (nouv)"
+      },
+      "source": {
+        "original_title": "Open Source - 1",
+        "original_audiences": [
+          "3A info"
+        ]
+      }
+    },
+    {
+      "id": "intelligence-artificielle-2027-01-05-0800-exam",
+      "course_id": "intelligence-artificielle",
+      "session_type": "EXAM",
+      "session_number": 1,
+      "start": "2027-01-05T08:00:00+01:00",
+      "end": "2027-01-05T10:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_Grand Amphi",
+        "site": "ILL",
+        "building": "I",
+        "room": "Grand Amphi"
+      },
+      "source": {
+        "original_title": "Intelligence Artificielle - 1",
+        "original_audiences": [
+          "2A info"
+        ]
+      }
+    },
+    {
+      "id": "deep-learning-2027-01-15-1400-td",
+      "course_id": "deep-learning",
+      "session_type": "TD",
+      "session_number": 14,
+      "start": "2027-01-15T14:00:00+01:00",
+      "end": "2027-01-15T16:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E27",
+        "site": "ILL",
+        "building": "I",
+        "room": "E27"
+      },
+      "source": {
+        "original_title": "Deep Learning-1",
+        "original_audiences": [
+          "3A Alt IR P Data",
+          "3A info P Data"
+        ]
+      }
+    }
+  ],
+  "other_events": [
+    {
+      "id": "conseil-ir-2026-09-01-1300",
+      "title": "Conseil IR",
+      "category": "administrative",
+      "start": "2026-09-01T13:00:00+02:00",
+      "end": "2026-09-01T14:00:00+02:00",
+      "duration_minutes": 60,
+      "location": {
+        "raw": "ILL_I_Salle du Conseil (Lumiere)",
+        "site": "ILL",
+        "building": "I",
+        "room": "Salle du Conseil (Lumiere)"
+      },
+      "participants": [
+        "PERRONNE Jean-Marc",
+        "ISMAIL FAWAZ Ali El Hadi",
+        "STUDER Philippe",
+        "THIRY Laurent",
+        "DEVANNE Maxime",
+        "MEYER Cyril",
+        "WEBER Jonathan",
+        "FONDEMENT Frederic",
+        "DION Joel",
+        "HASSENFORDER Michel",
+        "FORESTIER Germain"
+      ]
+    },
+    {
+      "id": "conseil-ir-2026-10-06-1300",
+      "title": "Conseil IR",
+      "category": "administrative",
+      "start": "2026-10-06T13:00:00+02:00",
+      "end": "2026-10-06T14:00:00+02:00",
+      "duration_minutes": 60,
+      "location": {
+        "raw": "ILL_I_Salle du Conseil (Lumiere)",
+        "site": "ILL",
+        "building": "I",
+        "room": "Salle du Conseil (Lumiere)"
+      },
+      "participants": [
+        "ISMAIL FAWAZ Ali El Hadi",
+        "DEVANNE Maxime",
+        "HASSENFORDER Michel",
+        "WEBER Jonathan",
+        "THIRY Laurent",
+        "PERRONNE Jean-Marc",
+        "MEYER Cyril",
+        "DION Joel",
+        "STUDER Philippe",
+        "FONDEMENT Frederic"
+      ]
+    },
+    {
+      "id": "conseil-ir-2026-11-03-1300",
+      "title": "Conseil IR",
+      "category": "administrative",
+      "start": "2026-11-03T13:00:00+01:00",
+      "end": "2026-11-03T14:00:00+01:00",
+      "duration_minutes": 60,
+      "location": {
+        "raw": "ILL_I_Salle du Conseil (Lumiere)",
+        "site": "ILL",
+        "building": "I",
+        "room": "Salle du Conseil (Lumiere)"
+      },
+      "participants": [
+        "DION Joel",
+        "FORESTIER Germain",
+        "PERRONNE Jean-Marc",
+        "FONDEMENT Frederic",
+        "STUDER Philippe",
+        "WEBER Jonathan",
+        "MEYER Cyril",
+        "ISMAIL FAWAZ Ali El Hadi",
+        "HASSENFORDER Michel",
+        "THIRY Laurent",
+        "DEVANNE Maxime"
+      ]
+    },
+    {
+      "id": "conseil-ir-2026-12-01-1300",
+      "title": "Conseil IR",
+      "category": "administrative",
+      "start": "2026-12-01T13:00:00+01:00",
+      "end": "2026-12-01T14:00:00+01:00",
+      "duration_minutes": 60,
+      "location": {
+        "raw": "ILL_I_Salle du Conseil (Lumiere)",
+        "site": "ILL",
+        "building": "I",
+        "room": "Salle du Conseil (Lumiere)"
+      },
+      "participants": [
+        "STUDER Philippe",
+        "PERRONNE Jean-Marc",
+        "WEBER Jonathan",
+        "THIRY Laurent",
+        "DEVANNE Maxime",
+        "DION Joel",
+        "FONDEMENT Frederic",
+        "HASSENFORDER Michel",
+        "FORESTIER Germain",
+        "ISMAIL FAWAZ Ali El Hadi",
+        "MEYER Cyril"
+      ]
+    },
+    {
+      "id": "conseil-ir-2027-01-05-1300",
+      "title": "Conseil IR",
+      "category": "administrative",
+      "start": "2027-01-05T13:00:00+01:00",
+      "end": "2027-01-05T14:00:00+01:00",
+      "duration_minutes": 60,
+      "location": {
+        "raw": "ILL_I_Salle du Conseil (Lumiere)",
+        "site": "ILL",
+        "building": "I",
+        "room": "Salle du Conseil (Lumiere)"
+      },
+      "participants": [
+        "DEVANNE Maxime",
+        "ISMAIL FAWAZ Ali El Hadi",
+        "STUDER Philippe",
+        "WEBER Jonathan",
+        "DION Joel",
+        "FORESTIER Germain",
+        "FONDEMENT Frederic",
+        "HASSENFORDER Michel",
+        "MEYER Cyril",
+        "PERRONNE Jean-Marc",
+        "THIRY Laurent"
+      ]
+    },
+    {
+      "id": "conseil-ir-2027-02-02-1300",
+      "title": "Conseil IR",
+      "category": "administrative",
+      "start": "2027-02-02T13:00:00+01:00",
+      "end": "2027-02-02T14:00:00+01:00",
+      "duration_minutes": 60,
+      "location": {
+        "raw": "ILL_I_Salle du Conseil (Lumiere)",
+        "site": "ILL",
+        "building": "I",
+        "room": "Salle du Conseil (Lumiere)"
+      },
+      "participants": [
+        "DEVANNE Maxime",
+        "FONDEMENT Frederic",
+        "DION Joel",
+        "HASSENFORDER Michel",
+        "FORESTIER Germain",
+        "ISMAIL FAWAZ Ali El Hadi",
+        "MEYER Cyril",
+        "STUDER Philippe",
+        "PERRONNE Jean-Marc",
+        "THIRY Laurent",
+        "WEBER Jonathan"
+      ]
+    },
+    {
+      "id": "conseil-ir-2027-03-02-1300",
+      "title": "Conseil IR",
+      "category": "administrative",
+      "start": "2027-03-02T13:00:00+01:00",
+      "end": "2027-03-02T14:00:00+01:00",
+      "duration_minutes": 60,
+      "location": {
+        "raw": "ILL_I_Salle du Conseil (Lumiere)",
+        "site": "ILL",
+        "building": "I",
+        "room": "Salle du Conseil (Lumiere)"
+      },
+      "participants": [
+        "ISMAIL FAWAZ Ali El Hadi",
+        "PERRONNE Jean-Marc",
+        "MEYER Cyril",
+        "STUDER Philippe",
+        "DEVANNE Maxime",
+        "THIRY Laurent",
+        "WEBER Jonathan",
+        "FONDEMENT Frederic",
+        "DION Joel",
+        "HASSENFORDER Michel",
+        "FORESTIER Germain"
+      ]
+    },
+    {
+      "id": "conseil-ir-2027-04-06-1300",
+      "title": "Conseil IR",
+      "category": "administrative",
+      "start": "2027-04-06T13:00:00+02:00",
+      "end": "2027-04-06T14:00:00+02:00",
+      "duration_minutes": 60,
+      "location": {
+        "raw": "ILL_I_Salle du Conseil (Lumiere)",
+        "site": "ILL",
+        "building": "I",
+        "room": "Salle du Conseil (Lumiere)"
+      },
+      "participants": [
+        "DEVANNE Maxime",
+        "FONDEMENT Frederic",
+        "DION Joel",
+        "HASSENFORDER Michel",
+        "FORESTIER Germain",
+        "MEYER Cyril",
+        "ISMAIL FAWAZ Ali El Hadi",
+        "STUDER Philippe",
+        "PERRONNE Jean-Marc",
+        "WEBER Jonathan",
+        "THIRY Laurent"
+      ]
+    },
+    {
+      "id": "conseil-ir-2027-05-04-1300",
+      "title": "Conseil IR",
+      "category": "administrative",
+      "start": "2027-05-04T13:00:00+02:00",
+      "end": "2027-05-04T14:00:00+02:00",
+      "duration_minutes": 60,
+      "location": {
+        "raw": "ILL_I_Salle du Conseil (Lumiere)",
+        "site": "ILL",
+        "building": "I",
+        "room": "Salle du Conseil (Lumiere)"
+      },
+      "participants": [
+        "DEVANNE Maxime",
+        "DION Joel",
+        "FONDEMENT Frederic",
+        "THIRY Laurent",
+        "MEYER Cyril",
+        "WEBER Jonathan",
+        "FORESTIER Germain",
+        "HASSENFORDER Michel",
+        "STUDER Philippe",
+        "ISMAIL FAWAZ Ali El Hadi",
+        "PERRONNE Jean-Marc"
+      ]
+    },
+    {
+      "id": "conseil-ir-2027-06-01-1300",
+      "title": "Conseil IR",
+      "category": "administrative",
+      "start": "2027-06-01T13:00:00+02:00",
+      "end": "2027-06-01T14:00:00+02:00",
+      "duration_minutes": 60,
+      "location": {
+        "raw": "ILL_I_Salle du Conseil (Lumiere)",
+        "site": "ILL",
+        "building": "I",
+        "room": "Salle du Conseil (Lumiere)"
+      },
+      "participants": [
+        "MEYER Cyril",
+        "PERRONNE Jean-Marc",
+        "DION Joel",
+        "THIRY Laurent",
+        "STUDER Philippe",
+        "WEBER Jonathan",
+        "FORESTIER Germain",
+        "FONDEMENT Frederic",
+        "ISMAIL FAWAZ Ali El Hadi",
+        "HASSENFORDER Michel",
+        "DEVANNE Maxime"
+      ]
+    },
+    {
+      "id": "conseil-ir-2027-07-06-1300",
+      "title": "Conseil IR",
+      "category": "administrative",
+      "start": "2027-07-06T13:00:00+02:00",
+      "end": "2027-07-06T14:00:00+02:00",
+      "duration_minutes": 60,
+      "location": {
+        "raw": "ILL_I_Salle du Conseil (Lumiere)",
+        "site": "ILL",
+        "building": "I",
+        "room": "Salle du Conseil (Lumiere)"
+      },
+      "participants": [
+        "THIRY Laurent",
+        "HASSENFORDER Michel",
+        "WEBER Jonathan",
+        "FONDEMENT Frederic",
+        "DEVANNE Maxime",
+        "ISMAIL FAWAZ Ali El Hadi",
+        "DION Joel",
+        "MEYER Cyril",
+        "PERRONNE Jean-Marc",
+        "FORESTIER Germain",
+        "STUDER Philippe"
+      ]
+    }
+  ]
+}
