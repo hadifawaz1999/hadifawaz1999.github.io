@@ -1,0 +1,217 @@
+/* Add this at the end of dashboard.css */
+.filter-card {
+  margin-bottom: 20px;
+  padding: 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.filter-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 16px;
+}
+
+.filter-heading h3,
+.filter-heading p {
+  margin: 0;
+}
+
+.filter-heading p {
+  margin-top: 4px;
+  color: var(--text-muted);
+  font-size: 0.84rem;
+}
+
+.filter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(150px, 1fr)) minmax(220px, 1.4fr);
+  gap: 12px;
+}
+
+.filter-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.filter-field > span {
+  color: var(--text-muted);
+  font-size: 0.74rem;
+  font-weight: 750;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.filter-control {
+  width: 100%;
+  min-height: 40px;
+  padding: 9px 11px;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  outline: none;
+}
+
+.filter-control:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--primary) 18%, transparent);
+}
+
+.secondary-button {
+  min-height: 38px;
+  padding: 8px 12px;
+  color: var(--primary-dark);
+  background: var(--primary-soft);
+  border: 1px solid color-mix(in srgb, var(--primary) 35%, var(--border));
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.secondary-button:hover {
+  border-color: var(--primary);
+}
+
+@media (max-width: 1280px) {
+  .filter-grid { grid-template-columns: repeat(3, minmax(170px, 1fr)); }
+  .filter-field-search { grid-column: span 2; }
+}
+
+@media (max-width: 760px) {
+  .filter-heading { align-items: stretch; flex-direction: column; }
+  .secondary-button { align-self: flex-start; }
+  .filter-grid { grid-template-columns: 1fr 1fr; }
+  .filter-field-search { grid-column: 1 / -1; }
+}
+
+@media (max-width: 520px) {
+  .filter-grid { grid-template-columns: 1fr; }
+  .filter-field-search { grid-column: auto; }
+  .secondary-button { width: 100%; }
+}
+
+/* Multi-select filter menus */
+.multi-filter-menu {
+  position: relative;
+}
+
+.multi-filter-menu > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.multi-filter-menu > summary::-webkit-details-marker {
+  display: none;
+}
+
+.multi-filter-menu > summary::after {
+  content: "▾";
+  flex: 0 0 auto;
+  color: var(--text-muted);
+  font-size: 0.8rem;
+  transition: transform 0.15s ease;
+}
+
+.multi-filter-menu[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+.multi-filter-summary-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.multi-filter-popover {
+  position: absolute;
+  z-index: 30;
+  top: calc(100% + 6px);
+  left: 0;
+  width: max(100%, 260px);
+  max-width: min(360px, calc(100vw - 32px));
+  padding: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border-strong);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.multi-filter-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-bottom: 9px;
+  margin-bottom: 7px;
+  border-bottom: 1px solid var(--border);
+}
+
+.multi-filter-actions button {
+  padding: 5px 8px;
+  color: var(--primary-dark);
+  background: var(--primary-soft);
+  border: 1px solid color-mix(in srgb, var(--primary) 28%, var(--border));
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.multi-filter-actions button:hover {
+  border-color: var(--primary);
+}
+
+.multi-filter-options {
+  display: grid;
+  gap: 2px;
+  max-height: 260px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.multi-filter-option {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 7px 6px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.multi-filter-option:hover {
+  background: var(--primary-soft);
+}
+
+.multi-filter-option input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: var(--primary);
+}
+
+.multi-filter-option span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  color: var(--text);
+  font-size: 0.82rem;
+}
+
+@media (max-width: 520px) {
+  .multi-filter-popover {
+    width: 100%;
+    max-width: 100%;
+  }
+}
