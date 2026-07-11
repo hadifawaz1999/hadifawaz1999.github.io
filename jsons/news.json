@@ -1,6 +1,14 @@
 {
 	"news":[
 		{
+			"date": "2026-06",
+			"content": "I won the 2025 best PhD thesis award at the <a href=\"https://www.uha.fr/en/index.html\">Université de Haute-Alsace</a> ! My thesis titled \"Deep Learning for Time Series Analysis with Application on Human Motion\" was defended in January 2025 and is now available on <a href=\"https://theses.hal.science/tel-05164981/document\">arxiv</a>."
+		},
+		{
+			"date": "2026-06",
+			"content": "In Saint-Etienne to give a keynote at the <a href=\"https://www.univ-st-etienne.fr/fr/modmad/agenda-actualites/actualites-2025-2026/time-series-analysis-and-deep-learning.html\">Time series analysis and deep learning</a> workshop organized at <a href=\"https://www.univ-st-etienne.fr/fr/icj.html\">Institut Camille Jordan et le ModMad</a> ! The talk is titled \"Deep Learning for Time Series Analysis with Application on Human Motion\" and the slides are available <a href=\"talks/2026/06-St-Etienne-DLTS/DL4TSC_TSER_Rehab.pdf\">here</a>."
+		},
+		{
 			"date": "2026-05",
 			"content": "<a href=\"https://maxime-devanne.com/\">Maxime Devanne</a> presenting our paper at <a href=\"https://fg2026.ieee-biometrics.org/\">IEEE FG 2026</a> for a <a href=\"https://msd-irimas.github.io/pages/DeepRehabPile/\">new benchmark on skeleton-based rehabilitation assessment !</a>"
 		},
