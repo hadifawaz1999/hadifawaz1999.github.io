@@ -1,13 +1,12 @@
 import { loadDatabase } from "./data.js";
 import { renderServiceSummary } from "./views/serviceSummary.js";
 import { renderTimelineView } from "./views/timelineView.js";
+import { renderGanttView } from "./views/ganttView.js";
 
 const container = document.querySelector("#view-container");
 const status = document.querySelector("#data-status");
 const themeToggle = document.querySelector("#theme-toggle");
 const themeToggleLabel = document.querySelector("#theme-toggle-label");
-
-const navigationButtons = document.querySelectorAll(".nav-button[data-view]");
 const pageEyebrow = document.querySelector(".page-heading .eyebrow");
 const pageTitle = document.querySelector(".page-heading h2");
 const pageDescription = document.querySelector(".page-description");
@@ -15,111 +14,86 @@ const pageDescription = document.querySelector(".page-description");
 let database = null;
 let currentView = "summary";
 
+const VIEW_META = {
+  summary: {
+    eyebrow: "Teaching service",
+    title: "Service summary",
+    description: "Aggregated teaching hours and session counts by course and session type.",
+  },
+  timeline: {
+    eyebrow: "Workload planning",
+    title: "Timeline",
+    description: "Calendar, weekly, monthly, and cumulative workload across the academic year.",
+  },
+  gantt: {
+    eyebrow: "Academic-year planning",
+    title: "Gantt diagram",
+    description: "Course activity periods and scheduled sessions on a shared horizontal timeline.",
+  },
+};
+
 initializeThemeToggle();
 initialize();
 
 async function initialize() {
   try {
     database = await loadDatabase();
-
-    setupNavigation();
-    renderCurrentView();
+    bindNavigation();
+    showView("summary");
 
     const generatedAt = database.metadata?.generated_at;
     status.textContent = generatedAt
       ? `Data loaded · generated ${formatDateTime(generatedAt)}`
       : "Data loaded";
-
     status.classList.add("is-ready");
   } catch (error) {
     console.error(error);
     status.textContent = "Data could not be loaded";
     status.classList.add("is-error");
-
     container.innerHTML = `
       <div class="state-card error">
         <strong>Unable to display the dashboard.</strong>
         <p>${escapeHtml(error.message)}</p>
         <p>
-          Confirm that <code>courses.json</code> exists at
-          <code>./data/courses.json</code> and serve the project through a local web server.
+          Confirm that the generated JSON exists in <code>./data/</code>
+          and serve the project through a local web server.
         </p>
       </div>
     `;
   }
 }
 
-function setupNavigation() {
-  navigationButtons.forEach((button) => {
+function bindNavigation() {
+  document.querySelectorAll(".nav-button[data-view]").forEach((button) => {
     if (button.disabled) return;
-
-    button.addEventListener("click", () => {
-      const requestedView = button.dataset.view;
-
-      if (!requestedView || requestedView === currentView) {
-        return;
-      }
-
-      currentView = requestedView;
-      updateNavigationButtons();
-      renderCurrentView();
-    });
+    button.addEventListener("click", () => showView(button.dataset.view));
   });
 }
 
-function updateNavigationButtons() {
-  navigationButtons.forEach((button) => {
-    const isActive = button.dataset.view === currentView;
+function showView(view) {
+  if (!database || !VIEW_META[view]) return;
+  currentView = view;
 
-    button.classList.toggle("active", isActive);
-
-    if (isActive) {
-      button.setAttribute("aria-current", "page");
-    } else {
-      button.removeAttribute("aria-current");
-    }
+  document.querySelectorAll(".nav-button[data-view]").forEach((button) => {
+    const active = button.dataset.view === view;
+    button.classList.toggle("active", active);
+    if (active) button.setAttribute("aria-current", "page");
+    else button.removeAttribute("aria-current");
   });
-}
 
-function renderCurrentView() {
-  if (!database) return;
+  const meta = VIEW_META[view];
+  if (pageEyebrow) pageEyebrow.textContent = meta.eyebrow;
+  if (pageTitle) pageTitle.textContent = meta.title;
+  if (pageDescription) pageDescription.textContent = meta.description;
 
-  switch (currentView) {
-    case "timeline":
-      updatePageHeading({
-        eyebrow: "Teaching schedule",
-        title: "Timeline",
-        description:
-          "Teaching workload over the academic year, grouped by month, week, and day. Explore when scheduled teaching happens during the academic year.",
-      });
-
-      renderTimelineView(container, database);
-      break;
-
-    case "summary":
-    default:
-      updatePageHeading({
-        eyebrow: "Teaching service",
-        title: "Service summary",
-        description:
-          "Aggregated teaching hours and session counts by course and session type.",
-      });
-
-      renderServiceSummary(container, database);
-      break;
-  }
-}
-
-function updatePageHeading({ eyebrow, title, description }) {
-  if (pageEyebrow) pageEyebrow.textContent = eyebrow;
-  if (pageTitle) pageTitle.textContent = title;
-  if (pageDescription) pageDescription.textContent = description;
+  if (view === "timeline") renderTimelineView(container, database);
+  else if (view === "gantt") renderGanttView(container, database);
+  else renderServiceSummary(container, database);
 }
 
 function formatDateTime(value) {
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return value;
-
   return new Intl.DateTimeFormat(undefined, {
     dateStyle: "medium",
     timeStyle: "short",
@@ -135,28 +109,26 @@ function escapeHtml(value) {
     .replaceAll("'", "&#039;");
 }
 
-
 function initializeThemeToggle() {
   updateThemeToggle();
 
   themeToggle?.addEventListener("click", () => {
     const currentTheme = document.documentElement.dataset.theme;
     const nextTheme = currentTheme === "dark" ? "light" : "dark";
-
     document.documentElement.dataset.theme = nextTheme;
     localStorage.setItem("ade-dashboard-theme", nextTheme);
     updateThemeToggle();
+
+    if (currentView === "timeline") {
+      container.refreshTimelineCharts?.();
+    }
   });
 }
 
 function updateThemeToggle() {
   if (!themeToggle || !themeToggleLabel) return;
-
   const isDark = document.documentElement.dataset.theme !== "light";
   themeToggle.setAttribute("aria-checked", String(isDark));
-  themeToggle.setAttribute(
-    "aria-label",
-    isDark ? "Switch to light mode" : "Switch to dark mode",
-  );
+  themeToggle.setAttribute("aria-label", isDark ? "Switch to light mode" : "Switch to dark mode");
   themeToggleLabel.textContent = isDark ? "Dark" : "Light";
 }
