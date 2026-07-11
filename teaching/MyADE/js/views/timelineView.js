@@ -11,17 +11,49 @@ export function renderTimelineView(container, database) {
     ),
   ).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: "base" }));
 
+  const allTimelineRows = buildTimelineRows(database);
+  const rangeModel = buildRangeModel(allTimelineRows);
+
   container.innerHTML = `
 
-  <section class="timeline-note" role="note">
+    <section class="timeline-note" role="note">
       Projects and suivis are not shown here because their manually entered hours have no scheduled dates.
     </section>
 
-    <section class="timeline-metrics" aria-label="Filtered timeline totals">
-      <article><span>Scheduled hours</span><strong id="timeline-total-hours">0 h</strong></article>
-      <article><span>Service Eq. TD</span><strong id="timeline-total-eqtd">0 h</strong></article>
-      <article><span>Sessions</span><strong id="timeline-total-sessions">0</strong></article>
-      <article><span>Active weeks</span><strong id="timeline-active-weeks">0</strong></article>
+    <section class="timeline-range-card" aria-label="Timeline date range">
+      <div class="timeline-range-heading">
+        <div>
+          <h3>Date range</h3>
+          <p>Limit every Timeline chart to a semester or a custom period.</p>
+        </div>
+        <button id="timeline-reset-range" class="secondary-button" type="button">Reset range</button>
+      </div>
+      <div class="timeline-range-grid">
+        <label class="filter-field">
+          <span>Semester</span>
+          <select id="timeline-semester-filter" class="filter-control">
+            <option value="all">All</option>
+            <option value="s1">Semester 1</option>
+            <option value="s2">Semester 2</option>
+          </select>
+        </label>
+        <label class="filter-field">
+          <span>Range</span>
+          <select id="timeline-range-mode" class="filter-control">
+            <option value="entire">Entire year</option>
+            <option value="semester">Selected semester</option>
+            <option value="custom">Custom</option>
+          </select>
+        </label>
+        <label class="filter-field">
+          <span>From</span>
+          <input id="timeline-date-from" class="filter-control" type="date">
+        </label>
+        <label class="filter-field">
+          <span>To</span>
+          <input id="timeline-date-to" class="filter-control" type="date">
+        </label>
+      </div>
     </section>
 
     <section class="filter-card" aria-label="Timeline filters">
@@ -42,6 +74,13 @@ export function renderTimelineView(container, database) {
           <input id="timeline-search-filter" class="filter-control search-input" type="search" placeholder="Name, diploma, year…" autocomplete="off">
         </label>
       </div>
+    </section>
+
+    <section class="timeline-metrics" aria-label="Filtered timeline totals">
+      <article><span>Scheduled hours</span><strong id="timeline-total-hours">0 h</strong></article>
+      <article><span>Service Eq. TD</span><strong id="timeline-total-eqtd">0 h</strong></article>
+      <article><span>Sessions</span><strong id="timeline-total-sessions">0</strong></article>
+      <article><span>Active weeks</span><strong id="timeline-active-weeks">0</strong></article>
     </section>
 
     <section class="timeline-chart-grid">
@@ -71,7 +110,15 @@ export function renderTimelineView(container, database) {
     selectedEstablishments: new Set(establishments),
     establishmentCount: establishments.length,
     query: "",
+    allRows: allTimelineRows,
+    rangeModel,
+    rangeMode: "entire",
+    semester: "all",
+    dateFrom: rangeModel.minKey,
+    dateTo: rangeModel.maxKey,
   };
+
+  bindRangeControls(container, state);
 
   bindMultiSelect(container, "timeline-activity-filter", state.selectedActivities, () => updateTimeline(container, state));
   bindMultiSelect(container, "timeline-session-type-filter", state.selectedSessionTypes, () => updateTimeline(container, state));
@@ -102,8 +149,9 @@ function updateTimeline(container, state) {
     return;
   }
 
-  const rows = buildTimelineRows(state.database).filter((row) =>
-    state.selectedActivities.has(row.courseId)
+  const rows = state.allRows.filter((row) =>
+    isWithinDateRange(row.date, state.dateFrom, state.dateTo)
+    && state.selectedActivities.has(row.courseId)
     && state.selectedSessionTypes.has(row.sessionType)
     && (state.selectedEstablishments.size === state.establishmentCount
       || row.establishments.some((value) => state.selectedEstablishments.has(value)))
@@ -121,6 +169,129 @@ function updateTimeline(container, state) {
   renderWeeklyChart(container, rows, theme);
   renderCumulativeChart(container, rows, theme);
   renderHeatmap(container, rows, theme);
+}
+
+function buildRangeModel(rows) {
+  if (!rows.length) {
+    const today = dayKey(new Date());
+    return { minKey: today, maxKey: today, s1Start: today, s1End: today, s2Start: today, s2End: today };
+  }
+
+  const minDate = new Date(rows[0].date);
+  const maxDate = new Date(rows.at(-1).date);
+  const academicStartYear = minDate.getMonth() >= 7 ? minDate.getFullYear() : minDate.getFullYear() - 1;
+  const semesterBoundary = new Date(academicStartYear, 11, 31);
+  const semesterTwoStart = new Date(academicStartYear + 1, 0, 1);
+
+  return {
+    minKey: dayKey(minDate),
+    maxKey: dayKey(maxDate),
+    s1Start: dayKey(minDate),
+    s1End: dayKey(semesterBoundary < maxDate ? semesterBoundary : maxDate),
+    s2Start: dayKey(semesterTwoStart > minDate ? semesterTwoStart : minDate),
+    s2End: dayKey(maxDate),
+  };
+}
+
+function bindRangeControls(container, state) {
+  const semester = container.querySelector("#timeline-semester-filter");
+  const mode = container.querySelector("#timeline-range-mode");
+  const from = container.querySelector("#timeline-date-from");
+  const to = container.querySelector("#timeline-date-to");
+  const reset = container.querySelector("#timeline-reset-range");
+
+  from.min = to.min = state.rangeModel.minKey;
+  from.max = to.max = state.rangeModel.maxKey;
+  from.value = state.dateFrom;
+  to.value = state.dateTo;
+
+  const syncInputs = () => {
+    from.value = state.dateFrom;
+    to.value = state.dateTo;
+    const custom = state.rangeMode === "custom";
+    from.disabled = !custom;
+    to.disabled = !custom;
+  };
+
+  const applyMode = () => {
+    if (state.rangeMode === "entire") {
+      state.semester = "all";
+      semester.value = "all";
+      state.dateFrom = state.rangeModel.minKey;
+      state.dateTo = state.rangeModel.maxKey;
+    } else if (state.rangeMode === "semester") {
+      if (state.semester === "all") {
+        state.semester = "s1";
+        semester.value = "s1";
+      }
+      applySemesterRange(state);
+    }
+    syncInputs();
+    updateTimeline(container, state);
+  };
+
+  semester.addEventListener("change", () => {
+    state.semester = semester.value;
+    if (state.semester === "all") {
+      state.rangeMode = "entire";
+      mode.value = "entire";
+    } else {
+      state.rangeMode = "semester";
+      mode.value = "semester";
+      applySemesterRange(state);
+    }
+    syncInputs();
+    updateTimeline(container, state);
+  });
+
+  mode.addEventListener("change", () => {
+    state.rangeMode = mode.value;
+    applyMode();
+  });
+
+  const applyCustomDates = () => {
+    state.rangeMode = "custom";
+    mode.value = "custom";
+    state.dateFrom = from.value || state.rangeModel.minKey;
+    state.dateTo = to.value || state.rangeModel.maxKey;
+    if (state.dateFrom > state.dateTo) {
+      if (document.activeElement === from) state.dateTo = state.dateFrom;
+      else state.dateFrom = state.dateTo;
+    }
+    syncInputs();
+    updateTimeline(container, state);
+  };
+
+  from.addEventListener("change", applyCustomDates);
+  to.addEventListener("change", applyCustomDates);
+
+  reset.addEventListener("click", () => {
+    state.semester = "all";
+    state.rangeMode = "entire";
+    state.dateFrom = state.rangeModel.minKey;
+    state.dateTo = state.rangeModel.maxKey;
+    semester.value = "all";
+    mode.value = "entire";
+    syncInputs();
+    updateTimeline(container, state);
+  });
+
+  syncInputs();
+}
+
+function applySemesterRange(state) {
+  if (state.semester === "s2") {
+    state.dateFrom = state.rangeModel.s2Start;
+    state.dateTo = state.rangeModel.s2End;
+  } else {
+    state.dateFrom = state.rangeModel.s1Start;
+    state.dateTo = state.rangeModel.s1End;
+  }
+}
+
+function isWithinDateRange(date, fromKey, toKey) {
+  const key = dayKey(date);
+  return key >= fromKey && key <= toKey;
 }
 
 function buildTimelineRows(database) {

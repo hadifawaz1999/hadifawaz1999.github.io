@@ -1,21 +1,131 @@
-.timeline-view-header { margin-bottom: 1rem; }
-.timeline-view-header h2 { margin: .15rem 0 .35rem; }
-.view-eyebrow { margin: 0; font-size: .75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted-text, var(--muted)); }
-.timeline-note { margin: 1rem 0; padding: .8rem 1rem; border: 1px solid var(--border); border-radius: .75rem; color: var(--muted-text, var(--muted)); background: var(--surface); font-size: .9rem; }
-.timeline-metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin: 1rem 0; }
-.timeline-metrics article { padding: 1rem; border: 1px solid var(--border); border-radius: .9rem; background: var(--surface); }
-.timeline-metrics span { display: block; color: var(--muted-text, var(--muted)); font-size: .82rem; margin-bottom: .35rem; }
-.timeline-metrics strong { font-size: 1.5rem; }
-.timeline-chart-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
-.timeline-chart-card { min-width: 0; padding: 1rem; border: 1px solid var(--border); border-radius: .9rem; background: var(--surface); }
-.timeline-chart-card-wide { grid-column: 1 / -1; }
-.timeline-chart-card header h3 { margin: 0 0 .3rem; }
-.timeline-chart-card header p { margin: 0; color: var(--muted-text, var(--muted)); font-size: .88rem; }
-.timeline-chart { width: 100%; min-height: 340px; margin-top: .6rem; }
-.timeline-chart-card-wide .timeline-chart { min-height: 380px; }
-.timeline-empty-state { padding: 2rem; margin-top: 1rem; text-align: center; border: 1px dashed var(--border); border-radius: .9rem; color: var(--muted-text, var(--muted)); }
-@media (max-width: 950px) { .timeline-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); } .timeline-chart-grid { grid-template-columns: 1fr; } .timeline-chart-card-wide { grid-column: auto; } }
-@media (max-width: 560px) { .timeline-metrics { grid-template-columns: 1fr; } .timeline-chart { min-height: 300px; } }
+.timeline-view-header {
+  margin-bottom: 1rem;
+}
+
+.timeline-view-header h2 {
+  margin: .15rem 0 .35rem;
+}
+
+.view-eyebrow {
+  margin: 0;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted-text, var(--muted));
+}
+
+.timeline-note {
+  margin: 1rem 0;
+  padding: .8rem 1rem;
+  border: 1px solid var(--border);
+  border-radius: .75rem;
+  /* color: var(--muted-text, var(--muted));
+  background: var(--surface); */
+  font-size: 1.1rem;
+  /* make it look like an alert note with red color and warning background */
+  border-color: rgb(255, 0, 0);
+  background: rgb(255, 186, 186);
+  /* color: var(--text-warning); */
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+
+.timeline-metrics {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.timeline-metrics article {
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: .9rem;
+  background: var(--surface);
+}
+
+.timeline-metrics span {
+  display: block;
+  color: var(--muted-text, var(--muted));
+  font-size: .82rem;
+  margin-bottom: .35rem;
+}
+
+.timeline-metrics strong {
+  font-size: 1.5rem;
+}
+
+.timeline-chart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.timeline-chart-card {
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: .9rem;
+  background: var(--surface);
+}
+
+.timeline-chart-card-wide {
+  grid-column: 1 / -1;
+}
+
+.timeline-chart-card header h3 {
+  margin: 0 0 .3rem;
+}
+
+.timeline-chart-card header p {
+  margin: 0;
+  color: var(--muted-text, var(--muted));
+  font-size: .88rem;
+}
+
+.timeline-chart {
+  width: 100%;
+  min-height: 340px;
+  margin-top: .6rem;
+}
+
+.timeline-chart-card-wide .timeline-chart {
+  min-height: 380px;
+}
+
+.timeline-empty-state {
+  padding: 2rem;
+  margin-top: 1rem;
+  text-align: center;
+  border: 1px dashed var(--border);
+  border-radius: .9rem;
+  color: var(--muted-text, var(--muted));
+}
+
+@media (max-width: 950px) {
+  .timeline-metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .timeline-chart-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-chart-card-wide {
+    grid-column: auto;
+  }
+}
+
+@media (max-width: 560px) {
+  .timeline-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-chart {
+    min-height: 300px;
+  }
+}
 
 .timeline-calendar-card {
   order: -1;
@@ -93,7 +203,7 @@
   font-size: clamp(1.45rem, 3vw, 2rem);
 }
 
-.timeline-modal-header > p:last-child {
+.timeline-modal-header>p:last-child {
   margin: .45rem 0 0;
   color: var(--muted-text, var(--muted));
 }
@@ -206,8 +316,15 @@
 }
 
 @keyframes timeline-modal-enter {
-  from { opacity: 0; transform: translateY(12px) scale(.985); }
-  to { opacity: 1; transform: translateY(0) scale(1); }
+  from {
+    opacity: 0;
+    transform: translateY(12px) scale(.985);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
 @media (max-width: 620px) {
@@ -237,5 +354,59 @@
     padding-bottom: .65rem;
     border-right: 0;
     border-bottom: 1px solid var(--border);
+  }
+}
+
+.timeline-range-card {
+  margin: 0 0 1rem;
+  padding: 1rem;
+  border: 1px solid var(--border);
+  border-radius: 1rem;
+  background: var(--surface);
+}
+
+.timeline-range-heading {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-range-heading h3 {
+  margin: 0 0 .3rem;
+}
+
+.timeline-range-heading p {
+  margin: 0;
+  color: var(--muted-text, var(--muted));
+  font-size: .88rem;
+}
+
+.timeline-range-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: .85rem;
+}
+
+.timeline-range-grid input:disabled {
+  cursor: not-allowed;
+  opacity: .62;
+  background: color-mix(in srgb, var(--surface) 88%, var(--border));
+}
+
+@media (max-width: 900px) {
+  .timeline-range-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .timeline-range-heading {
+    flex-direction: column;
+  }
+
+  .timeline-range-grid {
+    grid-template-columns: 1fr;
   }
 }
