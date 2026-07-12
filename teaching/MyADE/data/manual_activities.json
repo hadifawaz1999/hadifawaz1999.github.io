@@ -35,7 +35,7 @@
         },
         "projet-1A-info-fin-annee": {
             "id": "projet-1A-info-fin-annee",
-            "name": "Projet 1A Info Fin d'Annee",
+            "name": "Projet 1A Info IR Fin d'Annee",
             "aliases": [],
             "category": "project/suivi",
             "audiences": [
@@ -95,7 +95,7 @@
         },
         {
             "id": "projet-1A-info-fin-annee",
-            "name": "Projet 1A Info Fin d'Annee",
+            "name": "Projet 1A Info IR Fin d'Annee",
             "course_id": "projet-1A-info-fin-annee",
             "related_course_id": null,
             "category": "project/suivi",
