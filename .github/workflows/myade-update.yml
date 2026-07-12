@@ -1,0 +1,61 @@
+name: Update MyADE data
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "teaching/MyADE/data/ADECal.ics"
+      - "teaching/MyADE/data/manual_activities.json"
+      - "teaching/MyADE/ade_ics_to_json.py"
+      - "teaching/MyADE/merge_manual_activities.py"
+      - "teaching/MyADE/test_alignment.py"
+      - "teaching/MyADE/test_complete_database.py"
+      - "teaching/MyADE/run_pipeline.sh"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Make pipeline executable
+        working-directory: teaching/MyADE
+        run: chmod +x run_pipeline.sh
+
+      - name: Run pipeline
+        working-directory: teaching/MyADE
+        run: ./run_pipeline.sh
+
+      - name: Commit regenerated files
+        run: |
+          if git diff --quiet -- teaching/MyADE/data; then
+            echo "No generated files changed."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add \
+            teaching/MyADE/data/courses.json \
+            teaching/MyADE/data/courses_complete.json \
+            teaching/MyADE/data/import_report.json
+
+          git commit -m "chore(MyADE): regenerate generated data"
+
+          git push
