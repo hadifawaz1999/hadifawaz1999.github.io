@@ -147,8 +147,13 @@
   border-radius: 999px;
 }
 
-.gantt-legend-course { background: var(--gantt-course); }
-.gantt-legend-project { background: var(--gantt-project); }
+.gantt-legend-course {
+  background: var(--gantt-course);
+}
+
+.gantt-legend-project {
+  background: var(--gantt-project);
+}
 
 .gantt-legend-line {
   width: 22px;
@@ -205,7 +210,7 @@
   inset: 0 0 28px;
 }
 
-.gantt-months > div {
+.gantt-months>div {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -256,8 +261,13 @@
   content: "";
 }
 
-.gantt-label.is-course::before { background: var(--gantt-course); }
-.gantt-label.is-project::before { background: var(--gantt-project); }
+.gantt-label.is-course::before {
+  background: var(--gantt-course);
+}
+
+.gantt-label.is-project::before {
+  background: var(--gantt-project);
+}
 
 .gantt-label strong,
 .gantt-label span {
@@ -284,20 +294,16 @@
   overflow: hidden;
   border-bottom: 1px solid var(--border);
   background-image:
-    repeating-linear-gradient(
-      to right,
+    repeating-linear-gradient(to right,
       transparent 0,
       transparent calc(var(--gantt-day-width) - 1px),
       var(--gantt-grid-line) calc(var(--gantt-day-width) - 1px),
-      var(--gantt-grid-line) var(--gantt-day-width)
-    ),
-    repeating-linear-gradient(
-      to right,
+      var(--gantt-grid-line) var(--gantt-day-width)),
+    repeating-linear-gradient(to right,
       transparent 0,
       transparent calc(var(--gantt-day-width) * 7 - 1px),
       var(--gantt-week-line) calc(var(--gantt-day-width) * 7 - 1px),
-      var(--gantt-week-line) calc(var(--gantt-day-width) * 7)
-    );
+      var(--gantt-week-line) calc(var(--gantt-day-width) * 7));
 }
 
 .gantt-period-bar {
@@ -476,7 +482,7 @@
   margin: 16px 0 0;
 }
 
-.gantt-detail-grid > div {
+.gantt-detail-grid>div {
   padding: 13px 14px;
   border: 1px solid var(--border);
   border-radius: 12px;
@@ -496,7 +502,9 @@
 }
 
 @media (max-width: 900px) {
-  :root { --gantt-label-width: 190px; }
+  :root {
+    --gantt-label-width: 190px;
+  }
 
   .gantt-range-grid,
   .gantt-summary {
@@ -510,7 +518,9 @@
 }
 
 @media (max-width: 580px) {
-  :root { --gantt-label-width: 160px; }
+  :root {
+    --gantt-label-width: 160px;
+  }
 
   .gantt-range-grid,
   .gantt-summary,
@@ -533,47 +543,126 @@
 
 /* Gantt readability and course-period palette */
 :root {
-  --course-0: #a8c8f0; --course-0-strong: #7eace4;
-  --course-1: #a8ddc0; --course-1-strong: #7fc99f;
-  --course-2: #d8b6ec; --course-2-strong: #bf8fde;
-  --course-3: #f0c3a5; --course-3-strong: #e3a679;
-  --course-4: #f0aeb7; --course-4-strong: #df7f8e;
-  --course-5: #a9dcdf; --course-5-strong: #79c3c8;
-  --course-6: #d7d0a8; --course-6-strong: #beb36f;
-  --course-7: #b8c3ee; --course-7-strong: #8f9fe0;
-  --course-8: #c8dda5; --course-8-strong: #a5c474;
-  --course-9: #e5b8d1; --course-9-strong: #cf88af;
+  --course-0: #a8c8f0;
+  --course-0-strong: #7eace4;
+  --course-1: #a8ddc0;
+  --course-1-strong: #7fc99f;
+  --course-2: #d8b6ec;
+  --course-2-strong: #bf8fde;
+  --course-3: #f0c3a5;
+  --course-3-strong: #e3a679;
+  --course-4: #f0aeb7;
+  --course-4-strong: #df7f8e;
+  --course-5: #a9dcdf;
+  --course-5-strong: #79c3c8;
+  --course-6: #d7d0a8;
+  --course-6-strong: #beb36f;
+  --course-7: #b8c3ee;
+  --course-7-strong: #8f9fe0;
+  --course-8: #c8dda5;
+  --course-8-strong: #a5c474;
+  --course-9: #e5b8d1;
+  --course-9-strong: #cf88af;
 }
 
-.gantt-range-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-.filter-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.gantt-range-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
 
-.gantt-label::before { background: var(--course-color) !important; }
-.gantt-period-bar { background: color-mix(in srgb, var(--course-color) 38%, transparent); }
-.gantt-period-button { background: var(--course-color); cursor: pointer; transition: transform 120ms ease, filter 120ms ease, box-shadow 120ms ease; }
+.filter-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gantt-label::before {
+  background: var(--course-color) !important;
+}
+
+.gantt-period-bar {
+  background: color-mix(in srgb, var(--course-color) 38%, transparent);
+}
+
+.gantt-period-button {
+  background: var(--course-color);
+  cursor: pointer;
+  transition: transform 120ms ease, filter 120ms ease, box-shadow 120ms ease;
+}
+
 .gantt-period-button:hover,
-.gantt-period-button:focus-visible { filter: saturate(1.08) brightness(1.03); transform: translateY(-2px); box-shadow: 0 5px 14px rgba(15, 23, 42, 0.18); }
+.gantt-period-button:focus-visible {
+  filter: saturate(1.08) brightness(1.03);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(15, 23, 42, 0.18);
+}
 
-.gantt-session { width: 58px !important; min-width: 58px; height: 34px; top: 12px; }
-.gantt-session span { padding: 0 5px; font-size: 0.72rem; line-height: 32px; text-align: center; text-overflow: ellipsis; }
+.gantt-session {
+  width: 58px !important;
+  min-width: 58px;
+  height: 34px;
+  top: 12px;
+}
+
+.gantt-session span {
+  padding: 0 5px;
+  font-size: 0.72rem;
+  line-height: 32px;
+  text-align: center;
+  text-overflow: ellipsis;
+}
 
 .gantt-legend-swatch.is-cm,
-.gantt-session.is-cm { background: #aaa6ea; }
+.gantt-session.is-cm {
+  background: #aaa6ea;
+}
+
 .gantt-legend-swatch.is-td,
-.gantt-session.is-td { background: #91c7ee; }
+.gantt-session.is-td {
+  background: #91c7ee;
+}
+
 .gantt-legend-swatch.is-td1,
-.gantt-session.is-td1 { background: #87d6c1; }
+.gantt-session.is-td1 {
+  background: #87d6c1;
+}
+
 .gantt-legend-swatch.is-td2,
-.gantt-session.is-td2 { background: #77c4d8; }
+.gantt-session.is-td2 {
+  background: #77c4d8;
+}
+
 .gantt-legend-swatch.is-exam,
-.gantt-session.is-exam { background: #efa5a5; }
+.gantt-session.is-exam {
+  background: #efa5a5;
+}
 
 .gantt-lane,
-.gantt-label { min-height: 62px; }
-.gantt-period-button { top: 14px; height: 34px; }
-.gantt-period-button span { font-size: 0.78rem; }
+.gantt-label {
+  min-height: 62px;
+}
+
+.gantt-period-button {
+  top: 14px;
+  height: 34px;
+}
+
+.gantt-period-button span {
+  font-size: 0.78rem;
+}
 
 @media (max-width: 900px) {
+
   .gantt-range-grid,
-  .filter-grid { grid-template-columns: 1fr; }
+  .filter-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Same-day sessions use independent vertical tracks. */
+.gantt-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gantt-session {
+  top: auto;
 }

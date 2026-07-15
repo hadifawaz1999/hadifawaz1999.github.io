@@ -310,14 +310,37 @@ function renderActivityRow(activity, colorIndex, fromDate, toDate, dayWidth, tim
   const paletteIndex = colorIndex % 10;
   const courseStyle = `--course-color: var(--course-${paletteIndex}); --course-color-strong: var(--course-${paletteIndex}-strong);`;
 
+  // Sessions sharing the same calendar day occupy separate vertical tracks.
+  // This keeps Algo SD TD1 and TD2 visible instead of drawing one on top of the other.
+  const trackBySessionId = new Map();
+  const sessionsByDay = new Map();
+  activity.sessions.forEach((session) => {
+    const key = dayKey(session.start);
+    if (!sessionsByDay.has(key)) sessionsByDay.set(key, []);
+    sessionsByDay.get(key).push(session);
+  });
+  let maxTracks = 1;
+  sessionsByDay.forEach((sessions) => {
+    sessions.sort((a, b) => a.start - b.start || a.type.localeCompare(b.type));
+    maxTracks = Math.max(maxTracks, sessions.length);
+    sessions.forEach((session, index) => trackBySessionId.set(session.id, index));
+  });
+
+  const sessionHeight = 34;
+  const trackGap = 6;
+  const lanePadding = 12;
+  const rowHeight = mode === "periods"
+    ? 62
+    : Math.max(62, lanePadding * 2 + maxTracks * sessionHeight + (maxTracks - 1) * trackGap);
+
   return `
-    <div class="gantt-label is-course" style="${courseStyle}">
+    <div class="gantt-label is-course" style="${courseStyle}min-height:${rowHeight}px">
       <strong title="${escapeHtml(activity.name)}">${escapeHtml(activity.name)}</strong>
       <span>${activity.sessions.length} session${activity.sessions.length === 1 ? "" : "s"} · ${formatHours(activity.sessions.reduce((sum, session) => sum + session.durationMinutes, 0))}</span>
     </div>
-    <div class="gantt-lane is-course" style="width:${timelineWidth}px;${courseStyle}">
+    <div class="gantt-lane is-course" style="width:${timelineWidth}px;${courseStyle}min-height:${rowHeight}px">
       ${todayOffset === null ? "" : `<i class="gantt-today-line" style="left:${todayOffset}px" aria-label="Today"></i>`}
-      <div class="gantt-period-bar" style="left:${periodLeft}px;width:${periodWidth}px"></div>
+      <div class="gantt-period-bar" style="left:${periodLeft}px;width:${periodWidth}px;top:${Math.round(rowHeight / 2)}px"></div>
       ${mode === "periods" ? `
         <button
           class="gantt-period-button"
@@ -332,12 +355,14 @@ function renderActivityRow(activity, colorIndex, fromDate, toDate, dayWidth, tim
       ` : activity.sessions.map((session) => {
         const left = differenceInCalendarDays(fromDate, session.start) * dayWidth;
         const sameDayWidth = 58;
+        const track = trackBySessionId.get(session.id) ?? 0;
+        const top = lanePadding + track * (sessionHeight + trackGap);
         return `
           <button
             class="gantt-session ${sessionTypeClass(session.type)}"
             type="button"
             data-session-id="${escapeHtml(session.id)}"
-            style="left:${left}px;width:${sameDayWidth}px"
+            style="left:${left}px;top:${top}px;width:${sameDayWidth}px"
             title="${escapeHtml(session.tooltip)}"
             aria-label="${escapeHtml(session.tooltip)}"
           >
