@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """
 Convert an ADE .ics calendar into a normalized JSON course database.
 
@@ -19,6 +20,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo
+
 
 TIMEZONE = "Europe/Paris"
 
@@ -51,6 +53,13 @@ TITLE_SESSION_OVERRIDES = {
 # These course-level overrides apply to non-exam sessions after title normalization.
 COURSE_SESSION_TYPE_OVERRIDES = {
     "Deep Learning": "TD",
+}
+
+# Some ADE exports remove title prefixes that previously distinguished CM and TD.
+# The activity identifier embedded in the UID remains stable and can be used as
+# an explicit per-course classification rule.
+ADE_ACTIVITY_SESSION_OVERRIDES = {
+    ("Apprentissage statistique et automatique", "6582"): "TD",
 }
 
 # These mappings are deliberately explicit and easy to adjust.
@@ -241,6 +250,19 @@ def split_audience_and_people(description: str) -> tuple[list[str], list[str]]:
     return audience_lines, people
 
 
+
+def extract_ade_activity_id(raw_uid: str) -> str | None:
+    """Extract the ADE activity id from a hexadecimal ADE UID."""
+    if not raw_uid:
+        return None
+    payload = raw_uid[3:] if raw_uid.startswith("ADE") else raw_uid
+    try:
+        decoded = bytes.fromhex(payload).decode("utf-8", errors="strict")
+    except (ValueError, UnicodeDecodeError):
+        return None
+    match = re.search(r"-(\d+)-\d+-\d+$", decoded)
+    return match.group(1) if match else None
+
 def normalize_course_title(original_title: str) -> tuple[str, bool, str | None]:
     override = TITLE_SESSION_OVERRIDES.get(original_title)
     if override:
@@ -357,14 +379,14 @@ def build_database(
             )
             continue
 
-        canonical_title, is_exam, forced_session_type = normalize_course_title(
-            original_title
+        canonical_title, is_exam, forced_session_type = normalize_course_title(original_title)
+        raw_uid = raw_event.get("uid", {}).get("value", "")
+        ade_activity_id = extract_ade_activity_id(raw_uid)
+        activity_session_type = ADE_ACTIVITY_SESSION_OVERRIDES.get(
+            (canonical_title, ade_activity_id)
         )
         course_id = slugify(canonical_title)
-        if (
-            canonical_title != original_title
-            and original_title not in TITLE_SESSION_OVERRIDES
-        ):
+        if canonical_title != original_title and original_title not in TITLE_SESSION_OVERRIDES:
             report["normalized_aliases"].append(
                 {"original": original_title, "canonical": canonical_title}
             )
@@ -375,6 +397,7 @@ def build_database(
         audience_type = raw_session_type(audience_lines, is_exam=False)
         detected_type = (
             forced_session_type
+            or activity_session_type
             or (audience_type if audience_type.startswith("TD") else None)
             or COURSE_SESSION_TYPE_OVERRIDES.get(canonical_title)
             or ("EXAM" if is_exam else audience_type)
@@ -393,6 +416,7 @@ def build_database(
                 "start_dt": start,
                 "end_dt": end,
                 "location": parse_location(location_raw),
+                "ade_activity_id": ade_activity_id,
             }
         )
 
@@ -424,8 +448,7 @@ def build_database(
 
         session_type = event["raw_session_type"]
         numbered_groups = {
-            group
-            for group in td_groups_by_course[course_id]
+            group for group in td_groups_by_course[course_id]
             if re.fullmatch(r"TD\d+", group)
         }
         if re.fullmatch(r"TD\d+", session_type) and len(numbered_groups) == 1:
@@ -501,7 +524,8 @@ def build_database(
         )
         id_counts[id_base] += 1
         session["id"] = (
-            id_base if id_counts[id_base] == 1 else f"{id_base}-{id_counts[id_base]}"
+            id_base if id_counts[id_base] == 1
+            else f"{id_base}-{id_counts[id_base]}"
         )
 
     for course in course_records.values():
@@ -509,7 +533,9 @@ def build_database(
         course["audiences"] = unique_dicts(course["audiences"])
 
     report["normalized_aliases"] = unique_dicts(report["normalized_aliases"])
-    report["unknown_audience_labels"] = sorted(set(report["unknown_audience_labels"]))
+    report["unknown_audience_labels"] = sorted(
+        set(report["unknown_audience_labels"])
+    )
     report["course_session_count"] = len(unique_sessions)
     report["other_event_count"] = len(other_events)
 
