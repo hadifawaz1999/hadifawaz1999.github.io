@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Open source development course material">
+    <meta name="color-scheme" content="dark light">
+    <title>Course Material</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css">
+    <script>
+        (() => {
+            const saved = localStorage.getItem("course-theme");
+            const fallback = "dark";
+            document.documentElement.dataset.theme = saved || fallback;
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+
+    <header class="site-header">
+        <a class="brand" href="#" aria-label="Course homepage">
+            <span class="brand-copy">
+                <strong id="brand-title">Open Source Development</strong>
+            </span>
+        </a>
+
+        <nav class="header-actions" aria-label="Main navigation">
+            <a href="#material">Courses</a>
+            <a id="repository-link" class="repo-link hidden" href="#" target="_blank" rel="noreferrer">Repository</a>
+            <button id="theme-toggle" class="icon-button" type="button" aria-label="Switch theme">
+                <span class="theme-icon" aria-hidden="true"></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="eyebrow"><span></span> My Courses</div>
+            <h1 id="course-title">My Courses<br><em>Development</em></h1>
+            <p id="course-subtitle" class="hero-subtitle"></p>
+
+            <div class="hero-actions">
+                <p class="author-line">Created by <strong id="course-author">Ali El Hadi ISMAIL FAWAZ</strong></p>
+            </div>
+
+            <ul id="material" class="material-list">
+                <li class="material-item">
+                    <a target="_blank" href="https://hadifawaz1999.github.io/Artificial-Intelligence-Reinforcement-Learning--2A-Info/">
+                        <h3 class="material-title primary-button">Artificial Intelligence - Reinforcement Learning</h3>
+                    </a>
+                    <p class="material-description">This course is given to the 2nd year software engineering students at the École Nationale Supérieure d'Ingénieurs Sud-Alsace (ENSISA).</p>
+                    <p class="material-description">The course covers the fundamentals of artificial intelligence, including search algorithms, knowledge representation, reasoning, and planning. Students will learn how to implement and apply AI techniques to solve real-world problems.</p>
+                    <p class="material-description">The course covers as well the fundamentals of reinforcement learning, including Markov decision processes, value functions, policy gradients, and deep reinforcement learning. Students will learn how to implement and apply reinforcement learning algorithms to solve real-world problems.</p>
+                </li>
+                <li class="material-item">
+                    <a target="_blank" href="https://hadifawaz1999.github.io/Statistical-and-Machine-Learning-course---M2-IM-IMDS-MIAGE/">
+                        <h3 class="material-title primary-button">Statistical and Machine Learning</h3>
+                    </a>
+                    <p class="material-description">This course is given to the 2nd year Masters students (IM, IMDS and MIAGE) at the Faculté des Sciences et Technologies (FST).</p>
+                    <p class="material-description">The course covers the fundamentals of learning theory, including PAC and APAC learnability.</p>
+                    <p class="material-description">The course covers as well the fundamentals of statistical & machine learning, including linear regression, logistic regression, and support vector machines.</p>
+                </li>
+                <li class="material-item">
+                    <a target="_blank" href="https://hadifawaz1999.github.io/Advanced-Deep-Learning--3A-Info/">
+                        <h3 class="material-title primary-button">Advanced Deep Learning</h3>
+                    </a>
+                    <p class="material-description">This course is given to the 3rd year software engineering students at the École Nationale Supérieure d'Ingénieurs Sud-Alsace (ENSISA).</p>
+                    <p class="material-description">The course covers advanced and recent developments in the field of deep learning, including representation learning, generative models, foundation models and large language models.</p>
+                    <p class="material-description">Students will learn how to implement and apply deep learning algorithms to solve real-world problems.</p>
+                </li>
+                <li class="material-item">
+                    <a target="_blank" href="https://hadifawaz1999.github.io/Open-Source-Development--3A-Info/">
+                        <h3 class="material-title primary-button">Open Source Development</h3>
+                    </a>
+                    <p class="material-description">This course is given to the 3rd year software engineering students at the École Nationale Supérieure d'Ingénieurs Sud-Alsace (ENSISA).</p>
+                    <p class="material-description">The course covers the fundamentals of open source development, including the usage of the git version control system.</p>
+                    <p class="material-description">Students will learn how to contribute to, and manage open source projects as well as collaborate with other developers.</p>
+                </li>
+                <li class="material-item">
+                    <a target="_blank" href="https://hadifawaz1999.github.io/Algorithm-and-Data-Structures--1A-Info/">
+                        <h3 class="material-title primary-button">Algorithm and Data Structures</h3>
+                    </a>
+                    <p class="material-description">This course is given to the 1st year software engineering students at the École Nationale Supérieure d'Ingénieurs Sud-Alsace (ENSISA).</p>
+                    <p class="material-description">The course covers the fundamentals of algorithm design and data structures, including sorting, searching, and graph algorithms.</p>
+                    <p class="material-description">Students will learn how to analyze and design efficient algorithms for solving computational problems.</p>
+                    <p class="material-description">Students will also learn how to develop skills in order to be ready for coding interviews, following the ICPC guidelines.</p>
+                </li>
+            </ul>
+
+        </section>
+
+    <footer>
+        <span id="footer-copy"></span>
+        <span>© <span id="year"></span> <span id="footer-author"></span></span>
+    </footer>
+
+    <script src="course-data.js"></script>
+    <script src="assets/app.js"></script>
+</body>
+
+</html>
