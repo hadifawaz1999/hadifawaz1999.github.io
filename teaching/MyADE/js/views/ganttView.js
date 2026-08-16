@@ -56,21 +56,23 @@ export function renderGanttView(container, database) {
         <button id="gantt-reset-filters" class="secondary-button" type="button">Reset filters</button>
       </div>
       <div class="filter-grid">
-        <label class="filter-field">
-          <span>Activity</span>
-          <select id="gantt-activity-filter" class="filter-control">
-            <option value="all">All activities</option>
-            ${model.activities.map((activity) => `<option value="${escapeHtml(activity.id)}">${escapeHtml(activity.name)}</option>`).join("")}
-          </select>
-        </label>
+        ${multiSelectFilter(
+    "gantt-activity-filter",
+    "Activity",
+    model.activities.map((activity) => ({
+      value: activity.id,
+      label: activity.name,
+    })),
+  )}
 
-        <label class="filter-field">
-          <span>Session type</span>
-          <select id="gantt-session-type-filter" class="filter-control">
-            <option value="all">All session types</option>
-            ${SESSION_TYPES.map((type) => `<option value="${type}">${type === "EXAM" ? "Exam" : type}</option>`).join("")}
-          </select>
-        </label>
+        ${multiSelectFilter(
+    "gantt-session-type-filter",
+    "Session type",
+    SESSION_TYPES.map((type) => ({
+      value: type,
+      label: type === "EXAM" ? "Exam" : type,
+    })),
+  )}
         <label class="filter-field filter-field-search">
           <span>Search</span>
           <input id="gantt-search-filter" class="filter-control search-input" type="search" placeholder="Course, room, audience…" autocomplete="off">
@@ -116,8 +118,11 @@ export function renderGanttView(container, database) {
   const state = {
     model,
     mode: "sessions",
-    activity: "all",
-    sessionType: "all",
+    selectedActivities: new Set(
+      model.activities.map((activity) => activity.id),
+    ),
+
+    selectedSessionTypes: new Set(SESSION_TYPES),
     query: "",
     from: model.range.minKey,
     to: model.range.maxKey,
@@ -138,7 +143,6 @@ function bindControls(container, state) {
     });
   });
 
-  const activity = container.querySelector("#gantt-activity-filter");
   const type = container.querySelector("#gantt-session-type-filter");
   const search = container.querySelector("#gantt-search-filter");
   const semester = container.querySelector("#gantt-semester");
@@ -150,10 +154,19 @@ function bindControls(container, state) {
   from.value = state.from;
   to.value = state.to;
 
-  activity.addEventListener("change", () => {
-    state.activity = activity.value;
-    render(container, state);
-  });
+  bindMultiSelect(
+    container,
+    "gantt-activity-filter",
+    state.selectedActivities,
+    () => render(container, state),
+  );
+
+  bindMultiSelect(
+    container,
+    "gantt-session-type-filter",
+    state.selectedSessionTypes,
+    () => render(container, state),
+  );
   type.addEventListener("change", () => {
     state.sessionType = type.value;
     render(container, state);
@@ -204,8 +217,17 @@ function bindControls(container, state) {
   });
 
   container.querySelector("#gantt-reset-filters").addEventListener("click", () => {
-    state.activity = "all";
-    state.sessionType = "all";
+    resetMultiSelect(
+      container,
+      "gantt-activity-filter",
+      state.selectedActivities,
+    );
+
+    resetMultiSelect(
+      container,
+      "gantt-session-type-filter",
+      state.selectedSessionTypes,
+    );
     state.query = "";
     activity.value = "all";
     type.value = "all";
@@ -223,12 +245,12 @@ function render(container, state) {
       sessions: activity.sessions.filter((session) =>
         session.start <= toDate
         && session.end >= fromDate
-        && (state.sessionType === "all" || session.type === state.sessionType)
+        && (state.selectedSessionTypes.has(session.type))
         && (!state.query || session.searchText.includes(state.query) || activity.searchText.includes(state.query)),
       ),
     }))
     .filter((activity) =>
-      (state.activity === "all" || activity.id === state.activity)
+      (state.selectedActivities.has(activity.id))
       && (!state.query || activity.searchText.includes(state.query) || activity.sessions.some((session) => session.searchText.includes(state.query)))
       && activity.sessions.length > 0,
     );
@@ -353,11 +375,11 @@ function renderActivityRow(activity, colorIndex, fromDate, toDate, dayWidth, tim
           <span>${activity.sessions.length}</span>
         </button>
       ` : activity.sessions.map((session) => {
-        const left = differenceInCalendarDays(fromDate, session.start) * dayWidth;
-        const sameDayWidth = 58;
-        const track = trackBySessionId.get(session.id) ?? 0;
-        const top = lanePadding + track * (sessionHeight + trackGap);
-        return `
+    const left = differenceInCalendarDays(fromDate, session.start) * dayWidth;
+    const sameDayWidth = 58;
+    const track = trackBySessionId.get(session.id) ?? 0;
+    const top = lanePadding + track * (sessionHeight + trackGap);
+    return `
           <button
             class="gantt-session ${sessionTypeClass(session.type)}"
             type="button"
@@ -369,7 +391,7 @@ function renderActivityRow(activity, colorIndex, fromDate, toDate, dayWidth, tim
             <span>${escapeHtml(session.type === "EXAM" ? "Exam" : session.type)}</span>
           </button>
         `;
-      }).join("")}
+  }).join("")}
     </div>
   `;
 }
@@ -662,4 +684,49 @@ function escapeHtml(value) {
     .replaceAll(">", "&gt;")
     .replaceAll('"', "&quot;")
     .replaceAll("'", "&#039;");
+}
+
+function multiSelectFilter(id, label, options) {
+  return `<div class="filter-field multi-filter" id="${id}"><span>${escapeHtml(label)}</span><details class="multi-filter-menu"><summary class="filter-control multi-filter-summary"><span class="multi-filter-summary-text">All selected</span></summary><div class="multi-filter-popover"><div class="multi-filter-actions"><button type="button" data-action="all">Select all</button><button type="button" data-action="clear">Clear</button><button type="button" data-action="invert">Invert</button></div><div class="multi-filter-options">${options.map((option) => `<label class="multi-filter-option"><input type="checkbox" value="${escapeHtml(option.value)}" checked><span>${escapeHtml(option.label)}</span></label>`).join("")}</div></div></details></div>`;
+}
+
+function bindMultiSelect(container, id, selectedValues, onChange) {
+  const root = container.querySelector(`#${id}`);
+  const inputs = [...root.querySelectorAll('input[type="checkbox"]')];
+  const apply = () => {
+    selectedValues.clear();
+    inputs.filter((input) => input.checked).forEach((input) => selectedValues.add(input.value));
+    updateSummary(root, inputs);
+    onChange();
+  };
+  inputs.forEach((input) => input.addEventListener("change", apply));
+  root.querySelectorAll("[data-action]").forEach((button) => button.addEventListener("click", () => {
+    inputs.forEach((input) => {
+      if (button.dataset.action === "all") input.checked = true;
+      if (button.dataset.action === "clear") input.checked = false;
+      if (button.dataset.action === "invert") input.checked = !input.checked;
+    });
+    apply();
+  }));
+  updateSummary(root, inputs);
+}
+
+function resetMultiSelect(container, id, selectedValues) {
+  const root = container.querySelector(`#${id}`);
+  const inputs = [...root.querySelectorAll('input[type="checkbox"]')];
+  inputs.forEach((input) => { input.checked = true; });
+  selectedValues.clear();
+  inputs.forEach((input) => selectedValues.add(input.value));
+  updateSummary(root, inputs);
+}
+
+function updateSummary(root, inputs) {
+  const selected = inputs.filter((input) => input.checked);
+  root.querySelector(".multi-filter-summary-text").textContent = selected.length === inputs.length
+    ? "All selected"
+    : selected.length === 0
+      ? "None selected"
+      : selected.length === 1
+        ? selected[0].nextElementSibling.textContent
+        : `${selected.length} of ${inputs.length} selected`;
 }
