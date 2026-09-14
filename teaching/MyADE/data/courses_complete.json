@@ -7,10 +7,10 @@
       "calendar_product": "-//ADE/version 6.0"
     },
     "timezone": "Europe/Paris",
-    "generated_at": "2026-07-12T03:36:18.374997+02:00",
+    "generated_at": "2026-09-14T03:46:16.330349+02:00",
     "manual_data": {
       "schema_version": "1.1",
-      "merged_at": "2026-07-12T03:36:18.756628+02:00"
+      "merged_at": "2026-09-14T03:46:16.437564+02:00"
     }
   },
   "courses": {
@@ -30,35 +30,9 @@
         }
       ]
     },
-    "deep-learning": {
-      "id": "deep-learning",
-      "name": "Deep Learning",
-      "aliases": [
-        "Deep Learning-1"
-      ],
-      "category": "course",
-      "audiences": [
-        {
-          "source_label": "3A Alt IR P Data",
-          "year": "3A",
-          "diploma": "Info IR",
-          "establishment": "ENSISA",
-          "track": "Data",
-          "study_mode": "FA"
-        },
-        {
-          "source_label": "3A info P Data",
-          "year": "3A",
-          "diploma": "Info IR",
-          "establishment": "ENSISA",
-          "track": "Data",
-          "study_mode": "FI"
-        }
-      ]
-    },
-    "fouille-de-donnees": {
-      "id": "fouille-de-donnees",
-      "name": "Fouille de données",
+    "apprentissage-statistique-et-automatique": {
+      "id": "apprentissage-statistique-et-automatique",
+      "name": "Apprentissage statistique et automatique",
       "aliases": [],
       "category": "course",
       "audiences": [
@@ -93,6 +67,32 @@
           "establishment": "FST",
           "track": null,
           "study_mode": null
+        }
+      ]
+    },
+    "deep-learning": {
+      "id": "deep-learning",
+      "name": "Deep Learning",
+      "aliases": [
+        "Deep Learning-1"
+      ],
+      "category": "course",
+      "audiences": [
+        {
+          "source_label": "3A Alt IR P Data",
+          "year": "3A",
+          "diploma": "Info IR",
+          "establishment": "ENSISA",
+          "track": "Data",
+          "study_mode": "FA"
+        },
+        {
+          "source_label": "3A info P Data",
+          "year": "3A",
+          "diploma": "Info IR",
+          "establishment": "ENSISA",
+          "track": "Data",
+          "study_mode": "FI"
         }
       ]
     },
@@ -132,6 +132,54 @@
         }
       ]
     },
+    "sourenances-projets-finale": {
+      "id": "sourenances-projets-finale",
+      "name": "Sourenances Projets finale",
+      "aliases": [],
+      "category": "course",
+      "audiences": [
+        {
+          "source_label": "3A info",
+          "year": "3A",
+          "diploma": "Info IR",
+          "establishment": "ENSISA",
+          "track": null,
+          "study_mode": null
+        },
+        {
+          "source_label": "3A Alt/Pro IR",
+          "year": null,
+          "diploma": null,
+          "establishment": null,
+          "track": null,
+          "study_mode": null
+        }
+      ]
+    },
+    "soutanances-projets-intermediaire": {
+      "id": "soutanances-projets-intermediaire",
+      "name": "Soutanances Projets intermédiaire",
+      "aliases": [],
+      "category": "course",
+      "audiences": [
+        {
+          "source_label": "3A info",
+          "year": "3A",
+          "diploma": "Info IR",
+          "establishment": "ENSISA",
+          "track": null,
+          "study_mode": null
+        },
+        {
+          "source_label": "3A Alt/Pro IR",
+          "year": null,
+          "diploma": null,
+          "establishment": null,
+          "track": null,
+          "study_mode": null
+        }
+      ]
+    },
     "open-source-project": {
       "id": "open-source-project",
       "name": "Open Source Project",
@@ -166,7 +214,7 @@
     },
     "projet-1A-info-fin-annee": {
       "id": "projet-1A-info-fin-annee",
-      "name": "Projet 1A Info Fin d'Annee",
+      "name": "Projet 1A Info IR Fin d'Annee",
       "aliases": [],
       "category": "project/suivi",
       "audiences": [
@@ -183,12 +231,12 @@
   },
   "sessions": [
     {
-      "id": "fouille-de-donnees-2026-09-14-1600-cm",
-      "course_id": "fouille-de-donnees",
+      "id": "apprentissage-statistique-et-automatique-2026-09-14-1545-cm",
+      "course_id": "apprentissage-statistique-et-automatique",
       "session_type": "CM",
       "session_number": 1,
-      "start": "2026-09-14T16:00:00+02:00",
-      "end": "2026-09-14T18:00:00+02:00",
+      "start": "2026-09-14T15:45:00+02:00",
+      "end": "2026-09-14T17:45:00+02:00",
       "duration_minutes": 120,
       "location": {
         "raw": "ILL_K_AMPHI A",
@@ -197,7 +245,7 @@
         "room": "AMPHI A"
       },
       "source": {
-        "original_title": "Fouille de données",
+        "original_title": "Apprentissage statistique et automatique",
         "original_audiences": [
           "M2 MIAGE FA Choix Big Data",
           "M2 MIAGE FI Choix Big Data",
@@ -207,8 +255,29 @@
       }
     },
     {
-      "id": "fouille-de-donnees-2026-09-15-1330-cm",
-      "course_id": "fouille-de-donnees",
+      "id": "open-source-2026-09-15-1000-cm",
+      "course_id": "open-source",
+      "session_type": "CM",
+      "session_number": 1,
+      "start": "2026-09-15T10:00:00+02:00",
+      "end": "2026-09-15T12:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E28 (nouv)",
+        "site": "ILL",
+        "building": "I",
+        "room": "E28 (nouv)"
+      },
+      "source": {
+        "original_title": "Open Source",
+        "original_audiences": [
+          "3A info"
+        ]
+      }
+    },
+    {
+      "id": "apprentissage-statistique-et-automatique-2026-09-15-1330-cm",
+      "course_id": "apprentissage-statistique-et-automatique",
       "session_type": "CM",
       "session_number": 2,
       "start": "2026-09-15T13:30:00+02:00",
@@ -221,7 +290,7 @@
         "room": "AMPHI A"
       },
       "source": {
-        "original_title": "Fouille de données",
+        "original_title": "Apprentissage statistique et automatique",
         "original_audiences": [
           "M2 MIAGE FA Choix Big Data",
           "M2 MIAGE FI Choix Big Data",
@@ -231,8 +300,8 @@
       }
     },
     {
-      "id": "fouille-de-donnees-2026-09-17-1015-td",
-      "course_id": "fouille-de-donnees",
+      "id": "apprentissage-statistique-et-automatique-2026-09-17-1015-td",
+      "course_id": "apprentissage-statistique-et-automatique",
       "session_type": "TD",
       "session_number": 1,
       "start": "2026-09-17T10:15:00+02:00",
@@ -245,33 +314,12 @@
         "room": "AMPHI GB"
       },
       "source": {
-        "original_title": "AFouille de données",
+        "original_title": "Apprentissage statistique et automatique",
         "original_audiences": [
           "M2 MIAGE FA Choix Big Data",
           "M2 MIAGE FI Choix Big Data",
           "M2 IM",
           "M2 MATHEMATIQUES"
-        ]
-      }
-    },
-    {
-      "id": "open-source-2026-09-18-0800-cm",
-      "course_id": "open-source",
-      "session_type": "CM",
-      "session_number": 1,
-      "start": "2026-09-18T08:00:00+02:00",
-      "end": "2026-09-18T10:00:00+02:00",
-      "duration_minutes": 120,
-      "location": {
-        "raw": "ILL_I_E32",
-        "site": "ILL",
-        "building": "I",
-        "room": "E32"
-      },
-      "source": {
-        "original_title": "Open Source",
-        "original_audiences": [
-          "3A info"
         ]
       }
     },
@@ -284,10 +332,10 @@
       "end": "2026-09-21T12:00:00+02:00",
       "duration_minutes": 120,
       "location": {
-        "raw": "ILL_I_E33",
+        "raw": "ILL_M_Amphi RAS",
         "site": "ILL",
-        "building": "I",
-        "room": "E33"
+        "building": "M",
+        "room": "Amphi RAS"
       },
       "source": {
         "original_title": "Intelligence Artificielle",
@@ -348,10 +396,10 @@
       "end": "2026-09-23T12:00:00+02:00",
       "duration_minutes": 120,
       "location": {
-        "raw": "ILL_I_Petit Amphi",
+        "raw": "ILL_I_E23",
         "site": "ILL",
         "building": "I",
-        "room": "Petit Amphi"
+        "room": "E23"
       },
       "source": {
         "original_title": "Deep Learning",
@@ -447,9 +495,9 @@
       }
     },
     {
-      "id": "intelligence-artificielle-2026-10-02-1400-td",
+      "id": "intelligence-artificielle-2026-10-02-1400-td2",
       "course_id": "intelligence-artificielle",
-      "session_type": "TD",
+      "session_type": "TD2",
       "session_number": 1,
       "start": "2026-10-02T14:00:00+02:00",
       "end": "2026-10-02T16:00:00+02:00",
@@ -464,6 +512,27 @@
         "original_title": "Intelligence Artificielle",
         "original_audiences": [
           "TD2 2A info"
+        ]
+      }
+    },
+    {
+      "id": "intelligence-artificielle-2026-10-02-1600-td1",
+      "course_id": "intelligence-artificielle",
+      "session_type": "TD1",
+      "session_number": 1,
+      "start": "2026-10-02T16:00:00+02:00",
+      "end": "2026-10-02T18:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E31",
+        "site": "ILL",
+        "building": "I",
+        "room": "E31"
+      },
+      "source": {
+        "original_title": "Intelligence Artificielle",
+        "original_audiences": [
+          "TD3 2A info"
         ]
       }
     },
@@ -489,8 +558,8 @@
       }
     },
     {
-      "id": "fouille-de-donnees-2026-10-05-1545-cm",
-      "course_id": "fouille-de-donnees",
+      "id": "apprentissage-statistique-et-automatique-2026-10-05-1545-cm",
+      "course_id": "apprentissage-statistique-et-automatique",
       "session_type": "CM",
       "session_number": 3,
       "start": "2026-10-05T15:45:00+02:00",
@@ -503,7 +572,7 @@
         "room": "AMPHI A"
       },
       "source": {
-        "original_title": "Fouille de données",
+        "original_title": "Apprentissage statistique et automatique",
         "original_audiences": [
           "M2 MIAGE FA Choix Big Data",
           "M2 MIAGE FI Choix Big Data",
@@ -564,10 +633,10 @@
       "end": "2026-10-07T12:00:00+02:00",
       "duration_minutes": 120,
       "location": {
-        "raw": "ILL_I_Grand Amphi",
+        "raw": "ILL_I_Petit Amphi",
         "site": "ILL",
         "building": "I",
-        "room": "Grand Amphi"
+        "room": "Petit Amphi"
       },
       "source": {
         "original_title": "Deep Learning",
@@ -599,8 +668,8 @@
       }
     },
     {
-      "id": "fouille-de-donnees-2026-10-08-1015-cm",
-      "course_id": "fouille-de-donnees",
+      "id": "apprentissage-statistique-et-automatique-2026-10-08-1015-cm",
+      "course_id": "apprentissage-statistique-et-automatique",
       "session_type": "CM",
       "session_number": 4,
       "start": "2026-10-08T10:15:00+02:00",
@@ -613,7 +682,7 @@
         "room": "AMPHI GB"
       },
       "source": {
-        "original_title": "Fouille de données",
+        "original_title": "Apprentissage statistique et automatique",
         "original_audiences": [
           "M2 MIAGE FA Choix Big Data",
           "M2 MIAGE FI Choix Big Data",
@@ -623,8 +692,8 @@
       }
     },
     {
-      "id": "fouille-de-donnees-2026-10-09-0800-td",
-      "course_id": "fouille-de-donnees",
+      "id": "apprentissage-statistique-et-automatique-2026-10-09-0800-td",
+      "course_id": "apprentissage-statistique-et-automatique",
       "session_type": "TD",
       "session_number": 2,
       "start": "2026-10-09T08:00:00+02:00",
@@ -637,7 +706,7 @@
         "room": "AMPHI A"
       },
       "source": {
-        "original_title": "AFouille de données",
+        "original_title": "Apprentissage statistique et automatique",
         "original_audiences": [
           "M2 MIAGE FA Choix Big Data",
           "M2 MIAGE FI Choix Big Data",
@@ -669,8 +738,8 @@
       }
     },
     {
-      "id": "fouille-de-donnees-2026-10-12-1545-cm",
-      "course_id": "fouille-de-donnees",
+      "id": "apprentissage-statistique-et-automatique-2026-10-12-1545-cm",
+      "course_id": "apprentissage-statistique-et-automatique",
       "session_type": "CM",
       "session_number": 5,
       "start": "2026-10-12T15:45:00+02:00",
@@ -683,7 +752,7 @@
         "room": "AMPHI A"
       },
       "source": {
-        "original_title": "Fouille de données",
+        "original_title": "Apprentissage statistique et automatique",
         "original_audiences": [
           "M2 MIAGE FA Choix Big Data",
           "M2 MIAGE FI Choix Big Data",
@@ -693,8 +762,29 @@
       }
     },
     {
-      "id": "fouille-de-donnees-2026-10-14-1015-cm",
-      "course_id": "fouille-de-donnees",
+      "id": "intelligence-artificielle-2026-10-13-1400-td1",
+      "course_id": "intelligence-artificielle",
+      "session_type": "TD1",
+      "session_number": 2,
+      "start": "2026-10-13T14:00:00+02:00",
+      "end": "2026-10-13T16:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E34",
+        "site": "ILL",
+        "building": "I",
+        "room": "E34"
+      },
+      "source": {
+        "original_title": "Intelligence Artificielle",
+        "original_audiences": [
+          "TD3 2A info"
+        ]
+      }
+    },
+    {
+      "id": "apprentissage-statistique-et-automatique-2026-10-14-1015-cm",
+      "course_id": "apprentissage-statistique-et-automatique",
       "session_type": "CM",
       "session_number": 6,
       "start": "2026-10-14T10:15:00+02:00",
@@ -707,7 +797,7 @@
         "room": "AMPHI TAGLANG"
       },
       "source": {
-        "original_title": "Fouille de données",
+        "original_title": "Apprentissage statistique et automatique",
         "original_audiences": [
           "M2 MIAGE FA Choix Big Data",
           "M2 MIAGE FI Choix Big Data",
@@ -760,8 +850,8 @@
       }
     },
     {
-      "id": "fouille-de-donnees-2026-10-16-1015-cm",
-      "course_id": "fouille-de-donnees",
+      "id": "apprentissage-statistique-et-automatique-2026-10-16-1015-cm",
+      "course_id": "apprentissage-statistique-et-automatique",
       "session_type": "CM",
       "session_number": 7,
       "start": "2026-10-16T10:15:00+02:00",
@@ -774,7 +864,7 @@
         "room": "AMPHI GB"
       },
       "source": {
-        "original_title": "Fouille de données",
+        "original_title": "Apprentissage statistique et automatique",
         "original_audiences": [
           "M2 MIAGE FA Choix Big Data",
           "M2 MIAGE FI Choix Big Data",
@@ -834,10 +924,10 @@
       "end": "2026-10-19T10:00:00+02:00",
       "duration_minutes": 120,
       "location": {
-        "raw": "ILL_I_Grand Amphi",
+        "raw": "ILL_I_Petit Amphi",
         "site": "ILL",
         "building": "I",
-        "room": "Grand Amphi"
+        "room": "Petit Amphi"
       },
       "source": {
         "original_title": "Algo SD",
@@ -910,9 +1000,9 @@
       }
     },
     {
-      "id": "intelligence-artificielle-2026-10-20-1600-td",
+      "id": "intelligence-artificielle-2026-10-20-1600-td2",
       "course_id": "intelligence-artificielle",
-      "session_type": "TD",
+      "session_type": "TD2",
       "session_number": 2,
       "start": "2026-10-20T16:00:00+02:00",
       "end": "2026-10-20T18:00:00+02:00",
@@ -952,9 +1042,9 @@
       }
     },
     {
-      "id": "intelligence-artificielle-2026-10-21-1000-td",
+      "id": "intelligence-artificielle-2026-10-21-1000-td2",
       "course_id": "intelligence-artificielle",
-      "session_type": "TD",
+      "session_type": "TD2",
       "session_number": 3,
       "start": "2026-10-21T10:00:00+02:00",
       "end": "2026-10-21T12:00:00+02:00",
@@ -994,9 +1084,9 @@
       }
     },
     {
-      "id": "intelligence-artificielle-2026-10-22-0800-td",
+      "id": "intelligence-artificielle-2026-10-22-0800-td2",
       "course_id": "intelligence-artificielle",
-      "session_type": "TD",
+      "session_type": "TD2",
       "session_number": 4,
       "start": "2026-10-22T08:00:00+02:00",
       "end": "2026-10-22T10:00:00+02:00",
@@ -1011,6 +1101,48 @@
         "original_title": "Intelligence Artificielle",
         "original_audiences": [
           "TD2 2A info"
+        ]
+      }
+    },
+    {
+      "id": "intelligence-artificielle-2026-10-23-0800-td1",
+      "course_id": "intelligence-artificielle",
+      "session_type": "TD1",
+      "session_number": 3,
+      "start": "2026-10-23T08:00:00+02:00",
+      "end": "2026-10-23T10:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E31",
+        "site": "ILL",
+        "building": "I",
+        "room": "E31"
+      },
+      "source": {
+        "original_title": "Intelligence Artificielle",
+        "original_audiences": [
+          "TD3 2A info"
+        ]
+      }
+    },
+    {
+      "id": "intelligence-artificielle-2026-10-23-1000-td1",
+      "course_id": "intelligence-artificielle",
+      "session_type": "TD1",
+      "session_number": 4,
+      "start": "2026-10-23T10:00:00+02:00",
+      "end": "2026-10-23T12:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_PC3_BYOD",
+        "site": "ILL",
+        "building": "I",
+        "room": "PC3_BYOD"
+      },
+      "source": {
+        "original_title": "Intelligence Artificielle",
+        "original_audiences": [
+          "TD3 2A info"
         ]
       }
     },
@@ -1079,8 +1211,8 @@
       }
     },
     {
-      "id": "fouille-de-donnees-2026-11-03-0800-cm",
-      "course_id": "fouille-de-donnees",
+      "id": "apprentissage-statistique-et-automatique-2026-11-03-0800-cm",
+      "course_id": "apprentissage-statistique-et-automatique",
       "session_type": "CM",
       "session_number": 8,
       "start": "2026-11-03T08:00:00+01:00",
@@ -1093,7 +1225,7 @@
         "room": "AMPHI A"
       },
       "source": {
-        "original_title": "Fouille de données",
+        "original_title": "Apprentissage statistique et automatique",
         "original_audiences": [
           "M2 MIAGE FA Choix Big Data",
           "M2 MIAGE FI Choix Big Data",
@@ -1125,8 +1257,8 @@
       }
     },
     {
-      "id": "fouille-de-donnees-2026-11-06-1015-cm",
-      "course_id": "fouille-de-donnees",
+      "id": "apprentissage-statistique-et-automatique-2026-11-06-1015-cm",
+      "course_id": "apprentissage-statistique-et-automatique",
       "session_type": "CM",
       "session_number": 9,
       "start": "2026-11-06T10:15:00+01:00",
@@ -1139,7 +1271,7 @@
         "room": "AMPHI TAGLANG"
       },
       "source": {
-        "original_title": "Fouille de données",
+        "original_title": "Apprentissage statistique et automatique",
         "original_audiences": [
           "M2 MIAGE FA Choix Big Data",
           "M2 MIAGE FI Choix Big Data",
@@ -1213,8 +1345,8 @@
       }
     },
     {
-      "id": "fouille-de-donnees-2026-11-10-0800-cm",
-      "course_id": "fouille-de-donnees",
+      "id": "apprentissage-statistique-et-automatique-2026-11-10-0800-cm",
+      "course_id": "apprentissage-statistique-et-automatique",
       "session_type": "CM",
       "session_number": 10,
       "start": "2026-11-10T08:00:00+01:00",
@@ -1227,7 +1359,7 @@
         "room": "AMPHI A"
       },
       "source": {
-        "original_title": "Fouille de données",
+        "original_title": "Apprentissage statistique et automatique",
         "original_audiences": [
           "M2 MIAGE FA Choix Big Data",
           "M2 MIAGE FI Choix Big Data",
@@ -1259,8 +1391,8 @@
       }
     },
     {
-      "id": "fouille-de-donnees-2026-11-13-1015-td",
-      "course_id": "fouille-de-donnees",
+      "id": "apprentissage-statistique-et-automatique-2026-11-13-1015-td",
+      "course_id": "apprentissage-statistique-et-automatique",
       "session_type": "TD",
       "session_number": 3,
       "start": "2026-11-13T10:15:00+01:00",
@@ -1273,7 +1405,7 @@
         "room": "AMPHI A"
       },
       "source": {
-        "original_title": "AFouille de données",
+        "original_title": "Apprentissage statistique et automatique",
         "original_audiences": [
           "M2 MIAGE FA Choix Big Data",
           "M2 MIAGE FI Choix Big Data",
@@ -1369,6 +1501,27 @@
       }
     },
     {
+      "id": "intelligence-artificielle-2026-11-18-1600-td1",
+      "course_id": "intelligence-artificielle",
+      "session_type": "TD1",
+      "session_number": 5,
+      "start": "2026-11-18T16:00:00+01:00",
+      "end": "2026-11-18T18:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E33",
+        "site": "ILL",
+        "building": "I",
+        "room": "E33"
+      },
+      "source": {
+        "original_title": "Intelligence Artificielle",
+        "original_audiences": [
+          "TD3 2A info"
+        ]
+      }
+    },
+    {
       "id": "algo-sd-2026-11-20-0800-td2",
       "course_id": "algo-sd",
       "session_type": "TD2",
@@ -1453,9 +1606,9 @@
       }
     },
     {
-      "id": "intelligence-artificielle-2026-11-24-1000-td",
+      "id": "intelligence-artificielle-2026-11-24-1000-td2",
       "course_id": "intelligence-artificielle",
-      "session_type": "TD",
+      "session_type": "TD2",
       "session_number": 5,
       "start": "2026-11-24T10:00:00+01:00",
       "end": "2026-11-24T12:00:00+01:00",
@@ -1516,9 +1669,9 @@
       }
     },
     {
-      "id": "intelligence-artificielle-2026-11-26-0800-td",
+      "id": "intelligence-artificielle-2026-11-26-0800-td2",
       "course_id": "intelligence-artificielle",
-      "session_type": "TD",
+      "session_type": "TD2",
       "session_number": 6,
       "start": "2026-11-26T08:00:00+01:00",
       "end": "2026-11-26T10:00:00+01:00",
@@ -1537,9 +1690,30 @@
       }
     },
     {
-      "id": "intelligence-artificielle-2026-11-30-1600-td",
+      "id": "intelligence-artificielle-2026-11-26-1000-td1",
       "course_id": "intelligence-artificielle",
-      "session_type": "TD",
+      "session_type": "TD1",
+      "session_number": 6,
+      "start": "2026-11-26T10:00:00+01:00",
+      "end": "2026-11-26T12:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E33",
+        "site": "ILL",
+        "building": "I",
+        "room": "E33"
+      },
+      "source": {
+        "original_title": "Intelligence Artificielle",
+        "original_audiences": [
+          "TD3 2A info"
+        ]
+      }
+    },
+    {
+      "id": "intelligence-artificielle-2026-11-30-1600-td2",
+      "course_id": "intelligence-artificielle",
+      "session_type": "TD2",
       "session_number": 7,
       "start": "2026-11-30T16:00:00+01:00",
       "end": "2026-11-30T18:00:00+01:00",
@@ -1558,8 +1732,8 @@
       }
     },
     {
-      "id": "fouille-de-donnees-2026-12-02-1015-td",
-      "course_id": "fouille-de-donnees",
+      "id": "apprentissage-statistique-et-automatique-2026-12-02-1015-td",
+      "course_id": "apprentissage-statistique-et-automatique",
       "session_type": "TD",
       "session_number": 4,
       "start": "2026-12-02T10:15:00+01:00",
@@ -1572,7 +1746,7 @@
         "room": "AMPHI TAGLANG"
       },
       "source": {
-        "original_title": "AFouille de données",
+        "original_title": "Apprentissage statistique et automatique",
         "original_audiences": [
           "M2 MIAGE FA Choix Big Data",
           "M2 MIAGE FI Choix Big Data",
@@ -1624,6 +1798,27 @@
       }
     },
     {
+      "id": "intelligence-artificielle-2026-12-03-0800-td1",
+      "course_id": "intelligence-artificielle",
+      "session_type": "TD1",
+      "session_number": 7,
+      "start": "2026-12-03T08:00:00+01:00",
+      "end": "2026-12-03T10:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E33",
+        "site": "ILL",
+        "building": "I",
+        "room": "E33"
+      },
+      "source": {
+        "original_title": "Intelligence Artificielle",
+        "original_audiences": [
+          "TD3 2A info"
+        ]
+      }
+    },
+    {
       "id": "algo-sd-2026-12-08-0800-td1",
       "course_id": "algo-sd",
       "session_type": "TD1",
@@ -1662,6 +1857,28 @@
         "original_title": "Algo SD",
         "original_audiences": [
           "TD2 1A info"
+        ]
+      }
+    },
+    {
+      "id": "soutanances-projets-intermediaire-2026-12-14-1400-cm",
+      "course_id": "soutanances-projets-intermediaire",
+      "session_type": "CM",
+      "session_number": 1,
+      "start": "2026-12-14T14:00:00+01:00",
+      "end": "2026-12-14T18:00:00+01:00",
+      "duration_minutes": 240,
+      "location": {
+        "raw": "ILL_I_E20b,ILL_I_E26,ILL_I_E32",
+        "site": "ILL",
+        "building": "I",
+        "room": "E20b,ILL_I_E26,ILL_I_E32"
+      },
+      "source": {
+        "original_title": "Soutanances Projets intermédiaire",
+        "original_audiences": [
+          "3A info",
+          "3A Alt/Pro IR"
         ]
       }
     },
@@ -1750,27 +1967,6 @@
       }
     },
     {
-      "id": "open-source-2027-01-04-1000-exam",
-      "course_id": "open-source",
-      "session_type": "EXAM",
-      "session_number": 1,
-      "start": "2027-01-04T10:00:00+01:00",
-      "end": "2027-01-04T12:00:00+01:00",
-      "duration_minutes": 120,
-      "location": {
-        "raw": "ILL_I_E28 (nouv)",
-        "site": "ILL",
-        "building": "I",
-        "room": "E28 (nouv)"
-      },
-      "source": {
-        "original_title": "Open Source - 1",
-        "original_audiences": [
-          "3A info"
-        ]
-      }
-    },
-    {
       "id": "intelligence-artificielle-2027-01-05-0800-exam",
       "course_id": "intelligence-artificielle",
       "session_type": "EXAM",
@@ -1788,6 +1984,49 @@
         "original_title": "Intelligence Artificielle - 1",
         "original_audiences": [
           "2A info"
+        ]
+      }
+    },
+    {
+      "id": "open-source-2027-01-07-1000-exam",
+      "course_id": "open-source",
+      "session_type": "EXAM",
+      "session_number": 1,
+      "start": "2027-01-07T10:00:00+01:00",
+      "end": "2027-01-07T12:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E28 (nouv)",
+        "site": "ILL",
+        "building": "I",
+        "room": "E28 (nouv)"
+      },
+      "source": {
+        "original_title": "Open Source - 1",
+        "original_audiences": [
+          "3A info"
+        ]
+      }
+    },
+    {
+      "id": "sourenances-projets-finale-2027-01-13-1400-cm",
+      "course_id": "sourenances-projets-finale",
+      "session_type": "CM",
+      "session_number": 1,
+      "start": "2027-01-13T14:00:00+01:00",
+      "end": "2027-01-13T18:00:00+01:00",
+      "duration_minutes": 240,
+      "location": {
+        "raw": "ILL_I_E23,ILL_I_E26,ILL_I_E31",
+        "site": "ILL",
+        "building": "I",
+        "room": "E23,ILL_I_E26,ILL_I_E31"
+      },
+      "source": {
+        "original_title": "Sourenances Projets finale",
+        "original_audiences": [
+          "3A info",
+          "3A Alt/Pro IR"
         ]
       }
     },
@@ -1823,16 +2062,16 @@
       "end": "2026-09-01T14:00:00+02:00",
       "duration_minutes": 60,
       "location": {
-        "raw": "ILL_I_Salle du Conseil (Lumiere)",
-        "site": "ILL",
-        "building": "I",
-        "room": "Salle du Conseil (Lumiere)"
+        "raw": "",
+        "site": "",
+        "building": null,
+        "room": ""
       },
       "participants": [
         "PERRONNE Jean-Marc",
+        "THIRY Laurent",
         "ISMAIL FAWAZ Ali El Hadi",
         "STUDER Philippe",
-        "THIRY Laurent",
         "DEVANNE Maxime",
         "MEYER Cyril",
         "WEBER Jonathan",
@@ -1850,10 +2089,10 @@
       "end": "2026-10-06T14:00:00+02:00",
       "duration_minutes": 60,
       "location": {
-        "raw": "ILL_I_Salle du Conseil (Lumiere)",
-        "site": "ILL",
-        "building": "I",
-        "room": "Salle du Conseil (Lumiere)"
+        "raw": "",
+        "site": "",
+        "building": null,
+        "room": ""
       },
       "participants": [
         "ISMAIL FAWAZ Ali El Hadi",
@@ -1876,23 +2115,23 @@
       "end": "2026-11-03T14:00:00+01:00",
       "duration_minutes": 60,
       "location": {
-        "raw": "ILL_I_Salle du Conseil (Lumiere)",
-        "site": "ILL",
-        "building": "I",
-        "room": "Salle du Conseil (Lumiere)"
+        "raw": "",
+        "site": "",
+        "building": null,
+        "room": ""
       },
       "participants": [
         "DION Joel",
         "FORESTIER Germain",
         "PERRONNE Jean-Marc",
         "FONDEMENT Frederic",
-        "STUDER Philippe",
-        "WEBER Jonathan",
         "MEYER Cyril",
+        "STUDER Philippe",
         "ISMAIL FAWAZ Ali El Hadi",
         "HASSENFORDER Michel",
         "THIRY Laurent",
-        "DEVANNE Maxime"
+        "DEVANNE Maxime",
+        "WEBER Jonathan"
       ]
     },
     {
@@ -1903,21 +2142,21 @@
       "end": "2026-12-01T14:00:00+01:00",
       "duration_minutes": 60,
       "location": {
-        "raw": "ILL_I_Salle du Conseil (Lumiere)",
-        "site": "ILL",
-        "building": "I",
-        "room": "Salle du Conseil (Lumiere)"
+        "raw": "",
+        "site": "",
+        "building": null,
+        "room": ""
       },
       "participants": [
         "STUDER Philippe",
         "PERRONNE Jean-Marc",
+        "DION Joel",
         "WEBER Jonathan",
         "THIRY Laurent",
-        "DEVANNE Maxime",
-        "DION Joel",
         "FONDEMENT Frederic",
         "HASSENFORDER Michel",
         "FORESTIER Germain",
+        "DEVANNE Maxime",
         "ISMAIL FAWAZ Ali El Hadi",
         "MEYER Cyril"
       ]
@@ -1930,23 +2169,23 @@
       "end": "2027-01-05T14:00:00+01:00",
       "duration_minutes": 60,
       "location": {
-        "raw": "ILL_I_Salle du Conseil (Lumiere)",
-        "site": "ILL",
-        "building": "I",
-        "room": "Salle du Conseil (Lumiere)"
+        "raw": "",
+        "site": "",
+        "building": null,
+        "room": ""
       },
       "participants": [
-        "DEVANNE Maxime",
-        "ISMAIL FAWAZ Ali El Hadi",
-        "STUDER Philippe",
-        "WEBER Jonathan",
-        "DION Joel",
         "FORESTIER Germain",
         "FONDEMENT Frederic",
         "HASSENFORDER Michel",
         "MEYER Cyril",
         "PERRONNE Jean-Marc",
-        "THIRY Laurent"
+        "DEVANNE Maxime",
+        "ISMAIL FAWAZ Ali El Hadi",
+        "THIRY Laurent",
+        "STUDER Philippe",
+        "WEBER Jonathan",
+        "DION Joel"
       ]
     },
     {
@@ -1957,23 +2196,23 @@
       "end": "2027-02-02T14:00:00+01:00",
       "duration_minutes": 60,
       "location": {
-        "raw": "ILL_I_Salle du Conseil (Lumiere)",
-        "site": "ILL",
-        "building": "I",
-        "room": "Salle du Conseil (Lumiere)"
+        "raw": "",
+        "site": "",
+        "building": null,
+        "room": ""
       },
       "participants": [
         "DEVANNE Maxime",
         "FONDEMENT Frederic",
         "DION Joel",
         "HASSENFORDER Michel",
+        "WEBER Jonathan",
         "FORESTIER Germain",
         "ISMAIL FAWAZ Ali El Hadi",
         "MEYER Cyril",
         "STUDER Philippe",
         "PERRONNE Jean-Marc",
-        "THIRY Laurent",
-        "WEBER Jonathan"
+        "THIRY Laurent"
       ]
     },
     {
@@ -1984,10 +2223,10 @@
       "end": "2027-03-02T14:00:00+01:00",
       "duration_minutes": 60,
       "location": {
-        "raw": "ILL_I_Salle du Conseil (Lumiere)",
-        "site": "ILL",
-        "building": "I",
-        "room": "Salle du Conseil (Lumiere)"
+        "raw": "",
+        "site": "",
+        "building": null,
+        "room": ""
       },
       "participants": [
         "ISMAIL FAWAZ Ali El Hadi",
@@ -1995,12 +2234,12 @@
         "MEYER Cyril",
         "STUDER Philippe",
         "DEVANNE Maxime",
-        "THIRY Laurent",
-        "WEBER Jonathan",
         "FONDEMENT Frederic",
         "DION Joel",
+        "THIRY Laurent",
         "HASSENFORDER Michel",
-        "FORESTIER Germain"
+        "FORESTIER Germain",
+        "WEBER Jonathan"
       ]
     },
     {
@@ -2011,10 +2250,10 @@
       "end": "2027-04-06T14:00:00+02:00",
       "duration_minutes": 60,
       "location": {
-        "raw": "ILL_I_Salle du Conseil (Lumiere)",
-        "site": "ILL",
-        "building": "I",
-        "room": "Salle du Conseil (Lumiere)"
+        "raw": "",
+        "site": "",
+        "building": null,
+        "room": ""
       },
       "participants": [
         "DEVANNE Maxime",
@@ -2038,21 +2277,21 @@
       "end": "2027-05-04T14:00:00+02:00",
       "duration_minutes": 60,
       "location": {
-        "raw": "ILL_I_Salle du Conseil (Lumiere)",
-        "site": "ILL",
-        "building": "I",
-        "room": "Salle du Conseil (Lumiere)"
+        "raw": "",
+        "site": "",
+        "building": null,
+        "room": ""
       },
       "participants": [
         "DEVANNE Maxime",
         "DION Joel",
+        "HASSENFORDER Michel",
         "FONDEMENT Frederic",
         "THIRY Laurent",
         "MEYER Cyril",
         "WEBER Jonathan",
-        "FORESTIER Germain",
-        "HASSENFORDER Michel",
         "STUDER Philippe",
+        "FORESTIER Germain",
         "ISMAIL FAWAZ Ali El Hadi",
         "PERRONNE Jean-Marc"
       ]
@@ -2065,22 +2304,22 @@
       "end": "2027-06-01T14:00:00+02:00",
       "duration_minutes": 60,
       "location": {
-        "raw": "ILL_I_Salle du Conseil (Lumiere)",
-        "site": "ILL",
-        "building": "I",
-        "room": "Salle du Conseil (Lumiere)"
+        "raw": "",
+        "site": "",
+        "building": null,
+        "room": ""
       },
       "participants": [
         "MEYER Cyril",
         "PERRONNE Jean-Marc",
-        "DION Joel",
-        "THIRY Laurent",
-        "STUDER Philippe",
-        "WEBER Jonathan",
         "FORESTIER Germain",
         "FONDEMENT Frederic",
         "ISMAIL FAWAZ Ali El Hadi",
+        "DION Joel",
         "HASSENFORDER Michel",
+        "THIRY Laurent",
+        "STUDER Philippe",
+        "WEBER Jonathan",
         "DEVANNE Maxime"
       ]
     },
@@ -2092,23 +2331,23 @@
       "end": "2027-07-06T14:00:00+02:00",
       "duration_minutes": 60,
       "location": {
-        "raw": "ILL_I_Salle du Conseil (Lumiere)",
-        "site": "ILL",
-        "building": "I",
-        "room": "Salle du Conseil (Lumiere)"
+        "raw": "",
+        "site": "",
+        "building": null,
+        "room": ""
       },
       "participants": [
+        "DION Joel",
         "THIRY Laurent",
         "HASSENFORDER Michel",
-        "WEBER Jonathan",
-        "FONDEMENT Frederic",
-        "DEVANNE Maxime",
-        "ISMAIL FAWAZ Ali El Hadi",
-        "DION Joel",
         "MEYER Cyril",
         "PERRONNE Jean-Marc",
+        "WEBER Jonathan",
         "FORESTIER Germain",
-        "STUDER Philippe"
+        "FONDEMENT Frederic",
+        "DEVANNE Maxime",
+        "STUDER Philippe",
+        "ISMAIL FAWAZ Ali El Hadi"
       ]
     }
   ],
@@ -2157,7 +2396,7 @@
     },
     {
       "id": "projet-1A-info-fin-annee",
-      "name": "Projet 1A Info Fin d'Annee",
+      "name": "Projet 1A Info IR Fin d'Annee",
       "course_id": "projet-1A-info-fin-annee",
       "related_course_id": null,
       "category": "project/suivi",

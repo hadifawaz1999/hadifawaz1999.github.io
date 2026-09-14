@@ -402,6 +402,8 @@ def build_database(
             or COURSE_SESSION_TYPE_OVERRIDES.get(canonical_title)
             or ("EXAM" if is_exam else audience_type)
         )
+        if canonical_title == "Intelligence Artificielle" and detected_type == "TD3":
+            detected_type = "TD1"
         if detected_type.startswith("TD"):
             td_groups_by_course[course_id].add(detected_type)
 
