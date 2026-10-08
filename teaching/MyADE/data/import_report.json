@@ -1,16 +1,16 @@
 {
   "source_file": "ADECal.ics",
-  "event_count": 95,
+  "event_count": 97,
   "course_session_count": 84,
-  "other_event_count": 11,
+  "other_event_count": 13,
   "normalized_aliases": [
-    {
-      "original": "Open Source - 1",
-      "canonical": "Open Source"
-    },
     {
       "original": "Intelligence Artificielle - 1",
       "canonical": "Intelligence Artificielle"
+    },
+    {
+      "original": "Open Source - 1",
+      "canonical": "Open Source"
     },
     {
       "original": "Deep Learning-1",

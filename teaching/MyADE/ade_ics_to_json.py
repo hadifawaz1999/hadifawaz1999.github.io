@@ -38,6 +38,8 @@ EXAM_TITLE_PATTERN = re.compile(r"\s*-\s*1\s*$")
 
 OTHER_EVENT_CATEGORIES = {
     "Conseil IR": "administrative",
+    "Moment d'échange": "administrative",
+    "CCF Apprentissage statistique et automatique": "administrative",
 }
 
 # ADE uses a distinct title prefix for certain teaching types.

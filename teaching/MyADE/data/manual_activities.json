@@ -48,6 +48,54 @@
                     "study_mode": null
                 }
             ]
+        },
+        "projet-3a": {
+            "id": "projet-3a",
+            "name": "Projet 3A",
+            "aliases": [],
+            "category": "project/suivi",
+            "audiences": [
+                {
+                    "source_label": "3A Info",
+                    "year": "3A",
+                    "diploma": "Info IR",
+                    "establishment": "ENSISA",
+                    "track": null,
+                    "study_mode": null
+                }
+            ]
+        },
+        "suivi-alternant-2a": {
+            "id": "suivi-alternant-2a",
+            "name": "Suivi alternant 2A",
+            "aliases": [],
+            "category": "project/suivi",
+            "audiences": [
+                {
+                    "source_label": "2A Info",
+                    "year": "2A",
+                    "diploma": "Info IR",
+                    "establishment": "ENSISA",
+                    "track": null,
+                    "study_mode": "alternance"
+                }
+            ]
+        },
+        "referent-1a": {
+            "id": "referent-1a",
+            "name": "Referent 1A",
+            "aliases": [],
+            "category": "project/suivi",
+            "audiences": [
+                {
+                    "source_label": "1A Info",
+                    "year": "1A",
+                    "diploma": "Info IR",
+                    "establishment": "ENSISA",
+                    "track": null,
+                    "study_mode": null
+                }
+            ]
         }
     },
     "suivis": [
@@ -101,6 +149,69 @@
             "category": "project/suivi",
             "hours": 20,
             "description": "Projet de fin d'année pour les étudiants de première année Info IR.",
+            "audiences": [
+                {
+                    "source_label": "1A Info",
+                    "year": "1A",
+                    "diploma": "Info IR",
+                    "establishment": "ENSISA",
+                    "track": null,
+                    "study_mode": null
+                }
+            ],
+            "students": [],
+            "metadata": null
+        },
+        {
+            "id": "projet-3a",
+            "name": "Projet 3A",
+            "course_id": "projet-3a",
+            "related_course_id": null,
+            "category": "project/suivi",
+            "hours": 24,
+            "description": "Suivi du Projet 3A.",
+            "audiences": [
+                {
+                    "source_label": "3A Info",
+                    "year": "3A",
+                    "diploma": "Info IR",
+                    "establishment": "ENSISA",
+                    "track": null,
+                    "study_mode": null
+                }
+            ],
+            "students": [],
+            "metadata": null
+        },
+        {
+            "id": "suivi-alternant-2a",
+            "name": "Suivi alternant 2A",
+            "course_id": "suivi-alternant-2a",
+            "related_course_id": null,
+            "category": "project/suivi",
+            "hours": 7,
+            "description": "Suivi d'un alternant de deuxième année Info IR.",
+            "audiences": [
+                {
+                    "source_label": "2A Info",
+                    "year": "2A",
+                    "diploma": "Info IR",
+                    "establishment": "ENSISA",
+                    "track": null,
+                    "study_mode": "alternance"
+                }
+            ],
+            "students": [],
+            "metadata": null
+        },
+        {
+            "id": "referent-1a",
+            "name": "Referent 1A",
+            "course_id": "referent-1a",
+            "related_course_id": null,
+            "category": "project/suivi",
+            "hours": 6,
+            "description": "Référent des étudiants de première année Info IR.",
             "audiences": [
                 {
                     "source_label": "1A Info",

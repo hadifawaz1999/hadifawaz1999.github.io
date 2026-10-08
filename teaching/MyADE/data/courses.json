@@ -7,7 +7,7 @@
       "calendar_product": "-//ADE/version 6.0"
     },
     "timezone": "Europe/Paris",
-    "generated_at": "2026-09-14T03:46:16.330349+02:00"
+    "generated_at": "2026-10-08T18:57:50.761429+02:00"
   },
   "courses": {
     "algo-sd": {
@@ -152,9 +152,9 @@
         }
       ]
     },
-    "soutanances-projets-intermediaire": {
-      "id": "soutanances-projets-intermediaire",
-      "name": "Soutanances Projets intermédiaire",
+    "soutenances-projets-intermediaire": {
+      "id": "soutenances-projets-intermediaire",
+      "name": "Soutenances Projets intermédiaire",
       "aliases": [],
       "category": "course",
       "audiences": [
@@ -248,30 +248,6 @@
       }
     },
     {
-      "id": "apprentissage-statistique-et-automatique-2026-09-17-1015-td",
-      "course_id": "apprentissage-statistique-et-automatique",
-      "session_type": "TD",
-      "session_number": 1,
-      "start": "2026-09-17T10:15:00+02:00",
-      "end": "2026-09-17T12:15:00+02:00",
-      "duration_minutes": 120,
-      "location": {
-        "raw": "ILL_K_AMPHI GB",
-        "site": "ILL",
-        "building": "K",
-        "room": "AMPHI GB"
-      },
-      "source": {
-        "original_title": "Apprentissage statistique et automatique",
-        "original_audiences": [
-          "M2 MIAGE FA Choix Big Data",
-          "M2 MIAGE FI Choix Big Data",
-          "M2 IM",
-          "M2 MATHEMATIQUES"
-        ]
-      }
-    },
-    {
       "id": "intelligence-artificielle-2026-09-21-1000-cm",
       "course_id": "intelligence-artificielle",
       "session_type": "CM",
@@ -289,28 +265,6 @@
         "original_title": "Intelligence Artificielle",
         "original_audiences": [
           "2A info"
-        ]
-      }
-    },
-    {
-      "id": "deep-learning-2026-09-22-1000-td",
-      "course_id": "deep-learning",
-      "session_type": "TD",
-      "session_number": 1,
-      "start": "2026-09-22T10:00:00+02:00",
-      "end": "2026-09-22T12:00:00+02:00",
-      "duration_minutes": 120,
-      "location": {
-        "raw": "ILL_I_E25",
-        "site": "ILL",
-        "building": "I",
-        "room": "E25"
-      },
-      "source": {
-        "original_title": "Deep Learning",
-        "original_audiences": [
-          "3A Alt IR P Data",
-          "3A info P Data"
         ]
       }
     },
@@ -339,7 +293,7 @@
       "id": "deep-learning-2026-09-23-1000-td",
       "course_id": "deep-learning",
       "session_type": "TD",
-      "session_number": 2,
+      "session_number": 1,
       "start": "2026-09-23T10:00:00+02:00",
       "end": "2026-09-23T12:00:00+02:00",
       "duration_minutes": 120,
@@ -379,31 +333,10 @@
       }
     },
     {
-      "id": "intelligence-artificielle-2026-09-25-0800-cm",
-      "course_id": "intelligence-artificielle",
-      "session_type": "CM",
-      "session_number": 3,
-      "start": "2026-09-25T08:00:00+02:00",
-      "end": "2026-09-25T10:00:00+02:00",
-      "duration_minutes": 120,
-      "location": {
-        "raw": "ILL_I_PCMAster",
-        "site": "ILL",
-        "building": "I",
-        "room": "PCMAster"
-      },
-      "source": {
-        "original_title": "Intelligence Artificielle",
-        "original_audiences": [
-          "2A info"
-        ]
-      }
-    },
-    {
       "id": "deep-learning-2026-09-25-1000-td",
       "course_id": "deep-learning",
       "session_type": "TD",
-      "session_number": 3,
+      "session_number": 2,
       "start": "2026-09-25T10:00:00+02:00",
       "end": "2026-09-25T12:00:00+02:00",
       "duration_minutes": 120,
@@ -418,6 +351,69 @@
         "original_audiences": [
           "3A Alt IR P Data",
           "3A info P Data"
+        ]
+      }
+    },
+    {
+      "id": "algo-sd-2026-09-29-1000-td1",
+      "course_id": "algo-sd",
+      "session_type": "TD1",
+      "session_number": 1,
+      "start": "2026-09-29T10:00:00+02:00",
+      "end": "2026-09-29T12:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E34",
+        "site": "ILL",
+        "building": "I",
+        "room": "E34"
+      },
+      "source": {
+        "original_title": "Algo SD",
+        "original_audiences": [
+          "TD1 1A info"
+        ]
+      }
+    },
+    {
+      "id": "intelligence-artificielle-2026-09-30-0800-td2",
+      "course_id": "intelligence-artificielle",
+      "session_type": "TD2",
+      "session_number": 1,
+      "start": "2026-09-30T08:00:00+02:00",
+      "end": "2026-09-30T10:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_PCMAster",
+        "site": "ILL",
+        "building": "I",
+        "room": "PCMAster"
+      },
+      "source": {
+        "original_title": "Intelligence Artificielle",
+        "original_audiences": [
+          "TD2 2A info"
+        ]
+      }
+    },
+    {
+      "id": "intelligence-artificielle-2026-09-30-1600-cm",
+      "course_id": "intelligence-artificielle",
+      "session_type": "CM",
+      "session_number": 3,
+      "start": "2026-09-30T16:00:00+02:00",
+      "end": "2026-09-30T18:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_Petit Amphi",
+        "site": "ILL",
+        "building": "I",
+        "room": "Petit Amphi"
+      },
+      "source": {
+        "original_title": "Intelligence Artificielle",
+        "original_audiences": [
+          "2A info"
         ]
       }
     },
@@ -443,23 +439,23 @@
       }
     },
     {
-      "id": "intelligence-artificielle-2026-10-02-1400-td2",
-      "course_id": "intelligence-artificielle",
+      "id": "algo-sd-2026-10-02-1400-td2",
+      "course_id": "algo-sd",
       "session_type": "TD2",
       "session_number": 1,
       "start": "2026-10-02T14:00:00+02:00",
       "end": "2026-10-02T16:00:00+02:00",
       "duration_minutes": 120,
       "location": {
-        "raw": "ILL_I_PC2",
+        "raw": "ILL_I_E24",
         "site": "ILL",
         "building": "I",
-        "room": "PC2"
+        "room": "E24"
       },
       "source": {
-        "original_title": "Intelligence Artificielle",
+        "original_title": "Algo SD",
         "original_audiences": [
-          "TD2 2A info"
+          "TD2 1A info"
         ]
       }
     },
@@ -485,18 +481,18 @@
       }
     },
     {
-      "id": "open-source-2026-10-05-0800-cm",
+      "id": "open-source-2026-10-05-1400-cm",
       "course_id": "open-source",
       "session_type": "CM",
       "session_number": 3,
-      "start": "2026-10-05T08:00:00+02:00",
-      "end": "2026-10-05T10:00:00+02:00",
+      "start": "2026-10-05T14:00:00+02:00",
+      "end": "2026-10-05T16:00:00+02:00",
       "duration_minutes": 120,
       "location": {
-        "raw": "ILL_I_E34",
+        "raw": "ILL_I_E28 (nouv)",
         "site": "ILL",
         "building": "I",
-        "room": "E34"
+        "room": "E28 (nouv)"
       },
       "source": {
         "original_title": "Open Source",
@@ -506,12 +502,12 @@
       }
     },
     {
-      "id": "apprentissage-statistique-et-automatique-2026-10-05-1545-cm",
+      "id": "apprentissage-statistique-et-automatique-2026-10-05-1600-td",
       "course_id": "apprentissage-statistique-et-automatique",
-      "session_type": "CM",
-      "session_number": 3,
-      "start": "2026-10-05T15:45:00+02:00",
-      "end": "2026-10-05T17:45:00+02:00",
+      "session_type": "TD",
+      "session_number": 1,
+      "start": "2026-10-05T16:00:00+02:00",
+      "end": "2026-10-05T18:00:00+02:00",
       "duration_minutes": 120,
       "location": {
         "raw": "ILL_K_AMPHI A",
@@ -554,7 +550,7 @@
       "id": "deep-learning-2026-10-06-1000-td",
       "course_id": "deep-learning",
       "session_type": "TD",
-      "session_number": 4,
+      "session_number": 3,
       "start": "2026-10-06T10:00:00+02:00",
       "end": "2026-10-06T12:00:00+02:00",
       "duration_minutes": 120,
@@ -576,7 +572,7 @@
       "id": "deep-learning-2026-10-07-1000-td",
       "course_id": "deep-learning",
       "session_type": "TD",
-      "session_number": 5,
+      "session_number": 4,
       "start": "2026-10-07T10:00:00+02:00",
       "end": "2026-10-07T12:00:00+02:00",
       "duration_minutes": 120,
@@ -585,6 +581,50 @@
         "site": "ILL",
         "building": "I",
         "room": "Petit Amphi"
+      },
+      "source": {
+        "original_title": "Deep Learning",
+        "original_audiences": [
+          "3A Alt IR P Data",
+          "3A info P Data"
+        ]
+      }
+    },
+    {
+      "id": "deep-learning-2026-10-07-1400-td",
+      "course_id": "deep-learning",
+      "session_type": "TD",
+      "session_number": 5,
+      "start": "2026-10-07T14:00:00+02:00",
+      "end": "2026-10-07T16:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E25",
+        "site": "ILL",
+        "building": "I",
+        "room": "E25"
+      },
+      "source": {
+        "original_title": "Deep Learning",
+        "original_audiences": [
+          "3A Alt IR P Data",
+          "3A info P Data"
+        ]
+      }
+    },
+    {
+      "id": "deep-learning-2026-10-07-1600-td",
+      "course_id": "deep-learning",
+      "session_type": "TD",
+      "session_number": 6,
+      "start": "2026-10-07T16:00:00+02:00",
+      "end": "2026-10-07T18:00:00+02:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E23",
+        "site": "ILL",
+        "building": "I",
+        "room": "E23"
       },
       "source": {
         "original_title": "Deep Learning",
@@ -619,7 +659,7 @@
       "id": "apprentissage-statistique-et-automatique-2026-10-08-1015-cm",
       "course_id": "apprentissage-statistique-et-automatique",
       "session_type": "CM",
-      "session_number": 4,
+      "session_number": 3,
       "start": "2026-10-08T10:15:00+02:00",
       "end": "2026-10-08T12:15:00+02:00",
       "duration_minutes": 120,
@@ -640,10 +680,10 @@
       }
     },
     {
-      "id": "apprentissage-statistique-et-automatique-2026-10-09-0800-td",
+      "id": "apprentissage-statistique-et-automatique-2026-10-09-0800-cm",
       "course_id": "apprentissage-statistique-et-automatique",
-      "session_type": "TD",
-      "session_number": 2,
+      "session_type": "CM",
+      "session_number": 4,
       "start": "2026-10-09T08:00:00+02:00",
       "end": "2026-10-09T10:00:00+02:00",
       "duration_minutes": 120,
@@ -667,7 +707,7 @@
       "id": "deep-learning-2026-10-12-0800-td",
       "course_id": "deep-learning",
       "session_type": "TD",
-      "session_number": 6,
+      "session_number": 7,
       "start": "2026-10-12T08:00:00+02:00",
       "end": "2026-10-12T10:00:00+02:00",
       "duration_minutes": 120,
@@ -686,10 +726,10 @@
       }
     },
     {
-      "id": "apprentissage-statistique-et-automatique-2026-10-12-1545-cm",
+      "id": "apprentissage-statistique-et-automatique-2026-10-12-1545-td",
       "course_id": "apprentissage-statistique-et-automatique",
-      "session_type": "CM",
-      "session_number": 5,
+      "session_type": "TD",
+      "session_number": 2,
       "start": "2026-10-12T15:45:00+02:00",
       "end": "2026-10-12T17:45:00+02:00",
       "duration_minutes": 120,
@@ -734,7 +774,7 @@
       "id": "apprentissage-statistique-et-automatique-2026-10-14-1015-cm",
       "course_id": "apprentissage-statistique-et-automatique",
       "session_type": "CM",
-      "session_number": 6,
+      "session_number": 5,
       "start": "2026-10-14T10:15:00+02:00",
       "end": "2026-10-14T12:15:00+02:00",
       "duration_minutes": 120,
@@ -758,7 +798,7 @@
       "id": "deep-learning-2026-10-14-1400-td",
       "course_id": "deep-learning",
       "session_type": "TD",
-      "session_number": 7,
+      "session_number": 8,
       "start": "2026-10-14T14:00:00+02:00",
       "end": "2026-10-14T16:00:00+02:00",
       "duration_minutes": 120,
@@ -801,7 +841,7 @@
       "id": "apprentissage-statistique-et-automatique-2026-10-16-1015-cm",
       "course_id": "apprentissage-statistique-et-automatique",
       "session_type": "CM",
-      "session_number": 7,
+      "session_number": 6,
       "start": "2026-10-16T10:15:00+02:00",
       "end": "2026-10-16T12:15:00+02:00",
       "duration_minutes": 120,
@@ -825,7 +865,7 @@
       "id": "algo-sd-2026-10-16-1400-td1",
       "course_id": "algo-sd",
       "session_type": "TD1",
-      "session_number": 1,
+      "session_number": 2,
       "start": "2026-10-16T14:00:00+02:00",
       "end": "2026-10-16T16:00:00+02:00",
       "duration_minutes": 120,
@@ -846,7 +886,7 @@
       "id": "algo-sd-2026-10-16-1600-td2",
       "course_id": "algo-sd",
       "session_type": "TD2",
-      "session_number": 1,
+      "session_number": 2,
       "start": "2026-10-16T16:00:00+02:00",
       "end": "2026-10-16T18:00:00+02:00",
       "duration_minutes": 120,
@@ -909,7 +949,7 @@
       "id": "algo-sd-2026-10-20-0800-td1",
       "course_id": "algo-sd",
       "session_type": "TD1",
-      "session_number": 2,
+      "session_number": 3,
       "start": "2026-10-20T08:00:00+02:00",
       "end": "2026-10-20T10:00:00+02:00",
       "duration_minutes": 120,
@@ -930,7 +970,7 @@
       "id": "algo-sd-2026-10-20-1000-td2",
       "course_id": "algo-sd",
       "session_type": "TD2",
-      "session_number": 2,
+      "session_number": 3,
       "start": "2026-10-20T10:00:00+02:00",
       "end": "2026-10-20T12:00:00+02:00",
       "duration_minutes": 120,
@@ -972,7 +1012,7 @@
       "id": "algo-sd-2026-10-21-0800-td2",
       "course_id": "algo-sd",
       "session_type": "TD2",
-      "session_number": 3,
+      "session_number": 4,
       "start": "2026-10-21T08:00:00+02:00",
       "end": "2026-10-21T10:00:00+02:00",
       "duration_minutes": 120,
@@ -1014,7 +1054,7 @@
       "id": "algo-sd-2026-10-21-1400-td1",
       "course_id": "algo-sd",
       "session_type": "TD1",
-      "session_number": 3,
+      "session_number": 4,
       "start": "2026-10-21T14:00:00+02:00",
       "end": "2026-10-21T16:00:00+02:00",
       "duration_minutes": 120,
@@ -1140,7 +1180,7 @@
       "id": "deep-learning-2026-11-02-1400-td",
       "course_id": "deep-learning",
       "session_type": "TD",
-      "session_number": 8,
+      "session_number": 9,
       "start": "2026-11-02T14:00:00+01:00",
       "end": "2026-11-02T16:00:00+01:00",
       "duration_minutes": 120,
@@ -1162,7 +1202,7 @@
       "id": "apprentissage-statistique-et-automatique-2026-11-03-0800-cm",
       "course_id": "apprentissage-statistique-et-automatique",
       "session_type": "CM",
-      "session_number": 8,
+      "session_number": 7,
       "start": "2026-11-03T08:00:00+01:00",
       "end": "2026-11-03T10:00:00+01:00",
       "duration_minutes": 120,
@@ -1183,32 +1223,10 @@
       }
     },
     {
-      "id": "deep-learning-2026-11-04-1400-td",
-      "course_id": "deep-learning",
-      "session_type": "TD",
-      "session_number": 9,
-      "start": "2026-11-04T14:00:00+01:00",
-      "end": "2026-11-04T16:00:00+01:00",
-      "duration_minutes": 120,
-      "location": {
-        "raw": "ILL_I_E23",
-        "site": "ILL",
-        "building": "I",
-        "room": "E23"
-      },
-      "source": {
-        "original_title": "Deep Learning",
-        "original_audiences": [
-          "3A Alt IR P Data",
-          "3A info P Data"
-        ]
-      }
-    },
-    {
       "id": "apprentissage-statistique-et-automatique-2026-11-06-1015-cm",
       "course_id": "apprentissage-statistique-et-automatique",
       "session_type": "CM",
-      "session_number": 9,
+      "session_number": 8,
       "start": "2026-11-06T10:15:00+01:00",
       "end": "2026-11-06T12:15:00+01:00",
       "duration_minutes": 120,
@@ -1232,7 +1250,7 @@
       "id": "algo-sd-2026-11-06-1400-td2",
       "course_id": "algo-sd",
       "session_type": "TD2",
-      "session_number": 4,
+      "session_number": 5,
       "start": "2026-11-06T14:00:00+01:00",
       "end": "2026-11-06T16:00:00+01:00",
       "duration_minutes": 120,
@@ -1253,7 +1271,7 @@
       "id": "algo-sd-2026-11-06-1600-td1",
       "course_id": "algo-sd",
       "session_type": "TD1",
-      "session_number": 4,
+      "session_number": 5,
       "start": "2026-11-06T16:00:00+01:00",
       "end": "2026-11-06T18:00:00+01:00",
       "duration_minutes": 120,
@@ -1296,7 +1314,7 @@
       "id": "apprentissage-statistique-et-automatique-2026-11-10-0800-cm",
       "course_id": "apprentissage-statistique-et-automatique",
       "session_type": "CM",
-      "session_number": 10,
+      "session_number": 9,
       "start": "2026-11-10T08:00:00+01:00",
       "end": "2026-11-10T10:00:00+01:00",
       "duration_minutes": 120,
@@ -1305,6 +1323,30 @@
         "site": "ILL",
         "building": "K",
         "room": "AMPHI A"
+      },
+      "source": {
+        "original_title": "Apprentissage statistique et automatique",
+        "original_audiences": [
+          "M2 MIAGE FA Choix Big Data",
+          "M2 MIAGE FI Choix Big Data",
+          "M2 IM",
+          "M2 MATHEMATIQUES"
+        ]
+      }
+    },
+    {
+      "id": "apprentissage-statistique-et-automatique-2026-11-12-0800-cm",
+      "course_id": "apprentissage-statistique-et-automatique",
+      "session_type": "CM",
+      "session_number": 10,
+      "start": "2026-11-12T08:00:00+01:00",
+      "end": "2026-11-12T10:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E25",
+        "site": "ILL",
+        "building": "I",
+        "room": "E25"
       },
       "source": {
         "original_title": "Apprentissage statistique et automatique",
@@ -1363,48 +1405,6 @@
       }
     },
     {
-      "id": "algo-sd-2026-11-13-1400-td2",
-      "course_id": "algo-sd",
-      "session_type": "TD2",
-      "session_number": 5,
-      "start": "2026-11-13T14:00:00+01:00",
-      "end": "2026-11-13T16:00:00+01:00",
-      "duration_minutes": 120,
-      "location": {
-        "raw": "ILL_I_E27",
-        "site": "ILL",
-        "building": "I",
-        "room": "E27"
-      },
-      "source": {
-        "original_title": "Algo SD",
-        "original_audiences": [
-          "TD2 1A info"
-        ]
-      }
-    },
-    {
-      "id": "algo-sd-2026-11-13-1600-td1",
-      "course_id": "algo-sd",
-      "session_type": "TD1",
-      "session_number": 5,
-      "start": "2026-11-13T16:00:00+01:00",
-      "end": "2026-11-13T18:00:00+01:00",
-      "duration_minutes": 120,
-      "location": {
-        "raw": "ILL_I_E34",
-        "site": "ILL",
-        "building": "I",
-        "room": "E34"
-      },
-      "source": {
-        "original_title": "Algo SD",
-        "original_audiences": [
-          "TD1 1A info"
-        ]
-      }
-    },
-    {
       "id": "deep-learning-2026-11-16-1400-td",
       "course_id": "deep-learning",
       "session_type": "TD",
@@ -1423,6 +1423,27 @@
         "original_audiences": [
           "3A Alt IR P Data",
           "3A info P Data"
+        ]
+      }
+    },
+    {
+      "id": "intelligence-artificielle-2026-11-18-0800-td1",
+      "course_id": "intelligence-artificielle",
+      "session_type": "TD1",
+      "session_number": 5,
+      "start": "2026-11-18T08:00:00+01:00",
+      "end": "2026-11-18T10:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E33",
+        "site": "ILL",
+        "building": "I",
+        "room": "E33"
+      },
+      "source": {
+        "original_title": "Intelligence Artificielle",
+        "original_audiences": [
+          "TD3 2A info"
         ]
       }
     },
@@ -1452,7 +1473,7 @@
       "id": "intelligence-artificielle-2026-11-18-1600-td1",
       "course_id": "intelligence-artificielle",
       "session_type": "TD1",
-      "session_number": 5,
+      "session_number": 6,
       "start": "2026-11-18T16:00:00+01:00",
       "end": "2026-11-18T18:00:00+01:00",
       "duration_minutes": 120,
@@ -1466,6 +1487,27 @@
         "original_title": "Intelligence Artificielle",
         "original_audiences": [
           "TD3 2A info"
+        ]
+      }
+    },
+    {
+      "id": "intelligence-artificielle-2026-11-19-1000-td2",
+      "course_id": "intelligence-artificielle",
+      "session_type": "TD2",
+      "session_number": 5,
+      "start": "2026-11-19T10:00:00+01:00",
+      "end": "2026-11-19T12:00:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_I_E34",
+        "site": "ILL",
+        "building": "I",
+        "room": "E34"
+      },
+      "source": {
+        "original_title": "Intelligence Artificielle",
+        "original_audiences": [
+          "TD2 2A info"
         ]
       }
     },
@@ -1557,7 +1599,7 @@
       "id": "intelligence-artificielle-2026-11-24-1000-td2",
       "course_id": "intelligence-artificielle",
       "session_type": "TD2",
-      "session_number": 5,
+      "session_number": 6,
       "start": "2026-11-24T10:00:00+01:00",
       "end": "2026-11-24T12:00:00+01:00",
       "duration_minutes": 120,
@@ -1613,48 +1655,6 @@
         "original_title": "Algo SD",
         "original_audiences": [
           "TD1 1A info"
-        ]
-      }
-    },
-    {
-      "id": "intelligence-artificielle-2026-11-26-0800-td2",
-      "course_id": "intelligence-artificielle",
-      "session_type": "TD2",
-      "session_number": 6,
-      "start": "2026-11-26T08:00:00+01:00",
-      "end": "2026-11-26T10:00:00+01:00",
-      "duration_minutes": 120,
-      "location": {
-        "raw": "ILL_I_E34",
-        "site": "ILL",
-        "building": "I",
-        "room": "E34"
-      },
-      "source": {
-        "original_title": "Intelligence Artificielle",
-        "original_audiences": [
-          "TD2 2A info"
-        ]
-      }
-    },
-    {
-      "id": "intelligence-artificielle-2026-11-26-1000-td1",
-      "course_id": "intelligence-artificielle",
-      "session_type": "TD1",
-      "session_number": 6,
-      "start": "2026-11-26T10:00:00+01:00",
-      "end": "2026-11-26T12:00:00+01:00",
-      "duration_minutes": 120,
-      "location": {
-        "raw": "ILL_I_E33",
-        "site": "ILL",
-        "building": "I",
-        "room": "E33"
-      },
-      "source": {
-        "original_title": "Intelligence Artificielle",
-        "original_audiences": [
-          "TD3 2A info"
         ]
       }
     },
@@ -1775,10 +1775,10 @@
       "end": "2026-12-08T10:00:00+01:00",
       "duration_minutes": 120,
       "location": {
-        "raw": "ILL_I_E33",
+        "raw": "ILL_I_E24",
         "site": "ILL",
         "building": "I",
-        "room": "E33"
+        "room": "E24"
       },
       "source": {
         "original_title": "Algo SD",
@@ -1809,8 +1809,8 @@
       }
     },
     {
-      "id": "soutanances-projets-intermediaire-2026-12-14-1400-cm",
-      "course_id": "soutanances-projets-intermediaire",
+      "id": "soutenances-projets-intermediaire-2026-12-14-1400-cm",
+      "course_id": "soutenances-projets-intermediaire",
       "session_type": "CM",
       "session_number": 1,
       "start": "2026-12-14T14:00:00+01:00",
@@ -1823,7 +1823,7 @@
         "room": "E20b,ILL_I_E26,ILL_I_E32"
       },
       "source": {
-        "original_title": "Soutanances Projets intermédiaire",
+        "original_title": "Soutenances Projets intermédiaire",
         "original_audiences": [
           "3A info",
           "3A Alt/Pro IR"
@@ -2056,6 +2056,71 @@
       ]
     },
     {
+      "id": "moment-d-echange-2026-10-08-1300",
+      "title": "Moment d'échange",
+      "category": "administrative",
+      "start": "2026-10-08T13:00:00+02:00",
+      "end": "2026-10-08T14:00:00+02:00",
+      "duration_minutes": 60,
+      "location": {
+        "raw": "ILL_I_Grand Amphi",
+        "site": "ILL",
+        "building": "I",
+        "room": "Grand Amphi"
+      },
+      "participants": [
+        "PERRONNE Jean-Marc",
+        "L'HOSTIS Gildas",
+        "LAPRAY Pierre-Jean",
+        "COLLAINE Anne",
+        "LAUFFENBURGER Jean-Philippe",
+        "BASSET Michel",
+        "WANG Peng",
+        "DEVANNE Maxime",
+        "BRESCH Didier",
+        "DECRETTE Mathieu",
+        "LECLINCHE Floriane",
+        "ORJUELA Rodolfo",
+        "WEBER Jonathan",
+        "FREYBURGER Jean-Marie",
+        "MATHIEU Daniel",
+        "OSSELIN Jean-Francois",
+        "HARZALLAH Omar",
+        "GIRAULT Elise",
+        "GAUTIER Karine",
+        "BOUAZIZ Wafa",
+        "MEYER Cyril",
+        "HEIM Frederic",
+        "HASSENFORDER Michel",
+        "BUENO Marie-Ange",
+        "BIGUE Laurent",
+        "HIETTER Yann",
+        "HOFFMANN Andre",
+        "WEISSER Thomas",
+        "ALLIOT Patrick",
+        "ADOLPHE Dominique",
+        "SPROESSER Thomas",
+        "SINOIMERI Artan",
+        "DREAN Emilie",
+        "DION Joel",
+        "DIEVAL Florence",
+        "DUPUIS Raphael",
+        "THIRY Laurent",
+        "BARBIER Gerald",
+        "STUDER Philippe",
+        "VIEIRA GOIS FERNANDES David",
+        "FONDEMENT Frederic",
+        "TOURLONIAS Michel",
+        "ISMAIL FAWAZ Ali El Hadi",
+        "BIGUENET Florence",
+        "VIGNE Benoit",
+        "JORDAN Catherine",
+        "ODING Gaelle",
+        "VIGOUROUX Christian",
+        "JUNG Corinne"
+      ]
+    },
+    {
       "id": "conseil-ir-2026-11-03-1300",
       "title": "Conseil IR",
       "category": "administrative",
@@ -2107,6 +2172,23 @@
         "DEVANNE Maxime",
         "ISMAIL FAWAZ Ali El Hadi",
         "MEYER Cyril"
+      ]
+    },
+    {
+      "id": "ccf-apprentissage-statistique-et-automatique-2026-12-17-1330",
+      "title": "CCF Apprentissage statistique et automatique",
+      "category": "administrative",
+      "start": "2026-12-17T13:30:00+01:00",
+      "end": "2026-12-17T15:30:00+01:00",
+      "duration_minutes": 120,
+      "location": {
+        "raw": "ILL_K_AMPHI TAGLANG",
+        "site": "ILL",
+        "building": "K",
+        "room": "AMPHI TAGLANG"
+      },
+      "participants": [
+        "ISMAIL FAWAZ Ali El Hadi"
       ]
     },
     {
