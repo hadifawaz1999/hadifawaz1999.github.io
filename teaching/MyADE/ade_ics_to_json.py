@@ -49,6 +49,14 @@ TITLE_SESSION_OVERRIDES = {
         "course_name": "Fouille de données",
         "session_type": "TD",
     },
+    "Soutenances Projets intermédiaire": {
+        "course_name": "Projets 3A soutenances intermédiaires",
+        "session_type": "TD",
+    },
+    "Sourenances Projets finale": {
+        "course_name": "Projets 3A soutenances finales",
+        "session_type": "TD",
+    },
 }
 
 # Some ADE course descriptions list only the audience and omit the teaching type.

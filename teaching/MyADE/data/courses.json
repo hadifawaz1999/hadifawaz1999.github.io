@@ -7,7 +7,7 @@
       "calendar_product": "-//ADE/version 6.0"
     },
     "timezone": "Europe/Paris",
-    "generated_at": "2026-10-08T18:57:50.761429+02:00"
+    "generated_at": "2026-10-19T01:01:42.582065+02:00"
   },
   "courses": {
     "algo-sd": {
@@ -128,9 +128,9 @@
         }
       ]
     },
-    "sourenances-projets-finale": {
-      "id": "sourenances-projets-finale",
-      "name": "Sourenances Projets finale",
+    "projets-3a-soutenances-finales": {
+      "id": "projets-3a-soutenances-finales",
+      "name": "Projets 3A soutenances finales",
       "aliases": [],
       "category": "course",
       "audiences": [
@@ -152,9 +152,9 @@
         }
       ]
     },
-    "soutenances-projets-intermediaire": {
-      "id": "soutenances-projets-intermediaire",
-      "name": "Soutenances Projets intermédiaire",
+    "projets-3a-soutenances-intermediaires": {
+      "id": "projets-3a-soutenances-intermediaires",
+      "name": "Projets 3A soutenances intermédiaires",
       "aliases": [],
       "category": "course",
       "audiences": [
@@ -1809,9 +1809,9 @@
       }
     },
     {
-      "id": "soutenances-projets-intermediaire-2026-12-14-1400-cm",
-      "course_id": "soutenances-projets-intermediaire",
-      "session_type": "CM",
+      "id": "projets-3a-soutenances-intermediaires-2026-12-14-1400-td",
+      "course_id": "projets-3a-soutenances-intermediaires",
+      "session_type": "TD",
       "session_number": 1,
       "start": "2026-12-14T14:00:00+01:00",
       "end": "2026-12-14T18:00:00+01:00",
@@ -1957,9 +1957,9 @@
       }
     },
     {
-      "id": "sourenances-projets-finale-2027-01-13-1400-cm",
-      "course_id": "sourenances-projets-finale",
-      "session_type": "CM",
+      "id": "projets-3a-soutenances-finales-2027-01-13-1400-td",
+      "course_id": "projets-3a-soutenances-finales",
+      "session_type": "TD",
       "session_number": 1,
       "start": "2027-01-13T14:00:00+01:00",
       "end": "2027-01-13T18:00:00+01:00",
